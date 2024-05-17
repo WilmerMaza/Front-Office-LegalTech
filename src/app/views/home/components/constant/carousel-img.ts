@@ -2,26 +2,26 @@ import { ImgInterface } from '../interface/ImgInterface';
 
 export const CarouselImg: Array<ImgInterface> = [
   {
-    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/tablero-ajedrez-reina.webp?alt=media&token=82d0481f-9e7e-4422-a003-91f177c3787f',
+    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/tablero-ajedrez-cristal.webp?alt=media&token=ba81ed0a-524a-4171-90bb-40a601466a67',
     srcMovil:
-      'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/tablero-ajedrez-reina-movil.webp?alt=media&token=01a8c052-c22c-4dff-82b7-96f003f2a1be',
+      'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/tablero-ajedrez-cristal-movil.webp?alt=media&token=9ee54e1a-2278-4b09-ad55-e1b27c3c48eb',
     role: 'presentation',
     alt: 'Tablero de ajedrez aplicando estrategias legales',
     title: 'Estrategia y planificación legal',
     text: '<span class="bold">El futuro</span> del derecho esta aqui: De <span class="bold">principio</span> a fin,  nuestro <span class="bold">compromiso</span> es una asesoria legal <span class="bold">amparada</span> en los <span class="bold">avances tecnologicos</span>.  ',
   },
   {
-    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/tablero-ajedrez-cristal.webp?alt=media&token=c5bb621c-0416-43c1-a47a-6ef96a962502',
+    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/tablero-ajedrez-reina.webp?alt=media&token=9a3e5483-b058-4aba-a667-db25ec589da3',
     srcMovil:
-      'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/tablero-ajedrez-cristal-movil.webp?alt=media&token=f3c13532-59be-4475-b4d5-d40a63cccc67',
+      'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/tablero-ajedrez-reina-movil.webp?alt=media&token=ac993dd4-32dd-4be9-82ba-4d40d970c1d4',
     role: 'presentation',
     alt: 'Tablero de ajedrez con piezas de cristal',
     title: 'Estrategia y planificación legal',
     text: '¿Listo para un <span class="bold">cambio</span> en la experiencia legal? Ofrecemos más que <span class="bold">servicios</span>: ofrecemos cumplimiento, <span class="bold">honestidad</span> y un enfoque <span class="bold">innovador</span> que redefine la <span class="bold">práctica legal</span>.',
   },
   {
-    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/equipo-estrategias-legales.webp?alt=media&token=e26f577e-98e5-4d58-b444-2e8992a0c2c5',
-    srcMovil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-fe1eb.appspot.com/o/equipo-estrategias-legales-movil.webp?alt=media&token=c75ea06b-72c2-4e9a-a637-4bda2bf669fd',
+    src: 'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/equipo-estrategias-legales.webp?alt=media&token=7f21634d-8382-488d-bb31-98bb52b04b55',
+    srcMovil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-frontoffice.appspot.com/o/equipo-estrategias-legales-movil.webp?alt=media&token=6c25cda5-7a5d-4b28-90ed-7311280d0bd9',
     role: 'presentation',
     alt: 'En equipo se toman las mejores estrategias legales',
     title: 'Estrategia y planificación legal',
