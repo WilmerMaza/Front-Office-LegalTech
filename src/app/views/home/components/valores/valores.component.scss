@@ -55,11 +55,12 @@ p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 8.1px;
+    font-size: 8.5px;
     line-height: 13px;
     text-align: center;
     
     color: #611374;
+    width: 100%;
     
 }
 
@@ -67,11 +68,12 @@ p{
   grid-column: span 2;
   transform: translateX(70px);
   .item-honestidad{
-    transform: translateX(70px);
+    transform: translateX(60px);
   }
   p{
-    font-size: 9.2px;
-    width: 60%;
+    font-size: 8.5px;
+    width: 71%;
+    transform: translateX(-20px);
   }
  
 }
