@@ -13,11 +13,11 @@
 
 }
 .Linea{
-  width: 200px; /* Ajusta el ancho según tus necesidades */
-  height: 2px; /* Grosor de la línea */
+  width: 200px; 
+  height: 2px; 
   background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
-  display: flex; /* Usar flexbox para centrar */
-  margin: 0 auto; /* Centra horizontalmente */
+  display: flex; 
+  margin: 0 auto; 
   
    }
 
@@ -27,11 +27,11 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   justify-items: center;
   align-items: center;
-  height: auto; /* Se ajustará automáticamente según el contenido */
-  max-width: 800px; /* Opcional: establece un ancho máximo */
-  margin: 0 auto; /* Centra el grid horizontalmente */
+  height: auto; 
+  max-width: 800px; 
+  margin: 0 auto; 
   gap: 20px 11px;
-  align-items: flex-start; /* Alinea verticalmente en la parte superior */
+  align-items: flex-start; 
     
 }
 
@@ -42,7 +42,7 @@
   }
   
   .item-prejudicialidad{
-    transform: translateX(16px);
+    transform: translateX(13px);
   }
 
   .item-celebridad{
@@ -58,7 +58,7 @@ p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 8.5px;
+    font-size: 8.1px;
     line-height: 13px;
     text-align: center;
     
@@ -84,27 +84,14 @@ p{
     width: 45%;
    }
   .Container-Valores{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    justify-items: center;
-    height: auto; /* Se ajustará automáticamente según el contenido */
-    max-width: 800px; /* Opcional: establece un ancho máximo */
-    margin: 0 auto; /* Centra el grid horizontalmente */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 20px 10px;
-    align-items: flex-start
  }
 
- 
-
  p{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 9.2px;
   line-height: 12px;
-  text-align: center;
-  
-  color: #611374;
 
 }
   
@@ -119,16 +106,9 @@ p{
   }
   
   p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 11px;
     line-height: 12px;
-    text-align: center;
-    
-    color: #611374;
     width: 125%;
-  
   }
 /* Aquí aplicamos el orden deseado */
 .Honestidad {
@@ -187,7 +167,7 @@ p{
 }
 
 @media screen and (min-width:680px){
-  /* Aquí aplicamos el orden deseado */
+  
 
   p{
  
@@ -248,9 +228,8 @@ p{
   
 }
 
-//LISTO
+
 @media screen and (min-width: 780px) {
-  //800
   
   p{
  
@@ -308,9 +287,7 @@ p{
     transform: translateX(181px);
   
   }
-}
-  
-  
+}  
   
 }
 
@@ -427,7 +404,7 @@ p{
   transform: translateX(76px);
 }
 .item-celebridad{
-  transform: translateX(183px); //183
+  transform: translateX(183px); 
 }
 }
 .Prejudicialidad {
@@ -507,8 +484,6 @@ p{
   }
   }
  }
-
- 
 
  @media screen and (min-width:1420px) {
   .Linea{
