@@ -21,7 +21,6 @@
   
    }
 
-
 .Container-Valores{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -34,8 +33,6 @@
   align-items: flex-start; 
     
 }
-
-
 
 .item-innovacion{
     transform: translateX(16px);
@@ -91,7 +88,7 @@ p{
  p{
 
   font-size: 9.2px;
-  line-height: 12px;
+  line-height: 1.2;
 
 }
   
@@ -107,7 +104,6 @@ p{
   
   p{
     font-size: 11px;
-    line-height: 12px;
     width: 125%;
   }
 /* Aquí aplicamos el orden deseado */
@@ -167,15 +163,12 @@ p{
 }
 
 @media screen and (min-width:680px){
-  
-
   p{
  
     font-size: 1.65vw;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
+  
   p{
     font-size: 1.65vw;
         width: 86%;
@@ -187,7 +180,6 @@ p{
 }
 
 .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-45px);
   }
@@ -197,7 +189,6 @@ p{
 }
 
 .Innovacion {
-  order: 3;
  p{
   transform: translateX(-90px);
  } 
@@ -207,7 +198,6 @@ p{
 }
 
 .Celeridad {
-  order: 4;
   p{
     transform: translateX(60px);
   }
@@ -216,7 +206,6 @@ p{
   }
 }
 .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(91px);
   }
@@ -232,12 +221,9 @@ p{
 @media screen and (min-width: 780px) {
   
   p{
- 
     font-size: 1.65vw;
-    line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
   grid-column: span 1;
   p{
     font-size: 1.65vw;
@@ -250,7 +236,6 @@ p{
 }
 
 .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-45px);
   }
@@ -260,7 +245,6 @@ p{
 }
 
 .Innovacion {
-  order: 3;
  p{
   transform: translateX(-90px);
  } 
@@ -270,7 +254,6 @@ p{
 }
 
 .Celeridad {
-  order: 4;
   p{
     transform: translateX(60px);
   }
@@ -279,7 +262,6 @@ p{
   }
 }
 .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(91px);
   }
@@ -291,19 +273,14 @@ p{
   
 }
 
-
 @media screen and (min-width:900px){
   .Linea{
     width:30%;
   }
   p{
- 
     font-size: 1.4vw;
-    line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
   p{
     font-size: 1.4vw;
         width: 86%;
@@ -315,7 +292,6 @@ p{
 }
 
 .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-45px);
   }
@@ -325,7 +301,6 @@ p{
 }
 
 .Innovacion {
-  order: 3;
  p{
   transform: translateX(-90px);
  } 
@@ -335,7 +310,6 @@ p{
 }
 
 .Celeridad {
-  order: 4;
   p{
     transform: translateX(66px);
   }
@@ -344,7 +318,6 @@ p{
   }
 }
 .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(91px);
   }
@@ -361,13 +334,10 @@ p{
   width:26%;
  } 
  p{
- 
   font-size: 1.25vw;
-  line-height: 1.2;
 }
 .Honestidad {
-order: 1;
-grid-column: span 1;
+
 p{
   font-size: 1.25vw;
       width: 90%;
@@ -379,7 +349,6 @@ p{
 }
 
 .Responsabilidad {
-order: 2;
 p{
   transform: translateX(-31px);
 }
@@ -389,7 +358,6 @@ p{
 }
 
 .Innovacion {
-order: 3;
 p{
 transform: translateX(-78px);
 } 
@@ -399,7 +367,6 @@ transform: translateX(-78px);
 }
 
 .Celeridad {
-order: 4;
 p{
   transform: translateX(76px);
 }
@@ -408,13 +375,11 @@ p{
 }
 }
 .Prejudicialidad {
-order: 5;
 p{
   transform: translateX(97px);
 }
 .item-prejudicialidad{
   transform: translateX(194px);
-
 }
 }
 }
@@ -425,14 +390,10 @@ p{
   } 
 
   p{
- 
     font-size: 1vw;
-    line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
-  transform: translateX(-30px);
+  transform: translateX(-10px);
   p{
     font-size: 1vw;
         width: 85%;
@@ -444,7 +405,6 @@ p{
   }
   
   .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-31px);
   }
@@ -454,7 +414,7 @@ p{
   }
   
   .Innovacion {
-  order: 3;
+  
   transform: translateX(30px);
   p{
   transform: translateX(-78px);
@@ -465,7 +425,6 @@ p{
   }
   
   .Celeridad {
-  order: 4;
   p{
     transform: translateX(76px);
   }
@@ -474,13 +433,11 @@ p{
   }
   }
   .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(97px);
   }
   .item-prejudicialidad{
     transform: translateX(185px);
-  
   }
   }
  }
@@ -491,13 +448,10 @@ p{
   } 
 
   p{
- 
     font-size: 1vw;
     line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
   transform: translateX(-30px);
   p{
     font-size: 1vw;
@@ -510,7 +464,6 @@ p{
   }
   
   .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-31px);
   }
@@ -520,7 +473,6 @@ p{
   }
   
   .Innovacion {
-  order: 3;
   transform: translateX(30px);
   p{
   transform: translateX(-78px);
@@ -531,7 +483,6 @@ p{
   }
   
   .Celeridad {
-  order: 4;
   p{
     transform: translateX(70px);
   }
@@ -557,13 +508,9 @@ p{
   } 
 
   p{
- 
     font-size: 0.91vw;
-    line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
   transform: translateX(-30px);
   p{
     font-size: 0.91vw;
@@ -576,7 +523,6 @@ p{
   }
   
   .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-31px);
   }
@@ -586,7 +532,6 @@ p{
   }
   
   .Innovacion {
-  order: 3;
   transform: translateX(30px);
   p{
   transform: translateX(-78px);
@@ -597,9 +542,8 @@ p{
   }
   
   .Celeridad {
-  order: 4;
   p{
-    transform: translateX(50px); //50
+    transform: translateX(50px); 
   }
   .item-celebridad{
     transform: translateX(183px);
@@ -608,11 +552,10 @@ p{
   .Prejudicialidad {
   order: 5;
   p{
-    transform: translateX(120px); //120
+    transform: translateX(120px);
   }
   .item-prejudicialidad{
-    transform: translateX(211px);//211
-  
+    transform: translateX(211px);
   }
   }
  }
@@ -623,13 +566,9 @@ p{
   } 
 
   p{
- 
     font-size: 0.85vw;
-    line-height: 1.2;
   }
   .Honestidad {
-  order: 1;
-  grid-column: span 1;
   transform: translateX(-30px);
   p{
     font-size: 0.85vw;
@@ -640,9 +579,7 @@ p{
     transform: translateX(125px);
   }
   }
-  
   .Responsabilidad {
-  order: 2;
   p{
     transform: translateX(-31px);
   }
@@ -652,7 +589,6 @@ p{
   }
   
   .Innovacion {
-  order: 3;
   transform: translateX(30px);
   p{
   transform: translateX(-78px);
@@ -663,22 +599,19 @@ p{
   }
   
   .Celeridad {
-  order: 4;
   p{
-    transform: translateX(50px); //50
+    transform: translateX(50px); 
   }
   .item-celebridad{
     transform: translateX(183px);
   }
   }
   .Prejudicialidad {
-  order: 5;
   p{
-    transform: translateX(120px); //120
+    transform: translateX(120px); 
   }
   .item-prejudicialidad{
-    transform: translateX(211px);//211
-  
+    transform: translateX(211px);
   }
   }
  }
