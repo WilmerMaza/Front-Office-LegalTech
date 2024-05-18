@@ -10,8 +10,6 @@
 	 font-size: 17px;
 	 text-align: center;
     color: rgba(97, 19, 116, 1);
-   
-   
 
 }
 .Linea{
@@ -32,28 +30,24 @@
   height: auto; /* Se ajustará automáticamente según el contenido */
   max-width: 800px; /* Opcional: establece un ancho máximo */
   margin: 0 auto; /* Centra el grid horizontalmente */
-  gap: 20px 10px;
+  gap: 20px 11px;
   align-items: flex-start; /* Alinea verticalmente en la parte superior */
     
 }
+
+
 
 .item-innovacion{
     transform: translateX(16px);
   }
   
   .item-prejudicialidad{
-    transform: translateX(18px);
+    transform: translateX(16px);
   }
 
   .item-celebridad{
     transform: translateX(31px);
   }
-
-   .Honestidad{
-     grid-column: span 2;
-    
-    
-   }
 
   .item-honestidad{
 
@@ -70,9 +64,20 @@ p{
     
     color: #611374;
     
-
 }
 
+.Honestidad{
+  grid-column: span 2;
+  transform: translateX(70px);
+  .item-honestidad{
+    transform: translateX(70px);
+  }
+  p{
+    font-size: 9.2px;
+    width: 60%;
+  }
+ 
+}
 @media screen and (min-width:470px) {
   
   .Linea{
@@ -88,6 +93,8 @@ p{
     gap: 20px 10px;
     align-items: flex-start
  }
+
+ 
 
  p{
   font-family: 'Inter';
@@ -110,106 +117,199 @@ p{
   .Linea{
     width: 40%;
   }
- 
   
   p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 8.6px;
+    font-size: 11px;
     line-height: 12px;
     text-align: center;
     
     color: #611374;
+    width: 125%;
   
   }
-  
-  .item-celebridad{
-    transform: translateX(30px);
+/* Aquí aplicamos el orden deseado */
+.Honestidad {
+  order: 1;
+  grid-column: span 1;
+  transform: translateX(0px);
+  p{
+    font-size: 11px;
+    width: 92%;
   }
+  .item-honestidad{
+    transform: translateX(57px);
+  }
+}
 
+.Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-35px);
+  }
+  .item-responsabilidad{
+    transform: translateX(-10px);
+  }
+}
+
+.Innovacion {
+  order: 3;
+ p{
+  transform: translateX(-35px);
+ } 
   .item-innovacion{
     transform: translateX(10px);
   }
-
-  .item-prejudicialidad{
-    transform: translateX(20px);
-  
-  }
-
-  .item-honestidad{
-    transform: translateX(50px);
-  }
-.Prejudicialidad ,.Honestidad{
-  grid-column: span 1;
-  transform: translateX(120px);
-}
-  
 }
 
-
-@media screen and (min-width: 800px) {
-  
-  .Linea{
-    width: 35%;
-  }
-  .text h3{
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-     color: rgba(97, 19, 116, 1);
- 
- }
-  .Container-Valores{
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    grid-template-rows: repeat(2, 1fr); /* Dos filas */
-    gap: 25px 80px; /* Espacio entre celdas */
-
-  }
-  
-  
+.Celeridad {
+  order: 4;
   p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    
-    color: #611374;
-    width: 131%
+    transform: translateX(45px);
   }
-  
   .item-celebridad{
-    transform: translateX(90px);
+    transform: translateX(125px);
   }
+}
+.Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(80px);
+  }
+  .item-prejudicialidad{
+    transform: translateX(135px);
+  
+  }
+}
 
+}
+
+@media screen and (min-width:680px){
+  /* Aquí aplicamos el orden deseado */
+
+  p{
+ 
+    font-size: 1.65vw;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  p{
+    font-size: 1.65vw;
+        width: 86%;
+        transform: translateX(33px);
+  }
+  .item-honestidad{
+    transform: translateX(91px);
+  }
+}
+
+.Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-45px);
+  }
+  .item-responsabilidad{
+    transform: translateX(-10px);
+  }
+}
+
+.Innovacion {
+  order: 3;
+ p{
+  transform: translateX(-90px);
+ } 
   .item-innovacion{
+    transform: translateX(-32px);
+  }
+}
+
+.Celeridad {
+  order: 4;
+  p{
     transform: translateX(60px);
   }
-
+  .item-celebridad{
+    transform: translateX(149px);
+  }
+}
+.Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(91px);
+  }
   .item-prejudicialidad{
-    transform: translateX(73px);
+    transform: translateX(172px);
   
   }
+}
+  
+}
 
-  .item-honestidad{
-    transform: translateX(85px);
+//LISTO
+@media screen and (min-width: 780px) {
+  //800
+  
+  p{
+ 
+    font-size: 1.65vw;
+    line-height: 1.2;
   }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  p{
+    font-size: 1.65vw;
+        width: 90%;
+        transform: translateX(19px);
+  }
+  .item-honestidad{
+    transform: translateX(91px);
+  }
+}
+
+.Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-45px);
+  }
+  .item-responsabilidad{
+    transform: translateX(6.5px);
+  }
+}
+
+.Innovacion {
+  order: 3;
+ p{
+  transform: translateX(-90px);
+ } 
+  .item-innovacion{
+    transform: translateX(-14px);
+  }
+}
+
+.Celeridad {
+  order: 4;
+  p{
+    transform: translateX(60px);
+  }
+  .item-celebridad{
+    transform: translateX(172px);
+  }
+}
 .Prejudicialidad {
-  transform: translateX(120px);
+  order: 5;
+  p{
+    transform: translateX(91px);
+  }
+  .item-prejudicialidad{
+    transform: translateX(181px);
+  
+  }
 }
-
-.item-responsabilidad{
-  transform: translateX(37px);
-}
-
-.Honestidad{
-  transform: translateX(140px);
-}
+  
   
   
 }
@@ -219,22 +319,392 @@ p{
   .Linea{
     width:30%;
   }
+  p{
+ 
+    font-size: 1.4vw;
+    line-height: 1.2;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  p{
+    font-size: 1.4vw;
+        width: 86%;
+        transform: translateX(45px);
+  }
+  .item-honestidad{
+    transform: translateX(110px);
+  }
 }
 
-@media screen and (min-width:1130px) {
+.Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-45px);
+  }
+  .item-responsabilidad{
+    transform: translateX(1.7px);
+  }
+}
+
+.Innovacion {
+  order: 3;
+ p{
+  transform: translateX(-90px);
+ } 
+  .item-innovacion{
+    transform: translateX(-18.5px);
+  }
+}
+
+.Celeridad {
+  order: 4;
+  p{
+    transform: translateX(66px);
+  }
+  .item-celebridad{
+    transform: translateX(172px);
+  }
+}
+.Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(91px);
+  }
+  .item-prejudicialidad{
+    transform: translateX(181px);
+  
+  }
+}
+  
+}
+
+@media screen and (min-width:1024px) {
  .Linea{
   width:26%;
  } 
+ p{
+ 
+  font-size: 1.25vw;
+  line-height: 1.2;
+}
+.Honestidad {
+order: 1;
+grid-column: span 1;
+p{
+  font-size: 1.25vw;
+      width: 90%;
+      transform: translateX(40px);
+}
+.item-honestidad{
+  transform: translateX(110px);
+}
 }
 
-@media screen and (min-width:1300px) {
+.Responsabilidad {
+order: 2;
+p{
+  transform: translateX(-31px);
+}
+.item-responsabilidad{
+  transform: translateX(21px);
+}
+}
+
+.Innovacion {
+order: 3;
+p{
+transform: translateX(-78px);
+} 
+.item-innovacion{
+  transform: translateX(-7.5px);
+}
+}
+
+.Celeridad {
+order: 4;
+p{
+  transform: translateX(76px);
+}
+.item-celebridad{
+  transform: translateX(183px); //183
+}
+}
+.Prejudicialidad {
+order: 5;
+p{
+  transform: translateX(97px);
+}
+.item-prejudicialidad{
+  transform: translateX(194px);
+
+}
+}
+}
+
+@media screen and (min-width:1200px) {
   .Linea{
    width:22%;
   } 
+
+  p{
+ 
+    font-size: 1vw;
+    line-height: 1.2;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  transform: translateX(-30px);
+  p{
+    font-size: 1vw;
+        width: 85%;
+        transform: translateX(40px);
+  }
+  .item-honestidad{
+    transform: translateX(110px);
+  }
+  }
+  
+  .Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-31px);
+  }
+  .item-responsabilidad{
+    transform: translateX(12px);
+  }
+  }
+  
+  .Innovacion {
+  order: 3;
+  transform: translateX(30px);
+  p{
+  transform: translateX(-78px);
+  } 
+  .item-innovacion{
+    transform: translateX(-9.5px);//
+  }
+  }
+  
+  .Celeridad {
+  order: 4;
+  p{
+    transform: translateX(76px);
+  }
+  .item-celebridad{
+    transform: translateX(180px);
+  }
+  }
+  .Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(97px);
+  }
+  .item-prejudicialidad{
+    transform: translateX(185px);
+  
+  }
+  }
  }
 
- @media screen and (min-width:1500px) {
+ 
+
+ @media screen and (min-width:1420px) {
   .Linea{
    width:20%;
   } 
+
+  p{
+ 
+    font-size: 1vw;
+    line-height: 1.2;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  transform: translateX(-30px);
+  p{
+    font-size: 1vw;
+        width: 100%;
+        transform: translateX(40px);
+  }
+  .item-honestidad{
+    transform: translateX(125px);
+  }
+  }
+  
+  .Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-31px);
+  }
+  .item-responsabilidad{
+    transform: translateX(20.7%);
+  }
+  }
+  
+  .Innovacion {
+  order: 3;
+  transform: translateX(30px);
+  p{
+  transform: translateX(-78px);
+  } 
+  .item-innovacion{
+    transform: translateX(5.5px);
+  }
+  }
+  
+  .Celeridad {
+  order: 4;
+  p{
+    transform: translateX(70px);
+  }
+  .item-celebridad{
+    transform: translateX(183px);
+  }
+  }
+  .Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(100px);
+  }
+  .item-prejudicialidad{
+    transform: translateX(194px);
+  
+  }
+  }
  }
+
+ @media screen and (min-width:1600px) {
+  .Linea{
+   width:20%;
+  } 
+
+  p{
+ 
+    font-size: 0.91vw;
+    line-height: 1.2;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  transform: translateX(-30px);
+  p{
+    font-size: 0.91vw;
+        width: 102%;
+        transform: translateX(30px);
+  }
+  .item-honestidad{
+    transform: translateX(125px);
+  }
+  }
+  
+  .Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-31px);
+  }
+  .item-responsabilidad{
+    transform: translateX(20.7%);
+  }
+  }
+  
+  .Innovacion {
+  order: 3;
+  transform: translateX(30px);
+  p{
+  transform: translateX(-78px);
+  } 
+  .item-innovacion{
+    transform: translateX(5.5px);
+  }
+  }
+  
+  .Celeridad {
+  order: 4;
+  p{
+    transform: translateX(50px); //50
+  }
+  .item-celebridad{
+    transform: translateX(183px);
+  }
+  }
+  .Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(120px); //120
+  }
+  .item-prejudicialidad{
+    transform: translateX(211px);//211
+  
+  }
+  }
+ }
+
+ @media screen and (min-width:1872px) {
+  .Linea{
+   width:20%;
+  } 
+
+  p{
+ 
+    font-size: 0.85vw;
+    line-height: 1.2;
+  }
+  .Honestidad {
+  order: 1;
+  grid-column: span 1;
+  transform: translateX(-30px);
+  p{
+    font-size: 0.85vw;
+        width: 110%;
+        transform: translateX(20px);
+  }
+  .item-honestidad{
+    transform: translateX(125px);
+  }
+  }
+  
+  .Responsabilidad {
+  order: 2;
+  p{
+    transform: translateX(-31px);
+  }
+  .item-responsabilidad{
+    transform: translateX(29.7%);
+  }
+  }
+  
+  .Innovacion {
+  order: 3;
+  transform: translateX(30px);
+  p{
+  transform: translateX(-78px);
+  } 
+  .item-innovacion{
+    transform: translateX(5.5px);
+  }
+  }
+  
+  .Celeridad {
+  order: 4;
+  p{
+    transform: translateX(50px); //50
+  }
+  .item-celebridad{
+    transform: translateX(183px);
+  }
+  }
+  .Prejudicialidad {
+  order: 5;
+  p{
+    transform: translateX(120px); //120
+  }
+  .item-prejudicialidad{
+    transform: translateX(211px);//211
+  
+  }
+  }
+ }
+ 

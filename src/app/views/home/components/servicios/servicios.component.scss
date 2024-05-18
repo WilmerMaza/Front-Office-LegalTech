@@ -104,7 +104,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 30px;
+    gap: 25px 100px;
     justify-content: center;
   }
 
