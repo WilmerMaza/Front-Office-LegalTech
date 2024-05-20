@@ -1,3 +1,4 @@
+@import "@assets/colors.scss";
 .container {
 	width: 80%; /* adjust the width as needed */
 	margin: 40px auto; /* center the container */
@@ -24,7 +25,7 @@
 .Linea{
   width: 200px; /* Ajusta el ancho según tus necesidades */
   height: 2px; /* Grosor de la línea */
-  background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
+  background: $color-gradient;
   display: flex; /* Usar flexbox para centrar */
   margin: 0 auto; /* Centra horizontalmente */
   

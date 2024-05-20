@@ -1,22 +1,23 @@
-.container-firma {
+@import '@assets/colors.scss' ;
+.signature-section__container {
     position: relative;
     display: inline-block;
      margin-bottom: 1px;
      font-family: "Inter";
      font-style: normal;
-     color: #FFF;
+     color: $color-black;
      width: 100%;
-     height: auto; /* Ajusta la altura automáticamente según el ancho */
-     overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+     height: auto; 
+     overflow: hidden; 
 }
 
-.firma2{
-    width: 100%; /* Hace que el SVG ocupe todo el ancho del contenedor */
-    height: 140px; /* Mantiene la proporción del SVG */
-    display: block; /* Elimina el espacio en blanco debajo del SVG */
+.signature-section__image{
+    width: 100%; 
+    height: 140px; 
+    display: block; 
 }
 
-.titulo {
+.signature-section__title {
     font-weight: 800;
     font-size: 10.5px;
     position: absolute;
@@ -25,7 +26,7 @@
     
 }
 
-.texto {
+.signature-section__text {
     font-weight: 400;
     font-size: 2.2vw;
     line-height: 1.2;
@@ -36,7 +37,7 @@
     width: 73%;
 }
 
-.Ver-mas {
+.signature-section__button {
     box-sizing: border-box;
     padding: 1px;
     position: absolute;
@@ -57,12 +58,12 @@
 
  @media screen and (min-width:430px){
     
-     .titulo { 
+     .signature-section__title { 
         font-size: 12px;
         left: 45%;
      }
     
-     .texto {
+     .signature-section__text {
         font-size: 2.1vw;
         line-height: 1.2;
         top: 32px;
@@ -70,30 +71,30 @@
         width: 73%;
      }
     
-     .Ver-mas {
+     .signature-section__button {
         top: 120px;
      }
      
  }
 
 @media screen and (min-width:480px) {
-    .firma2{
+    .signature-section__image{
        
         height: 150px; 
         
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 14px;
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 2vw;
         left: 76px;
         width: 70%
     }
    
-    .Ver-mas {
+    .signature-section__button {
         top: 128px; 
         width: 55px;
         height: 14px;
@@ -102,23 +103,23 @@
     
 }
 @media screen and (min-width:600px) {
-    .firma2{ 
+    .signature-section__image{ 
         height: 180px;  
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 17px;
         left: 43.5%;
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 1.8vw;
         top: 37px;
         left: 113px;
         width: 63%;
     }
    
-    .Ver-mas {
+    .signature-section__button {
         
         left: calc(47% - 25px);
         top: 149px;
@@ -130,20 +131,20 @@
 }
  
 @media screen and (min-width:768px) {
-    .firma2{
+    .signature-section__image{
         
         height: 200px; /* Mantiene la proporción del SVG */
        
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 19px;
         top: 29px;
         left: 45%;
 
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 1.35vw;
         line-height: 1.4;
         top: 69px;
@@ -151,7 +152,7 @@
         width: 77%
     }
    
-    .Ver-mas {
+    .signature-section__button {
         left: calc(48% - 24px);
         top: 160px;
         width: 55px;
@@ -162,26 +163,26 @@
 }
 
 @media screen and (min-width:1024px) {
-    .firma2{
+    .signature-section__image{
        
         height: 250px; 
         
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 25px;
         top: 37px;
         left: 46.5%
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 1.4vw;
         top: 83px;
         left: 120px;
         width: 79%; 
     }
    
-    .Ver-mas {
+    .signature-section__button {
         left: calc(48% - 22px);
         top: 197px;
         width: 72px;
@@ -191,17 +192,17 @@
 }
 
 @media screen and (min-width: 1200px){
-    .firma2{
+    .signature-section__image{
         
         height: 315px; 
         
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 30px;
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 1.42vw;
         top: 115px;
         left: 143px;
@@ -209,7 +210,7 @@
         
     }
    
-    .Ver-mas {
+    .signature-section__button {
         left: calc(48% - 15px);
         top: 250px;
         font-size: 14px;
@@ -219,21 +220,21 @@
 
 @media screen and (min-width: 1600px){
    
-    .firma2{
+    .signature-section__image{
         height: 317px; 
         
     }
    
-    .titulo {
+    .signature-section__title {
         left: 47%
     }
    
-    .texto {
+    .signature-section__text {
         top: 100px;
         left: 175px;  
     }
    
-    .Ver-mas {
+    .signature-section__button {
         top: 255px;
     }  
 
@@ -242,19 +243,19 @@
 @media screen and (min-width: 1800px) {
 
     
-    .firma2{
+    .signature-section__image{
         
         height: 385px;
         
     }
    
-    .titulo {
+    .signature-section__title {
         font-size: 40px;
         top: 60px;
         left: 46.5%;
     }
    
-    .texto {
+    .signature-section__text {
         font-size: 1.35vw;
         line-height: 1.4;
         top: 143px;
@@ -262,7 +263,7 @@
         width: 77%
     }
    
-    .Ver-mas {
+    .signature-section__button {
         left: calc(48% - 10px);
         top: 330px; 
     }  

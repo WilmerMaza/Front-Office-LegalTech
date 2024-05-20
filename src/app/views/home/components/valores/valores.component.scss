@@ -1,7 +1,8 @@
-//MI CODIGO
+
+@import "@assets/colors.scss";
 .container {
-	width: 80%; /* adjust the width as needed */
-	margin: 40px auto; /* center the container */
+	width: 80%; 
+	margin: 40px auto;
 }
 
 .text h3{
@@ -9,13 +10,13 @@
 	 padding: 10px;
 	 font-size: 17px;
 	 text-align: center;
-    color: rgba(97, 19, 116, 1);
+    color:$color-footer;
 
 }
 .Linea{
   width: 200px; 
   height: 2px; 
-  background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
+  background: $color-gradient;
   display: flex; 
   margin: 0 auto; 
   
@@ -33,24 +34,23 @@
   align-items: flex-start; 
     
 }
+//cambios
+.item-innovacion {
+  transform: translateX(calc(16px - 1px));
+}
 
-.item-innovacion{
-    transform: translateX(16px);
-  }
-  
-  .item-prejudicialidad{
-    transform: translateX(13px);
-  }
+.item-prejudicialidad {
+  transform: translateX(calc(13px - 1px));
+}
 
-  .item-celebridad{
-    transform: translateX(31px);
-  }
+.item-celebridad {
+  transform: translateX(calc(31px - 1px));
+}
 
-  .item-honestidad{
-
-    transform: translateX(52px);
-  }
-
+.item-honestidad {
+  transform: translateX(calc(52px - 1px));
+}
+//---------------------------------
 p{
     font-family: 'Inter';
     font-style: normal;
@@ -59,24 +59,22 @@ p{
     line-height: 13px;
     text-align: center;
     
-    color: #611374;
+    color: $color-footer;
     width: 100%;
     
 }
-
-.Honestidad{
+//cambios
+.Honestidad {
   grid-column: span 2;
-  transform: translateX(70px);
-  .item-honestidad{
-    transform: translateX(60px);
-  }
-  p{
-    font-size: 8.5px;
-    width: 71%;
-    transform: translateX(-20px);
-  }
- 
+  transform: translateX(calc(70px - 1px));
 }
+
+.Honestidad p {
+  font-size: 8.5px;
+  width: calc(71% + 1px);
+  transform: translateX(calc(-20px - 1px));
+}
+//---------------
 @media screen and (min-width:470px) {
   
   .Linea{
@@ -84,7 +82,8 @@ p{
    }
   .Container-Valores{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 20px 10px;
+    //gap: 20px 10px;
+    gap: calc(20px + 1px) 10px;
  }
 
  p{
@@ -510,14 +509,14 @@ p{
   } 
 
   p{
-    font-size: 0.91vw;
+    font-size: 0.8vw;
   }
   .Honestidad {
   transform: translateX(-30px);
   p{
-    font-size: 0.91vw;
-        width: 102%;
-        transform: translateX(30px);
+    font-size: 0.8vw;
+        width: 95%;
+        transform: translateX(40px);
   }
   .item-honestidad{
     transform: translateX(125px);
@@ -562,59 +561,6 @@ p{
   }
  }
 
- @media screen and (min-width:1872px) {
-  .Linea{
-   width:20%;
-  } 
 
-  p{
-    font-size: 0.85vw;
-  }
-  .Honestidad {
-  transform: translateX(-30px);
-  p{
-    font-size: 0.85vw;
-        width: 110%;
-        transform: translateX(20px);
-  }
-  .item-honestidad{
-    transform: translateX(125px);
-  }
-  }
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
-  .item-responsabilidad{
-    transform: translateX(29.7%);
-  }
-  }
-  
-  .Innovacion {
-  transform: translateX(30px);
-  p{
-  transform: translateX(-78px);
-  } 
-  .item-innovacion{
-    transform: translateX(5.5px);
-  }
-  }
-  
-  .Celeridad {
-  p{
-    transform: translateX(50px); 
-  }
-  .item-celebridad{
-    transform: translateX(183px);
-  }
-  }
-  .Prejudicialidad {
-  p{
-    transform: translateX(120px); 
-  }
-  .item-prejudicialidad{
-    transform: translateX(211px);
-  }
-  }
- }
+ //ESTE ES MI CODIGO
  
