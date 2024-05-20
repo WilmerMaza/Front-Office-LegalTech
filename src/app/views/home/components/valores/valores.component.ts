@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-valores',
@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ValoresComponent {
 
+
+  
 }
