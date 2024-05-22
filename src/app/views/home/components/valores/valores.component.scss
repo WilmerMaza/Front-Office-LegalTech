@@ -35,30 +35,27 @@
     
 }
 //cambios
-.item-innovacion {
-  transform: translateX(calc(16px - 1px));
-}
+ .item-innovacion {
+   transform: translateX(calc(15px - 1px));
+ }
 
-.item-prejudicialidad {
-  transform: translateX(calc(13px - 1px));
-}
+ .item-prejudicialidad {
+   transform: translateX(calc(13px - 1px));
+ }
 
-.item-celebridad {
-  transform: translateX(calc(31px - 1px));
-}
+ .item-celebridad {
+   transform: translateX(calc(31px - 1px));
+ }
 
-.item-honestidad {
+ .item-honestidad {
   transform: translateX(calc(52px - 1px));
-}
-//---------------------------------
+ }
+//--
 p{
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 8.5px;
     line-height: 13px;
-    text-align: center;
-    
+    text-align: center;    
     color: $color-footer;
     width: 100%;
     
@@ -68,53 +65,34 @@ p{
   grid-column: span 2;
   transform: translateX(calc(70px - 1px));
 }
-
 .Honestidad p {
   font-size: 8.5px;
   width: calc(71% + 1px);
   transform: translateX(calc(-20px - 1px));
 }
-//---------------
-@media screen and (min-width:470px) {
-  
-  .Linea{
-    width: 45%;
-   }
+//---
+@media screen and (width >= 470px) {
   .Container-Valores{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    //gap: 20px 10px;
     gap: calc(20px + 1px) 10px;
  }
-
- p{
-
-  font-size: 9.2px;
-  line-height: 1.2;
-
 }
-  
-}
-
 
 @media screen and (min-width: 620px){
-
-
-  .Linea{
-    width: 40%;
-  }
   
   p{
-    font-size: 11px;
+    font-size: 77%; 
     width: 125%;
   }
-/* Aquí aplicamos el orden deseado */
+
 .Honestidad {
   order: 1;
   grid-column: span 1;
   transform: translateX(0px);
   p{
-    font-size: 11px;
-    width: 92%;
+    font-size: 77%;
+    width: 90%;
+    transform: translateX(10px);
   }
   .item-honestidad{
     transform: translateX(57px);
@@ -163,20 +141,15 @@ p{
 
 }
 
-@media screen and (min-width:680px){
-  p{
- 
-    font-size: 1.65vw;
-  }
+@media screen and (width >= 680px){
   .Honestidad {
   
   p{
-    font-size: 1.65vw;
-        width: 86%;
-        transform: translateX(33px);
+width: 86%;
+transform: translateX(33px);
   }
   .item-honestidad{
-    transform: translateX(91px);
+    transform: translateX(96px); 
   }
 }
 
@@ -194,7 +167,7 @@ p{
   transform: translateX(-90px);
  } 
   .item-innovacion{
-    transform: translateX(-32px);
+    transform: translateX(-28px);
   }
 }
 
@@ -215,77 +188,17 @@ p{
   
   }
 }
-  
 }
 
-
-@media screen and (min-width: 780px) {
-  
-  p{
-    font-size: 1.65vw;
-  }
-  .Honestidad {
-  grid-column: span 1;
-  p{
-    font-size: 1.65vw;
-        width: 90%;
-        transform: translateX(19px);
-  }
-  .item-honestidad{
-    transform: translateX(91px);
-  }
-}
-
-.Responsabilidad {
-  p{
-    transform: translateX(-45px);
-  }
-  .item-responsabilidad{
-    transform: translateX(6.5px);
-  }
-}
-
-.Innovacion {
- p{
-  transform: translateX(-90px);
- } 
-  .item-innovacion{
-    transform: translateX(-14px);
-  }
-}
-
-.Celeridad {
-  p{
-    transform: translateX(60px);
-  }
-  .item-celebridad{
-    transform: translateX(172px);
-  }
-}
-.Prejudicialidad {
-  p{
-    transform: translateX(91px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(181px);
-  
-  }
-}  
-  
-}
-
-@media screen and (min-width:900px){
-  .Linea{
-    width:30%;
-  }
+@media screen and (width >= 900px){
   p{
     font-size: 1.4vw;
   }
   .Honestidad {
   p{
     font-size: 1.4vw;
-        width: 86%;
-        transform: translateX(45px);
+    width: 86%;
+    transform: translateX(45px);
   }
   .item-honestidad{
     transform: translateX(110px);
@@ -302,9 +215,6 @@ p{
 }
 
 .Innovacion {
- p{
-  transform: translateX(-90px);
- } 
   .item-innovacion{
     transform: translateX(-18.5px);
   }
@@ -318,34 +228,22 @@ p{
     transform: translateX(172px);
   }
 }
-.Prejudicialidad {
-  p{
-    transform: translateX(91px);
-  }
   .item-prejudicialidad{
-    transform: translateX(181px);
-  
+    transform: translateX(181px); 
   }
 }
-  
-}
-
-@media screen and (min-width:1024px) {
- .Linea{
-  width:26%;
- } 
+@media screen and (width>=1024px) {
  p{
   font-size: 1.25vw;
+  line-height: 1.2;
 }
 .Honestidad {
 
 p{
   font-size: 1.25vw;
-      width: 90%;
-      transform: translateX(40px);
-}
-.item-honestidad{
-  transform: translateX(110px);
+  width: 90%;
+  transform: translateX(40px);
+  line-height: 1.2;
 }
 }
 
@@ -354,7 +252,7 @@ p{
   transform: translateX(-31px);
 }
 .item-responsabilidad{
-  transform: translateX(21px);
+  transform: translateX(15px);//21
 }
 }
 
@@ -385,10 +283,7 @@ p{
 }
 }
 
-@media screen and (min-width:1200px) {
-  .Linea{
-   width:22%;
-  } 
+@media screen and (width>=1200px) {
 
   p{
     font-size: 1vw;
@@ -397,18 +292,13 @@ p{
   transform: translateX(-10px);
   p{
     font-size: 1vw;
-        width: 85%;
-        transform: translateX(40px);
-  }
-  .item-honestidad{
-    transform: translateX(110px);
+    width: 85%;
+    transform: translateX(40px);
   }
   }
   
   .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
+
   .item-responsabilidad{
     transform: translateX(12px);
   }
@@ -421,7 +311,7 @@ p{
   transform: translateX(-78px);
   } 
   .item-innovacion{
-    transform: translateX(-9.5px);//
+    transform: translateX(-9.5px);
   }
   }
   
@@ -443,34 +333,25 @@ p{
   }
  }
 
- @media screen and (min-width:1420px) {
-  .Linea{
-   width:20%;
-  } 
-
+ @media screen and (width >=1420px) {
   p{
     font-size: 1vw;
-    line-height: 1.2;
+    
   }
   .Honestidad {
   transform: translateX(-30px);
   p{
     font-size: 1vw;
-        width: 100%;
-        transform: translateX(40px);
+    width: 100%;
+    transform: translateX(40px);
   }
   .item-honestidad{
     transform: translateX(125px);
   }
   }
-  
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
+
   .item-responsabilidad{
-    transform: translateX(20.7%);
-  }
+    transform: translateX(20%);
   }
   
   .Innovacion {
@@ -492,7 +373,6 @@ p{
   }
   }
   .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(100px);
   }
@@ -503,10 +383,7 @@ p{
   }
  }
 
- @media screen and (min-width:1600px) {
-  .Linea{
-   width:20%;
-  } 
+ @media screen and (width>=1600px) {
 
   p{
     font-size: 0.8vw;
@@ -515,21 +392,16 @@ p{
   transform: translateX(-30px);
   p{
     font-size: 0.8vw;
-        width: 95%;
-        transform: translateX(40px);
+    width: 95%;
+    transform: translateX(40px);
   }
   .item-honestidad{
     transform: translateX(125px);
   }
   }
   
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
   .item-responsabilidad{
     transform: translateX(20.7%);
-  }
   }
   
   .Innovacion {
@@ -541,7 +413,6 @@ p{
     transform: translateX(5.5px);
   }
   }
-  
   .Celeridad {
   p{
     transform: translateX(50px); 
@@ -551,7 +422,6 @@ p{
   }
   }
   .Prejudicialidad {
-  order: 5;
   p{
     transform: translateX(120px);
   }
@@ -560,7 +430,5 @@ p{
   }
   }
  }
-
-
  //ESTE ES MI CODIGO
  
