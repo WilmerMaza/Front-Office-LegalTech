@@ -1,158 +1,88 @@
-.container {
-	width: 80%; /* adjust the width as needed */
-	margin: 40px auto; /* center the container */
-}
+@use "@assets/colors.scss" as *;
 
-.text{
-  position: relative;
-  text-align: center;
-  font-size: 1em; /* tamaño base del texto */
-}
-.text h3{
-	 width: 100%;
-	 //font-size: 1.5em; /* tamaño del título en relación con el tamaño base */
-	 text-align: center;
-   .Color1{
-    color:rgba(238, 172, 255, 1);
-   }
-   .Color2{
-    color: rgba(97, 19, 116, 1);
-   }
-   
+.services {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: clamp(562px, 20vw, 681px);
+  .container-services {
+    margin-bottom: clamp(45px, 2vw, 60px);
+    .services-header {
+      text-align: center;
+      font-family: "Inter";
+      font-style: normal;
+      h3 {
+        line-height: 1.2;
+        margin-top: 20%;
+        font-size: clamp(15px, 2vw, 43px);
+        .highlight-primary {
+          color: $color-navPosition;
+        }
+        .highlight-secondary {
+          color: $color-footer;
+        }
+        .highlighted-text {
+          font-weight: 700;
+        }
+      }
+      .divider-services {
+        width: clamp(168px, 22vw, 48vh);
+        margin: auto;
+        border: none;
+        height: 3px;
+        opacity: 1;
+        background: $color-gradientLine;
+      }
+    }
+  }
 
-}
-.Linea{
-  width: 200px; /* Ajusta el ancho según tus necesidades */
-  height: 2px; /* Grosor de la línea */
-  background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
-  display: flex; /* Usar flexbox para centrar */
-  margin: 0 auto; /* Centra horizontalmente */
-  
-   }
-
-.button-container {
-   
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .button-item {
-   
+  .button-container {
+    max-width: 800px;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    justify-items: center;
+    align-content: space-evenly;
     font-family: "Inter";
     font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    color: #611374;
-    border: 3.59816px solid #FFFFFF;
-    background-color: white;
-    border-radius: 16.1569px;
-    box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03), 0px 3.79963px 3.03971px #CBCBCB;
-    width: 240.59px;
-    height: 65.72px;
-    margin-bottom: 25px;
-    position: relative;
-    margin-left: 40px;
-    padding: 0.5em 1em 0.5em 1em;
+    .button-item {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: $color-footer;
+      border: 3.59816px solid $color-white;
+      background-color: $color-white;
+      border-radius: 16.1569px;
+      box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03),
+        0px 3.79963px 3.03971px #cbcbcb;
+      width: 240.59px;
+      height: 65.72px;
+      margin-bottom: 25px;
+      position: relative;
+      margin-left: 40px;
+      padding: 0.5em 1em 0.5em 1em;
 
-
-.imagen-Mayor{
-
-    position: absolute;
-    top: 50%;
-    left: 13.3em;
-    transform: translateY(-50%)
-  }
-
-  }
-
-
-.morado{
-
-    width: 99.76px;
-    height: 65.86px;
-    background: #EEACFF;
-    border-radius: 16.1569px;
-    position: absolute;
-    transform: translate(-12px, -90px);
-    z-index: -1;
-
-    .Iconos{
-      transform: translate(10px, 16px);
+      .service-image {
+        position: absolute;
+        top: 50%;
+        left: 13.3em;
+        transform: translateY(-50%);
+      }
     }
 
-  }
-  
-  }
- 
- @media screen and (min-width:481px){
-  .Linea{
-    width: 52%;
-   }
- }
+    .icon-container {
+      width: 99.76px;
+      height: 65.86px;
+      background: $color-navPosition;
+      border-radius: 16.1569px;
+      position: absolute;
+      transform: translate(-12px, -90px);
+      z-index: -1;
 
-
-@media screen and (min-width: 593px) {
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .button {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .button-item {
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ajustar al ancho de la celda */
-    height: 100%; /* Ajustar al alto de la celda */
-  }
-
-  .Linea{
-    width: 48%;
+      .icon {
+        transform: translate(10px, 16px);
+      }
+    }
   }
 }
-
-@media screen and (min-width: 768px) {
-  /* Estilos específicos para pantallas de hasta 768px de ancho */
-  .text {
-    font-size: 0.9em; /* Disminuye el tamaño del texto */
-  }
-  .Linea {
-    width: 37%; /* Reducir el ancho de la línea */
-  }
-}
-
-@media screen and (min-width:900px){
-  .Linea{
-    width:30%;
-  }
-}
-
-@media screen and (min-width:1130px) {
- .Linea{
-  width:27%;
- } 
-}
-
-@media screen and (min-width:1300px) {
-  .Linea{
-   width:25%;
-  } 
- }
-
- @media screen and (min-width:1500px) {
-  .Linea{
-   width:20%;
-  } 
- }
-
-
-  
