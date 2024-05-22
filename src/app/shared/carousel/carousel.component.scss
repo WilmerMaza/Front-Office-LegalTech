@@ -1,9 +1,9 @@
 @use "@assets/colors.scss" as *;
 
 .swipper-custom {
-  --swiper-navigation-color: $color-navPosition;
-  --swiper-pagination-color: $color-navPosition;
-  --swiper-pagination-bullet-inactive-color: $color-white;
+  --swiper-navigation-color: #eeacff;
+  --swiper-pagination-color: #eeacff;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-width: 15.95px;
   --swiper-pagination-bullet-height: 15.26px;
