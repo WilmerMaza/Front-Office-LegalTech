@@ -1,34 +1,80 @@
 @use "@assets/colors.scss" as *;
 
-.swipper-empresa-custom {
-  --swiper-navigation-color: #eeacff;
-  --swiper-pagination-bullet-width: 15.95px;
-  --swiper-pagination-bullet-height: 15.26px;
-  height: 20vh;
-  .swiper-slide {
-    margin: 0 8px;
-    .content-pictures {
-      display: flex;
-      width: auto;
-      height: 100%;
-      justify-content: center;
+.company-section {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  padding: 1rem;
+  margin-top: 7%;
 
-      img {
-        margin: auto;
+  .company-title {
+    font-weight: 400;
+    text-align: center;
+    font-size: clamp(15px, 2vw, 43px);
+    color: $color-footer;
+    .company-title-bold {
+      font-weight: 800;
+    }
+  }
+
+  .section-divider {
+    border: 0;
+    border-top: 2px solid $color-navPosition;
+    margin: auto;
+    margin-bottom: 2%;
+    width: clamp(226px, 33%, 766px);
+    height: 1px;
+  }
+
+  .company-swiper {
+    color: $color-navPosition;
+    --swiper-navigation-color: $color-navPosition;
+
+    --swiper-pagination-bullet-width: 16px;
+    --swiper-pagination-bullet-height: 15px;
+    height: 20vh;
+
+    .company-swiper-slide {
+      margin: 0 8px;
+
+      .company-picture {
+        display: flex;
+        width: auto;
+        height: 100%;
+        justify-content: center;
+
+        .company-img {
+          margin: auto;
+          max-width: 100%;
+          height: auto;
+          aspect-ratio: 1/1;
+          object-fit: contain;
+          mix-blend-mode: color-burn;
+        }
       }
     }
   }
 }
 
-@media (width >= 992px) {
-}
+/* Media Queries */
+
+/* Dispositivos medianos a grandes */
 @media (min-width: 768px) {
+  .company-swiper {
+    margin: 0 10%;
+  }
 }
 
-/* Dispositivos de escritorio pequeños */
-@media (width >= 992px) {
-}
+// /* Dispositivos grandes */
+// @media (min-width: 992px) {
+//   .company-swiper {
+//     height: 25vh;
+//   }
+// }
 
-/* Dispositivos de escritorio grandes */
-@media (min-width: 1200px) {
-}
+// /* Dispositivos extra grandes */
+// @media (min-width: 1200px) {
+//   .company-swiper {
+//     height: 30vh;
+//   }
+//}

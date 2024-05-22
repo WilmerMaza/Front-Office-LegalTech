@@ -23,8 +23,12 @@ register();
     <swiper-slide lazy="true">
       @if (textPresent) {
       <div class="content-text-swiper">
-        <p [innerHTML]="img.text"></p>
+        <p [innerHTML]="img.text" class="text-swiper"></p>
+        <hr class="divider-carousel">
       </div>
+
+     
+
       }
       <picture class="content-pictures" style="height:{{heightCorousel}} ;" >
         <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
@@ -35,8 +39,9 @@ register();
           loading="lazy"
           role="presentation"
           [title]="img.title"
-          height="100%"
+          height="100vh"
           width="100%"
+          class="images"
         />
       </picture>
     </swiper-slide>
