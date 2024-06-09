@@ -1,0 +1,143 @@
+@use "@assets/colors.scss" as *;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.background-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Para asegurarse de que las capas no sobresalgan */
+}
+
+.white-background {
+  background-color: $color-white;
+  width: 100%;
+  height: 100%; /* REVISAR */
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.purple-background {
+  background: $color-modu-conocenos;
+  width: 100%;
+  height: 80%; /* Ajusta la altura  */
+  position: absolute;
+  z-index: 1;
+  @media (min-width: 768px) {
+    height: 65%; /* Ajusta la altura */
+  }
+}
+
+.divider-services {
+  width: clamp(240px, 22vw, 48vh); //clamp(168px, 22vw, 48vh); 
+  margin: auto;
+  border-top: 2px solid rgba(238, 172, 255, 1);
+}
+
+.work-team-container {
+  text-align: center;
+  color: $color-white;
+  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 20px; /* evitar que las tarjetas se peguen a los bordes */
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio columnas */
+  }
+}
+
+.card {
+  background-color: $color-white;
+  border-radius: 15px;
+  padding: 20px;
+  width: clamp(300px, 90%, 400px);
+  text-align: center;
+  color: $color-groupname;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+
+  @media (min-width: 768px) {
+    flex: 1 1 30%; 
+  }
+}
+
+.profile-picture {
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  border: 5px solid $color-borde-conocenos;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+h4 {
+  color: $color-borde-conocenos;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: $color-footer;
+  margin: 10px 0 20px;
+  flex-grow: 1;
+}
+
+.btn-more {
+  background-color: $color-footer;
+  color: $color-white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.btn-more:hover {
+  background-color: #5a227d;
+}
+
+.btn-more span {
+  font-size: 1.2rem;
+}
+
+.button-container {
+  text-align: center;
+}
