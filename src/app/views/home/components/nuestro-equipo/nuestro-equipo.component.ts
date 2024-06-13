@@ -16,7 +16,7 @@ export class NuestroEquipoComponent {
   public teamMembers: TeamMember[]= [
     {
       img: 'assets/img/team/member1.webp',
-      name: 'CATHERINE GÓMEZ',
+      name: 'CATHERINE SUCETE GÓMEZ',
       position: 'Representante legal - Gerente',
       description: 'Abogada con amplia experiencia en asesoría legal y litigios, con más de 21 años de experiencia en el ejercicio del derecho. En materia de derecho comercial y civil. Igualmente, atención de procesos laborales y administrativos como abogada.'
     },
