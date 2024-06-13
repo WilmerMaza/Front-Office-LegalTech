@@ -9,6 +9,8 @@ import { IdentidadComponent } from './components/identidad/identidad.component';
 import { ImgInterface } from './components/interface/ImgInterface';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ValoresComponent } from './components/valores/valores.component';
+import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equipo.component';
+
 
 @Component({
   selector: 'app-home',
@@ -21,6 +23,8 @@ import { ValoresComponent } from './components/valores/valores.component';
     ValoresComponent,
     EmpresasComponent,
     FirmaComponent,
+    NuestroEquipoComponent,
+   
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

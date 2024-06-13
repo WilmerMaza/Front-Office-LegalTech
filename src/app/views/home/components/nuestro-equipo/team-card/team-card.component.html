@@ -1,0 +1,13 @@
+<article class="card">
+  <div class="profile-picture">
+    <img [src]="member().img" [alt]="member.name" />
+  </div>
+  <h3>{{ member().name }}</h3>
+  <h4>{{ member().position }}</h4>
+  <p>{{ member().description }}</p>
+  <div class="button-container">
+    <button class="btn-more">
+      <strong>ver más <span>&#8594;</span></strong>
+    </button>
+  </div>
+</article>

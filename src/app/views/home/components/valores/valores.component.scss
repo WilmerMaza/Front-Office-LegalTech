@@ -124,8 +124,8 @@ p{
 
  @media screen and (width >=1420px) {
   p{
-    font-size: 0.82vw;
+    font-size: 0.75vw;
     line-height: 20px;
-    width: clamp(260px, 50%, 900px);
+    width: clamp(100px, 150%, 500px);
    }
  }

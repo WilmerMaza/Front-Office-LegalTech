@@ -1,0 +1,17 @@
+<section class="work-teams">
+  <div class="background-wrapper">
+    <div class="white-background"></div>
+    <div class="purple-background"></div>
+    <div class="work-team-container">
+      <div class="work-teams-container-title">
+        <h2><strong>CONOCE</strong> NUESTRO EQUIPO</h2>
+      </div>
+      <hr class="divider-team" />
+      <div class="team-information">
+       @for ( member of teamMembers; track member) {
+          <app-team-card [member]="member"></app-team-card>
+        }
+      </div>
+    </div>
+  </div>
+</section>
