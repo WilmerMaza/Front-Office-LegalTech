@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TeamMember } from '../../interface/ImgInterface';
 
 @Component({
   selector: 'app-team-card',
@@ -8,10 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './team-card.component.scss'
 })
 export class TeamCardComponent {
-  @Input() member: { img: any, name: string, position: string, description: string }= {
-    img: '',
-    name: '',
-    position: '',
-    description: ''
-};
+  @Input() member!: TeamMember;  
 }

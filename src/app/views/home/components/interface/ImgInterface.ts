@@ -7,3 +7,10 @@ export interface ImgInterface {
   arial?:string;
   title?:string;
 }
+
+export interface TeamMember {
+  img: string;
+  name: string;
+  position: string;
+  description: string;
+}

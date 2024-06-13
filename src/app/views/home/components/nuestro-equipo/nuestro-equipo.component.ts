@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TeamCardComponent } from './team-card/team-card.component';
 import { FormsModule } from '@angular/forms';
+import { TeamMember } from '../interface/ImgInterface';
 
 @Component({
   selector: 'app-nuestro-equipo',
@@ -12,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class NuestroEquipoComponent {
   
-  teamMembers = [
+  teamMembers: TeamMember[]= [
     {
       img: 'assets/img/team/member1.webp',
       name: 'CATHERINE GÓMEZ',

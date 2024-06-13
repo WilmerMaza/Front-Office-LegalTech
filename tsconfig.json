@@ -15,19 +15,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "ES2022",
+    "module": "ES2022",
     "useDefineForClassFields": false,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "skipLibCheck": true,
     "lib": [
       "ES2022",
-      "dom",
-      "ESNext"
+      "dom"
     ],
     "baseUrl": "./",
     "paths": {
@@ -38,15 +31,6 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true,
-    "enableIvy": true,
-    "strictInputTypes": true,
-    "strictSafeNavigationTypes": true,
-    "strictAttributeTypes": true,
-    "strictNullChecks": true,
-    "strictNullInputTypes": true,
-    "strictDomLocalRefTypes": true,
-    "strictContextGenerics": true
-
+    "strictTemplates": true
   }
 }
