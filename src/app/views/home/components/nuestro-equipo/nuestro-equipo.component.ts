@@ -13,7 +13,7 @@ import { TeamMember } from '../interface/ImgInterface';
 })
 export class NuestroEquipoComponent {
   
-  teamMembers: TeamMember[]= [
+  public teamMembers: TeamMember[]= [
     {
       img: 'assets/img/team/member1.webp',
       name: 'CATHERINE GÓMEZ',

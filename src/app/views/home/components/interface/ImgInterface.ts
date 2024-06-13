@@ -9,7 +9,7 @@ export interface ImgInterface {
 }
 
 export interface TeamMember {
-  img: any;
+  img: string;
   name: string;
   position: string;
   description: string;

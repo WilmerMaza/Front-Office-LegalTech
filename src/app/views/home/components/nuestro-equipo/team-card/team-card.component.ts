@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component,input } from '@angular/core';
 import { TeamMember } from '../../interface/ImgInterface';
 
 @Component({
@@ -9,5 +9,5 @@ import { TeamMember } from '../../interface/ImgInterface';
   styleUrl: './team-card.component.scss'
 })
 export class TeamCardComponent {
-  @Input() member!: TeamMember;  
+member =input.required<TeamMember>();
 }
