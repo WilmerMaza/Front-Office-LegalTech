@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TeamCardComponent } from './team-card/team-card.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-nuestro-equipo',
   templateUrl: './nuestro-equipo.component.html',
   styleUrls: ['./nuestro-equipo.component.scss'],
-  imports: [CommonModule,TeamCardComponent],
+  imports: [CommonModule,TeamCardComponent, FormsModule],
   standalone: true,
 })
 export class NuestroEquipoComponent {
