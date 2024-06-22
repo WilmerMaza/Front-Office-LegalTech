@@ -10,6 +10,7 @@ import { ImgInterface } from './components/interface/ImgInterface';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ValoresComponent } from './components/valores/valores.component';
 import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equipo.component';
+import { NuestraFirmaComponent } from './components/nuestra-firma/nuestra-firma.component';
 
 
 @Component({
@@ -24,6 +25,7 @@ import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equi
     EmpresasComponent,
     FirmaComponent,
     NuestroEquipoComponent,
+    NuestraFirmaComponent,
    
   ],
   templateUrl: './home.component.html',

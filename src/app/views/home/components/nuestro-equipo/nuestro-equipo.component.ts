@@ -9,7 +9,7 @@ import { TeamMember } from '../interface/ImgInterface';
   templateUrl: './nuestro-equipo.component.html',
   styleUrls: ['./nuestro-equipo.component.scss'],
   imports: [CommonModule,TeamCardComponent, FormsModule],
-  standalone: true,
+  standalone: true
 })
 export class NuestroEquipoComponent {
   
