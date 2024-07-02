@@ -2,7 +2,7 @@
 @use "@assets/colors.scss" as *;
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -43,10 +43,10 @@ section {
   z-index: 1;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  max-width: 85%;
 }
 
 .content {
@@ -62,6 +62,19 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-size: 95%;
+
+  .divider-firma{
+    width: clamp(200px, 25vw, 70vh);
+    border: none;
+    height: 3px;
+    opacity: 1;
+    background: $color-nuestroequipoLine;
+  }
+
+  .title-firma{
+    font-size: 2.5rem;
+  }
 }
 
 .image-column {
@@ -75,6 +88,7 @@ section {
 .additional-text {
   padding-left: 20px;
   flex-basis: 100%;
+  font-size: 90%;
 }
 
 img {
@@ -85,21 +99,21 @@ img {
 }
 
 .icon {
-  display: block;
   margin: 10px auto;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 137px;
+  position: absolute;
+  transform: translate(122px, -100px);
 }
 
 .mision-vision-section {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0.3, 0.3, 0.3, 0.3);
-  max-width: 90%;
-  margin: 20px auto;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.07), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 85%;
+  margin: 30px auto;
   text-align: center;
-  
 }
 
 .mision-vision-section h2 {
@@ -109,14 +123,20 @@ img {
 }
 
 .mision-vision-section p {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   color: $color-footer;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.mision-vision-section img {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
+.divider-nuestrafirma {
+  width: clamp(168px, 22vw, 48vh);
+  margin: auto;
+  border: none;
+  height: 3px;
+  opacity: 1;
+  background: $color-gradientLine;
+  
 }
 
 .mision-vision-section h2 strong {
@@ -132,14 +152,5 @@ img {
   .content {
     flex-direction: row;
     height: clamp(300px, 340px, 380px);
-  }
-
-  .additional-text {
-    //padding: 20px;
-  }
-
-  img.icon {
-    width: 70px;
-    height: 70px;
   }
 }
