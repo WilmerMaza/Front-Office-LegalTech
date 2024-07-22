@@ -16,7 +16,7 @@ export const routes: Routes = [
       ),
   },
   {
-    path:'nuestroFirma',
+    path:'nuestraFirma',
     loadComponent:() =>
       import('./views/home/components/nuestra-firma/nuestra-firma.component').then(
         (c) => c.NuestraFirmaComponent
