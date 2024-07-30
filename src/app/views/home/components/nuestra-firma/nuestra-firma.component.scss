@@ -1,0 +1,162 @@
+/* General Styles */
+@use "@assets/colors.scss" as *;
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-top: 110px; /* Ajusta este valor para bajar más el contenido */
+}
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.white-background {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.purple-background {
+  background-color: $color-footer;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.text-column {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 95%;
+
+  .divider-firma{
+    width: clamp(200px, 25vw, 70vh);
+    border: none;
+    height: 3px;
+    opacity: 1;
+    background: $color-nuestroequipoLine;
+  }
+
+  .title-firma{
+    font-size: 2.5rem;
+  }
+}
+
+.image-column {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-text {
+  padding-left: 20px;
+  flex-basis: 100%;
+  font-size: 90%;
+}
+
+img {
+  display: block;
+  max-width: 110%;
+  height: clamp(200px, 290px, 400px);
+  border-radius: 10px;
+}
+
+.icon {
+  margin: 10px auto;
+  width: 120px;
+  height: 137px;
+  position: absolute;
+  transform: translate(122px, -100px);
+}
+
+.mision-vision-section {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.07), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 85%;
+  margin: 30px auto; //espacio
+  text-align: center;
+}
+
+.mision-vision-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: $color-footer;
+}
+
+.mision-vision-section p {
+  margin-bottom: 70px;
+  color: $color-footer;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.divider-nuestrafirma {
+  width: clamp(168px, 22vw, 48vh);
+  margin: auto;
+  border: none;
+  height: 3px;
+  opacity: 1;
+  background: $color-gradientLine;
+  
+}
+
+.mision-vision-section h2 strong {
+  font-weight: 800;
+}
+
+/* Añade espacio extra después de la sección "Nuestra Visión" */
+.mision-vision-section:last-of-type {
+  margin-bottom: 100px; 
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .purple-background {
+    padding: 40px;
+  }
+
+  .content {
+    flex-direction: row;
+    height: clamp(300px, 340px, 380px);
+  }
+}

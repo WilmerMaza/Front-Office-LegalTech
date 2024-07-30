@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+
 export const routes: Routes = [
   {
     path: '',
@@ -14,4 +15,11 @@ export const routes: Routes = [
         (c) => c.ExampleComponent
       ),
   },
+  {
+    path:'nuestraFirma',
+    loadComponent:() =>
+      import('./views/home/components/nuestra-firma/nuestra-firma.component').then(
+        (c) => c.NuestraFirmaComponent
+      )
+  }
 ];
