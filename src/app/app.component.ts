@@ -11,5 +11,5 @@ import { LayoutComponent } from './containers/layout/layout.component';
   template: '<app-layout/>',
 })
 export class AppComponent {
-  title = 'LegalTech';
+  title = 'LegalTech - Abogados Digitales';
 }

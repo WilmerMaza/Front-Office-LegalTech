@@ -1,10 +1,9 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
-
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 // Plus imports for other components in your app.
 
@@ -41,6 +40,10 @@ $LegalTech-theme: mat.define-light-theme(
 
 /* You can add global styles to this file, and also import other style files */
 
+header {
+  text-align: -webkit-match-parent; /* Para navegadores basados en WebKit */
+  text-align: match-parent; /* Para Edge 79+ y otros navegadores */
+}
 html,
 body {
   overflow-x: hidden;
@@ -50,4 +53,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  -webkit-text-size-adjust: 100%; /* Para soportar navegadores basados en WebKit */
+  text-size-adjust: 100%; /* Para otros navegadores */
 }

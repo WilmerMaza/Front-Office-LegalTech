@@ -6,7 +6,7 @@ export const routes: Routes = [
     path: '',
     loadComponent: () =>
       import('./views/home/home.component').then((c) => c.HomeComponent),
-    title: 'LegalTech',
+    title: 'LegalTech - Abogados Digitales',
   },
   {
     path: 'Example',

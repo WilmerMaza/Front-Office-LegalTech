@@ -1,8 +1,9 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr';
 import express from 'express';
-import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { SitemapStream, streamToPromise } from 'sitemap';
 import bootstrap from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
@@ -16,6 +17,33 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
+
+  server.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    next();
+  });
+
+  server.get('/robots.txt', (req, res) => {
+    res.sendFile(join(serverDistFolder, 'robots.txt'));
+  });
+
+  server.get('/sitemap.xml', async (req, res) => {
+    const sitemap = new SitemapStream({ hostname: 'https://abogadosdigitales.com.co/' });
+
+    // Añade las URLs que deseas incluir en el sitemap
+    sitemap.write({ url: '/', lastmod: new Date(), changefreq: 'daily', priority: 1.0 });
+
+    // Añade más URLs según sea necesario
+    sitemap.end();
+
+    try {
+      const sitemapXml = await streamToPromise(sitemap);
+      res.header('Content-Type', 'application/xml');
+      res.send(sitemapXml.toString());
+    } catch (err) {
+      res.status(500).send('Error generating sitemap');
+    }
+  });
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
