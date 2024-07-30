@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "sitemap"
+            ],
             "outputPath": "dist/legaltech",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -50,7 +53,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"  
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"

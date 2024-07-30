@@ -7,10 +7,9 @@ import { EmpresasComponent } from './components/empresas/empresas.component';
 import { FirmaComponent } from './components/firma/firma.component';
 import { IdentidadComponent } from './components/identidad/identidad.component';
 import { ImgInterface } from './components/interface/ImgInterface';
+import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equipo.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ValoresComponent } from './components/valores/valores.component';
-import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equipo.component';
-import { NuestraFirmaComponent } from './components/nuestra-firma/nuestra-firma.component';
 
 
 @Component({
@@ -25,8 +24,8 @@ import { NuestraFirmaComponent } from './components/nuestra-firma/nuestra-firma.
     EmpresasComponent,
     FirmaComponent,
     NuestroEquipoComponent,
-    NuestraFirmaComponent,
-   
+
+
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
