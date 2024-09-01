@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
-import { CarouselEmpresasImg } from '../constant/carousel-empresas-img';
-import { ImgInterface } from '../interface/ImgInterface';
+import { CarouselEmpresasImg } from '../../constant/carousel-empresas-img';
+import { ImgInterface } from '../../interface/ImgInterface';
 
 @Component({
   selector: 'app-empresas',
@@ -10,25 +10,27 @@ import { ImgInterface } from '../interface/ImgInterface';
   imports: [CommonModule],
   template: `
     <section class="company-section">
-  <h3 class="company-title">
+  <h2 class="company-title">
     Empresas que <span class="company-title-bold">confiaron en nosotros</span>
-  </h3>
+  </h2>
   <hr class="section-divider">
   <swiper-container
     class="company-swiper"
     navigation="true"
     slides-per-view="3"
-    space-between="1"
+    space-between="30"
     free-mode="true"
     centered-slides="true"
     autoplay-delay="2500"
     autoplay-disable-on-interaction="false"
     aria-label="Empresas que confiaron en nosotros"
+ 
+    
   >
     @for (img of corouselImg ; track img.src) {
-    <swiper-slide lazy="true" class="company-swiper-slide">
+    <swiper-slide  class="company-swiper-slide">
       <picture class="company-picture">
-        <source srcset="{{img.srcMovil}}" />
+        <source srcset="{{img.srcMovil}}" crossorigin="anonymous" />
         <img [src]="img.srcMovil" [alt]="img.alt" loading="lazy" class="company-img" />
       </picture>
     </swiper-slide>

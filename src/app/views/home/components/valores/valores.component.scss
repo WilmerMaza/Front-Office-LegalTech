@@ -1,131 +1,160 @@
-
 @use "@assets/colors.scss" as *;
-.container {
-	width: 80%; 
-	margin: 40px auto;
-}
 
-
-.container-text h3{
-  line-height: 1.2;
-  font-size: clamp(15px, 2vw, 43px);
-  text-align: center;
-  font-family: "Inter";
-  font-style: normal;
-  color: $color-footer;
-
-}
-.Linea{
-  
-  background: $color-gradient;
-  width: clamp(168px, 22vw, 48vh);
-  margin: auto;
-  border: none;
-  height: 3px;
-  opacity: 1; 
-  
-   }
-
-.Container-Valores{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  justify-items: center;
-  align-items: center;
-  height: auto; 
-  max-width: 800px; 
-  margin: 0 auto; 
-  gap: 20px 11px;
-  align-items: flex-start; 
-    
-}
-
-.Responsabilidad, .Innovacion, .Celeridad, .Prejudicialidad{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: clamp(170px, 40%, 800px);
-
-}
-p{
-    font-family: 'Inter';
-    font-size: 8.5px;
-    line-height: 13px;
-    text-align: center;    
-    color: $color-footer;
-    width: 100%;
-    
-}
-
-.Honestidad {
-  grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: clamp(170px, 40%, 800px)
-  
-}
-@media screen and (width >= 470px) {
-  .Container-Valores{
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: calc(20px + 1px) 10px;
- }
-}
-
-@media screen and (width >= 620px){
-  
-  p{
-   font-size: 1.6vw; 
-   line-height: 15px;
-   width: clamp(204px, 40%, 800px);
+.Valores {
+  .container {
+    width: 80%;
+    margin: 70px auto;
+    .container-text {
+      .text_principal_valores {
+        // margin: 7% 0 5% 0;
+        line-height: 0;
+        font-size: clamp(20px, 2.5vw, 43px);
+        text-align: center;
+        font-family: "Inter";
+        font-style: normal;
+        color: $color-footer;
+        .text_valores_normal {
+          font-weight: 400;
+        }
+      }
+      .divider-services {
+        width: clamp(230px, 29vw, 31rem);
+        margin: auto;
+        border: none;
+        height: 2px;
+        opacity: 1;
+        background: $color-gradientLine;
+      }
+    }
   }
 
-.Honestidad {
-  order: 1;
-  grid-column: span 1;
- 
+  .Container-Valores {
+    gap: 20px 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eeacff;
+    position: relative;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 28px 0;
+
+    .item_valor {
+      background: $color-white;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 135px;
+      .svg_valores {
+        width: 68px;
+      }
+      .text-valores {
+        width: 70%;
+        .title_valor {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+
+          color: #611374;
+          margin: 1px 0;
+        }
+        .text_valores_p {
+          color: #611374;
+          width: 100%;
+          margin: 0;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
 }
 
-.Responsabilidad {
-  order: 2;
+@media (width >= 992px) {
+  .Valores {
+    .Container-Valores {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-items: center;
+      align-items: center;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      gap: 20px 40px;
+      align-items: flex-start;
+      background: $color-white;
+      .item_valor {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        flex-direction: column;
+        .svg_valores {
+          width: 55%;
+          height: auto;
+        }
+        .text-valores {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          .title_valor {
+            font-size: 27px;
+          }
+          .text_valores_p {
+            text-align: center;
+            font-size: 17px;
+          }
+        }
+      }
 
+      .Responsabilidad,
+      .Innovacion,
+      .Celeridad,
+      .Prejudicialidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .Honestidad {
+        order: 1;
+        grid-column: span 1;
+      }
+
+      .Responsabilidad {
+        order: 2;
+      }
+
+      .Innovacion {
+        order: 3;
+      }
+
+      .Celeridad {
+        order: 4;
+      }
+
+      .Prejudicialidad {
+        order: 5;
+      }
+
+      .Celeridad,
+      .Prejudicialidad {
+        position: relative;
+        top: 20px;
+        left: 132px;
+      }
+    }
+  }
 }
-
-.Innovacion {
- order: 3;
-
-}
-
-.Celeridad {
- order: 4;
-
-}
-.Prejudicialidad {
- order: 5;
-
-}
-.Celeridad, .Prejudicialidad{
-  position: relative;
-  top: 20px;
-  left: 132px
-
-}
-}
-
- @media screen and (width >= 900px){
-  p{
-    font-size: 1.2vw;
-    line-height: 20px;
-    width: clamp(250px, 50%, 900px);
-   }
- 
- }
-
- @media screen and (width >=1420px) {
-  p{
-    font-size: 0.75vw;
-    line-height: 20px;
-    width: clamp(100px, 150%, 500px);
-   }
- }

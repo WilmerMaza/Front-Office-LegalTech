@@ -1,4 +1,4 @@
-<article class="card">
+<!-- <article class="card">
   <div class="profile-picture">
     <img [src]="member().img" [alt]="member().name" />
   </div>
@@ -10,4 +10,24 @@
       <strong>ver más <span>&#8594;</span></strong>
     </button>
   </div>
+</article> -->
+
+<article class="card-team">
+  <section class="profile-picture-team">
+    <!-- <img [src]="member().img" [alt]="member().name" /> -->
+    <picture>
+      <source srcset="{{member().img_movil}}" media="(max-width: 425px)" loading="lazy" />
+      <source srcset="{{member().img}}" media="(min-width: 600px)" loading="lazy" />
+      <img [src]="member().img" [alt]="member().name" loading="lazy" />
+    </picture>
+  </section>
+  <section class="profile-content-team">
+    <h4 class="team-name">{{ member().name }}</h4>
+    <h4 class="team-position">{{ member().position }}</h4>
+    <button class="btn-more-team">
+      ver más <span class="flex_icon">&#8594;</span>
+    </button>
+  </section>
+
+
 </article>

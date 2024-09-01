@@ -4,47 +4,91 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  color: $color-white;
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    margin-left: -16px;
-    .imgLogo{
-      width: 58px;
-    }
-    .text-container {
-      margin-left: -12px;
-      .company-name {
-      
-        font-size: 29px;
-        line-height: 16px;
-        font-weight: 800;
-      }
-      .company-desc {
-        font-weight: 400;
-        font-size: 11.37139px;
-        line-height: 7px;
-        margin: 0;
-      }
-    }
-  }
+  position: absolute;
+  margin-top: 50px;
+  height: 376px;
+  width: 100%;
 
-  .socialMedia {
-    margin-top: 23px;
-    .text{
-      font-size: 19px;
-    }
-    .list-social {
-      list-style-type: none;
+  .footer-white {
+    background: $color-white;
+    position: absolute;
+    width: 85%;
+    top: -65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
+
+    .logo {
       display: flex;
       align-items: center;
-      padding: 0;
-      margin: 0 5px;
+      justify-content: center;
 
-      a:focus,
-      a:hover {
-        opacity: 0.8;
+      .divider-footer {
+        border-color: $color-footer;
+        height: 65px;
+        margin: 35px;
+      }
+      .text-container {
+        margin-left: -12px;
+        .company-name {
+          font-size: 21px;
+          line-height: 0px;
+          font-weight: 800;
+          color: $color-footer;
+        }
+        .company-desc {
+          font-weight: 400;
+          font-size: 9px;
+          line-height: 7px;
+          margin: 0;
+          color: $color-footer;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      padding: 0px 25px;
+      word-wrap: break-word;
+      word-break: break-all;
+      .text-footer {
+        color: $color-footer;
+        text-decoration: none;
+        font-size: 15px;
+      }
+    }
+
+    .socialMedia {
+      margin-top: 38px;
+      margin-left: 32px;
+      .text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 0px;
+        color: $color-footer;
+      }
+      .list-social {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 5px;
+
+        a:focus,
+        a:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .derechos-autor {
+      margin: 10%;
+      .text-derechos {
+        color: $color-footer;
+        text-align: center;
       }
     }
   }

@@ -1,32 +1,27 @@
 @use "@assets/colors.scss" as *;
+
 .navbar {
+  display: flex;
+  width: 100%;
   .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10%;
     .logo {
-      position: absolute;
-      width: 40.1px;
-      height: 31.75px;
-      left: 29px;
-      top: 44.16px;
+      width: 40px;
     }
     .text-container {
       color: $color-white;
-      font-family: "Inter";
+      font-family: "Josefin Sans", sans-serif;
       font-style: normal;
-      .company-name {
-        position: absolute;
-        left: 61.34px;
-        top: 42px;
-        font-weight: 800;
-        font-size: 17.2477px;
-        line-height: 21px;
+      .company-name,
+      .company-desc {
+        line-height: 0;
       }
       .company-desc {
-        position: absolute;
-        left: 61.34px;
-        top: 60.11px;
         font-weight: 400;
-        font-size: 6.89908px;
-        line-height: 8px;
+        font-size: 0.6rem;
       }
     }
   }
@@ -43,52 +38,47 @@
     top: 46px;
   }
 }
-
 /* Tabletas */
 @media (min-width: 768px) {
   .company-name {
-    font-size: 20px !important;
+    font-size: 1.25rem;
   }
   .company-desc {
-    font-size: 8px !important;
+    font-size: 8px;
   }
 }
-
 /* Dispositivos de escritorio pequeños */
-@media (width >= 992px) {
+@media (min-width: 992px) {
   .navbar {
-    box-sizing: border-box;
-    position: absolute;
-    height: calc(5vw + 1px);
+    height: 77px;
     background: $color-nav-gradient;
     border-bottom: 0.5px solid rgba(209, 219, 219, 0.2);
     padding: 0;
-
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10%;
     .logo-container {
-      display: flex;
-      align-items: center;
-      position: relative;
+      margin-left: 10%;
       .logo {
-        margin-left: 104px;
         position: static;
-        width: auto;
         height: auto;
       }
       .text-container {
-        position: absolute;
-        left: 138px;
-        top: 1px;
+        margin-top: 16px;
         .company-name {
-          position: static;
           margin: 0;
+          font-weight: 700;
+          font-size: 31.7945px;
+          line-height: 20px;
         }
         .company-desc {
-          position: static;
+          font-size: 12.52px;
         }
       }
     }
     .menu {
-      display: flex !important;
+      display: flex;
       justify-content: center;
       gap: 8%;
       width: 60%;
@@ -98,42 +88,42 @@
         list-style: none;
         display: flex;
         height: 100%;
-
+        align-items: center;
         .link {
           position: relative;
           text-decoration: none;
-
           color: $color-white;
-          font-family: "Inter";
+          font-family: "Inter", sans-serif;
           font-style: normal;
-          font-size: 13.863px;
+          font-size: 18px;
           font-weight: 400;
           line-height: 24px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          &:hover {
+            color: $color-navPosition;
+          }
+          &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 0;
+            background: $color-navPosition;
+            height: 5px;
+            top: 0;
+            transition: width 0.5s;
+          }
+          &:hover::before {
+            width: 100%;
+          }
         }
       }
-    }
-    .menu .menu-item .link:hover {
-      color: $color-navPosition;
-    }
-    .menu .menu-item .link::before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 0;
-      background: $color-navPosition;
-      height: 5px;
-      top: 0;
-      transition: width 0.5s;
-    }
-    .menu .menu-item .link:hover:before {
-      width: 100%;
     }
     .menu-button {
       display: none;
     }
   }
-}
-
-/* Dispositivos de escritorio grandes */
-@media (min-width: 1200px) {
 }

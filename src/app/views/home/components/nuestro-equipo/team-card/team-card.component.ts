@@ -1,5 +1,6 @@
-import { Component,input } from '@angular/core';
-import { TeamMember } from '../../interface/ImgInterface';
+import { Component, input } from '@angular/core';
+import { TeamMember } from '../../../interface/ImgInterface';
+
 
 @Component({
   selector: 'app-team-card',

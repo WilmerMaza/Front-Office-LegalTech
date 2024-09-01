@@ -5,24 +5,23 @@
   align-items: center;
   flex-direction: column;
   height: clamp(562px, 20vw, 681px);
+  margin-bottom: 8%;
   .container-services {
     margin-bottom: clamp(45px, 2vw, 60px);
     .services-header {
       text-align: center;
       font-family: "Inter";
       font-style: normal;
-      h3 {
+      .text-services {
         line-height: 1.2;
         margin-top: 20%;
-        font-size: clamp(15px, 2vw, 43px);
+        font-size: clamp(20px, 3vw, 43px);
+        color: $color-footer;
         .highlight-primary {
-          color: $color-navPosition;
+          font-weight: 700;
         }
         .highlight-secondary {
-          color: $color-footer;
-        }
-        .highlighted-text {
-          font-weight: 700;
+          font-weight: 800;
         }
       }
       .divider-services {
@@ -62,6 +61,10 @@
       position: relative;
       margin-left: 40px;
       padding: 0.5em 1em 0.5em 1em;
+      .service-title {
+        margin: 0;
+        text-align: left;
+      }
 
       .service-image {
         position: absolute;
