@@ -1,4 +1,4 @@
-<section class="work-teams">
+<!-- <section class="work-teams">
   <div class="background-wrapper">
     <div class="white-background"></div>
     <div class="purple-background"></div>
@@ -14,4 +14,34 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="section-team">
+  <section class="header-team">
+    <h2 class="text-title-team">CONOCE <span class="text-title-team-weight">NUESTRO EQUIPO</span></h2>
+    <hr class="section-divider">
+  </section>
+  <section class="content-text">
+    <p class="team-section-text">
+      Nos enorgullece contar con un equipo diverso y dinámico que trabaja con pasión para transformar ideas en
+      realidades. En Legaltech, cada miembro del equipo juega un papel crucial en nuestro éxito, y estamos emocionados
+      de compartir esta experiencia con nuestros clientes.
+    </p>
+    <p class="content-text-bold">¡Estamos aquí para ayudarte!</p>
+  </section>
+
+  <section class="content-team">
+    <section class="team-header-list">
+      <h3 class="header-list-text">Asociados</h3>
+    </section>
+
+    <section class="team-content-list">
+
+      @for (member of teamMembers; track $index) {
+        <app-team-card [member]="member"></app-team-card>
+        }
+    </section>
+
+
+  </section>
 </section>

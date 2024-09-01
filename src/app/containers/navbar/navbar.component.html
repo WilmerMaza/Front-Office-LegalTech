@@ -1,21 +1,20 @@
-<div class="navbar d-flex w-100">
+<section class="navbar">
   <div class="logo-container">
-    <picture>
-      <source srcset="../../../assets/img/logoLegalmovil.webp" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="../../../assets/img/logoLegal@2x.jpg" media="(min-width: 768px)" />
-      <source srcset="../../../assets/img/logoLegalpc.webp" type="image/webp" />
-      <img src="../../../assets/img/logoLegalmovil.webp" alt="Logo de LegalTech, Abogados Digitales SAS"
-        class="logo absolute-position" loading="lazy" />
-    </picture>
+    <div class="content-img">
+      <img src="../../../assets/icons/icon-72x72.webp" alt="Logo de LegalTech, Abogados Digitales SAS" class="logo "
+        height="40" width="40" loading="eager" />
+    </div>
+
     <div class="text-container">
-      <h2 class="company-name absolute-position">LEGALTECH</h2>
-      <p class="company-desc absolute-position">ABOGADOS DIGITALES S.A.S</p>
+      <h2 class="company-name ">LEGALTECH</h2>
+      <p class="company-desc ">ABOGADOS DIGITALES</p>
     </div>
   </div>
   <ul class="menu">
     @for (item of navbar; track $index) {
-    <li class="menu-item h-100">
-      <a href="{{item.link}}" class="link d-flex align-items-center justify-content-center" [tabIndex]="$index">{{item.label}}</a>
+    <li class="menu-item ">
+      <a href="{{item.link}}" class="link d-flex align-items-center justify-content-center"
+        [tabIndex]="0">{{item.label}}</a>
     </li>
     }
   </ul>
@@ -27,4 +26,4 @@
       <rect y="18" width="33" height="7" rx="3.5" fill="#EEACFF" />
     </svg>
   </button>
-</div>
+</section>

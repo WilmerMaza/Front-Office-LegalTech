@@ -52,7 +52,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   -webkit-text-size-adjust: 100%; /* Para soportar navegadores basados en WebKit */
   text-size-adjust: 100%; /* Para otros navegadores */
 }

@@ -1,77 +1,160 @@
 @use "@assets/colors.scss" as *;
-//NUEVOOOOO
-:host {
-  display: block;
-  width: 100%;
-}
+// //NUEVOOOOO
+// :host {
+//   display: block;
+//   width: 100%;
+// }
 
-.background-wrapper {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
+// .background-wrapper {
+//   width: 100%;
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.white-background {
-  background-color: $color-white;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-}
+// .white-background {
+//   background-color: $color-white;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   z-index: 0;
+// }
 
-.purple-background {
-  background: $color-modu-conocenos;
-  width: 100%;
-  height: 83%;
-  position: absolute;
-  z-index: 1;
-  @media (width>= 768px) {
-    height: 75%;
-  }
-  @media (width>= 1024px) {
-    height: 67%;
-  }
-}
+// .purple-background {
+//   background: $color-modu-conocenos;
+//   width: 100%;
+//   height: 83%;
+//   position: absolute;
+//   z-index: 1;
+//   @media (width>= 768px) {
+//     height: 75%;
+//   }
+//   @media (width>= 1024px) {
+//     height: 67%;
+//   }
+// }
 
-.divider-team {
-  width: clamp(168px, 28vw, 48vh);
-  margin: auto;
-  border-top: 2px solid rgba(238, 172, 255, 1);
-}
+// .divider-team {
+//   width: clamp(168px, 28vw, 48vh);
+//   margin: auto;
+//   border-top: 2px solid rgba(238, 172, 255, 1);
+// }
 
-.work-team-container {
-  text-align: center;
-  color: $color-white;
-  padding-top: 20px;
-  position: relative;
-  z-index: 2;
-  font-family: "Inter", sans-serif;
-}
+// .work-team-container {
+//   text-align: center;
+//   color: $color-white;
+//   padding-top: 20px;
+//   position: relative;
+//   z-index: 2;
+//   font-family: "Inter", sans-serif;
+// }
 
-.work-teams-container-title h2 {
-  font-size: clamp(15px, 2vw, 43px); 
-  margin-top: 20px;
-}
+// .work-teams-container-title h2 {
+//   font-size: clamp(15px, 2vw, 43px);
+//   margin-top: 20px;
+// }
 
-.team-information {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch; /* Asegura que las tarjetas se estiren uniformemente */
-  gap: 20px;
-  margin: 20px 0;
-  padding: 0 20px;
+// .team-information {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: stretch; /* Asegura que las tarjetas se estiren uniformemente */
+//   gap: 20px;
+//   margin: 20px 0;
+//   padding: 0 20px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     padding: 0 5%;
+//   }
+// }
+
+// .team-information app-team-card {
+//   flex: 1 1 30%; /* Tres columnas con espacio entre ellas */
+//   margin: 10px;
+// }
+.section-team {
+  .header-team {
+    height: 138px;
+    background: linear-gradient(
+      90.2deg,
+      rgba(97, 19, 116, 0.95) 55.58%,
+      rgba(192, 131, 207, 0.95) 166.61%
+    );
+
+    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 0 5%;
+    align-items: center;
+
+    .text-title-team {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 0;
+      .text-title-team-weight {
+        font-weight: 300;
+      }
+    }
+    .section-divider {
+      border: 0;
+      border-top: 2px solid #eeacff;
+      width: clamp(226px, 33%, 766px);
+      height: 1px;
+      opacity: 1;
+      margin: 0;
+    }
+  }
+  .content-text {
+    margin: 12% 10%;
+    text-align: center;
+    color: #611374;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    .team-section-text {
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+    .content-text-bold {
+      font-weight: 700;
+    }
+  }
+
+  .content-team {
+    margin: 5%;
+    position: relative;
+    .team-header-list {
+      height: 56px;
+      background: #641378;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      color: white;
+      text-align: left;
+      line-height: 56px;
+      padding-left: 20px;
+      .header-list-text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    .team-content-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      padding: 10% 5%;
+      position: relative;
+      top: -13px;
+      z-index: -1;
+    }
   }
 }
-
-.team-information app-team-card {
-  flex: 1 1 30%; /* Tres columnas con espacio entre ellas */
-  margin: 10px;
-}
-

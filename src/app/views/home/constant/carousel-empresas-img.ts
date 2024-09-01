@@ -1,4 +1,5 @@
-import { ImgInterface } from '../interface/ImgInterface';
+import { ImgInterface } from "../interface/ImgInterface";
+
 
 export const CarouselEmpresasImg: Array<ImgInterface> = [
   {

@@ -16,8 +16,8 @@ export const routes: Routes = [
       ),
   },
   {
-    path:'nuestraFirma',
-    loadComponent:() =>
+    path: 'about',
+    loadComponent: () =>
       import('./views/home/components/nuestra-firma/nuestra-firma.component').then(
         (c) => c.NuestraFirmaComponent
       )

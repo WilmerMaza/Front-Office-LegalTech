@@ -17,7 +17,7 @@ export class NavbarComponent {
   }, {
     label: 'Servicios', link: '#'
   }, {
-    label: 'Nuestra firma', link: '/nuestraFirma'
+    label: 'Nuestra firma', link: '/about'
   }, {
     label: 'Contactos', link: '#'
   }]

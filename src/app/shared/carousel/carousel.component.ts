@@ -7,10 +7,13 @@ import {
   signal,
 } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ImgInterface } from 'src/app/views/home/components/interface/ImgInterface';
-import { SwiperContainer, register } from 'swiper/element/bundle';
+import { ImgInterface } from 'src/app/views/home/interface/ImgInterface';
+
+import { SwiperContainer } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
 
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
 register();
 
 @Component({
@@ -19,34 +22,31 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [CommonModule],
   template: `<swiper-container init="false" class="swipper-custom">
-    @for (img of imagesCarousel; track img.src) {
-    <swiper-slide lazy="true">
-      @if (textPresent) {
-      <div class="content-text-swiper">
-        <p [innerHTML]="img.text" class="text-swiper"></p>
-        <hr class="divider-carousel">
-      </div>
+  
+  <swiper-slide *ngFor="let img of imagesCarousel">
+    <picture class="content-pictures" style="height:{{heightCorousel}};">
+      <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
+      <source srcset="{{img.src}}" media="(min-width: 600px)" />
+      
+      <img
+        [src]="img.src"
+        [alt]="img.alt"
+        [title]="img.title"
+        height="{{heightCorousel}}"
+        width="100"
+        class="images"
+        loading="eager"
+         style="object-fit: cover;"
+      />
+    </picture>
+    <div *ngIf="textPresent" class="content-text-swiper">
+      <p [innerHTML]="img.text" class="text-swiper"></p>
+      <hr class="divider-carousel">
+    </div>
+  </swiper-slide>
 
-     
-
-      }
-      <picture class="content-pictures" style="height:{{heightCorousel}} ;" >
-        <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
-        <source srcset="{{img.src}}" media="(min-width: 600px)" />
-        <img
-          [src]="img.src"
-          [alt]="img.alt"
-          loading="lazy"
-          role="presentation"
-          [title]="img.title"
-          height="100vh"
-          width="100%"
-          class="images"
-        />
-      </picture>
-    </swiper-slide>
-    }
-  </swiper-container>`,
+</swiper-container>
+`,
   styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent implements OnInit {
@@ -61,10 +61,10 @@ export class CarouselComponent implements OnInit {
   @Input() freeMode: boolean = false;
   @Input() spacebetween: number = 0;
   @Input() heightCorousel: string = '';
-  
+
   private swiperElement = signal<SwiperContainer | null>(null);
-  
-  constructor(private sanitizer: DomSanitizer) {}
+
+  constructor(private sanitizer: DomSanitizer) { }
   ngOnInit(): void {
     this.swiperInit();
   }
@@ -85,7 +85,7 @@ export class CarouselComponent implements OnInit {
       };
       Object.assign(swiperElemConstructor!, swiperOptions);
       this.swiperElement.set(swiperElemConstructor as SwiperContainer);
-       this.swiperElement()?.initialize();
+      this.swiperElement()?.initialize();
     }
   }
   sanitize(html: string | undefined): SafeHtml {

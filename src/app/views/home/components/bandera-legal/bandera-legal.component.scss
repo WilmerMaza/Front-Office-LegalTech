@@ -1,0 +1,16 @@
+.bandera_legal {
+  background: #eeacff;
+  height: auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content_bandera {
+    margin: 43% 10px;
+    .bander_icon {
+      height: 6vw;
+      width: auto;
+    }
+  }
+}
