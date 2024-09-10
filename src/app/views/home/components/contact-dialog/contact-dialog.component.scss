@@ -1,0 +1,11 @@
+.card-dialog {
+}
+
+::ng-deep.cdk-overlay-backdrop {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con 70% de opacidad */
+}
+
+::ng-deep.mat-mdc-dialog-surface.mdc-dialog__surface {
+  background-color: rgb(0 0 0 / 63%);
+  box-shadow: none;
+}

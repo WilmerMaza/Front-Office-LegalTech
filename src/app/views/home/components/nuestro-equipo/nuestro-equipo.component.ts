@@ -15,22 +15,22 @@ export class NuestroEquipoComponent {
 
   public teamMembers: TeamMember[] = [
     {
-      img: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/CATHERIN_SUZETTE_CEO.webp?alt=media&token=3c685aa3-7ab3-429f-b550-9d678989fcbd',
-      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-sucette-movil.png?alt=media&token=0a639855-3f06-4fca-879d-05df270a3989',
+      img: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-suzette.png?alt=media&token=c60b101b-e4e0-4451-9874-6237de6b8a9d',
+      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-sucette-movil.png?alt=media&token=6aa78b5e-b82f-4a97-a08c-0a43c1565d59',
       name: 'CATHERINE SUZETTE GÓMEZ',
       position: 'Representante legal - Gerente',
       description: 'Abogada con amplia experiencia en asesoría legal y litigios, con más de 21 años de experiencia en el ejercicio del derecho. En materia de derecho comercial y civil. Igualmente, atención de procesos laborales y administrativos como abogada.'
     },
     {
-      img: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/MIRNA_AGUILERA_ABOGADO.webp?alt=media&token=08cc4628-6a95-4db4-a80f-946a0405997c',
-      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-mirna-movil.png?alt=media&token=6445a57f-b5f1-43e2-b026-e5db85bf964a',
+      img: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-mirna.png?alt=media&token=6aa76de4-266a-46e4-973f-a005ca6459e5',
+      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-mirna-movil.png?alt=media&token=6bbcd829-9088-42d4-88d3-e89ec97a2b5a',
       name: 'MIRNA AGUILERA',
       position: 'Abogada Junior',
       description: 'Abogada bilingüe, con experiencia en asesoramiento a empresas privadas en el área laboral y contractual. Especializada en la rama judicial, específicamente en el área del Derecho Contencioso Administrativo.'
     },
     {
-      img: 'assets/img/team/member2.webp',
-      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-isabel-movil.png?alt=media&token=fba08431-eddc-4f33-b7cd-f68b2af87cef',
+      img: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-isabel.png?alt=media&token=a8393edc-7afa-4749-b1d4-54046f4b30f8',
+      img_movil: 'https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/member-isabel-movil.png?alt=media&token=94e0dbeb-c678-4361-8fc2-36e55fcb40a3',
       name: 'ISABEL PINTO CALLE',
       position: 'Abogada Junior',
       description: 'Abogada bilingüe, con experiencia en asesoramiento a empresas privadas en el área laboral y contractual. Especializada en la rama judicial, específicamente en el área del Derecho Contencioso Administrativo.'
