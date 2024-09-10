@@ -16,9 +16,9 @@
   <section class="profile-picture-team">
     <!-- <img [src]="member().img" [alt]="member().name" /> -->
     <picture>
-      <source srcset="{{member().img_movil}}" media="(max-width: 425px)" loading="lazy" />
+      <source srcset="{{member().img_movil}}" media="(max-width: 600px)" loading="lazy" />
       <source srcset="{{member().img}}" media="(min-width: 600px)" loading="lazy" />
-      <img [src]="member().img" [alt]="member().name" loading="lazy" />
+      <img class="team-img" [src]="member().img" [alt]="member().name" loading="lazy"  width="210" height="210"/>
     </picture>
   </section>
   <section class="profile-content-team">

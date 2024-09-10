@@ -84,5 +84,8 @@
       font-family: "Inter";
       font-style: normal;
     }
+    .signature-section-button:focus {
+      outline: 2px solid #000; /* Ajusta el estilo del foco según el diseño */
+    }
   }
 }
