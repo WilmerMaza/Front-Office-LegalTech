@@ -1,43 +1,49 @@
 @use "@assets/colors.scss" as *;
+
 #footer-content {
+  height: 384px;
   background: $color-footer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  position: absolute;
-  margin-top: 50px;
-  height: 376px;
-  width: 100%;
+  position: relative;
+  margin-top: 95px;
+  align-items: stretch;
 
   .footer-white {
     background: $color-white;
-    position: absolute;
+    position: relative;
     width: 85%;
     top: -65px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
+
 
     .logo {
       display: flex;
       align-items: center;
-      justify-content: center;
+     /* Adjusted for better spacing */
+     margin: 0px 62px;
 
       .divider-footer {
         border-color: $color-footer;
+
         height: 65px;
         margin: 35px;
       }
+
       .text-container {
         margin-left: -12px;
+
         .company-name {
           font-size: 21px;
           line-height: 0px;
           font-weight: 800;
           color: $color-footer;
         }
+
         .company-desc {
           font-weight: 400;
           font-size: 9px;
@@ -50,10 +56,11 @@
 
     .links {
       display: flex;
-      justify-content: center;
-      padding: 0px 25px;
+
+      padding: 0px 32px;
       word-wrap: break-word;
       word-break: break-all;
+
       .text-footer {
         color: $color-footer;
         text-decoration: none;
@@ -63,19 +70,21 @@
 
     .socialMedia {
       margin-top: 38px;
-      margin-left: 32px;
+      margin-left: 45px;
+
       .text {
         font-weight: 600;
         font-size: 20px;
         line-height: 0px;
         color: $color-footer;
       }
+
       .list-social {
         list-style-type: none;
         display: flex;
         align-items: center;
         padding: 0;
-        margin: 0 5px;
+        margin: 0 10px; /* Increased spacing between icons */
 
         a:focus,
         a:hover {
@@ -86,9 +95,164 @@
 
     .derechos-autor {
       margin: 10%;
+      .custom-desk{
+        display: inline;
+      }
+
       .text-derechos {
         color: $color-footer;
         text-align: center;
+      }
+    }
+  }
+
+  @media (width > 790px) {
+    .footer-white {
+      height: 293px;
+      width: 100%;
+      top: 3px;
+      display: flex;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: $color-footer;
+
+      .logo,
+      .links,
+      .socialMedia {
+        position: relative;
+      }
+
+      .logo {
+        justify-content: center;
+        margin: 0 14px;
+
+        .color{
+          fill: $color-white;
+        }
+
+        .divider-footer {
+          border-color: $color-white;
+          height: 121px;
+          margin: 58px;
+        }
+
+        .text-container {
+           .company-name {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 24px;
+            color: white;
+
+            @media (min-width: 900px) {
+              font-size: 30px;
+            }
+
+            @media (min-width: 1024px) {
+              font-size: 35px;
+            }
+
+            @media (min-width: 1440px) {
+              font-size: 47px;
+            }
+
+          }
+
+          .company-desc {
+            font-size: 11px;
+            line-height: 12px;
+            color: white;
+
+            @media (min-width: 900px) {
+              font-size: 12px;
+              line-height: 13px;
+            }
+
+            @media (min-width: 1024px) {
+              font-size: 14px;
+              line-height: 16px;
+            }
+
+            @media (min-width: 1440px) {
+              font-size: 16px;
+              line-height: 18px;
+            }
+          }
+
+        }
+      }
+
+      .links {
+
+
+
+        padding: 68px 0px;
+        right: -61px;
+
+
+        .text-footer {
+          font-size: 18px;
+          color: white;
+        }
+      }
+
+      .socialMedia {
+        margin-top: 44px;
+        padding: 16px 60px;
+        right: -38px;
+
+
+        .text {
+          display: flex;
+          justify-content: center;
+          font-size: 20px;
+          color: white;
+          transition: font-size 0.3s ease-in-out;
+
+          @media (min-width: 900px) {
+            font-size: 22px; // para pantallas medianas
+          }
+
+          @media (min-width: 1024px) {
+            font-size: 30px; // para pantallas grandes
+          }
+
+          @media (min-width: 1440px) {
+            font-size: 36px; // para pantallas muy grandes
+          }
+        }
+
+        .list-social {
+          display: flex;
+          justify-content: center;
+          margin: -10px 20px;
+          font-size: 20px;
+
+
+
+
+        }
+
+      }
+
+
+      .logo::after,
+      .links::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -50px;
+        height: 165px;
+        border-right: 1px solid #ffff;
+      }
+
+      .derechos-autor {
+        margin: 5%;
+
+          display: none;
+
+
+        .text-derechos {
+          font-size: 14px;
+        }
       }
     }
   }
