@@ -1,7 +1,7 @@
 @use "@assets/colors.scss" as *;
 .floating-button {
   position: fixed;
-  bottom: 175px;
+  bottom: 343px;
   right: 20px;
   background-color: $color-navPosition;
   color: white;
@@ -30,7 +30,7 @@
     border-right: 10px solid transparent;
     border-top: 17px solid $color-navPosition;
     transition: border-top-color 0.3s;
-    
+
   }
 
   &:hover {
