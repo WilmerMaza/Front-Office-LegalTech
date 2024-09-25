@@ -1,33 +1,19 @@
-<!-- <article class="card">
-  <div class="profile-picture">
-    <img [src]="member().img" [alt]="member().name" />
-  </div>
-  <h3>{{ member().name }}</h3>
-  <h4>{{ member().position }}</h4>
-  <p>{{ member().description }}</p>
-  <div class="button-container">
-    <button class="btn-more">
-      <strong>ver más <span>&#8594;</span></strong>
-    </button>
-  </div>
-</article> -->
-
 <article class="card-team">
   <section class="profile-picture-team">
-    <!-- <img [src]="member().img" [alt]="member().name" /> -->
     <picture>
       <source srcset="{{member().img_movil}}" media="(max-width: 600px)" loading="lazy" />
       <source srcset="{{member().img}}" media="(min-width: 600px)" loading="lazy" />
-      <img class="team-img" [src]="member().img" [alt]="member().name" loading="lazy"  width="210" height="210"/>
+      <img class="team-img" [src]="member().img" [alt]="member().name" loading="lazy" width="210" height="210" />
     </picture>
   </section>
   <section class="profile-content-team">
-    <h4 class="team-name">{{ member().name }}</h4>
-    <h4 class="team-position">{{ member().position }}</h4>
+    <div class="text">
+      <h4 class="team-name">{{ member().name }}</h4>
+      <h4 class="team-position">{{ member().position }}</h4>
+    </div>
+
     <button class="btn-more-team">
       ver más <span class="flex_icon">&#8594;</span>
     </button>
   </section>
-
-
 </article>

@@ -9,10 +9,10 @@ export const routes: Routes = [
     title: 'LegalTech - Abogados Digitales',
   },
   {
-    path: 'Example',
+    path: 'team',
     loadComponent: () =>
-      import('./views/example/example.component').then(
-        (c) => c.ExampleComponent
+      import('./views/team/team.component').then(
+        (c) => c.TeamComponent
       ),
   },
   {
