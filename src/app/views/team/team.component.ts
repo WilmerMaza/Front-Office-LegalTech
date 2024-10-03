@@ -22,23 +22,21 @@ export class TeamComponent {
   public showEducation: boolean = false;
   public showSignature: boolean = false;
 
-  get arrowContact(): string {
-    return this.showInfo ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
-  }
-
-  get arrowFormation(): string {
-    return this.showEducation ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
-  }
+  public arrowContact: string = 'assets/img/team/arriba.png';
+  public arrowFormation: string = 'assets/img/team/arriba.png';
 
   public toggleInfo(): void {
     this.showInfo = !this.showInfo;
+    this.arrowContact = this.showInfo ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
   }
 
   public toggleEducation(): void {
     this.showEducation = !this.showEducation;
+    this.arrowFormation = this.showEducation ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
   }
 
   public toggleSignature(): void {
     this.showSignature = !this.showSignature;
   }
 }
+
