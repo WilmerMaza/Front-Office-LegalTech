@@ -4,6 +4,7 @@
     background: #611374;
   }
 }
+
 .conten-team {
   .header {
     height: 117px;
@@ -27,7 +28,7 @@
     text-align: left;
     padding-left: 55px;
     margin-bottom: 20px;
-    width: 92%;
+    width: 88%;
     max-width: 700px;
     justify-content: space-between;
     box-shadow: 2px 2px 5px #611374;
@@ -88,7 +89,7 @@
     z-index: 2;
     text-align: left;
     padding-left: 55px;
-    width: 92%;
+    width: 88%;
     max-width: 700px;
     justify-content: space-between;
     box-shadow: 2px 2px 5px #611374;
@@ -181,7 +182,7 @@
     background-color: #611374;
     color: white;
     padding: 35px 32px;
-    font-size: 20px;
+    font-size: 24px;
     font-family: inherit;
     border: none;
     border-radius: 23px;
@@ -190,8 +191,8 @@
     margin: 72px auto;
     text-align: center;
     width: 86%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 700px;
   }
 
 }
-
