@@ -1,7 +1,7 @@
-<section>
+<!-- <section>
   <div class="nuestra-firma">
     <div class="background-wrapper">
-      <div class="white-background"></div>
+   
       <div class="purple-background">
         <div class="content">
           <div class="text-column">
@@ -83,4 +83,86 @@
      
     </article>
   </div>
+</section> -->
+<section class="about-us">
+  <header class="about-header">
+    <!-- Aquí podrías agregar contenido relevante para la cabecera si es necesario -->
+  </header>
+
+  <section class="about-content">
+    <div class="about-header-text">
+      <h1 class="about-title" id="about-us">
+        <strong>Nuestra Firma</strong>
+      </h1>
+      <hr class="about-divider" aria-hidden="true" />
+    </div>
+
+    <div class="about-image">
+      <img src="assets/img/Nuestra firma/Nuestra-firma.webp" alt="Equipo de abogados en LegalTech - Abogados Digitales"
+        loading="lazy" width="600" height="400" class="image" />
+    </div>
+
+    <div class="about-text">
+      <p>
+        En <strong>LegalTech - Abogados Digitales</strong>, creemos en la importancia de adaptarnos a un mundo en
+        constante evolución. Nos esforzamos por estar a la vanguardia de las tendencias emergentes en legal tech,
+        explorando nuevas formas de utilizar la inteligencia artificial, la automatización y el análisis de datos para
+        mejorar la eficiencia y la precisión en la práctica del derecho.
+      </p>
+
+      <!-- Aquí va la parte que se ocultará hasta que el usuario haga clic en 'Ver más' -->
+      <div [class.collapsed]="!showMore">
+        <p>
+          Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de
+          cómo la tecnología puede transformar y mejorar la prestación de servicios legales.
+        </p>
+        <p>
+          En LegalTech – Abogados Digitales, combinamos la destreza legal tradicional con un enfoque innovador hacia la
+          resolución de problemas. Ya sea que seas una startup emergente, una empresa establecida o un particular en
+          busca de asesoramiento legal, en Legaltech te ofrecemos soluciones adaptadas a tus necesidades específicas.
+          Estamos aquí para ayudarte a navegar por el panorama legal en constante cambio y para proporcionarte la
+          tranquilidad y la seguridad que necesitas en un mundo cada vez más digitalizado.
+        </p>
+      </div>
+
+      <!-- Botón para ver más/menos -->
+      <div class="toggle-content">
+        <button class="toggle-more-btn" (click)="toggleShowMore()">
+          {{ showMore ? 'Ver menos' : 'Ver más' }}
+        </button>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <section class="button-content">
+    <div class="mision-button">
+      <button class="formation-button" (click)="toggleEducation()">
+
+        <strong>NUESTRA MISIÓN</strong>
+
+      </button>
+      @if (showEducation) {
+      <div class="mision-box">
+        <p>
+          Abogada, graduada de la Universidad del Norte en Barranquilla en 1998. Continué mis estudios en la Universidad
+          Externado de Colombia en Bogotá entre 2001 y 2002. Además, completé un programa de American Legal English en
+          EF
+          Chicago de 2016 a 2017. Finalmente, obtuve mi título en Law School en la University of Pennsylvania en abril
+          de
+          2020.
+        </p>
+      </div>
+      }
+    </div>
+
+  </section>
+
+
+
+
 </section>
