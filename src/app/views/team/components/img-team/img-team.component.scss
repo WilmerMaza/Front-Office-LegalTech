@@ -1,9 +1,11 @@
 .content_img {
   padding: 33px;
+
   .content_principal {
     background: #eeacff;
     box-shadow: 0px 3.30372px 3.30372px rgba(0, 0, 0, 0.25);
     border-radius: 24.7779px;
+
     .img {
       width: 100%;
       height: 100%;
@@ -12,19 +14,72 @@
       top: 6px;
     }
   }
+
   .name_team {
     margin-top: 33px;
+    text-align: center; /* Centrar texto */
+    position: relative; /* Asegurar que se superponga correctamente */
+
     .name {
       font-weight: 800;
       font-size: 15px;
       line-height: 0px;
-      color: #611374;
+      color: #611374; /* Color original */
     }
+
     .team-position {
       font-weight: 400;
       font-size: 15px;
       line-height: 0px;
-      color: #641378;
+      color: #641378; /* Color original */
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .content_img {
+    padding: 144px;
+
+
+    .content_principal {
+      display: flex; /* Asegura que los elementos dentro estén alineados */
+      justify-content: center; /* Centra horizontalmente */
+      flex-direction: column;
+      height: 174px;
+
+      padding: 0px 49px;
+
+
+      .img {
+        margin-top: -18px;
+        width: 210px;
+        height: 119%;
+        object-fit: cover;
+        position: relative;
+        top: 168px;
+        left: -21px;
+      }
+
+    }
+
+    .name_team {
+
+      margin-top: -131px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 86%;
+      z-index: 1;
+
+      .name {
+        margin-top: 26px;
+        font-size: 35px;
+      }
+
+      .team-position {
+        color: white; /* Cambiar color a blanco */
+        font-size: 20px;
+      }
     }
   }
 }
