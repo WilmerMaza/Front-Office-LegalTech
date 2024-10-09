@@ -40,8 +40,23 @@ export class TeamComponent {
     this.showSignature = !this.showSignature;
   }
 
-  htmlString: string = '<p> Abogada con amplia experiencia en <strong>asesoría legal y litigios</strong>, con más de <strong>21 años de experiencia</strong> en el ejercicio del derecho. En materia de derecho comercial y civil, ha asesorado empresas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, Hotel Bahía S.A.S, Vélez Gutiérrez Abogados S.A.S, Russell Bedford DSA, Igualmente, atención de procesos laborales y administrativos como abogada  corresponsal de la firma Chapman & Asociados, Vélez Gutiérrez, Baker & McKenzie S.A.S, atendiendo empresas como Royal & Sun Alliance, Ecopetrol, Coca Cola, Liberty SA, BBVA Colombia SA, ARL SURA, Corpbanca, Bancolombia, Círculo de Lectores, entre otros. </p>';
 
+  htmlStringInfo: string = `
+    <p><strong>Correo:</strong> sucete&#64;gmail.com</p>
+    <p><strong>Número:</strong> 123-456-7890</p>
+  `;
+
+  htmlStringEducation: string = `
+    <p>
+      Abogada, graduada de la Universidad del Norte en Barranquilla en 1998.
+      Continué mis estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002.
+      Además, completé un programa de American Legal English en EF Chicago de 2016 a 2017.
+      Finalmente, obtuve mi título en Law School en la University of Pennsylvania en abril de 2020.
+    </p>
+  `;
+
+
+  htmlString: string = '<p> Abogada con amplia experiencia en <strong>asesoría legal y litigios</strong>, con más de <strong>21 años de experiencia</strong> en el ejercicio del derecho. En materia de derecho comercial y civil, ha asesorado empresas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, Hotel Bahía S.A.S, Vélez Gutiérrez Abogados S.A.S, Russell Bedford DSA, Igualmente, atención de procesos laborales y administrativos como abogada corresponsal de la firma Chapman & Asociados, Vélez Gutiérrez, Baker & McKenzie S.A.S, atendiendo empresas como Royal & Sun Alliance, Ecopetrol, Coca Cola, Liberty SA, BBVA Colombia SA, ARL SURA, Corpbanca, Bancolombia, Círculo de Lectores, entre otros. </p>';
 
   htmlStringExperience: string = `
     <h3><strong>Experiencia</strong></h3>
@@ -57,12 +72,15 @@ export class TeamComponent {
     <p>• Cámara de Comercio de Barranquilla. Junio – Julio de 1998.</p>
   `;
 
-
   safeHtml: SafeHtml;
   safeHtmlExperience: SafeHtml;
+  safeHtmlInfo: SafeHtml;
+  safeHtmlEducation: SafeHtml;
 
   constructor(private sanitizer: DomSanitizer) {
     this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.htmlString);
     this.safeHtmlExperience = this.sanitizer.bypassSecurityTrustHtml(this.htmlStringExperience);
+    this.safeHtmlInfo = this.sanitizer.bypassSecurityTrustHtml(this.htmlStringInfo);
+    this.safeHtmlEducation = this.sanitizer.bypassSecurityTrustHtml(this.htmlStringEducation);
   }
 }

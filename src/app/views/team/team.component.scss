@@ -54,6 +54,8 @@
 
 .info-box,
 .education-box {
+  color: #611374;
+  margin-top: 15px;
   background-color: white;
   border-radius: 18px;
   padding: 20px 16px;
@@ -67,11 +69,7 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-box p,
-.education-box p {
-  color: #611374;
-  margin-top: 15px;
-}
+
 
 .purple-line {
   border: 0;
@@ -228,13 +226,16 @@
     .info-box,
     .education-box {
       width: 90%;
+      color:#611374
     }
   }
 
   .formation-button,
   .contact-button {
     width: 100%;
+
   }
+
 
   .team-title-container {
     padding: 37px;
