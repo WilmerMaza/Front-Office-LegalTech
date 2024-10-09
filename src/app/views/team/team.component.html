@@ -7,7 +7,7 @@
 
   <app-img-team></app-img-team>
   <div class="team-container">
-    <img src="" />
+
   </div>
 
   <!-- Botones de contacto y formación -->
@@ -50,19 +50,7 @@
     </div>
 
     <div class="experience-box">
-      <h3><strong>Experiencia</strong></h3>
-      <p>• Gerente y socia fundadora. Legal Tech Abogados Digitales 2012 - presente.</p>
-      <p>• Abogada Litigante y asesora legal externa – Julio de 2005 - Actualmente. Cartagena.</p>
-      <p>• Corresponsal para la ciudad de Cartagena. Vélez Gutiérrez. Agosto 2011 hasta la fecha.</p>
-      <p>• Corresponsal para la ciudad de Cartagena. CHAPMAN & ASOCIADOS. Agosto 2005 hasta febrero de 2016.</p>
-      <p>• Abogada - Colombia Telecomunicaciones SA ESP – 23 de Noviembre de 2004 – 30 de Junio de 2005. Cartagena.</p>
-      <p>• Abogada. ELECTRICARIBE S. A E. S. P. - Gerencia Legal Corporativa- Barranquilla. Julio de 2002- Noviembre de
-        2004. Barranquilla.</p>
-      <p>• Abogada Asociada. Borda, Castañeda y Valderrama Asociados Ltda. Febrero de 2002 - Julio de 2002 – Bogotá.</p>
-      <p>• Abogada – Área Legal - ENERGÍA CONFIABLE S.A. E.S.P. Julio de 1999 - Agosto de 2001. Barranquilla.</p>
-      <p>• Asistente Jurídica - Federación Nacional de Comerciantes- Seccional Atlántico. Julio de 1998 a julio de 1999.
-        Barranquilla.</p>
-      <p>• Cámara de Comercio de Barranquilla. Junio – Julio de 1998.</p>
+      <div class="team-content" [innerHTML]="safeHtmlExperience"></div>
     </div>
   </div>
 
@@ -73,10 +61,12 @@
 </section>
 
 
-<main>
-<div class="kwon-team">
-
-</div>
+<main class="nuevo_container">
+  <div class="kwon-team">
+    <div class="team-title-container">
+      <h2>CONOCE NUESTRO EQUIPO</h2>
+    </div>
+  </div>
   <section class="container-team">
     <div class="container-title">
       <p class="title">CATHERINE SUCETE GÓMEZ SÀNCHEZ</p>
@@ -124,7 +114,7 @@
 
       <div class="container-text">
         <div [innerHTML]="safeHtml"></div>
-
+        <div class="team-content" [innerHTML]="safeHtmlExperience"></div>
       </div>
 
     </div>

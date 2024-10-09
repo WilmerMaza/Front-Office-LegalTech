@@ -26,7 +26,6 @@ export class TeamComponent {
   public arrowContact: string = 'assets/img/team/arriba.png';
   public arrowFormation: string = 'assets/img/team/arriba.png';
 
-
   public toggleInfo(): void {
     this.showInfo = !this.showInfo;
     this.arrowContact = this.showInfo ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
@@ -39,12 +38,32 @@ export class TeamComponent {
 
   public toggleSignature(): void {
     this.showSignature = !this.showSignature;
-
   }
+
+  // Contenido HTML anterior
   htmlString: string = '<p> Abogada con amplia experiencia en <strong>asesoría legal y litigios</strong>, con más de <strong>21 años de experiencia</strong> en el ejercicio del derecho. En materia de derecho comercial y civil, ha asesorado empresas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, Hotel Bahía S.A.S, Vélez Gutiérrez Abogados S.A.S, Russell Bedford DSA, Igualmente, atención de procesos laborales y administrativos como abogada  corresponsal de la firma Chapman & Asociados, Vélez Gutiérrez, Baker & McKenzie S.A.S, atendiendo empresas como Royal & Sun Alliance, Ecopetrol, Coca Cola, Liberty SA, BBVA Colombia SA, ARL SURA, Corpbanca, Bancolombia, Círculo de Lectores, entre otros. </p>';
+
+  // Contenido HTML nuevo
+  htmlStringExperience: string = `
+    <h3><strong>Experiencia</strong></h3>
+    <p>• Gerente y socia fundadora. Legal Tech Abogados Digitales 2012 - presente.</p>
+    <p>• Abogada Litigante y asesora legal externa – Julio de 2005 - Actualmente. Cartagena.</p>
+    <p>• Corresponsal para la ciudad de Cartagena. Vélez Gutiérrez. Agosto 2011 hasta la fecha.</p>
+    <p>• Corresponsal para la ciudad de Cartagena. CHAPMAN & ASOCIADOS. Agosto 2005 hasta febrero de 2016.</p>
+    <p>• Abogada - Colombia Telecomunicaciones SA ES P – 23 de Noviembre de 2004 – 30 de Junio de 2005. Cartagena.</p>
+    <p>• Abogada. ELECTRICARIBE S. A E. S. P. - Gerencia Legal Corporativa- Barranquilla. Julio de 2002- Noviembre de 2004. Barranquilla.</p>
+    <p>• Abogada Asociada. Borda, Castañeda y Valderrama Asociados Ltda. Febrero de 2002 - Julio de 2002 – Bogotá.</p>
+    <p>• Abogada – Área Legal - ENERGÍA CONFIABLE S.A. E.S.P. Julio de 1999 - Agosto de 2001. Barranquilla.</p>
+    <p>• Asistente Jurídica - Federación Nacional de Comerciantes- Seccional Atlántico. Julio de 1998 a julio de 1999. Barranquilla.</p>
+    <p>• Cámara de Comercio de Barranquilla. Junio – Julio de 1998.</p>
+  `;
+
+  // Propiedades seguras para el HTML
   safeHtml: SafeHtml;
+  safeHtmlExperience: SafeHtml;
 
   constructor(private sanitizer: DomSanitizer) {
     this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.htmlString);
-}
+    this.safeHtmlExperience = this.sanitizer.bypassSecurityTrustHtml(this.htmlStringExperience);
+  }
 }
