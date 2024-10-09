@@ -1,10 +1,9 @@
 <section class="conten-team">
-  <!-- Contenedor de título "Nuestro Equipo" -->
-  <div class="title-container">
-    <h2>CONOCE NUESTRO EQUIPO</h2>
-  </div>
-
   <section class="header"></section>
+
+
+
+
 
   <app-img-team></app-img-team>
   <div class="team-container">
@@ -16,7 +15,7 @@
     <button class="contact-button" (click)="toggleInfo()">
       <img src="assets/img/team/Group 164.png" alt="icono contacto" class="contact-icon">
       <strong>Contactar</strong>
-      <img [src]="arrowContact" alt="fle avcha" class="arrow-icon">
+      <img [src]="arrowContact" alt="flecha" class="arrow-icon">
     </button>
 
     <div *ngIf="showInfo" class="info-box">
@@ -46,15 +45,8 @@
   <!-- Contenedores de biografía y experiencia -->
   <div class="experience-biography-container">
     <div class="biography-info">
-      <p>
-        Abogada con amplia experiencia en <strong>asesoría legal y litigios</strong>, con más de <strong>21 años de
-          experiencia</strong> en el ejercicio del derecho. En materia de derecho comercial y civil, ha asesorado empresas
-        como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, Hotel Bahía S.A.S, Vélez Gutiérrez
-        Abogados S.A.S, Russell Bedford DSA, Igualmente, atención de procesos laborales y administrativos como abogada
-        corresponsal de la firma Chapman & Asociados, Vélez Gutiérrez, Baker & McKenzie S.A.S, atendiendo empresas como
-        Royal & Sun Alliance, Ecopetrol, Coca Cola, Liberty SA, BBVA Colombia SA, ARL SURA, Corpbanca, Bancolombia,
-        Círculo de Lectores, entre otros.
-      </p>
+      <div [innerHTML]="safeHtml"></div>
+
     </div>
 
     <div class="experience-box">
@@ -74,8 +66,68 @@
     </div>
   </div>
 
-  <!-- Botón de firma original -->
+  <!-- Botón de firma -->
   <button class="signature-button" (click)="toggleSignature()">
     Nuestra <strong> Firma</strong>
   </button>
 </section>
+
+
+<main>
+<div class="kwon-team">
+
+</div>
+  <section class="container-team">
+    <div class="container-title">
+      <p class="title">CATHERINE SUCETE GÓMEZ SÀNCHEZ</p>
+      <p class="subtitle">Representante legal - Gerente</p>
+    </div>
+
+    <div class="container-info">
+
+      <div class="container-images">
+        <div class="image-team">
+
+
+            <img class="image" src="assets/img/team/team_succete.png"/>
+
+
+        </div>
+        <div class="button-container">
+          <button class="contact-button" (click)="toggleInfo()">
+            <img src="assets/img/team/Group 164.png" alt="icono contacto" class="contact-icon">
+            <strong>Contactar</strong>
+            <img [src]="arrowContact" alt="flecha" class="arrow-icon">
+          </button>
+
+          <div *ngIf="showInfo" class="info-box">
+            <p><strong>Correo:</strong> sucete&#64;gmail.com</p>
+            <p><strong>Número:</strong> 123-456-7890</p>
+          </div>
+
+          <button class="formation-button" (click)="toggleEducation()">
+            <img class="formation-icon" src="assets/img/team/Group 670.png" alt="Icono de Formación">
+            <strong>Formación</strong>
+            <img [src]="arrowFormation" alt="flecha" class="arrow-icon">
+          </button>
+
+          <div *ngIf="showEducation" class="education-box">
+            <p>
+              Abogada, graduada de la Universidad del Norte en Barranquilla en 1998. Continué mis estudios en la Universidad
+              Externado de Colombia en Bogotá entre 2001 y 2002. Además, completé un programa de American Legal English en EF
+              Chicago de 2016 a 2017. Finalmente, obtuve mi título en Law School en la University of Pennsylvania en abril de
+              2020.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-text">
+        <div [innerHTML]="safeHtml"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
