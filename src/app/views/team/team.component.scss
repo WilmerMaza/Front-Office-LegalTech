@@ -134,18 +134,19 @@
   max-width: 700px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.nuevo_container{
+
+.nuevo_container {
   display: none;
 }
 
 @media (min-width: 800px) {
-  .nuevo_container{
+  .nuevo_container {
     display: block;
   }
 
-.kwon-team{
-  margin-top: 129px;
-}
+  .kwon-team {
+    margin-top: 129px;
+  }
 
   .conten-team {
     display: none;
@@ -160,8 +161,8 @@
   .container-team {
     margin-top: 10px;
     margin: auto;
-    max-width: 1280px;
-    padding: 0px 30px;
+    max-width: 1300px;
+    padding: 8px 76px;
 
     .container-title {
       height: 185px;
@@ -234,7 +235,8 @@
   .contact-button {
     width: 100%;
   }
-  .team-title-container{
+
+  .team-title-container {
     padding: 37px;
     justify-content: center;
     display: flex;
@@ -245,7 +247,8 @@
 
 
   }
-  .team-title-container h2{
+
+  .team-title-container h2 {
     font-weight: 300;
   }
 

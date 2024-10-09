@@ -40,10 +40,9 @@ export class TeamComponent {
     this.showSignature = !this.showSignature;
   }
 
-  // Contenido HTML anterior
   htmlString: string = '<p> Abogada con amplia experiencia en <strong>asesoría legal y litigios</strong>, con más de <strong>21 años de experiencia</strong> en el ejercicio del derecho. En materia de derecho comercial y civil, ha asesorado empresas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, Hotel Bahía S.A.S, Vélez Gutiérrez Abogados S.A.S, Russell Bedford DSA, Igualmente, atención de procesos laborales y administrativos como abogada  corresponsal de la firma Chapman & Asociados, Vélez Gutiérrez, Baker & McKenzie S.A.S, atendiendo empresas como Royal & Sun Alliance, Ecopetrol, Coca Cola, Liberty SA, BBVA Colombia SA, ARL SURA, Corpbanca, Bancolombia, Círculo de Lectores, entre otros. </p>';
 
-  // Contenido HTML nuevo
+
   htmlStringExperience: string = `
     <h3><strong>Experiencia</strong></h3>
     <p>• Gerente y socia fundadora. Legal Tech Abogados Digitales 2012 - presente.</p>
@@ -58,7 +57,7 @@ export class TeamComponent {
     <p>• Cámara de Comercio de Barranquilla. Junio – Julio de 1998.</p>
   `;
 
-  // Propiedades seguras para el HTML
+
   safeHtml: SafeHtml;
   safeHtmlExperience: SafeHtml;
 

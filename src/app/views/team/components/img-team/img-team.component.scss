@@ -36,38 +36,3 @@
   }
 }
 
-@media (min-width: 1220px) {
-
-
-  .content_img {
-    padding: 144px;
-
-    .content_principal {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 174px;
-      padding: 0px 49px;
-
-    }
-
-    .name_team {
-      margin-top: -131px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 86%;
-      z-index: 1;
-
-      .name {
-        margin-top: 26px;
-        font-size: 35px;
-      }
-
-      .team-position {
-        color: white;
-        font-size: 20px;
-      }
-    }
-  }
-}
