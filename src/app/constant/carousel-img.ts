@@ -1,4 +1,4 @@
-import { ImgInterface } from "../interface/ImgInterface";
+import { ImgInterface } from "../views/home/interface/ImgInterface";
 
 
 // export const CarouselImg: Array<ImgInterface> = [
@@ -35,7 +35,7 @@ import { ImgInterface } from "../interface/ImgInterface";
 
 
 // ];
-export const CarouselImg: Array<ImgInterface> = [
+export const CAROUSELIMG: Array<ImgInterface> = [
   {
     name: 'tablero-ajedrez-cristal',
     src: '../../../../../assets/img/carousel/tablero-ajedrez-cristal.webp',

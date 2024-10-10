@@ -67,24 +67,58 @@
       margin-top: 38px;
       margin-left: 45px;
 
-      .text {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 0px;
+      // .text {
+      //   font-weight: 600;
+      //   font-size: 20px;
+      //   line-height: 0px;
+      //   color: $color-footer;
+      // }
+
+      // .list-social {
+      //   list-style-type: none;
+      //   display: flex;
+      //   align-items: center;
+      //   padding: 0;
+      //   margin: 0 10px; /* Increased spacing between icons */
+
+      //   a:focus,
+      //   a:hover {
+      //     opacity: 0.8;
+      //   }
+      // }
+    }
+
+    .social-media {
+      padding: 0 32px;
+
+      &__text {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
         color: $color-footer;
       }
 
-      .list-social {
-        list-style-type: none;
+      &__list {
         display: flex;
-        align-items: center;
-        padding: 0;
-        margin: 0 10px; /* Increased spacing between icons */
 
-        a:focus,
-        a:hover {
-          opacity: 0.8;
+        align-items: center;
+        gap: 20px; /* Espacio entre los íconos */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      &__link {
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1); /* Efecto de zoom al pasar sobre el ícono */
         }
+      }
+
+      img {
+        display: block;
       }
     }
 
@@ -104,9 +138,8 @@
 
 @media (width > 790px) {
   #footer-content {
-
     color: $color-white;
-
+    margin-top: 10%;
     .footer-white {
       background: none;
       position: static; /* static es el valor predeterminado que anula absolute */
@@ -158,13 +191,8 @@
         margin: 0 37px;
       }
 
-      .socialMedia {
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        .text {
+      .social-media {
+        &__text {
           color: $color-white;
         }
       }

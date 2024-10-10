@@ -169,12 +169,23 @@
   .about-content {
     padding: 3%;
     margin: 4%;
+    margin-bottom: 100px;
     background: rgba(97, 19, 116, 0.66);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 
     .about-header-text {
       color: $color-white;
+      .about-title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 0px;
+        .strong {
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 0px;
+        }
+      }
     }
 
     .about-image {
@@ -187,6 +198,10 @@
 
     .about-text {
       color: $color-white;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+
       .toggle-content {
         width: 100%;
         display: flex;
@@ -201,41 +216,99 @@
           font-size: 15px;
         }
       }
+
+      .collapsible-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1.5s ease-in-out, opacity 1.5s ease-in-out; /* Ajuste para transición más suave */
+      }
+
+      .collapsible-content.collapsed {
+        max-height: 1000px; /* Ajusta esta altura según el contenido */
+        opacity: 1;
+      }
     }
   }
 
   .button-content {
     margin-top: 50px;
-    .mision-button {
-      padding: 3%;
-      .formation-button {
-        width: 100%;
-        background: $color-white;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        height: 91px;
-        border: none;
-        filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.25));
-      }
-      .mision-box {
-        background: rgba(238, 172, 255, 0.16);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        padding: 40px 20px 25px;
-        position: relative;
-        top: -35px;
-        z-index: -1;
+  }
+
+  .button-nuestro-equipo {
+    margin: 4%;
+    margin-top: 40px;
+
+    .formation-button {
+      width: 100%;
+      background: $color-footer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      height: 91px;
+      border: none;
+      filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.25));
+      color: $color-white;
+      font-weight: 400;
+      font-size: 20px;
+      font-family: "Inter" !important;
+      font-style: normal !important;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+      .strong {
+        font-size: 20px;
+        font-weight: 800;
       }
     }
   }
 }
 
-.collapsed {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
+// .collapsed {
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: max-height 0.5s ease;
+// }
+
+// .about-text {
+//   transition: max-height 0.5s ease;
+// }
+
+/* Estilo para el contenido colapsable */
+
+// .toggle-more-btn {
+//   background-color: #007bff;
+//   color: white;
+//   border: none;
+//   padding: 10px 20px;
+//   font-size: 1em;
+//   cursor: pointer;
+//   border-radius: 5px;
+//   margin-top: 15px;
+//   display: inline-block;
+// }
+
+// .toggle-more-btn:hover {
+//   background-color: #0056b3;
+// }
+
+// .toggle-more-btn:focus {
+//   outline: 2px solid #0056b3;
+// }
+// .formation-button {
+//   background-color: #2c3e50;
+//   color: white;
+//   border: none;
+//   padding: 15px 30px;
+//   font-size: 16px;
+//   cursor: pointer;
+//   transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+// }
+
+.formation-button:hover {
+  background-color: #34495e;
 }
 
-.about-text {
-  transition: max-height 0.5s ease;
+.formation-button:active {
+  background-color: #1a252f;
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }

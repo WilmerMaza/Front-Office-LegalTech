@@ -1,7 +1,7 @@
-import { ImgInterface } from "../interface/ImgInterface";
+import { ImgInterface } from "../views/home/interface/ImgInterface";
 
 
-export const CarouselEmpresasImg: Array<ImgInterface> = [
+export const CAROUSELEMPRESASIMG: Array<ImgInterface> = [
   {
     src:'../../../../../assets/img/empresas/bahia.webp',
     srcMovil:'../../../../../assets/img/empresas/bahia.webp',

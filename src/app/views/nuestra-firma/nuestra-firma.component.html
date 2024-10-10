@@ -85,33 +85,39 @@
   </div>
 </section> -->
 <section class="about-us">
+  <!-- Sección de cabecera opcional -->
   <header class="about-header">
     <!-- Aquí podrías agregar contenido relevante para la cabecera si es necesario -->
   </header>
 
+  <!-- Contenido sobre la firma -->
   <section class="about-content">
     <div class="about-header-text">
       <h1 class="about-title" id="about-us">
-        <strong>Nuestra Firma</strong>
+        NUESTRA <span class="strong">FIRMA</span>
       </h1>
       <hr class="about-divider" aria-hidden="true" />
     </div>
 
+    <!-- Imagen con carga diferida y atributos de accesibilidad optimizados -->
     <div class="about-image">
       <img src="assets/img/Nuestra firma/Nuestra-firma.webp" alt="Equipo de abogados en LegalTech - Abogados Digitales"
         loading="lazy" width="600" height="400" class="image" />
     </div>
 
+    <!-- Descripción sobre la firma -->
     <div class="about-text">
-      <p>
-        En <strong>LegalTech - Abogados Digitales</strong>, creemos en la importancia de adaptarnos a un mundo en
-        constante evolución. Nos esforzamos por estar a la vanguardia de las tendencias emergentes en legal tech,
-        explorando nuevas formas de utilizar la inteligencia artificial, la automatización y el análisis de datos para
-        mejorar la eficiencia y la precisión en la práctica del derecho.
+      <p class="about-text-principal">
+        En LegalTech – Abogados Digitales, creemos en la importancia de adaptarnos a un mundo en constante evolución.
+        Nos esforzamos por estar a la vanguardia de las tendencias emergentes en legal tech, explorando nuevas formas de
+        utilizar la inteligencia artificial, la automatización y el análisis de datos para mejorar la eficiencia y la
+        precisión en la práctica del derecho. Nuestros abogados no solo tienen un profundo conocimiento del derecho,
+        sino también una comprensión sólida de cómo la tecnología puede transformar y mejorar la prestación de servicios
+        legales.
       </p>
 
-      <!-- Aquí va la parte que se ocultará hasta que el usuario haga clic en 'Ver más' -->
-      <div [class.collapsed]="!showMore">
+      <!-- Contenido colapsable -->
+      <div class="collapsible-content" [class.collapsed]="showMore">
         <p>
           Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de
           cómo la tecnología puede transformar y mejorar la prestación de servicios legales.
@@ -127,42 +133,24 @@
 
       <!-- Botón para ver más/menos -->
       <div class="toggle-content">
-        <button class="toggle-more-btn" (click)="toggleShowMore()">
+        <button class="toggle-more-btn" (click)="toggleShowMore()" [attr.aria-expanded]="showMore">
           {{ showMore ? 'Ver menos' : 'Ver más' }}
         </button>
       </div>
-
     </div>
-
-
-
   </section>
 
-
+  <!-- Sección de la misión con contenido colapsable -->
   <section class="button-content">
-    <div class="mision-button">
-      <button class="formation-button" (click)="toggleEducation()">
-
-        <strong>NUESTRA MISIÓN</strong>
-
-      </button>
-      @if (showEducation) {
-      <div class="mision-box">
-        <p>
-          Abogada, graduada de la Universidad del Norte en Barranquilla en 1998. Continué mis estudios en la Universidad
-          Externado de Colombia en Bogotá entre 2001 y 2002. Además, completé un programa de American Legal English en
-          EF
-          Chicago de 2016 a 2017. Finalmente, obtuve mi título en Law School en la University of Pennsylvania en abril
-          de
-          2020.
-        </p>
-      </div>
-      }
-    </div>
-
+    <app-legend-buttons [content]="mision" [title]="titleMision"></app-legend-buttons>
+    <br>
+    <app-legend-buttons [content]="vision" [title]="titleVision"></app-legend-buttons>
   </section>
 
-
-
+  <section class="button-nuestro-equipo">
+    <button class="formation-button" role="button" (click)="redirectToTeam()">
+      <span>CONOCE NUESTRO<span class="strong"> EQUIPO</span></span>
+    </button>
+  </section>
 
 </section>

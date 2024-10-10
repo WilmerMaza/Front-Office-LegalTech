@@ -1,6 +1,5 @@
 .conten-team {
   margin: auto;
-
 }
 
 .header {
@@ -14,7 +13,7 @@
 
 .contact-button,
 .formation-button {
-  background-color: #EEACFF;
+  background-color: #eeacff;
   color: #611374;
   padding: 10px 32px;
   font-size: 16px;
@@ -66,10 +65,8 @@
   z-index: 1;
   width: 78%;
   max-width: 700px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .purple-line {
   border: 0;
@@ -94,7 +91,7 @@
 }
 
 .experience-box {
-  background-color: #EEACFF29;
+  background-color: #eeacff29;
   border-radius: 35px;
   padding: 20px;
   margin-top: 20px;
@@ -115,7 +112,6 @@
   color: #611374;
   margin: 5px 0;
 }
-
 
 .signature-button {
   background-color: #611374;
@@ -148,7 +144,6 @@
 
   .conten-team {
     display: none;
-
   }
 
   .kwon-team {
@@ -164,7 +159,7 @@
 
     .container-title {
       height: 185px;
-      background-color: #EEACFF;
+      background-color: #eeacff;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -193,11 +188,10 @@
         width: 25%;
 
         .image-team {
-
           justify-content: center;
           display: flex;
           border-radius: 30px;
-          background-color: #EEACFF;
+          background-color: #eeacff;
           height: 215px;
 
           .image {
@@ -205,7 +199,6 @@
             margin-top: -150px;
           }
         }
-
       }
 
       .container-text {
@@ -226,16 +219,14 @@
     .info-box,
     .education-box {
       width: 90%;
-      color:#611374
+      color: #611374;
     }
   }
 
   .formation-button,
   .contact-button {
     width: 100%;
-
   }
-
 
   .team-title-container {
     padding: 37px;
@@ -245,13 +236,9 @@
     font-size: 28px;
     color: white;
     font-weight: 300;
-
-
   }
 
   .team-title-container h2 {
     font-weight: 300;
   }
-
-
 }

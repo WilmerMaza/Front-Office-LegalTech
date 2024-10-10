@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
-import { CarouselEmpresasImg } from '../../constant/carousel-empresas-img';
+import { CAROUSELEMPRESASIMG } from '../../../../constant/carousel-empresas-img';
 import { ImgInterface } from '../../interface/ImgInterface';
 
 @Component({
@@ -42,7 +42,7 @@ import { ImgInterface } from '../../interface/ImgInterface';
   styleUrl: './empresas.component.scss',
 })
 export class EmpresasComponent {
-  public corouselImg: Array<ImgInterface> = CarouselEmpresasImg;
+  public corouselImg: Array<ImgInterface> = CAROUSELEMPRESASIMG;
 
   constructor() { }
 
