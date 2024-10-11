@@ -18,13 +18,15 @@ export interface TeamMember {
 }
 
 export interface TeamArray {
-  img: string;
-  name: string;
-  position: string;
-  educacion: string;
-  formacion: string;
-  contacto: string;
-  experiencia: string;
-  img_movil: string;
-  description: string;
+  img?: string;
+  name?: string;
+  position?: string;
+  educacion?: string;
+  formacion?: string;
+  contacto?: string;
+  experiencia?: string;
+  img_movil?: string;
+  description?: string;
+  person?: string;
+  link?: string;
 }

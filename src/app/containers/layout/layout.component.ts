@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterModule } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { filter, Subject, switchMap } from 'rxjs';
@@ -8,9 +9,10 @@ import { NavbarComponent } from '../navbar/navbar.component';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [NavbarComponent, FooterPageComponent, RouterModule],
+  imports: [NavbarComponent, FooterPageComponent, RouterModule, MatProgressSpinnerModule],
   template: `
-    <nav class="layout-nav" aria-label="Navegación principal">
+ @defer(on idle){
+  <nav class="layout-nav" aria-label="Navegación principal">
       <app-navbar></app-navbar>
     </nav>
     <main role="main" class="h-100 w-100 min-vh-100 min-vw-100">
@@ -19,6 +21,16 @@ import { NavbarComponent } from '../navbar/navbar.component';
     <footer role="contentinfo">
       <app-footer-page></app-footer-page>
     </footer>
+}  @loading (minimum 5s) { 
+
+
+<section class="loading">
+    <img src="assets/icons/icon.svg" alt="Logo LegalTech" class="loading-icon" loading="eager">
+    <h1 class="loading-text">LegalTech</h1>
+</section>
+
+
+}
   `,
   styleUrl: './layout.component.scss',
 })
@@ -26,7 +38,14 @@ export class LayoutComponent implements OnInit {
   private updateAvailableSubject = new Subject<void>();
   private updateActivatedSubject = new Subject<void>();
   constructor(private swUpdate: SwUpdate) { }
+
+
+
+  isLoading: boolean = true;
+
+
   ngOnInit(): void {
+
     if (this.swUpdate.isEnabled) {
       // Check for updates manually
       this.swUpdate.checkForUpdate().then(() => {

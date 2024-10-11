@@ -1,14 +1,29 @@
 <section>
   <section class="header"></section>
+
+
+  @if (!this.param) {
   <div class="kwon-team">
     <div class="team-title-container">
       <h2>CONOCE NUESTRO EQUIPO</h2>
     </div>
   </div>
+  }@else {
+  <div style="margin-top:100px ;"></div>
+
+  }
+
   @for (member of team; track $index) {
+  @if(!this.param){
+  <app-person [teamObject]="member"></app-person>
+  }@else if(member.link === this.param ) {
   <app-person [teamObject]="member"></app-person>
   }
-  <button class="signature-button" (click)="toggleSignature()">
+
+  }
+
+  <!-- <button class="signature-button" (click)="toggleSignature()">
     Nuestra <strong> Firma</strong>
-  </button>
+  </button> -->
+
 </section>

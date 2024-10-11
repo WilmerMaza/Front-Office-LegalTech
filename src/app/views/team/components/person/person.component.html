@@ -3,11 +3,7 @@
   <div class="team-container"></div>
   <div class="button-container">
     <button class="contact-button" (click)="toggleInfo()">
-      <img
-        src="assets/img/team/contact.png"
-        alt="icono contacto"
-        class="contact-icon"
-      />
+      <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" />
       <strong>Contactar</strong>
       <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
     </button>
@@ -20,11 +16,7 @@
   </div>
 
   <button class="formation-button" (click)="toggleEducation()">
-    <img
-      class="formation-icon"
-      src="assets/img/team/logro.png"
-      alt="Icono de Formación"
-    />
+    <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" />
     <strong>Formación</strong>
     <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
   </button>
@@ -43,10 +35,11 @@
     <div class="biography-info">
       <div [innerHTML]="teamObject()?.formacion"></div>
     </div>
-
+    @if (teamObject()?.experiencia) {
     <div class="experience-box">
       <div class="team-content" [innerHTML]="teamObject()?.experiencia"></div>
     </div>
+    }
   </div>
 </section>
 
@@ -60,15 +53,11 @@
     <div class="container-info">
       <div class="container-images">
         <div class="image-team">
-          <img class="image" src="{{ teamObject()?.img }}" />
+          <img class="image" src="{{ teamObject()?.person }}" />
         </div>
         <div class="button-container">
           <button class="contact-button" (click)="toggleInfo()">
-            <img
-              src="assets/img/team/contact.png"
-              alt="icono contacto"
-              class="contact-icon"
-            />
+            <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" />
             <strong>Contactar</strong>
             <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
           </button>
@@ -80,11 +69,7 @@
           }
 
           <button class="formation-button" (click)="toggleEducation()">
-            <img
-              class="formation-icon"
-              src="assets/img/team/logro.png"
-              alt="Icono de Formación"
-            />
+            <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" />
             <strong>Formación</strong>
             <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
           </button>
@@ -102,5 +87,6 @@
         <div class="team-content" [innerHTML]="teamObject()?.experiencia"></div>
       </div>
     </div>
+
   </section>
 </main>

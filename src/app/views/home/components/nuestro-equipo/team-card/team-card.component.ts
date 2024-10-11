@@ -1,5 +1,7 @@
 import { Component, input } from '@angular/core';
-import { TeamMember } from '../../../interface/ImgInterface';
+import { Router } from '@angular/router';
+import { TeamArray } from '../../../interface/ImgInterface';
+
 
 
 @Component({
@@ -10,5 +12,13 @@ import { TeamMember } from '../../../interface/ImgInterface';
   styleUrl: './team-card.component.scss'
 })
 export class TeamCardComponent {
-member =input.required<TeamMember>();
+
+  public member = input.required<TeamArray>();
+
+  constructor(private router: Router) { }
+
+  public memberInfo(member?: string): void {
+    // Navegar con queryParams
+    this.router.navigate(['/team'], { queryParams: { member } });
+  }
 }
