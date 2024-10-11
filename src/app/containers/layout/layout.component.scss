@@ -1,6 +1,80 @@
+@use "@assets/colors.scss" as *;
 .layout-nav {
   width: 100%;
   position: absolute;
   z-index: 2;
   top: 0;
+}
+
+/* Aseguramos que el loading ocupe toda la pantalla */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+/* Estilo para el logo */
+.loading-icon {
+  width: 100px;
+  height: 100px;
+  animation: swing 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* Estilo para el texto */
+.loading-text {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: $color-footer;
+  margin-top: 20px;
+}
+
+/* Animación para los tres puntos suspensivos */
+.dots::after {
+  content: "";
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}
+
+/* Animación para tambalear la imagen */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

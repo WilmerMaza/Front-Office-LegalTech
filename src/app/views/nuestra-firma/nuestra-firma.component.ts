@@ -18,7 +18,10 @@ export class NuestraFirmaComponent {
   public titleVision: string[] = TEXT_VISION;
 
 
+
   constructor(private router: Router) { }
+
+
 
   public toggleShowMore = () => (this.showMore = !this.showMore);
 

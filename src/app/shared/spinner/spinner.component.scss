@@ -1,0 +1,39 @@
+/* Aseguramos que el loading ocupe toda la pantalla */
+.loading {
+  position: fixed; /* Fijo para que siempre esté visible */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* Fondo blanco */
+  display: flex; /* Usamos flex para centrar */
+  justify-content: center; /* Alinear al centro horizontalmente */
+  align-items: center; /* Alinear al centro verticalmente */
+  flex-direction: column; /* Apilar el logo y el texto verticalmente */
+  z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+/* Estilo para el logo */
+.loading-icon {
+  width: 100px; /* Tamaño de la imagen */
+  height: 100px;
+  animation: rotate 2s linear infinite; /* Animación de rotación */
+}
+
+/* Estilo para el texto */
+.loading-text {
+  font-family: "Arial", sans-serif; /* Cambia según el estilo que prefieras */
+  font-size: 24px;
+  color: #333; /* Color del texto */
+  margin-top: 20px; /* Espacio entre el logo y el texto */
+}
+
+/* Animación para rotar la imagen */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

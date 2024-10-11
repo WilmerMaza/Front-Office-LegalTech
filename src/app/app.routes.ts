@@ -13,7 +13,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./views/team/team.component').then(
         (c) => c.TeamComponent
-      ),
+      )
   },
   {
     path: 'about',

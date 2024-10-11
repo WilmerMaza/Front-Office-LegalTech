@@ -12,7 +12,7 @@
       <h4 class="team-position">{{ member().position }}</h4>
     </div>
 
-    <button class="btn-more-team">
+    <button class="btn-more-team" (click)="memberInfo(member().link)">
       ver más <span class="flex_icon">&#8594;</span>
     </button>
   </section>
