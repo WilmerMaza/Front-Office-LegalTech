@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+
+import { TeamArray } from 'src/app/views/home/interface/ImgInterface';
 
 @Component({
   selector: 'app-img-team',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './img-team.component.scss'
 })
 export class ImgTeamComponent {
-
+  public  tamObject = input<TeamArray>();
 }
