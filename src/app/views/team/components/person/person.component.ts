@@ -24,12 +24,12 @@ export class PersonComponent {
   public arrowContact: string = 'assets/img/team/arriba.png';
   public arrowFormation: string = 'assets/img/team/arriba.png';
 
-public  TeamObject = input<TeamArray>();
+public  teamObject = input<TeamArray>();
 
   public toggleInfo(): void {
     this.showInfo = !this.showInfo;
     this.arrowContact = this.showInfo ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
-  }
+}
 
   public toggleEducation(): void {
     this.showEducation = !this.showEducation;

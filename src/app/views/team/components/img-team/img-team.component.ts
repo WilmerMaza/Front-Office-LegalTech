@@ -10,5 +10,5 @@ import { TeamArray } from 'src/app/views/home/interface/ImgInterface';
   styleUrl: './img-team.component.scss'
 })
 export class ImgTeamComponent {
-  public  TeamObject = input<TeamArray>();
+  public  tamObject = input<TeamArray>();
 }

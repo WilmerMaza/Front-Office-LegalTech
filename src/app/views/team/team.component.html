@@ -6,7 +6,7 @@
     </div>
   </div>
   @for (member of team; track $index) {
-  <app-person [TeamObject]="member"></app-person>
+  <app-person [teamObject]="member"></app-person>
   }
   <button class="signature-button" (click)="toggleSignature()">
     Nuestra <strong> Firma</strong>

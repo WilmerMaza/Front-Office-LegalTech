@@ -21,10 +21,10 @@ export interface TeamArray {
   img: string;
   name: string;
   position: string;
-  Educacion: string;
-  Formacion: string;
+  educacion: string;
+  formacion: string;
   contacto: string;
-  Experiencia: string;
+  experiencia: string;
   img_movil: string;
   description: string;
 }
