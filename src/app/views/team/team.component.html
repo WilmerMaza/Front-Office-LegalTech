@@ -1,12 +1,14 @@
 <section>
+  <section class="header"></section>
   <div class="kwon-team">
     <div class="team-title-container">
       <h2>CONOCE NUESTRO EQUIPO</h2>
     </div>
   </div>
-
-  <app-person [Name]="'alejandra'"></app-person>
-  <app-person></app-person>
-  <app-person></app-person>
-  <app-person></app-person>
+  @for (member of team; track $index) {
+  <app-person [TeamObject]="member"></app-person>
+  }
+  <button class="signature-button" (click)="toggleSignature()">
+    Nuestra <strong> Firma</strong>
+  </button>
 </section>

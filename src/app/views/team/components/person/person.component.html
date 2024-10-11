@@ -1,0 +1,106 @@
+<section class="conten-team">
+  <app-img-team [TeamObject]="TeamObject()"></app-img-team>
+  <div class="team-container"></div>
+  <div class="button-container">
+    <button class="contact-button" (click)="toggleInfo()">
+      <img
+        src="assets/img/team/Group 164.png"
+        alt="icono contacto"
+        class="contact-icon"
+      />
+      <strong>Contactar</strong>
+      <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
+    </button>
+
+    @if (showInfo) {
+    <div class="info-box">
+      <div [innerHTML]="TeamObject()?.contacto"></div>
+    </div>
+    }
+  </div>
+
+  <button class="formation-button" (click)="toggleEducation()">
+    <img
+      class="formation-icon"
+      src="assets/img/team/Group 670.png"
+      alt="Icono de Formación"
+    />
+    <strong>Formación</strong>
+    <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
+  </button>
+
+  @if (showEducation) {
+  <div class="education-box">
+    <div [innerHTML]="TeamObject()?.Educacion"></div>
+  </div>
+  }
+
+  <!-- Línea separadora -->
+  <hr class="purple-line" />
+
+  <!-- Contenedores de biografía y experiencia -->
+  <div class="experience-biography-container">
+    <div class="biography-info">
+      <div [innerHTML]="TeamObject()?.Formacion"></div>
+    </div>
+
+    <div class="experience-box">
+      <div class="team-content" [innerHTML]="TeamObject()?.Experiencia"></div>
+    </div>
+  </div>
+</section>
+
+<main class="nuevo_container">
+  <section class="container-team">
+    <div class="container-title">
+      <p class="title">{{ TeamObject()?.name }}</p>
+      <p class="subtitle">{{ TeamObject()?.position }}</p>
+    </div>
+
+    <div class="container-info">
+      <div class="container-images">
+        <div class="image-team">
+          <img class="image" src="{{ TeamObject()?.img }}" />
+        </div>
+        <div class="button-container">
+          <button class="contact-button" (click)="toggleInfo()">
+            <img
+              src="assets/img/team/Group 164.png"
+              alt="icono contacto"
+              class="contact-icon"
+            />
+            <strong>Contactar</strong>
+            <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
+          </button>
+
+          @if (showInfo) {
+          <div class="info-box">
+            <div [innerHTML]="TeamObject()?.contacto"></div>
+          </div>
+          }
+
+          <button class="formation-button" (click)="toggleEducation()">
+            <img
+              class="formation-icon"
+              src="assets/img/team/Group 670.png"
+              alt="Icono de Formación"
+            />
+            <strong>Formación</strong>
+            <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
+          </button>
+
+          @if (showEducation) {
+          <div class="education-box">
+            <div [innerHTML]="TeamObject()?.Educacion"></div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <div class="container-text">
+        <div [innerHTML]="TeamObject()?.Formacion"></div>
+        <div class="team-content" [innerHTML]="TeamObject()?.Experiencia"></div>
+      </div>
+    </div>
+  </section>
+</main>
