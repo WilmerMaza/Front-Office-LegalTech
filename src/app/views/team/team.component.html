@@ -1,116 +1,12 @@
-<section class="conten-team">
-  <section class="header"></section>
-
-  <app-img-team></app-img-team>
-  <div class="team-container">
-  </div>
-  <div class="button-container">
-    <button class="contact-button" (click)="toggleInfo()">
-      <img src="assets/img/team/Group 164.png" alt="icono contacto" class="contact-icon">
-      <strong>Contactar</strong>
-      <img [src]="arrowContact" alt="flecha" class="arrow-icon">
-    </button>
-
-    @if (showInfo) {<div class="info-box">
-      <div [innerHTML]="safeHtmlInfo"></div>
-    </div>}
-  </div>
-
-
-  <button class="formation-button" (click)="toggleEducation()">
-    <img class="formation-icon" src="assets/img/team/Group 670.png" alt="Icono de Formación">
-    <strong>Formación</strong>
-    <img [src]="arrowFormation" alt="flecha" class="arrow-icon">
-  </button>
-
-  @if (showEducation) {<div class="education-box">
-
-    <div [innerHTML]="safeHtmlEducation"></div>
-
-  </div>
-  }
-
-
-
-
-
-  <!-- Línea separadora -->
-  <hr class="purple-line">
-
-  <!-- Contenedores de biografía y experiencia -->
-  <div class="experience-biography-container">
-    <div class="biography-info">
-      <div [innerHTML]="safeHtml"></div>
-
-    </div>
-
-    <div class="experience-box">
-      <div class="team-content" [innerHTML]="safeHtmlExperience"></div>
-    </div>
-  </div>
-
-  <button class="signature-button" (click)="toggleSignature()">
-    Nuestra <strong> Firma</strong>
-  </button>
-</section>
-
-
-<main class="nuevo_container">
+<section>
   <div class="kwon-team">
     <div class="team-title-container">
       <h2>CONOCE NUESTRO EQUIPO</h2>
     </div>
   </div>
-  <section class="container-team">
-    <div class="container-title">
-      <p class="title">CATHERINE SUCETE GÓMEZ SÀNCHEZ</p>
-      <p class="subtitle">Representante legal - Gerente</p>
-    </div>
 
-    <div class="container-info">
-
-      <div class="container-images">
-        <div class="image-team">
-
-
-          <img class="image" src="assets/img/team/team_succete.png" />
-
-
-        </div>
-        <div class="button-container">
-          <button class="contact-button" (click)="toggleInfo()">
-            <img src="assets/img/team/Group 164.png" alt="icono contacto" class="contact-icon">
-            <strong>Contactar</strong>
-            <img [src]="arrowContact" alt="flecha" class="arrow-icon">
-          </button>
-
-          @if (showInfo) {<div class="info-box">
-            <div [innerHTML]="safeHtmlInfo"></div>
-          </div>}
-
-
-          <button class="formation-button" (click)="toggleEducation()">
-            <img class="formation-icon" src="assets/img/team/Group 670.png" alt="Icono de Formación">
-            <strong>Formación</strong>
-            <img [src]="arrowFormation" alt="flecha" class="arrow-icon">
-          </button>
-
-          @if (showEducation) {<div class="education-box">
-
-            <div [innerHTML]="safeHtmlEducation"></div>
-
-          </div>
-          }
-        </div>
-
-      </div>
-
-      <div class="container-text">
-        <div [innerHTML]="safeHtml"></div>
-        <div class="team-content" [innerHTML]="safeHtmlExperience"></div>
-      </div>
-
-    </div>
-  </section>
-
-</main>
+  <app-person [Name]="'alejandra'"></app-person>
+  <app-person></app-person>
+  <app-person></app-person>
+  <app-person></app-person>
+</section>
