@@ -2,54 +2,119 @@
 
 .navbar {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
+  position: relative;
+
   .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 35px;
+    padding: 20px;
+
     .logo {
       width: 40px;
     }
+
     .text-container {
       color: $color-white;
       font-family: "Josefin Sans", sans-serif;
-      font-style: normal;
-      .company-name,
-      .company-desc {
-        line-height: 0;
+
+      .company-name {
+        font-size: 1.2rem;
       }
+
       .company-desc {
-        font-weight: 400;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
     }
   }
+
   .menu {
     display: none;
   }
+
+  .menu-toggle-checkbox {
+    display: none;
+  }
+
   .menu-button {
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px;
     position: absolute;
-    right: 40px;
-    top: 46px;
+    top: 39px;
+    right: 49px;
+    z-index: 1001;
+  }
+
+  .button-lineal-container {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 59%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    margin-left: -20px;
+
+    .menu-lineal {
+      margin: 54px 34px;
+
+      a {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        text-decoration: none;
+        color: #641378;
+        font-size: 19px;
+
+        &.fixed {
+          border-bottom: 1px solid #eeacff;
+          height: 67px;
+          margin-right: -13px;
+        }
+
+        .menu-icon {
+          width: 28px;
+          height: 28px;
+        }
+
+        &:hover {
+          color: plum;
+        }
+      }
+    }
   }
 }
 
-/* Tabletas */
-@media (min-width: 768px) {
-  .company-name {
-    font-size: 1.25rem;
+@media (max-width: 920px) {
+  .navbar {
+    .menu-toggle-checkbox:checked + .menu-button {
+      position: fixed;
+    }
   }
-  .company-desc {
-    font-size: 8px;
+
+  .menu-toggle-checkbox:checked + .menu-button + .button-lineal-container {
+    max-height: 88%;
+    margin-top: 21px;
+    right: 21px;
+    display: block;
+    transform: translateX(0);
   }
 }
 
-/* Dispositivos de escritorio pequeños */
 @media (min-width: 992px) {
   .navbar {
     height: 77px;
@@ -60,25 +125,31 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 10%;
+
     .logo-container {
       margin-left: 10%;
+
       .logo {
         position: static;
         height: auto;
       }
+
       .text-container {
         margin-top: 16px;
+
         .company-name {
           margin: 0;
           font-weight: 700;
           font-size: 31.7945px;
           line-height: 20px;
         }
+
         .company-desc {
           font-size: 12.52px;
         }
       }
     }
+
     .menu {
       display: flex;
       justify-content: center;
@@ -86,17 +157,18 @@
       width: 60%;
       height: 100%;
       margin: 0;
+
       .menu-item {
         list-style: none;
         display: flex;
         height: 100%;
         align-items: center;
+
         .link {
           position: relative;
           text-decoration: none;
           color: $color-white;
           font-family: "Inter", sans-serif;
-          font-style: normal;
           font-size: 18px;
           font-weight: 400;
           line-height: 24px;
@@ -105,11 +177,12 @@
           align-items: center;
           flex-direction: column;
           justify-content: center;
+
           &:hover {
             color: $color-navPosition;
           }
+
           &::before {
-            display: block;
             position: absolute;
             content: "";
             width: 0;
@@ -118,12 +191,16 @@
             top: 0;
             transition: width 0.5s;
           }
+
           &:hover::before {
             width: 100%;
           }
         }
       }
     }
+
+    .menu-toggle-checkbox:checked,
+    .button-lineal-container,
     .menu-button {
       display: none;
     }
