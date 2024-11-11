@@ -1,4 +1,4 @@
-<article class="card-team">
+<article class="card-team" (click)="memberInfo(member().link)">
   <section class="profile-picture-team">
     <picture>
       <source srcset="{{member().img_movil}}" media="(max-width: 600px)" loading="lazy" />
@@ -12,8 +12,9 @@
       <h4 class="team-position">{{ member().position }}</h4>
     </div>
 
-    <button class="btn-more-team" (click)="memberInfo(member().link)">
+    <button class="btn-more-team" (click)="memberInfo(member().link); $event.stopPropagation()">
       ver más <span class="flex_icon">&#8594;</span>
     </button>
+
   </section>
 </article>

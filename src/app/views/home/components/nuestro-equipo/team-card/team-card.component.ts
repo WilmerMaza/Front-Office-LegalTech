@@ -19,6 +19,7 @@ export class TeamCardComponent {
 
   public memberInfo(member?: string): void {
     // Navegar con queryParams
+    
     this.router.navigate(['/team'], { queryParams: { member } });
   }
 }
