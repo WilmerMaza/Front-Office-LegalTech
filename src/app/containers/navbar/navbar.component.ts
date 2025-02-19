@@ -19,7 +19,7 @@ export class NavbarComponent {
     class: "fixed-style"
   }, {
     label: 'Servicios',
-    link: '#',
+    link: '/services',
     icon: "assets/icons/concierge.svg"
   }, {
     label: 'Nuestra firma',
