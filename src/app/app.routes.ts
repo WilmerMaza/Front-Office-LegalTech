@@ -21,5 +21,12 @@ export const routes: Routes = [
       import('./views/nuestra-firma/nuestra-firma.component').then(
         (c) => c.NuestraFirmaComponent
       )
+  },
+  {
+    path: 'services',
+    loadComponent: () =>
+      import('../app/components/service/service.component').then(
+        (c) => c.ServiceComponent
+      )
   }
 ];
