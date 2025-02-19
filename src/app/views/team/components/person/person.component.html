@@ -3,7 +3,7 @@
   <div class="team-container"></div>
   <div class="button-container">
     <button class="contact-button" (click)="toggleInfo()">
-      <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" />
+      <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
       <strong>Contactar</strong>
       <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
     </button>
@@ -16,9 +16,9 @@
   </div>
 
   <button class="formation-button" (click)="toggleEducation()">
-    <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" />
+    <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" loading="lazy" />
     <strong>Formación</strong>
-    <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
+    <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
   </button>
 
   @if (showEducation) {
@@ -53,13 +53,13 @@
     <div class="container-info">
       <div class="container-images">
         <div class="image-team">
-          <img class="image" src="{{ teamObject()?.person }}" />
+          <img class="image" src="{{ teamObject()?.person }}"  loading="lazy"/>
         </div>
         <div class="button-container">
           <button class="contact-button" (click)="toggleInfo()">
-            <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" />
+            <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
             <strong>Contactar</strong>
-            <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
+            <img [src]="arrowContact" alt="flecha" class="arrow-icon" loading="lazy" />
           </button>
 
           @if (showInfo) {
@@ -69,9 +69,9 @@
           }
 
           <button class="formation-button" (click)="toggleEducation()">
-            <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" />
+            <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación"  loading="lazy"/>
             <strong>Formación</strong>
-            <img [src]="arrowFormation" alt="flecha" class="arrow-icon" />
+            <img [src]="arrowFormation" alt="flecha" class="arrow-icon"  loading="lazy"/>
           </button>
 
           @if (showEducation) {

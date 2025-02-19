@@ -25,7 +25,7 @@ export const routes: Routes = [
   {
     path: 'services',
     loadComponent: () =>
-      import('../app/components/service/service.component').then(
+      import('./views/service/service.component').then(
         (c) => c.ServiceComponent
       )
   }

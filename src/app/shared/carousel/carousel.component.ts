@@ -25,8 +25,8 @@ register();
   
   <swiper-slide *ngFor="let img of imagesCarousel">
     <picture class="content-pictures" style="height:{{heightCorousel}};">
-      <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
-      <source srcset="{{img.src}}" media="(min-width: 600px)" />
+      <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" type="image/webp" />
+      <source srcset="{{img.src}}" media="(min-width: 600px)" type="image/webp" />
       
       <img
         [src]="img.src"
@@ -35,8 +35,9 @@ register();
         height="{{heightCorousel}}"
         width="100"
         class="images"
-        loading="eager"
+        loading="lazy"
          style="object-fit: cover;"
+         decoding="async"
       />
     </picture>
     <div *ngIf="textPresent" class="content-text-swiper">

@@ -25,7 +25,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 
 
 <section class="loading">
-    <img src="assets/icons/icon.svg" alt="Logo LegalTech" class="loading-icon" loading="eager">
+    <img src="assets/icons/icon.svg" alt="Logo LegalTech" class="loading-icon" loading="lazy">
     <h1 class="loading-text">LegalTech</h1>
 </section>
 

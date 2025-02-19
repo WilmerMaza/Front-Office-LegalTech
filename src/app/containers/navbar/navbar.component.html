@@ -2,7 +2,7 @@
   <div class="logo-container">
     <div class="content-img">
       <img src="../../../assets/icons/icon-72x72.webp" alt="Logo de LegalTech, Abogados Digitales SAS" class="logo"
-        height="40" width="40" loading="eager" />
+        height="40" width="40" loading="lazy" />
     </div>
     <div class="text-container">
       <h2 class="company-name">LEGALTECH</h2>
@@ -38,7 +38,7 @@
     @for (item of navbar; track $index) {
     <div class="menu-lineal">
       <a href="{{item.link}}" tabindex="0" [ngClass]="{'fixed': item.class === 'fixed-style'}">
-        <img src="{{item.icon}}" alt="Icono de {{item.label}}" class="menu-icon" />
+        <img src="{{item.icon}}" alt="Icono de {{item.label}}" class="menu-icon" loading="lazy" />
         {{item.label}}
       </a>
     </div>

@@ -6,6 +6,8 @@
   align-items: flex-start;
   width: 100%;
   position: relative;
+  height: 117px;
+  background: #611374;
 
   .logo-container {
     display: flex;
@@ -54,8 +56,8 @@
   .button-lineal-container {
     display: none;
     position: fixed;
-    top: 0;
-    height: 100vh;
+    top: 20px;
+    // height: 100vh;
     width: 52%;
     max-width: 400px;
     background-color: #ffffff;
@@ -108,25 +110,27 @@
   }
 
   // Mostrar overlay y menú cuando el checkbox esté marcado
-  .menu-toggle-checkbox:checked ~ .overlay {
+  .menu-toggle-checkbox:checked~.overlay {
     display: block;
   }
-  .menu-toggle-checkbox:checked ~ .button-lineal-container {
+
+  .menu-toggle-checkbox:checked~.button-lineal-container {
     display: block;
   }
-  .menu-toggle-checkbox:checked ~ .menu-button {
+
+  .menu-toggle-checkbox:checked~.menu-button {
     position: fixed;
   }
 }
 
 @media (max-width: 920px) {
   .navbar {
-    .menu-toggle-checkbox:checked + .menu-button {
+    .menu-toggle-checkbox:checked+.menu-button {
       position: fixed;
     }
   }
 
-  .menu-toggle-checkbox:checked + .menu-button + .button-lineal-container {
+  .menu-toggle-checkbox:checked+.menu-button+.button-lineal-container {
     max-height: 88%;
     margin-top: 21px;
     right: 21px;

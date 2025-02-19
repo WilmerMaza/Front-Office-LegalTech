@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+
+
   public navbar: any[] = [{
     label: 'Inicio',
     link: '#',
