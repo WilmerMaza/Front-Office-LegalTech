@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { ServiciosComponent } from 'src/app/views/home/components/servicios/servicios.component';
+import { LEGALSERVICES } from 'src/app/constant/services';
+
+import { ServicesArray } from 'src/app/views/home/interface/interfaceService';
+
 @Component({
   selector: 'app-service',
   standalone: true,
@@ -11,4 +15,9 @@ import { ServiciosComponent } from 'src/app/views/home/components/servicios/serv
 })
 export class ServiceComponent {
 
-}
+    public service: ServicesArray[] = LEGALSERVICES;
+
+
+
+  }
+
