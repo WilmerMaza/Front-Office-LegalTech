@@ -9,7 +9,8 @@ export const LEGALSERVICES: ServicesArray[]  = [
         <li>Negociación con los deudores para establecer planes de pago.</li>
         <li>Presentación de procesos ejecutivos y procesos hipotecarios.</li>
         <li>Ejecución de sentencias y seguimiento de la recuperación de las sumas adeudadas.</li>
-      </ul>`
+      </ul>`,
+    id: ''
   },
 
 ];

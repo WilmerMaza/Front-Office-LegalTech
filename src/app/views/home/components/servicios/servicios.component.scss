@@ -36,56 +36,70 @@
   }
 
   .button-container {
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     justify-items: center;
     align-content: space-evenly;
     font-family: "Inter";
     font-style: normal;
-    .button-item {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 18px;
-      color: $color-footer;
-      border: 3.59816px solid $color-white;
-      background-color: $color-white;
-      border-radius: 16.1569px;
-      box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03),
-        0px 3.79963px 3.03971px #cbcbcb;
-      width: 240.59px;
-      height: 65.72px;
-      margin-bottom: 25px;
-      position: relative;
-      margin-left: 40px;
-      padding: 0.5em 1em 0.5em 1em;
-      .service-title {
-        margin: 0;
-        text-align: left;
-      }
+    padding: 0 2rem;
+  }
 
-      .service-image {
-        position: absolute;
-        top: 50%;
-        left: 13.3em;
-        transform: translateY(-50%);
-      }
+  @media (max-width: 1024px) {
+    .button-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .button-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .button-item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-footer;
+    border: 3.59816px solid $color-white;
+    background-color: $color-white;
+    border-radius: 16.1569px;
+    box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03),
+      0px 3.79963px 3.03971px #cbcbcb;
+    width: 240.59px;
+    height: 65.72px;
+    margin-bottom: 25px;
+    position: relative;
+    margin-left: 40px;
+    padding: 0.5em 1em 0.5em 1em;
+    .service-title {
+      margin: 0;
+      text-align: left;
     }
 
-    .icon-container {
-      width: 99.76px;
-      height: 65.86px;
-      background: $color-navPosition;
-      border-radius: 16.1569px;
+    .service-image {
       position: absolute;
-      transform: translate(-12px, -90px);
-      z-index: -1;
+      top: 50%;
+      left: 13.3em;
+      transform: translateY(-50%);
+    }
+  }
 
-      .icon {
-        transform: translate(10px, 16px);
-      }
+  .icon-container {
+    width: 99.76px;
+    height: 65.86px;
+    background: $color-navPosition;
+    border-radius: 16.1569px;
+    position: absolute;
+    transform: translate(-12px, -90px);
+    z-index: -1;
+
+    .icon {
+      transform: translate(10px, 16px);
     }
   }
 }
