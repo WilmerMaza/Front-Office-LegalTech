@@ -4,26 +4,32 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  height: clamp(562px, 20vw, 681px);
   margin-bottom: 8%;
+
   .container-services {
     margin-bottom: clamp(45px, 2vw, 60px);
+
     .services-header {
       text-align: center;
       font-family: "Inter";
       font-style: normal;
+
       .text-services {
         line-height: 1.2;
         margin-top: 20%;
         font-size: clamp(20px, 3vw, 43px);
         color: $color-footer;
+
         .highlight-primary {
           font-weight: 700;
         }
+
         .highlight-secondary {
           font-weight: 800;
         }
       }
+
       .divider-services {
         width: clamp(168px, 22vw, 48vh);
         margin: auto;
@@ -60,6 +66,12 @@
       grid-template-columns: 1fr;
     }
   }
+
+  // Add the media query for very small screens (less than 400px)
+  @media (min-width: 300px) and (max-width: 760px) {
+    height: clamp(837px, 20vw, 681px);
+  }
+
   .button-item {
     font-weight: 600;
     font-size: 15px;
@@ -76,6 +88,7 @@
     position: relative;
     margin-left: 40px;
     padding: 0.5em 1em 0.5em 1em;
+
     .service-title {
       margin: 0;
       text-align: left;
@@ -115,36 +128,4 @@
 .button-effect:active {
   transform: translateY(2px);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-// Mobile responsiveness
-@media (max-width: 768px) {
-  .button-container {
-    gap: 0.75rem !important; // Reduce gap on mobile
-    padding: 0 1rem !important; // Reduce padding
-  }
-
-  .service-item {
-    margin-bottom: 0.5rem;
-  }
-
-  .button-item {
-    padding: 0.75rem !important; // Reduce padding
-  }
-
-  .service-title {
-    font-size: 0.9rem !important; // Smaller font
-  }
-}
-
-// For very small screens
-@media (max-width: 480px) {
-  .button-container {
-    grid-template-columns: repeat(2, 1fr) !important; // Force 2 columns on very small screens
-    gap: 0.5rem !important;
-  }
-
-  .service-title {
-    font-size: 0.8rem !important;
-  }
 }
