@@ -1,23 +1,33 @@
 import { Component } from '@angular/core';
-import { ServiciosComponent } from 'src/app/views/home/components/servicios/servicios.component';
-import { LEGALSERVICES } from 'src/app/constant/services';
-
-import { ServicesArray } from 'src/app/views/home/interface/interfaceService';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { CarteraComponent } from '../home/components/servicios/cartera/cartera.component';
+import { InmobiliariaComponent } from '../home/components/servicios/inmobiliaria/inmobiliaria.component';
+import { ResponsabilidadCivilComponent } from '../home/components/servicios/respondabilidad/responsabilidad_civil.component';
+import { LaboraComercialComponent } from '../home/components/servicios/laboral/labora.component';
+import { PropiedadHorizontalComponent } from '../home/components/servicios/propiedad-horizontal/propiedad-horizontal.component';
+import { DerechoComercialComponent } from '../home/components/servicios/derecho-comercial/derecho-comercial.component';
 
 @Component({
   selector: 'app-service',
   standalone: true,
   imports: [
-    ServiciosComponent
+    CommonModule,
+    CarteraComponent,
+    InmobiliariaComponent,
+    ResponsabilidadCivilComponent,
+    LaboraComercialComponent,
+    PropiedadHorizontalComponent,
+    DerechoComercialComponent
   ],
   templateUrl: './service.component.html',
-  styleUrl: './service.component.scss'
+  styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent {
+  currentRoute: string;
 
-    public service: ServicesArray[] = LEGALSERVICES;
-
-
-
+  constructor(private router: Router) {
+    this.currentRoute = this.router.url;
   }
+}
 
