@@ -10,19 +10,14 @@ export const TEAMARRAY: TeamArray[] = [
     link: 'CATHERINE_SUZETTE',
     position: 'Gerente',
     educacion: `<p>
-      Abogada, graduada de la Universidad del Norte en Barranquilla en 1998.
-      Continué mis estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002.
-      Además, completé un programa de American Legal English en EF Chicago de 2016 a 2017.
-      Finalmente, obtuve mi título en Law School en la University of Pennsylvania en abril de 2020.
+      Es abogada,graduada en 1998 de la Universidad del Norte en Barranquilla.Posteriormente, profundizó sus estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002. En 2017, completo un programa de American Legal English en EF Chicago. En 2020 y 2022 cursó Introducción al inglés americano en la Universidad de Pennsylvania y Liderazgo en la Universidad de Michigan respectivamente
     </p>`,
     formacion: `Abogada egresada de la Universidad del Norte y la Universidad Externado de Colombia con más de 21 años de experiencia en asesoría legal y litigios. A lo largo de mi carrera, he proporcionado asesoramiento estratégico a empresas reconocidas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, y Hotel Bahía S.A.S. Mi trayectoria incluye la gestión de procesos Civiles, laborales y administrativos como abogada corresponsal para firmas prestigiosas, incluyendo Chapman & Asociados, Vélez Gutiérrez y Baker & McKenzie S.A.S.
 `,
     contacto: `<p><strong>Correo:</strong> sucete&#64;gmail.com</p>
-       <p><strong>Número:</strong> 123-456-7890</p> `,
+       <p><strong>Número:</strong> 3166912248</p> `,
 
-    experiencia: `<h3><strong>Experiencia Profesional</strong></h3>
-    <p>• ⁠Gerente y Socia Fundadora Legal Tech Abogados Digitales | 2012 – Presente.</p>
-    <p>• Asistente Jurídica - Federación Nacional de Comerciantes- Seccional Atlántico. Julio de 1998 a julio de 1999. Barranquilla.</p>`,
+
     description:"",
 
   },

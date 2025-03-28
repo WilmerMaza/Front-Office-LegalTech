@@ -1,45 +1,10 @@
 <section class="service-us">
-  <!-- Sección de cabecera opcional
-  <header class="service-header">
-  
-  </header> -->
-
-  <!-- Contenido sobre el servicio -->
-  <section class="service-content">
-    <!-- Título y línea divisoria -->
-    <div class="service-header-text">
-      <h1 class="service-title" id="service-us">
-        NUESTRO <span class="strong">SERVICIO</span>
-      </h1>
-      <hr class="service-divider" aria-hidden="true" />
-    </div>
-
-    <!-- Imagen del servicio -->
-    <div class="service-image">
-      <img src="assets/img/Nuestro servicio/Nuestro-servicio.webp"
-        alt="Equipo de abogados en LegalTech - Abogados Digitales" loading="lazy" class="image" />
-    </div>
-
-    <!-- Descripción del servicio -->
-    <div class="service-text">
-      <p class="service-text-principal">
-        CARTERA
-
-        Cobro de cartera a través de los mecanismos tecnológicos que permiten ejercer un efectivo cobro prejudicial y
-        judicial .
-
-      </p>
-    </div>
-  </section>
-
-  <!-- Sección de servicios (ubicada fuera de .service-content) -->
-  <div class="services-box">
-    <div class="team-content">
-      <!-- Contenido dinámico de servicios aquí -->
-    </div>
+  <app-cartera></app-cartera>
+  <div class="services-navigation">
+    <app-inmobiliaria *ngIf="currentRoute !== '/inmobiliaria'"></app-inmobiliaria>
+    <app-responsabilidad-civil *ngIf="currentRoute !== '/responsabilidad'"></app-responsabilidad-civil>
+    <app-labora-comercial *ngIf="currentRoute !== '/laboral'"></app-labora-comercial>
+    <app-propiedad-horizontal *ngIf="currentRoute !== '/propiedad-horizontal'"></app-propiedad-horizontal>
+    <app-derecho-comercial *ngIf="currentRoute !== '/derecho-comercial'"></app-derecho-comercial>
   </div>
-  <div>
-    <app-servicios></app-servicios>
-  </div>
-
 </section>

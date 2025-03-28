@@ -6,24 +6,30 @@
   flex-direction: column;
   height: clamp(562px, 20vw, 681px);
   margin-bottom: 8%;
+
   .container-services {
     margin-bottom: clamp(45px, 2vw, 60px);
+
     .services-header {
       text-align: center;
       font-family: "Inter";
       font-style: normal;
+
       .text-services {
         line-height: 1.2;
         margin-top: 20%;
         font-size: clamp(20px, 3vw, 43px);
         color: $color-footer;
+
         .highlight-primary {
           font-weight: 700;
         }
+
         .highlight-secondary {
           font-weight: 800;
         }
       }
+
       .divider-services {
         width: clamp(168px, 22vw, 48vh);
         margin: auto;
@@ -36,56 +42,90 @@
   }
 
   .button-container {
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     justify-items: center;
     align-content: space-evenly;
     font-family: "Inter";
     font-style: normal;
-    .button-item {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 18px;
-      color: $color-footer;
-      border: 3.59816px solid $color-white;
-      background-color: $color-white;
-      border-radius: 16.1569px;
-      box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03),
-        0px 3.79963px 3.03971px #cbcbcb;
-      width: 240.59px;
-      height: 65.72px;
-      margin-bottom: 25px;
-      position: relative;
-      margin-left: 40px;
-      padding: 0.5em 1em 0.5em 1em;
-      .service-title {
-        margin: 0;
-        text-align: left;
-      }
+    padding: 0 2rem;
+  }
 
-      .service-image {
-        position: absolute;
-        top: 50%;
-        left: 13.3em;
-        transform: translateY(-50%);
-      }
-    }
-
-    .icon-container {
-      width: 99.76px;
-      height: 65.86px;
-      background: $color-navPosition;
-      border-radius: 16.1569px;
-      position: absolute;
-      transform: translate(-12px, -90px);
-      z-index: -1;
-
-      .icon {
-        transform: translate(10px, 16px);
-      }
+  @media (max-width: 1024px) {
+    .button-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  @media (max-width: 768px) {
+    .button-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Add the media query for very small screens (less than 400px)
+  @media (min-width: 300px) and (max-width: 760px) {
+    height: clamp(837px, 20vw, 681px);
+  }
+
+  .button-item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-footer;
+    border: 3.59816px solid $color-white;
+    background-color: $color-white;
+    border-radius: 16.1569px;
+    box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03),
+      0px 3.79963px 3.03971px #cbcbcb;
+    width: 240.59px;
+    height: 65.72px;
+    margin-bottom: 25px;
+    position: relative;
+    margin-left: 40px;
+    padding: 0.5em 1em 0.5em 1em;
+
+    .service-title {
+      margin: 0;
+      text-align: left;
+    }
+
+    .service-image {
+      position: absolute;
+      top: 50%;
+      left: 13.3em;
+      transform: translateY(-50%);
+    }
+  }
+
+  .icon-container {
+    width: 99.76px;
+    height: 65.86px;
+    background: $color-navPosition;
+    border-radius: 16.1569px;
+    position: absolute;
+    transform: translate(-12px, -90px);
+    z-index: -1;
+
+    .icon {
+      transform: translate(10px, 16px);
+    }
+  }
+}
+
+// Add these styles to your existing CSS
+
+.button-effect {
+  position: relative;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-effect:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
