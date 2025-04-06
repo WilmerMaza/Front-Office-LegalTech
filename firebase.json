@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/legaltech/browser",
+    "public": "dist/legal-tech/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
