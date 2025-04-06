@@ -1,0 +1,46 @@
+@use "assets/colors.scss" as *;
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-footer;
+    padding: 25px;
+
+    &__text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: $color-footer;
+    }
+
+    &__list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            display: block;
+        }
+    }
+}
+
+
+@media (min-width: 770px) {
+    .social-media {
+        &__text {
+            color: $color-white;
+        }
+    }
+}

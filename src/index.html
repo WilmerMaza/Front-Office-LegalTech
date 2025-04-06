@@ -1,34 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <!-- google console -->
-  <meta name="google-site-verification" content="3LUHrKz9jIZ-zmVWCp-IrMhYAkImDYn8sz7sdCG3SH8" />
-
   <base href="/" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- fonts google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-
-  <title>LegalTech - Innovación y Tecnología en el Derecho</title>
+  <meta name="google" content="notranslate">
+  <!-- TITLE & SEO -->
+  <title>LegalTech | Abogados Digitales y Soluciones Legales Tecnológicas</title>
   <meta name="description"
-    content="LegalTech es pionero en la integración de la tecnología con el derecho, con más de 20 años de experiencia y soluciones legales innovadoras.">
+    content="LegalTech es pionero en la integración de tecnología y derecho, con más de 20 años de experiencia ofreciendo soluciones legales innovadoras.">
   <meta name="author" content="LegalTech">
   <meta name="keywords"
-    content="LegalTech, tecnología legal, derecho, asesoramiento legal, soluciones legales, innovación legal">
+    content="LegalTech, abogados digitales, derecho, asesoría legal, firma de abogados, tecnología legal, innovación legal, servicios jurídicos, derecho digital, automatización legal, inteligencia artificial legal, legal software, gestión legal, compliance digital, contratos inteligentes, blockchain legal, protección de datos, transformación digital legal, servicios jurídicos online, soluciones legales tecnológicas, derecho corporativo, derecho inmobiliario, propiedad horizontal, derecho laboral, derecho comercial, derecho civil, responsabilidad civil, recuperación de cartera, abogados en línea">
 
-  <!-- Metadatos de Open Graph -->
-  <meta property="og:title" content="LegalTech - Innovación y Tecnología en el Derecho">
+
+  <!-- CANONICAL URL -->
+  <link rel="canonical" href="https://abogadosdigitales.com.co/" />
+
+  <!-- OPEN GRAPH (para compartir en redes sociales) -->
+  <meta property="og:title" content="LegalTech | Abogados Digitales y Soluciones Legales Tecnológicas">
   <meta property="og:description"
-    content="LegalTech es pionero en la integración de la tecnología con el derecho, ofreciendo soluciones legales de vanguardia con más de 20 años de experiencia.">
+    content="Soluciones legales de vanguardia integradas con tecnología. Asesoría jurídica con enfoque moderno y profesional.">
   <meta property="og:image"
-    content="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/Logo.webp?alt=media&token=882640d7-d555-40e8-aea2-d98893162580">
+    content="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/Logo.webp?alt=media&amp;token=882640d7-d555-40e8-aea2-d98893162580">
   <meta property="og:url" content="https://abogadosdigitales.com.co">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LegalTech - Abogados Digitales">
@@ -36,27 +31,49 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Identidad visual y tema del navegador -->
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LegalTech | Abogados Digitales">
+  <meta name="twitter:description"
+    content="Soluciones legales innovadoras con respaldo tecnológico y más de 20 años de experiencia.">
+  <meta name="twitter:image"
+    content="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/Logo.webp?alt=media&amp;token=882640d7-d555-40e8-aea2-d98893162580">
+  <meta name="twitter:site" content="@LegalTechCol">
+
+  <!-- PWA / MOBILE WEB APP -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="LegalTech | Abogados Digitales y Soluciones Legales Tecnológicas" />
+
+  <!-- THEME / ICONOS -->
   <meta name="theme-color" content="#611374">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
-  <!-- Control de caché -->
+  <!-- FONTS & PERFORMANCE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preload" href="icons/icon.svg" as="image" type="image/svg+xml">
+
+  <!-- CACHE CONTROL (opcional en dev, cuidado en prod) -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#611374">
-
-
-  <link rel="preload" href="assets/icons/icon.svg" as="image" type="image/svg+xml">
-
-
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
 </head>
 
-<body class="mat-typography">
+<body>
   <app-root></app-root>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 
 </html>

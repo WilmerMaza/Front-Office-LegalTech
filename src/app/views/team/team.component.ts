@@ -22,10 +22,8 @@ export class TeamComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-     
-
       this.param = params['member'] ?? false;
     });
   }

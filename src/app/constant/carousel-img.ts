@@ -38,9 +38,9 @@ import { ImgInterface } from "../views/home/interface/ImgInterface";
 export const CAROUSELIMG: Array<ImgInterface> = [
   {
     name: 'tablero-ajedrez-cristal',
-    src: '../../../../../assets/img/carousel/tablero-ajedrez-cristal.webp',
+    src: 'img/carousel/tablero-ajedrez-cristal.webp',
     srcMovil:
-      '../../../../../assets/img/carousel/tablero-ajedrez-cristal-movil.webp',
+      'img/carousel/tablero-ajedrez-cristal-movil.webp',
     role: 'presentation',
     alt: 'Tablero de ajedrez aplicando estrategias legales',
     title: 'Estrategia y planificación legal',
@@ -48,9 +48,9 @@ export const CAROUSELIMG: Array<ImgInterface> = [
   },
   {
     name: 'tablero-ajedrez-reina',
-    src: '../../../../../assets/img/carousel/tablero-ajedrez-reina.webp',
+    src: 'img/carousel/tablero-ajedrez-reina.webp',
     srcMovil:
-      '../../../../../assets/img/carousel/tablero-ajedrez-reina-movil.webp',
+      'img/carousel/tablero-ajedrez-reina-movil.webp',
     role: 'presentation',
     alt: 'Tablero de ajedrez con piezas de cristal',
     title: 'Estrategia y planificación legal',
@@ -58,8 +58,8 @@ export const CAROUSELIMG: Array<ImgInterface> = [
   },
   {
     name: 'equipo-estrategias-legales',
-    src: '../../../../../assets/img/carousel/equipo-estrategias-legales.webp',
-    srcMovil: '../../../../../assets/img/carousel/equipo-estrategias-legales-movil.webp',
+    src: 'img/carousel/equipo-estrategias-legales.webp',
+    srcMovil: 'img/carousel/equipo-estrategias-legales-movil.webp',
     role: 'presentation',
     alt: 'En equipo se toman las mejores estrategias legales',
     title: 'Estrategia y planificación legal',

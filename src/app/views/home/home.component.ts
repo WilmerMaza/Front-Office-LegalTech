@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { CAROUSELEMPRESASIMG } from 'src/app/constant/carousel-empresas-img';
-import { CAROUSELIMG } from 'src/app/constant/carousel-img';
-import { CarouselComponent } from 'src/app/shared/carousel/carousel.component';
-import { ButtonContactoComponent } from './components/button-contacto/button-contacto.component';
+import { CAROUSELEMPRESASIMG } from '../../constant/carousel-empresas-img';
+import { CAROUSELIMG } from '../../constant/carousel-img';
+import { CarouselComponent } from '../../shared/carousel/carousel.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { FirmaComponent } from './components/firma/firma.component';
 import { IdentidadComponent } from './components/identidad/identidad.component';
@@ -25,9 +24,7 @@ import { ImgInterface } from './interface/ImgInterface';
     ValoresComponent,
     EmpresasComponent,
     FirmaComponent,
-    NuestroEquipoComponent,
-    // CarouselNaviteComponent,
-    ButtonContactoComponent
+    NuestroEquipoComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

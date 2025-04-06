@@ -1,4 +1,4 @@
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
 
 .services {
   display: flex;
@@ -52,7 +52,6 @@
     align-content: space-evenly;
     font-family: "Inter";
     font-style: normal;
-    padding: 0 2rem;
   }
 
   @media (max-width: 1024px) {

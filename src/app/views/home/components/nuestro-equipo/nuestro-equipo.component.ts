@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TEAMARRAY } from 'src/app/constant/team';
+import { TEAMARRAY } from '../../../../constant/team';
 import { TeamArray } from '../../interface/ImgInterface';
 import { TeamCardComponent } from './team-card/team-card.component';
 

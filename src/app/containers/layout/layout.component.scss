@@ -1,10 +1,27 @@
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  width: 100%;
+}
 
 .layout-nav {
   width: 100%;
   // position: absolute;
   z-index: 2;
-  top: 0;
+  flex-shrink: 0;
+}
+
+.layout-main {
+  flex: 1; // <- ¡el truco!
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-footer {
+  flex-shrink: 0;
 }
 
 /* Aseguramos que el loading ocupe toda la pantalla */
@@ -87,4 +104,3 @@
     transform: rotate(0deg);
   }
 }
-

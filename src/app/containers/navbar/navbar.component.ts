@@ -2,45 +2,44 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-// In your component.ts file
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [MatIconModule, CommonModule, FormsModule],
+  imports: [MatIconModule, CommonModule, FormsModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
 
-
   public navbar: any[] = [{
     label: 'Inicio',
-    link: '#',
-    icon: "assets/icons/add_home.svg",
+    link: '/',
+    icon: "icons/add_home.svg",
     class: "fixed-style"
   }, {
     label: 'Servicios',
     link: '/services',
-    icon: "assets/icons/concierge.svg"
+    icon: "icons/concierge.svg"
   }, {
     label: 'Nuestra firma',
     link: '/about',
-    icon: "assets/icons/assured_workload.svg",
+    icon: "icons/assured_workload.svg",
     class: "fixed-style"
   }, {
     label: 'Contactos',
-    link: '#',
-    icon: "assets/icons/forward_to_inbox.svg"
+    link: '/contas',
+    icon: "icons/forward_to_inbox.svg"
   }]
 
-
-  public isMenuOpen: boolean = false;
-  menuOpen = false;
-
-  closeMenu(): void {
-    this.menuOpen = false;
+  public closeMenu(): void {
+    const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement;
+    if (menuToggle?.checked) {
+      menuToggle.checked = false;
+      console.log('Menu closed ✔️');
+    }
   }
-
 
 }

@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngFor="let service of services" [class.hidden]="currentService === service.route">
         <button class="button-item" [routerLink]="[service.route]" [attr.data-value]="service.dataValue" [attr.aria-label]="service.ariaLabel">
           <h3 class="service-title">{{service.name}}</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" [alt]="'Icono de ' + service.name" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" [alt]="'Icono de ' + service.name" loading="lazy">
         </button>
         <div class="icon-container" [innerHTML]="service.icon"></div>
       </article>

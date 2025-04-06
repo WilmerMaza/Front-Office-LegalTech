@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BanderaLegalComponent } from '../bandera-legal/bandera-legal.component';
+import { BanderaLegalComponent } from '../../../../shared/bandera-legal/bandera-legal.component';
 
 @Component({
   selector: 'app-identidad',
