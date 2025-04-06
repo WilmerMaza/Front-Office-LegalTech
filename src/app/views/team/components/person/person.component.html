@@ -3,27 +3,27 @@
   <div class="team-container"></div>
   <div class="button-container">
     <button class="contact-button" (click)="toggleInfo()">
-      <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
+      <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
       <strong>Contactar</strong>
       <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
     </button>
 
     @if (showInfo) {
     <div class="info-box">
-      <div [innerHTML]="teamObject()?.contacto"></div>
+      <div [innerHTML]="getSanitizerHtml(teamObject()?.contacto )"></div>
     </div>
     }
   </div>
 
   <button class="formation-button" (click)="toggleEducation()">
-    <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación" loading="lazy" />
+    <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
     <strong>Formación</strong>
     <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
   </button>
 
   @if (showEducation) {
   <div class="education-box">
-    <div [innerHTML]="teamObject()?.educacion"></div>
+    <div [innerHTML]=" getSanitizerHtml(teamObject()?.educacion)"></div>
   </div>
   }
 
@@ -33,11 +33,11 @@
   <!-- Contenedores de biografía y experiencia -->
   <div class="experience-biography-container">
     <div class="biography-info">
-      <div [innerHTML]="teamObject()?.formacion"></div>
+      <div [innerHTML]="getSanitizerHtml(teamObject()?.formacion)"></div>
     </div>
     @if (teamObject()?.experiencia) {
     <div class="experience-box">
-      <div class="team-content" [innerHTML]="teamObject()?.experiencia"></div>
+      <div class="team-content" [innerHTML]="getSanitizerHtml(teamObject()?.experiencia)"></div>
     </div>
     }
   </div>
@@ -54,39 +54,39 @@
       <div class="container-images">
         <div class="image-team">
 
-          <img class="image" src="{{ teamObject()?.person }}"  loading="lazy"/>
+          <img class="image" src="{{ teamObject()?.person }}" loading="lazy" />
 
         </div>
         <div class="button-container">
           <button class="contact-button" (click)="toggleInfo()">
-            <img src="assets/img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
+            <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
             <strong>Contactar</strong>
             <img [src]="arrowContact" alt="flecha" class="arrow-icon" loading="lazy" />
           </button>
 
           @if (showInfo) {
           <div class="info-box">
-            <div [innerHTML]="teamObject()?.contacto"></div>
+            <div [innerHTML]="getSanitizerHtml(teamObject()?.contacto )"></div>
           </div>
           }
 
           <button class="formation-button" (click)="toggleEducation()">
-            <img class="formation-icon" src="assets/img/team/logro.png" alt="Icono de Formación"  loading="lazy"/>
+            <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
             <strong>Formación</strong>
-            <img [src]="arrowFormation" alt="flecha" class="arrow-icon"  loading="lazy"/>
+            <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
           </button>
 
           @if (showEducation) {
           <div class="education-box">
-            <div [innerHTML]="teamObject()?.educacion"></div>
+            <div [innerHTML]="getSanitizerHtml(teamObject()?.educacion)"></div>
           </div>
           }
         </div>
       </div>
 
       <div class="container-text">
-        <div [innerHTML]="teamObject()?.formacion"></div>
-        <div class="team-content" [innerHTML]="teamObject()?.experiencia"></div>
+        <div [innerHTML]=" getSanitizerHtml(teamObject()?.formacion)"></div>
+        <div class="team-content" [innerHTML]=" getSanitizerHtml(teamObject()?.experiencia)"></div>
       </div>
     </div>
 

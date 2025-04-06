@@ -1,95 +1,59 @@
-@use "@assets/colors.scss" as *;
-// .signature {
-//   background: $color-footer;
-//   width: 100%;
-//   .signature-section-container {
-//     position: relative;
-//     .signature-section-image {
-//       width: auto;
-//       max-width: 100%;
-//       min-height: 189px;
-//       height: auto;
-//     }
-//     .signature-container-text {
-//       font-family: "Inter";
-//       font-style: normal;
-//       position: absolute;
-//       top: clamp(23px, 2rem, 55px);
-//       text-align: center;
-//       color: $color-white;
-//       .signature-section-title {
-//         font-weight: 800;
-//         font-size: clamp(15px, 2.5vw, 43px);
-//         text-align: center;
-//       }
-//       .signature-section-text {
-//         font-size: clamp(10px, 1.5vw, 27px);
-//         width: 80%;
-//         margin: auto;
-//         margin-top: 2%;
-//         font-weight: 400;
-//         line-height: clamp(12px, 2vw, 33px);
-//       }
-//       .signature-section-button {
-//         padding: 1px;
-//         border: 0.28px solid $color-white;
-//         border-radius: 17px;
-//         color: $color-white;
-//         width: clamp(7%, 8vw, 50%);
-//         font-weight: 500;
-//         font-size: clamp(5px, 1vw, 19px); // (10px, 2vw, 19px)
-//         background-color: transparent;
-//         margin: 2%;
-//       }
-//     }
-//   }
-// }
+@use "assets/colors.scss" as *;
+
 .signature {
-  margin: 24px;
-  position: relative;
+  margin: 0 auto 3rem auto;
+  width: 90%;
+  max-width: 960px;
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
   .header-title {
-    background: #611374;
-    color: white;
-    height: 80px;
+    background: $color-footer;
+    color: $color-white;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     border-radius: 20px;
-    text-align: center;
-    line-height: 80px;
-    font-size: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
   .content-text {
-    padding: 30px 20px;
+    background: $color-white;
+    padding: 2rem;
     text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 20px 20px;
-    position: relative;
-    top: -18px;
+
     .signature-section-text {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 18px;
-      text-align: center;
-      color: #611374;
+      text-align: justify;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: $color-footer;
+      margin-bottom: 2rem;
     }
+
     .signature-section-button {
-      border-radius: 20px;
-      border: none;
-      height: 30px;
-      width: 200px;
-      background: #eeacff;
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background-color: $color-navPosition;
+      color: $color-footer;
       font-weight: 700;
-      color: #611374;
-      font-family: "Inter";
-      font-style: normal;
-      box-shadow: 0px 4.55087px 9.10173px rgba(0, 0, 0, 0.25);
-    }
-    .signature-section-button:focus {
-      outline: 2px solid white;
-    }
-    .signature-section-button:hover {
-      background: white;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0px 4.5px 9.1px rgba(0, 0, 0, 0.25);
+      transition: background-color 0.2s ease, color 0.2s ease;
+      width: 150px;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-footer;
+      }
+
+      &:focus {
+        outline: 3px solid $color-white;
+        outline-offset: 4px;
+      }
     }
   }
 }

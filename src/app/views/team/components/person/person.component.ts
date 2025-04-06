@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, input, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
+
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { TeamArray } from '../../../home/interface/ImgInterface';
 import { ImgTeamComponent } from '../img-team/img-team.component';
-import { TeamArray } from 'src/app/views/home/interface/ImgInterface';
+
 
 @Component({
   selector: 'app-person',
-  standalone: true,
   imports: [
     CommonModule,
     ImgTeamComponent,
@@ -21,25 +22,30 @@ export class PersonComponent {
   public showEducation: boolean = false;
   public showSignature: boolean = false;
 
-  public arrowContact: string = 'assets/img/team/arriba.png';
-  public arrowFormation: string = 'assets/img/team/arriba.png';
+  public arrowContact: string = 'img/team/arriba.png';
+  public arrowFormation: string = 'img/team/arriba.png';
 
-public  teamObject = input<TeamArray>();
+  public teamObject = input<TeamArray>();
+
+  constructor(private sanitizer: DomSanitizer) { }
+
 
   public toggleInfo(): void {
     this.showInfo = !this.showInfo;
-    this.arrowContact = this.showInfo ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
-}
+    this.arrowContact = this.showInfo ? 'img/team/abajo.png' : 'img/team/arriba.png';
+  }
 
   public toggleEducation(): void {
     this.showEducation = !this.showEducation;
-    this.arrowFormation = this.showEducation ? 'assets/img/team/abajo.png' : 'assets/img/team/arriba.png';
+    this.arrowFormation = this.showEducation ? 'img/team/abajo.png' : 'img/team/arriba.png';
   }
 
   public toggleSignature(): void {
     this.showSignature = !this.showSignature;
   }
 
-
+  public getSanitizerHtml(html?: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html ?? '');
+  }
 
 }

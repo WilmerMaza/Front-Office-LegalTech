@@ -1,15 +1,15 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { LayoutComponent } from './containers/layout/layout.component';
-
+import { SeoService } from './shared/services/seo.service';
 
 @Component({
   selector: 'app-root',
+  imports: [LayoutComponent],
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LayoutComponent],
-  template: '<app-layout/>',
+  template: `<app-layout></app-layout>`,
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'LegalTech - Abogados Digitales';
+  constructor(private readonly seo: SeoService) { }
+  title = 'LegalTech | Abogados Digitales y Soluciones Legales Tecnológicas';
 }

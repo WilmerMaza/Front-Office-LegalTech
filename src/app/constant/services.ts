@@ -1,4 +1,4 @@
-import { ServicesArray } from 'src/app/views/home/interface/interfaceService';
+import { ServicesArray } from "../views/home/interface/interfaceService";
 
 export const LEGALSERVICES: ServicesArray[]  = [
   {

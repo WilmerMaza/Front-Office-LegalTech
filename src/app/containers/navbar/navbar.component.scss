@@ -1,4 +1,4 @@
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
 
 .navbar {
   display: flex;
@@ -6,29 +6,39 @@
   align-items: flex-start;
   width: 100%;
   position: relative;
-  height: 117px;
-  background: #611374;
+  height: 77px;
+  background: $color-footer;
 
   .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    margin-left: 20px;
 
-    .logo {
-      width: 40px;
+    .content-img {
+      margin-top: 12px;
+
+      .logo {
+        position: static;
+        height: auto;
+        width: 35px;
+      }
     }
 
     .text-container {
+      margin-top: 28px;
       color: $color-white;
       font-family: "Josefin Sans", sans-serif;
 
       .company-name {
-        font-size: 1.2rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: 18.7945px;
+        line-height: 4px;
       }
 
       .company-desc {
-        font-size: 0.7rem;
+        font-size: 9.52px;
       }
     }
   }
@@ -48,24 +58,23 @@
     cursor: pointer;
     padding: 10px;
     position: absolute;
-    top: 39px;
-    right: 49px;
-    z-index: 1001;
+    top: 15px;
+    right: 10px;
+    z-index: 1002;
   }
 
   .button-lineal-container {
     display: none;
     position: fixed;
-    top: 20px;
-    // height: 100vh;
+    top: 10px;
     width: 52%;
     max-width: 400px;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-    z-index: 10;
-    right: 14px;
+    z-index: 1001;
+    right: 5px;
 
     .menu-lineal {
       margin: 54px 34px;
@@ -78,6 +87,7 @@
         text-decoration: none;
         color: #641378;
         font-size: 19px;
+        font-family: "Josefin Sans", sans-serif;
 
         &.fixed {
           border-bottom: 1px solid #eeacff;
@@ -92,11 +102,18 @@
         }
 
         &:hover {
-          color: plum;
+          color: $color-navPosition;
+        }
+
+        &.active {
+          color: $color-navPosition;
+          font-weight: bold;
+
         }
       }
     }
   }
+
 
   .overlay {
     position: fixed;
@@ -105,8 +122,8 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9;
-    display: none; // Oculto por defecto
+    z-index: 1000; // Más alto que el botón
+    display: none;
   }
 
   // Mostrar overlay y menú cuando el checkbox esté marcado
@@ -121,6 +138,7 @@
   .menu-toggle-checkbox:checked~.menu-button {
     position: fixed;
   }
+
 }
 
 @media (max-width: 920px) {
@@ -141,7 +159,7 @@
 @media (min-width: 992px) {
   .navbar {
     height: 77px;
-    background: $color-nav-gradient;
+    background-color: $color-nav-gradient;
     border-bottom: 0.5px solid rgba(209, 219, 219, 0.2);
     padding: 0;
     flex-direction: row;
@@ -152,10 +170,16 @@
     .logo-container {
       margin-left: 10%;
 
-      .logo {
-        position: static;
-        height: auto;
+      .content-img {
+        margin-top: -3px !important;
+
+        .logo {
+          position: static;
+          height: auto;
+          width: 44px !important;
+        }
       }
+
 
       .text-container {
         margin-top: 16px;
@@ -201,24 +225,35 @@
           flex-direction: column;
           justify-content: center;
 
-          &:hover {
-            color: $color-navPosition;
-          }
-
           &::before {
             position: absolute;
             content: "";
             width: 0;
-            background: $color-navPosition;
             height: 5px;
+            background: $color-navPosition;
             top: 0;
             transition: width 0.5s;
+          }
+
+          &:hover {
+            color: $color-navPosition;
           }
 
           &:hover::before {
             width: 100%;
           }
+
+          &.active {
+            color: $color-navPosition;
+            font-weight: bold;
+
+            &::before {
+              width: 100%;
+              background: $color-navPosition;
+            }
+          }
         }
+
       }
     }
 

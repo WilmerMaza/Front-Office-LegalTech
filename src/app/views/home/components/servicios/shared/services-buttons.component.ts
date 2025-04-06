@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/cartera'">
         <button class="button-item" [routerLink]="['/cartera']">
           <h3 class="service-title">Cartera</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de cartera" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de cartera" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/responsabilidad'">
         <button class="button-item" [routerLink]="['/responsabilidad']">
           <h3 class="service-title">Responsabilidad Civil</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de responsabilidad" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de responsabilidad" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/inmobiliaria'">
         <button class="button-item" [routerLink]="['/inmobiliaria']">
           <h3 class="service-title">Inmobiliario</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de inmobiliario" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de inmobiliario" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/laboral'">
         <button class="button-item" [routerLink]="['/laboral']">
           <h3 class="service-title">Laboral</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de laboral" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de laboral" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/propiedad-horizontal'">
         <button class="button-item" [routerLink]="['/propiedad-horizontal']">
           <h3 class="service-title">Propiedad Horizontal</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de propiedad horizontal" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de propiedad horizontal" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@ import { RouterModule } from '@angular/router';
       <article class="service-item" *ngIf="currentService !== '/derecho-comercial'">
         <button class="button-item" [routerLink]="['/derecho-comercial']">
           <h3 class="service-title">Derecho Comercial</h3>
-          <img class="service-image" src="assets/icons/Mayor.svg" alt="Icono de derecho comercial" loading="lazy">
+          <img class="service-image" src="icons/Mayor.svg" alt="Icono de derecho comercial" loading="lazy">
         </button>
         <div class="icon-container">
           <svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">

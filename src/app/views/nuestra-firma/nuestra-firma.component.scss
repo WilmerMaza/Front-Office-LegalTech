@@ -1,11 +1,12 @@
 // /* General Styles */
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
 
 .about-us {
   .about-header {
     height: 117px;
     background: #611374;
   }
+
   .about-content {
     padding: 3%;
     margin: 4%;
@@ -16,10 +17,12 @@
 
     .about-header-text {
       color: $color-white;
+
       .about-title {
         font-weight: 400;
         font-size: 20px;
         line-height: 0px;
+
         .strong {
           font-weight: 800;
           font-size: 20px;
@@ -30,6 +33,7 @@
 
     .about-image {
       width: 100%;
+
       .image {
         width: 100%;
         height: auto;
@@ -46,6 +50,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+
         .toggle-more-btn {
           background-color: transparent;
           color: $color-white;
@@ -61,11 +66,13 @@
         overflow: hidden;
         max-height: 0;
         opacity: 0;
-        transition: max-height 1.5s ease-in-out, opacity 1.5s ease-in-out; /* Ajuste para transición más suave */
+        transition: max-height 1.5s ease-in-out, opacity 1.5s ease-in-out;
+        /* Ajuste para transición más suave */
       }
 
       .collapsible-content.collapsed {
-        max-height: 1000px; /* Ajusta esta altura según el contenido */
+        max-height: 1000px;
+        /* Ajusta esta altura según el contenido */
         opacity: 1;
       }
     }
@@ -94,6 +101,7 @@
       font-style: normal !important;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+
       .strong {
         font-size: 20px;
         font-weight: 800;

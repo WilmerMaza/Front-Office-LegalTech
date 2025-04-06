@@ -1,8 +1,8 @@
 <section class="navbar">
   <div class="logo-container">
     <div class="content-img">
-      <img src="../../../assets/icons/icon-72x72.webp" alt="Logo de LegalTech, Abogados Digitales SAS" class="logo"
-        height="40" width="40" loading="lazy" />
+      <img src="icons/icon-72x72.webp" alt="Logo de LegalTech, Abogados Digitales SAS" class="logo" height="40"
+        width="40" loading="lazy" />
     </div>
     <div class="text-container">
       <h2 class="company-name">LEGALTECH</h2>
@@ -13,21 +13,23 @@
   <ul class="menu">
     @for (item of navbar; track $index) {
     <li class="menu-item">
-      <a href="{{item.link}}" class="link d-flex align-items-center justify-content-center" tabindex="0"
-        [ngClass]="{'fixed': item.class === 'fixed-style'}">{{item.label}}</a>
+      <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        class="link d-flex align-items-center justify-content-center">
+        {{ item.label }}
+      </a>
     </li>
     }
   </ul>
 
   <!-- Input checkbox para activar/desactivar el menú -->
-  <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Abrir menú" />
+  <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Abrir menú" #menuToggle />
 
   <!-- Overlay para cerrar el menú -->
   <label for="menu-toggle" class="overlay"></label>
 
   <!-- Botón del menú -->
   <label for="menu-toggle" class="menu-button">
-    <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 25px;">
       <rect width="33" height="7" rx="3.5" fill="#EEACFF" />
       <rect y="9" width="33" height="7" rx="3.5" fill="#EEACFF" />
       <rect y="18" width="33" height="7" rx="3.5" fill="#EEACFF" />
@@ -37,9 +39,9 @@
   <div class="button-lineal-container">
     @for (item of navbar; track $index) {
     <div class="menu-lineal">
-      <a href="{{item.link}}" tabindex="0" [ngClass]="{'fixed': item.class === 'fixed-style'}">
-        <img src="{{item.icon}}" alt="Icono de {{item.label}}" class="menu-icon" loading="lazy" />
-        {{item.label}}
+      <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+        <img src="{{ item.icon }}" alt="Icono de {{ item.label }}" class="menu-icon" />
+        {{ item.label }}
       </a>
     </div>
     }

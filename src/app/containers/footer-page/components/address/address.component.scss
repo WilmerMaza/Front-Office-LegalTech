@@ -1,0 +1,20 @@
+@use "assets/colors.scss" as *;
+
+#address_footer {
+    margin: 40px 20px 0;
+    color: $color-footer;
+
+    a {
+        text-decoration: none;
+        color: inherit; // opcional, para heredar el color del padre
+    }
+}
+
+
+@media (min-width: 770px) {
+    #address_footer {
+        margin: 0;
+        color: $color-white;
+
+    }
+}

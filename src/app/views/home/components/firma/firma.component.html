@@ -1,31 +1,3 @@
-<!-- <section class="signature" role="region" aria-labelledby="signature-title">
-  <div class="signature-section-container">
-    <picture>
-      <source
-        srcset="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/signature_cartagena_bella_movil.webp?alt=media&token=8b348aba-9a07-497c-9fa7-54d886033ce8"
-        title="Firma LegalTech en Cartagena Bella" media="(max-width: 425px)">
-      <source
-        srcset="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/signature_cartagena_bella.webp?alt=media&token=aa5c2a47-542f-4c07-8137-a0522c5f73e0"
-        title="Firma LegalTech en Cartagena Bella">
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/signature_cartagena_bella.webp?alt=media&token=aa5c2a47-542f-4c07-8137-a0522c5f73e0"
-        class="signature-section-image" alt="Firma LegalTech en Cartagena Bella"
-        title="Firma LegalTech en Cartagena Bella" loading="lazy">
-    </picture>
-    <div class="signature-container-text">
-      <h2 id="signature-title" class="signature-section-title">FIRMA</h2>
-      <p class="signature-section-text">
-        En LegalTech, nos enorgullecemos de ofrecer a nuestros clientes una representación legal excepcional respaldada
-        por años de experiencia y dedicación inquebrantable. Nuestro equipo de abogados altamente calificados está
-        comprometido con la defensa de los derechos y los intereses de quienes confían en nosotros para resolver sus
-        asuntos legales más apremiantes.
-      </p>
-      <button class="signature-section-button" aria-label="Leer más sobre nuestra firma legal"> VER MÁS </button>
-    </div>
-
-  </div>
-</section> -->
-
 <Section class="signature">
 
   <section class="header-title">
@@ -38,6 +10,10 @@
       comprometido con la defensa de los derechos y los intereses de quienes confían en nosotros para resolver sus
       asuntos legales más apremiantes.
     </p>
-    <button class="signature-section-button" aria-label="Leer más sobre nuestra firma legal" ><a href="/about">ver más</a></button>
+    <a class="signature-section-button" [routerLink]="'/about'" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }" role="button" aria-label="Leer más sobre nuestra firma legal">
+      Ver más
+    </a>
+
   </section>
 </Section>

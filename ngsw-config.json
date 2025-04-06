@@ -3,11 +3,12 @@
   "index": "/index.html",
   "assetGroups": [
     {
-      "name": "legaltech",
+      "name": "app",
       "installMode": "prefetch",
       "resources": {
         "files": [
           "/favicon.ico",
+          "/index.csr.html",
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
@@ -21,24 +22,8 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**",
-          "/media/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
-        ],
-        "urls": [ "https://firebasestorage.googleapis.com/v0/b/legaltech-6d712.appspot.com/o/**"]
-      }
-    }
-  ],
-  "dataGroups": [
-    {
-      "name": "api",
-      "urls": [
-        "https://api.example.com/**"
-      ],
-      "cacheConfig": {
-        "maxSize": 50,
-        "maxAge": "1h",
-        "timeout": "10s",
-        "strategy": "freshness"
+          "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
       }
     }
   ]

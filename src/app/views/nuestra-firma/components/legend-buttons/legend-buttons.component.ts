@@ -10,7 +10,7 @@ import { Component, input } from '@angular/core';
       (click)="toggle()"
       [attr.aria-expanded]="show"
     >
-    <span>{{ title()[0] }} <span class="strong">{{ title()[1] }}</span></span>   <img [src]="show? 'assets/icons/arrow_down.svg':'assets/icons/arrow_up.svg'">
+    <span>{{ title()[0] }} <span class="strong">{{ title()[1] }}</span></span>   <img [src]="show? 'icons/arrow_down.svg':'icons/arrow_up.svg'">
     </button>
     @if (show) {
     <div class="box">

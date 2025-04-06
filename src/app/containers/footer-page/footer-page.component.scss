@@ -1,210 +1,213 @@
-@use "@assets/colors.scss" as *;
+ @use "assets/colors.scss" as *;
 
-#footer-content {
-  height: 296px;
-  background: $color-footer;
-  position: relative;
-  margin-top: 25%;
-  .footer-white {
-    background: $color-white;
-    position: absolute;
-    width: 91%;
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
-    height: 370px;
-    top: 111px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    .logo {
-      display: flex;
-      align-items: center;
-      margin: 30px 34px 40px;
-      justify-content: center;
+ #footer-content {
+   display: flex;
+   justify-content: center;
+   background-color: $color-footer;
+   height: 400px;
+   width: 100%;
+   position: relative;
+   margin-top: 80px;
 
-      .logo_img {
-        width: 64%;
-        min-width: 60px;
-        height: auto;
-      }
 
-      .divider-footer {
-        height: 65px;
-        border-left: 2px solid $color-footer;
-        margin: 0 34px 0 -13px;
-      }
+   .footer-white {
+     width: 90%;
+     height: 115%;
+     background-color: #ffffff;
+     position: absolute;
+     top: -60px;
+     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
+   }
 
-      .text-container {
-        .company-name {
-          font-size: 21px;
-          line-height: 0px;
-          font-weight: 800;
-          color: $color-footer;
-        }
 
-        .company-desc {
-          font-weight: 400;
-          font-size: 9px;
-          line-height: 7px;
-          margin: 0;
-          color: $color-footer;
-        }
-      }
-    }
+   .derechos-autor {
+     color: $color-footer;
+     margin: 20px;
+     text-align: center;
+   }
 
-    .links {
-      display: flex;
-      padding: 0px 32px;
-      word-wrap: break-word;
-      word-break: break-all;
-      .text-footer {
-        color: $color-footer;
-        text-decoration: none;
-        font-size: 15px;
-      }
-    }
+   .derechos-autor-pc {
+     position: absolute;
+     color: $color-white;
+     margin: 20px;
+     bottom: -19px;
+   }
 
-    .socialMedia {
-      margin-top: 38px;
-      margin-left: 45px;
+   .footer_purple {
+     display: none;
+   }
+ }
 
-      // .text {
-      //   font-weight: 600;
-      //   font-size: 20px;
-      //   line-height: 0px;
-      //   color: $color-footer;
-      // }
+ @media (min-width: 770px) {
+   #footer-content {
+     height: 200px;
 
-      // .list-social {
-      //   list-style-type: none;
-      //   display: flex;
-      //   align-items: center;
-      //   padding: 0;
-      //   margin: 0 10px; /* Increased spacing between icons */
+     .footer-white {
+       display: none;
+     }
 
-      //   a:focus,
-      //   a:hover {
-      //     opacity: 0.8;
-      //   }
-      // }
-    }
+     .footer_purple {
+       display: flex !important;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       gap: 20px;
 
-    .social-media {
-      padding: 0 32px;
+       .divider-footer {
+         width: 2px;
+         background-color: $color-white;
+         height: 84px;
+       }
 
-      &__text {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: $color-footer;
-      }
+     }
+   }
 
-      &__list {
-        display: flex;
 
-        align-items: center;
-        gap: 20px; /* Espacio entre los íconos */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+   //       width: 33%;
+   //       margin: 0;
 
-      &__link {
-        display: inline-block;
-        transition: transform 0.3s ease;
+   //       .divider-footer {
+   //         margin: 0 37px;
+   //         height: 100px;
+   //         border-left: 2px solid $color-white;
+   //       }
+ }
 
-        &:hover {
-          transform: scale(1.1); /* Efecto de zoom al pasar sobre el ícono */
-        }
-      }
+ // #footer-content {
+ //   background: $color-footer;
+ //   color: $color-white;
+ //   display: flex;
+ //   flex-direction: column;
+ //   align-items: center;
+ //   margin-top: 10%;
+ //   padding: 2rem 1.5rem;
 
-      img {
-        display: block;
-      }
-    }
+ //   .footer-white {
+ //     width: 100%;
+ //     display: flex;
+ //     flex-direction: column;
+ //     align-items: center;
 
-    .derechos-autor {
-      margin: 10%;
-      .custom-desk {
-        display: inline;
-      }
+ //     @media (min-width: 790px) {
+ //       flex-direction: row;
+ //       justify-content: space-between;
+ //       align-items: center;
+ //       background: none;
+ //       box-shadow: none;
 
-      .text-derechos {
-        color: $color-footer;
-        text-align: center;
-      }
-    }
-  }
-}
+ //     }
+ //   }
 
-@media (width > 790px) {
-  #footer-content {
-    color: $color-white;
-    margin-top: 10%;
-    .footer-white {
-      background: none;
-      position: static; /* static es el valor predeterminado que anula absolute */
-      width: 100%; /* Auto restablece el ancho a su valor predeterminado */
-      box-shadow: none;
-      transform: none;
-      display: flex;
-      height: 100%;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      padding: 0 30px;
+ //   .logo {
+ //     display: flex;
+ //     align-items: center;
+ //     justify-content: center;
+ //     margin-bottom: 2rem;
 
-      .logo {
-        width: 33%;
-        margin: 0;
-        .logo_img {
-          width: clamp(40px, 4vw, 88px);
-        }
-        .divider-footer {
-          border-left: 2px solid $color-white;
-          height: 100px;
-          margin: 0 37px;
-        }
-        .text-container {
-          .company-name {
-            color: $color-white;
-            font-size: clamp(0.5rem, 3.5vw, 46px);
-          }
-          .company-desc {
-            color: $color-white;
-            font-size: clamp(12px, 1vw, 16px);
-          }
-        }
-      }
-      .links {
-        width: 33%;
-        padding: 0;
-        margin-left: 66px;
-        .text-footer {
-          color: $color-white;
-        }
-      }
+ //     @media (min-width: 790px) {
+ //       width: 33%;
+ //       margin: 0;
 
-      .divider-footer-botones {
-        border-left: 2px solid $color-white;
-        height: 150px;
-        margin: 0 37px;
-      }
+ //       .divider-footer {
+ //         margin: 0 37px;
+ //         height: 100px;
+ //         border-left: 2px solid $color-white;
+ //       }
+ //     }
 
-      .social-media {
-        &__text {
-          color: $color-white;
-        }
-      }
-    }
+ //     .logo_img {
+ //       width: clamp(60px, 4vw, 88px);
+ //       height: auto;
+ //     }
 
-    .links::before {
-      content: "";
-      display: inline-block;
-      border-left: 2px solid $color-white; /* Grosor y color de la línea */
-      height: 150px; /* Altura de la línea */
-      margin-right: 43px;
-      vertical-align: middle;
-    }
-  }
-}
+ //     .text-container {
+ //       .company-name {
+ //         font-size: clamp(1rem, 3vw, 2rem);
+ //         font-weight: 800;
+ //         color: $color-white;
+ //       }
+
+ //       .company-desc {
+ //         font-size: clamp(10px, 1vw, 14px);
+ //         color: $color-white;
+ //       }
+ //     }
+ //   }
+
+ //   .links {
+ //     display: flex;
+ //     flex-direction: column;
+ //     gap: 0.5rem;
+ //     margin-bottom: 2rem;
+
+ //     @media (min-width: 790px) {
+ //       width: 33%;
+ //       margin: 0 2rem;
+ //       padding-left: 2rem;
+ //       position: relative;
+
+ //       &::before {
+ //         content: "";
+ //         position: absolute;
+ //         left: 0;
+ //         top: 0;
+ //         bottom: 0;
+ //         border-left: 2px solid $color-white;
+ //       }
+ //     }
+
+ //     .text-footer {
+ //       color: $color-white;
+ //       text-decoration: none;
+ //       font-size: 1rem;
+ //     }
+ //   }
+
+ //   .social-media {
+ //     display: flex;
+ //     flex-direction: column;
+ //     align-items: flex-start;
+
+ //     @media (min-width: 790px) {
+ //       width: 33%;
+ //     }
+
+ //     &__text {
+ //       font-size: 1.2rem;
+ //       font-weight: bold;
+ //       margin-bottom: 10px;
+ //       color: $color-white;
+ //     }
+
+ //     &__list {
+ //       display: flex;
+ //       gap: 20px;
+ //       padding: 0;
+ //       margin: 0;
+ //       list-style: none;
+ //     }
+
+ //     &__link {
+ //       display: inline-block;
+ //       transition: transform 0.3s ease;
+
+ //       &:hover {
+ //         transform: scale(1.1);
+ //       }
+
+ //       img {
+ //         display: block;
+ //       }
+ //     }
+ //   }
+
+ //   .derechos-autor {
+ //     text-align: center;
+ //     margin-top: 2rem;
+
+ //     .text-derechos {
+ //       font-size: 0.8rem;
+ //       color: $color-white;
+ //     }
+ //   }
+ // }

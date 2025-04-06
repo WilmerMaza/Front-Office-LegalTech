@@ -1,4 +1,4 @@
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
 
 .section-team {
   .header-team {
@@ -43,6 +43,7 @@
     font-size: 15px;
     line-height: 18px;
     .team-section-text {
+      text-align: justify;
       font-weight: 400;
       margin-bottom: 50px;
     }
