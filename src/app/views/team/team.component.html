@@ -9,12 +9,9 @@
   }
 
   @for (member of team; track $index) {
-  @if(!this.param){
-  <app-person [teamObject]="member"></app-person>
-  }@else if(member.link === this.param ) {
+  @if(!this.param || member.link === this.param ){
   <app-person [teamObject]="member"></app-person>
   }
-
   }
 
   <!-- <button class="signature-button" (click)="toggleSignature()">

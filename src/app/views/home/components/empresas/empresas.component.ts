@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CAROUSELEMPRESASIMG } from '../../../../constant/carousel-empresas-img';
 import { CarouselComponent } from '../../../../shared/carousel/carousel.component';
 import { ImgInterface } from '../../interface/ImgInterface';
 
 @Component({
   selector: 'app-empresas',
-  imports: [CommonModule, CarouselComponent],
+  imports: [CommonModule, CarouselComponent, TranslateModule],
   standalone: true,
   template: `
     <section class="company-section">
   <h2 class="company-title">
-    Empresas que <span class="company-title-bold">confiaron en nosotros</span>
+  {{'ENTERPRISES.TITLE_PART_ONE' | translate}} <span class="company-title-bold"> {{'ENTERPRISES.TITLE_PART_TWO' | translate}}</span>
   </h2>
   <hr class="section-divider">
 

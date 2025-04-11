@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule } from '@ngx-translate/core';
 import { AddressComponent } from './components/address/address.component';
 import { LogoNameComponent } from './components/logo-name/logo-name.component';
 import { SocialMediaComponent } from "./components/social-media/social-media.component";
@@ -8,7 +9,7 @@ import { SocialMediaComponent } from "./components/social-media/social-media.com
 @Component({
   selector: 'app-footer-page',
   standalone: true,
-  imports: [MatIconModule, LogoNameComponent, AddressComponent, SocialMediaComponent, CommonModule],
+  imports: [MatIconModule, LogoNameComponent, TranslateModule, AddressComponent, SocialMediaComponent, CommonModule],
   template: `<footer id="footer-content" class="footer-content" role="contentinfo">
 
   <section [ngClass]="isMobile ? 'footer-white':'footer_purple' ">
@@ -25,7 +26,7 @@ import { SocialMediaComponent } from "./components/social-media/social-media.com
 
     <!-- Derechos de autor -->
     <section [ngClass]="isMobile ? 'derechos-autor':'derechos-autor-pc' ">
-      <p class="text-derechos">© 2024 LegalTech | Todos los derechos reservados.</p>
+      <p class="text-derechos">© 2024 LegalTech |{{ "FOOTER.RIGHTS" | translate}}.</p>
     </section>
   </section>
 
