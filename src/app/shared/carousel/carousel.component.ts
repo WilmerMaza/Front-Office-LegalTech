@@ -7,15 +7,16 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { TranslateModule } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
 import { ImgInterface } from '../../views/home/interface/ImgInterface';
+import { HtmlTranslateService } from '../services/html-translate.service';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   styleUrl: './carousel.component.scss',
   template: `
    <swiper-container
@@ -38,8 +39,8 @@ import { ImgInterface } from '../../views/home/interface/ImgInterface';
 
       <img
         [src]="img.src"
-        [alt]="img.alt"
-        [title]="img.title"
+        [alt]="img.alt | translate"
+        [title]="img.title! | translate"
         loading="lazy"
         decoding="async"
         style="object-fit: cover;"
@@ -51,7 +52,7 @@ import { ImgInterface } from '../../views/home/interface/ImgInterface';
     </picture>
 
     <div *ngIf="textPresent" class="content-text-swiper">
-      <p [innerHTML]="img.text" class="text-swiper"></p>
+      <p [innerHTML]="safeContent(img.text)" class="text-swiper"></p>
       <hr class="divider-carousel">
     </div>
 
@@ -80,9 +81,9 @@ export class CarouselComponent implements AfterViewInit {
 
   @ViewChild('swiperRef', { static: false }) swiperRef!: ElementRef;
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(public htmlTranslate: HtmlTranslateService) { }
 
-  ngAfterViewInit(): void {
+  public ngAfterViewInit(): void {
     const swiperEl = this.swiperRef.nativeElement;
 
     const config: SwiperOptions = {
@@ -99,5 +100,9 @@ export class CarouselComponent implements AfterViewInit {
 
     Object.assign(swiperEl, config);
     swiperEl.initialize?.();
+  }
+
+  safeContent(key?: string) {
+    return this.htmlTranslate.getSanitizedHtml(key);
   }
 }

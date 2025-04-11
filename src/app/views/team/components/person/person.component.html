@@ -10,7 +10,7 @@
 
     @if (showInfo) {
     <div class="info-box">
-      <div [innerHTML]="getSanitizerHtml(teamObject()?.contacto )"></div>
+      <div [innerHTML]="safeContent(teamObject()?.contacto )"></div>
     </div>
     }
   </div>
@@ -23,7 +23,7 @@
 
   @if (showEducation) {
   <div class="education-box">
-    <div [innerHTML]=" getSanitizerHtml(teamObject()?.educacion)"></div>
+    <div [innerHTML]=" safeContent(teamObject()?.educacion)"></div>
   </div>
   }
 
@@ -33,11 +33,11 @@
   <!-- Contenedores de biografía y experiencia -->
   <div class="experience-biography-container">
     <div class="biography-info">
-      <div [innerHTML]="getSanitizerHtml(teamObject()?.formacion)"></div>
+      <div [innerHTML]="safeContent(teamObject()?.formacion)"></div>
     </div>
     @if (teamObject()?.experiencia) {
     <div class="experience-box">
-      <div class="team-content" [innerHTML]="getSanitizerHtml(teamObject()?.experiencia)"></div>
+      <div class="team-content" [innerHTML]="safeContent(teamObject()?.experiencia)"></div>
     </div>
     }
   </div>
@@ -47,7 +47,7 @@
   <section class="container-team">
     <div class="container-title">
       <p class="title">{{ teamObject()?.name }}</p>
-      <p class="subtitle">{{ teamObject()?.position }}</p>
+      <p class="subtitle">{{ teamObject()?.position ?? '' | translate }}</p>
     </div>
 
     <div class="container-info">
@@ -66,7 +66,7 @@
 
           @if (showInfo) {
           <div class="info-box">
-            <div [innerHTML]="getSanitizerHtml(teamObject()?.contacto )"></div>
+            <div [innerHTML]="safeContent(teamObject()?.contacto )"></div>
           </div>
           }
 
@@ -78,15 +78,15 @@
 
           @if (showEducation) {
           <div class="education-box">
-            <div [innerHTML]="getSanitizerHtml(teamObject()?.educacion)"></div>
+            <div [innerHTML]="safeContent(teamObject()?.educacion)"></div>
           </div>
           }
         </div>
       </div>
 
       <div class="container-text">
-        <div [innerHTML]=" getSanitizerHtml(teamObject()?.formacion)"></div>
-        <div class="team-content" [innerHTML]=" getSanitizerHtml(teamObject()?.experiencia)"></div>
+        <div [innerHTML]=" safeContent(teamObject()?.formacion)"></div>
+        <div class="team-content" [innerHTML]=" safeContent(teamObject()?.experiencia)"></div>
       </div>
     </div>
 

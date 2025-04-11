@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-social-media',
-  imports: [],
+  imports: [TranslateModule],
   template: `  <section class="social-media" aria-label="Redes sociales de LegalTech" id="social_media_footer">
-  <p class="social-media__text">SÍGUENOS</p>
+  <p class="social-media__text">{{ "FOOTER.SOCIAL" | translate}}</p>
   <ul class="social-media__list">
     <li>
       <a title="Instagram" href="https://www.instagram.com/legaltechabogadosdigitales" target="_blank"

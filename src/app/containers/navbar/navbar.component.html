@@ -6,7 +6,7 @@
     </div>
     <div class="text-container">
       <h2 class="company-name">LEGALTECH</h2>
-      <p class="company-desc">ABOGADOS DIGITALES</p>
+      <p class="company-desc">{{ "NAV.NAME" | translate }}</p>
     </div>
   </div>
 
@@ -15,11 +15,13 @@
     <li class="menu-item">
       <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
         class="link d-flex align-items-center justify-content-center">
-        {{ item.label }}
+        {{ item.label | translate }}
       </a>
     </li>
     }
   </ul>
+
+  <app-language-switcher></app-language-switcher>
 
   <!-- Input checkbox para activar/desactivar el menú -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Abrir menú" #menuToggle />
@@ -39,9 +41,10 @@
   <div class="button-lineal-container">
     @for (item of navbar; track $index) {
     <div class="menu-lineal">
-      <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+      <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()">
         <img src="{{ item.icon }}" alt="Icono de {{ item.label }}" class="menu-icon" />
-        {{ item.label }}
+        {{ item.label | translate }}
       </a>
     </div>
     }
