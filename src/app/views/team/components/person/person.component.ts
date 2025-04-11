@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { TranslateModule } from '@ngx-translate/core';
+import { HtmlTranslateService } from 'src/app/shared/services/html-translate.service';
 import { TeamArray } from '../../../home/interface/ImgInterface';
 import { ImgTeamComponent } from '../img-team/img-team.component';
 
 
 @Component({
   selector: 'app-person',
+  standalone: true,
   imports: [
     CommonModule,
     ImgTeamComponent,
     FormsModule,
+    TranslateModule
   ],
   templateUrl: './person.component.html',
   styleUrl: './person.component.scss'
@@ -27,7 +29,7 @@ export class PersonComponent {
 
   public teamObject = input<TeamArray>();
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(public htmlTranslate: HtmlTranslateService) { }
 
 
   public toggleInfo(): void {
@@ -44,8 +46,9 @@ export class PersonComponent {
     this.showSignature = !this.showSignature;
   }
 
-  public getSanitizerHtml(html?: string): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(html ?? '');
+  // Puedes acceder directamente desde la plantilla o desde el TS
+  safeContent(key?: string) {
+    return this.htmlTranslate.getSanitizedHtml(key);
   }
 
 }

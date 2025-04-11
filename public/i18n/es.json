@@ -1,0 +1,66 @@
+{
+    "NAV": {
+        "HOME": "Inicio",
+        "SERVICES": "Servicios",
+        "FIRM": "Nuestra firma",
+        "CONTACT": "Contactos",
+        "NAME": "ABOGADOS DIGITALES"
+    },
+    "FOOTER": {
+        "RIGHTS": "Todos los derechos reservados",
+        "NAME": "ABOGADOS DIGITALES",
+        "SOCIAL": "SÍGUENOS"
+    },
+    "OUR_FIRM": {
+        "TITLE": "Nuestra Firma",
+        "INITIAL_TEXT": "En LegalTech, nos enorgullecemos de ofrecer a nuestros clientes una representación legal excepcional respaldada por años de experiencia y dedicación inquebrantable. Nuestro equipo de abogados altamente calificados está comprometido con la defensa de los derechos y los intereses de quienes confían en nosotros para resolver sus asuntos legales más apremiantes.",
+        "SEE_MORE": "Ver más"
+    },
+    "COROUSEL_INIT": {
+        "IMG_ONE": {
+            "TITLE": "Estrategia y planificación legal",
+            "ALT": "Tablero de ajedrez aplicando estrategias legales",
+            "TEXT": "<span class='bold'>El futuro</span> del derecho está aquí: De <span class='bold'>principio</span> a fin, nuestro <span class='bold'>compromiso</span> es una asesoría legal <span class='bold'>amparada</span> en los <span class='bold'>avances tecnológicos</span>."
+        },
+        "IMG_TWO": {
+            "TITLE": "Estrategia y planificación legal",
+            "ALT": "Tablero de ajedrez con piezas de cristal",
+            "TEXT": "¿Listo para un <span class='bold'>cambio</span> en la experiencia legal? Ofrecemos más que <span class='bold'>servicios</span>: ofrecemos cumplimiento, <span class='bold'>honestidad</span> y un enfoque <span class='bold'>innovador</span> que redefine la <span class='bold'>práctica legal</span>."
+        },
+        "IMG_THREE": {
+            "TITLE": "Estrategia y planificación legal",
+            "ALT": "En equipo se toman las mejores estrategias legales",
+            "TEXT": "En nuestra firma, la <span class='bold'>efectividad</span> y la transparencia son más que <span class='bold'>palabras</span>: son nuestra promesa. Cumplimos <span class='bold'>plazos</span>, entregamos <span class='bold'>resultados</span> y llevamos la asesoría legal al <span class='bold'>siguiente nivel</span>."
+        }
+    },
+    "ENTERPRISES": {
+        "TITLE_PART_ONE": "Empresas que",
+        "TITLE_PART_TWO": "confiaron en nosotros"
+    },
+    "TEAM": {
+        "CATHERINE": {
+            "EDUCATION": "<p>Es abogada, graduada en 1998 de la Universidad del Norte en Barranquilla. Posteriormente, profundizó sus estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002. En 2017, completo un programa de American Legal English en EF Chicago. En 2020 y 2022 cursó Introducción al inglés americano en la Universidad de Pennsylvania y Liderazgo en la Universidad de Michigan respectivamente.</p>",
+            "FORMACION": "Abogada egresada de la Universidad del Norte y la Universidad Externado de Colombia con más de 21 años de experiencia en asesoría legal y litigios. A lo largo de mi carrera, he proporcionado asesoramiento estratégico a empresas reconocidas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, y Hotel Bahía S.A.S. Mi trayectoria incluye la gestión de procesos Civiles, laborales y administrativos como abogada corresponsal para firmas prestigiosas, incluyendo Chapman & Asociados, Vélez Gutiérrez y Baker & McKenzie S.A.S.",
+            "POSITION": "Gerente"
+        },
+        "MIRNA": {
+            "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p>",
+            "FORMACION": "Abogada Bilingüe, con experiencia en asesoramiento a empresas privadas en el área laboral y contractual. Experiencia en la rama judicial, específicamente en el área del Derecho Contencioso Administrativo. Actualmente, prestando mis servicios jurídicos en la firma de abogados Legal Tech Abogados Digitales derecho inmobiliario, propiedad horizontal y ejecutivos.",
+            "POSITION": "Abogada Junior",
+            "EXPERIENCE": "<h3><strong>Experiencia Profesional</strong></h3><p>• Tribunal Administrativo de Bolívar, como auxiliar judicial ad honorem  | Enero 2023</p><p>• Abogada junior -  Legaltech Abogados Digitales | octubre 2023- Presente. </p>"
+        },
+        "ISABEL": {
+            "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p>",
+            "FORMACION": "Abogada bilingüe con experiencia en propiedad horizontal, encargada del área de cartera. Experta en la gestión de cobro de cuotas de administración y recuperación de cartera morosa, brindando soluciones legales. Mi enfoque está en garantizar la estabilidad financiera de las propiedades a través de estrategias efectivas de cobro y negociación, asegurando el cumplimiento normativo y la buena convivencia entre los copropietarios.",
+            "POSITION": "Abogada Junior",
+            "EXPERIENCE": "<h3><strong>Experiencia Profesional</strong></h3><p>• Abogada junior -  Legaltech Abogados Digitales. </p>",
+            "DESCRIPTION": "Abogada bilingüe, con experiencia en asesoramiento a empresas privadas en el área laboral y contractual. Especializada en la rama judicial, específicamente en el área del Derecho Contencioso Administrativo."
+        },
+        "SEE_MORE": "Ver más",
+        "ASSOCIATED": "Asociados",
+        "HELP_MESSAGE": "¡Estamos aquí para ayudarte!",
+        "TEAM_INTRO": "Nos enorgullece contar con un equipo diverso y dinámico que trabaja con pasión para transformar ideas en realidades. En Legaltech, cada miembro del equipo juega un papel crucial en nuestro éxito, y estamos emocionados de compartir esta experiencia con nuestros clientes.",
+        "TITLE_PART_ONE": "CONOCE",
+        "TITLE_PART_TWO": "NUESTRO EQUIPO"
+    }
+}

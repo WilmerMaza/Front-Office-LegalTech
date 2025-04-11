@@ -63,3 +63,10 @@
     }
 
 }
+
+
+@media (min-width:990px) {
+    .divider-footer {
+        margin: 0 clamp(10px, 4vw, 80px) !important;
+    }
+}

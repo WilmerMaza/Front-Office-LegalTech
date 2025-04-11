@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-logo-name',
-  imports: [],
+  imports: [TranslateModule],
   standalone: true,
   template: ` <section class="logo" aria-label="Logo LegalTech" #logo_footer id="logo_footer">
   <picture>
@@ -16,7 +17,7 @@ import { Component } from '@angular/core';
 
   <div class="text-container">
     <h2 class="company-name">LEGALTECH</h2>
-    <p class="company-desc">ABOGADOS DIGITALES</p>
+    <p class="company-desc">{{ "FOOTER.NAME" | translate }}</p>
   </div>
 </section>`,
   styleUrl: './logo-name.component.scss'

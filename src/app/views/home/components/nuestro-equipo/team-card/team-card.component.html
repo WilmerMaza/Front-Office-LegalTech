@@ -9,11 +9,12 @@
   <section class="profile-content-team">
     <div class="text">
       <h4 class="team-name">{{ member().name }}</h4>
-      <h4 class="team-position">{{ member().position }}</h4>
+      <h4 class="team-position">{{ member().position! | translate }}</h4>
+
     </div>
 
     <button class="btn-more-team" (click)="memberInfo(member().link); $event.stopPropagation()">
-      ver más <span class="flex_icon">&#8594;</span>
+      {{'TEAM.SEE_MORE' | translate}} <span class="flex_icon">&#8594;</span>
     </button>
 
   </section>
