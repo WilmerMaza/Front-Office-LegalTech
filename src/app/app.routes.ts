@@ -39,7 +39,7 @@ export const routes: Routes = [
     },
     {
         path: 'cartera',
-        loadComponent: () => import('./views/home/components/servicios/cartera/cartera.component').then(c => c.CarteraComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Recuperación de Cartera | LegalTech',
             description: 'Maximiza la eficiencia en el cobro de cartera con nuestra asesoría legal especializada.',
@@ -48,7 +48,7 @@ export const routes: Routes = [
     },
     {
         path: 'inmobiliaria',
-        loadComponent: () => import('./views/home/components/servicios/inmobiliaria/inmobiliaria.component').then(c => c.InmobiliariaComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Asesoría Inmobiliaria Legal | LegalTech',
             description: 'Protege tus inversiones inmobiliarias con respaldo legal especializado.',
@@ -57,7 +57,7 @@ export const routes: Routes = [
     },
     {
         path: 'laboral',
-        loadComponent: () => import('./views/home/components/servicios/laboral/labora.component').then(c => c.LaboraComercialComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Derecho Laboral | LegalTech',
             description: 'Defensa y asesoría en conflictos laborales, contratos y relaciones de trabajo.',
@@ -66,7 +66,7 @@ export const routes: Routes = [
     },
     {
         path: 'responsabilidad',
-        loadComponent: () => import('./views/home/components/servicios/respondabilidad/responsabilidad_civil.component').then(c => c.ResponsabilidadCivilComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Responsabilidad Civil | LegalTech',
             description: 'Te asesoramos y defendemos en casos de responsabilidad civil contractual y extracontractual.',
@@ -75,7 +75,7 @@ export const routes: Routes = [
     },
     {
         path: 'propiedad-horizontal',
-        loadComponent: () => import('./views/home/components/servicios/propiedad-horizontal/propiedad-horizontal.component').then(c => c.PropiedadHorizontalComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Propiedad Horizontal | LegalTech',
             description: 'Gestión y solución de conflictos legales en conjuntos residenciales y edificios.',
@@ -84,7 +84,7 @@ export const routes: Routes = [
     },
     {
         path: 'derecho-comercial',
-        loadComponent: () => import('./views/home/components/servicios/derecho-comercial/derecho-comercial.component').then(c => c.DerechoComercialComponent),
+        loadComponent: () => import('./views/service/service.component').then(c => c.ServiceComponent),
         data: {
             title: 'Derecho Comercial | LegalTech',
             description: 'Asesoría legal en sociedades, contratos mercantiles y obligaciones comerciales.',

@@ -8,19 +8,25 @@ import { RouterModule } from '@angular/router';
   imports: [CommonModule, RouterModule],
   template: `
     <div class="button-container">
-      <article class="service-item" *ngFor="let service of services" [class.hidden]="currentService === service.route">
-        <button class="button-item" [routerLink]="[service.route]" [attr.data-value]="service.dataValue" [attr.aria-label]="service.ariaLabel">
+      <article class="service-item" *ngFor="let service of services" [class.hidden]="isCurrentService(service.route)">
+        <button class="button-item button-effect" [routerLink]="[service.route]" [attr.data-value]="service.dataValue" [attr.aria-label]="service.ariaLabel">
           <h3 class="service-title">{{service.name}}</h3>
-          <img class="service-image" src="icons/Mayor.svg" [alt]="'Icono de ' + service.name" loading="lazy">
+          <div class="icon-container" [innerHTML]="service.icon"></div>
         </button>
-        <div class="icon-container" [innerHTML]="service.icon"></div>
       </article>
     </div>
   `,
-  styleUrls: ['../servicios.component.scss']
+  styleUrls: ['./service-navigation.component.scss']
 })
 export class ServiceNavigationComponent {
   @Input() currentService: string = '';
+
+
+  isCurrentService(serviceRoute: string): boolean {
+
+    const currentPath = this.currentService.startsWith('/') ? this.currentService : '/' + this.currentService;
+    return currentPath === serviceRoute;
+  }
 
   services = [
     {
@@ -28,28 +34,28 @@ export class ServiceNavigationComponent {
       route: '/cartera',
       dataValue: 'Portfolio',
       ariaLabel: 'Portfolio',
-      icon: '<!-- SVG for Cartera -->'
+      icon: '<img class="icon" width="34" height="28" src="/icons/cartera.webp" alt="cartera" loading="lazy">'
     },
     {
       name: 'Responsabilidad Civil',
       route: '/responsabilidad',
       dataValue: 'Liability',
       ariaLabel: 'Civil Liability',
-      icon: '<!-- SVG for Responsabilidad -->'
+      icon: '<img class="icon" width="34" height="28" src="icons/igroup.webp" alt="Responsabilidad Civil" loading="lazy">'
     },
     {
       name: 'Inmobiliario',
       route: '/inmobiliaria',
       dataValue: 'RealEstate',
       ariaLabel: 'Real Estate',
-      icon: '<!-- SVG for Inmobiliario -->'
+      icon: '<img class="icon" width="34" height="28" src="/icons/home.webp" alt="inmobiliario" loading="lazy">'
     },
     {
       name: 'Laboral',
       route: '/laboral',
       dataValue: 'SmallBusiness',
       ariaLabel: 'Labor and Commercial',
-      icon: '<!-- SVG for Laboral -->'
+      icon: '<img class="icon" width="34" height="28" src="/icons/bolso.webp" alt="laboral" loading="lazy">'
     },
     {
       name: 'Propiedad Horizontal',
