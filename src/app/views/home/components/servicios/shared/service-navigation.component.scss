@@ -64,8 +64,9 @@
 }
 
 .icon-container {
-  width: 99.76px;
-  height: 65.86px;
+  padding-left: 8px;
+  width: 80px;
+  height: 67px;
   background: $color-navPosition;
   border-radius: 16.1569px;
   position: absolute;
@@ -75,10 +76,11 @@
   z-index: -1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .icon {
+
   width: 40px;
   height: 40px;
   margin: 0;
@@ -86,6 +88,10 @@
   transition: transform 0.2s ease;
 
   &:hover {
-    transform: translateX(-5px) scale(1.1);
+    transform: translateX(-90px) scale(1.1);
   }
+
+
 }
+
+

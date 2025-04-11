@@ -21,9 +21,7 @@ import { RouterModule } from '@angular/router';
 export class ServiceNavigationComponent {
   @Input() currentService: string = '';
 
-
   isCurrentService(serviceRoute: string): boolean {
-
     const currentPath = this.currentService.startsWith('/') ? this.currentService : '/' + this.currentService;
     return currentPath === serviceRoute;
   }
@@ -62,14 +60,15 @@ export class ServiceNavigationComponent {
       route: '/propiedad-horizontal',
       dataValue: 'PropertyManagement',
       ariaLabel: 'Property Management',
-      icon: '<svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 26H32M6 26V8L17 2L28 8V26" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12H22M12 17H22M12 22H22" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>'
+      icon: '<img class="icon" width="41" height="50" src="/icons/icon-edificio.svg" alt="propiedad horizontal" loading="lazy">'
     },
     {
       name: 'Derecho Comercial',
       route: '/derecho-comercial',
       dataValue: 'Commercial',
       ariaLabel: 'Commercial Law',
-      icon: '<svg class="icon" width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14H30M4 7H30M4 21H30" stroke="white" stroke-width="3" stroke-linecap="round"/><path d="M10 3V25M24 3V25" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>'
+      icon: '<img class="icon" width="38" height="50" src="/icons/icon-peso-blanco.svg" alt="derecho comercial" loading="lazy">'
     }
+
   ];
 }
