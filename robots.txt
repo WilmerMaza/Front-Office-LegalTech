@@ -1,0 +1,29 @@
+# Archivo robots.txt para tu sitio web
+
+# Permitir el acceso a todos los rastreadores
+User-agent: *
+
+# Bloquear acceso a directorios privados o sensibles
+Disallow: /admin/
+Disallow: /login/
+Disallow: /checkout/
+Disallow: /private/
+Disallow: /cart/
+
+# Permitir el acceso a archivos específicos si es necesario
+Allow: /public/
+
+# Permitir el acceso a recursos necesarios para el renderizado
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Configurar el archivo sitemap para que los motores de búsqueda puedan encontrarlo fácilmente
+Sitemap: https://abogadosdigitales.com.co/sitemap.xml
+
+# Opcional: Evitar que ciertos rastreadores accedan al contenido
+# User-agent: BadBot
+# Disallow: /
+
+# Finalizar con una línea en blanco

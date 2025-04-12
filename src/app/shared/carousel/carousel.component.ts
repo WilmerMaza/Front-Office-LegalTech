@@ -1,57 +1,70 @@
 import { CommonModule } from '@angular/common';
 import {
+  AfterViewInit,
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
+  ElementRef,
   Input,
-  OnInit,
-  signal,
+  ViewChild,
 } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ImgInterface } from 'src/app/views/home/components/interface/ImgInterface';
-import { SwiperContainer, register } from 'swiper/element/bundle';
+import { TranslateModule } from '@ngx-translate/core';
 import { SwiperOptions } from 'swiper/types';
-
-register();
+import { ImgInterface } from '../../views/home/interface/ImgInterface';
+import { HtmlTranslateService } from '../services/html-translate.service';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule],
-  template: `<swiper-container init="false" class="swipper-custom">
-    @for (img of imagesCarousel; track img.src) {
-    <swiper-slide lazy="true">
-      @if (textPresent) {
-      <div class="content-text-swiper">
-        <p [innerHTML]="img.text" class="text-swiper"></p>
-        <hr class="divider-carousel">
-      </div>
-
-     
-
-      }
-      <picture class="content-pictures" style="height:{{heightCorousel}} ;" >
-        <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
-        <source srcset="{{img.src}}" media="(min-width: 600px)" />
-        <img
-          [src]="img.src"
-          [alt]="img.alt"
-          loading="lazy"
-          role="presentation"
-          [title]="img.title"
-          height="100vh"
-          width="100%"
-          class="images"
-        />
-      </picture>
-    </swiper-slide>
-    }
-  </swiper-container>`,
+  imports: [CommonModule, TranslateModule],
   styleUrl: './carousel.component.scss',
+  template: `
+   <swiper-container
+  #swiperRef
+  init="false"
+  class="swipper-custom"  [ngClass]="{ 'swipper-big': isBig }">
+
+  <swiper-slide
+    *ngFor="let img of imagesCarousel"
+    [ngClass]="{ 'company-swiper-slide': isEmpresas}">
+
+    <picture
+      [ngClass]="{
+        'content-pictures': isBig,
+        'company-picture': isEmpresas
+      }">
+
+      <source [srcset]="img.srcMovil" media="(max-width: 425px)" type="image/webp" />
+      <source [srcset]="img.src" media="(min-width: 600px)" type="image/webp" />
+
+      <img
+        [src]="img.src"
+        [alt]="img.alt | translate"
+        [title]="img.title! | translate"
+        loading="lazy"
+        decoding="async"
+        style="object-fit: cover;"
+        [ngClass]="{
+          'images': isPrincipal,
+          'company-img': isEmpresas
+        }"
+      />
+    </picture>
+
+    <div *ngIf="textPresent" class="content-text-swiper">
+      <p [innerHTML]="safeContent(img.text)" class="text-swiper"></p>
+      <hr class="divider-carousel">
+    </div>
+
+  </swiper-slide>
+</swiper-container>
+
+  `
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent implements AfterViewInit {
   @Input() imagesCarousel: Array<ImgInterface> = [];
   @Input() textPresent: boolean = false;
+  @Input() isBig: boolean = false;
   @Input() navigation: boolean = false;
   @Input() pagination: boolean = false;
   @Input() paginationClick: boolean = false;
@@ -61,34 +74,35 @@ export class CarouselComponent implements OnInit {
   @Input() freeMode: boolean = false;
   @Input() spacebetween: number = 0;
   @Input() heightCorousel: string = '';
-  
-  private swiperElement = signal<SwiperContainer | null>(null);
-  
-  constructor(private sanitizer: DomSanitizer) {}
-  ngOnInit(): void {
-    this.swiperInit();
+  @Input() centeredSlides: boolean = false;
+  @Input() isEmpresas: boolean = false;
+  @Input() isPrincipal: boolean = false;
+
+
+  @ViewChild('swiperRef', { static: false }) swiperRef!: ElementRef;
+
+  constructor(public htmlTranslate: HtmlTranslateService) { }
+
+  public ngAfterViewInit(): void {
+    const swiperEl = this.swiperRef.nativeElement;
+
+    const config: SwiperOptions = {
+      slidesPerView: this.slidesPerView,
+      pagination: this.pagination ? { clickable: this.paginationClick } : undefined,
+      navigation: this.navigation,
+      autoplay: { delay: this.autoplayTime },
+      loop: this.loop,
+      freeMode: this.freeMode,
+      spaceBetween: this.spacebetween,
+      centeredSlides: this.centeredSlides,
+      updateOnWindowResize: true,
+    };
+
+    Object.assign(swiperEl, config);
+    swiperEl.initialize?.();
   }
-  swiperInit(): void {
-    if (typeof document !== 'undefined') {
-      const swiperElemConstructor = document.querySelector(' swiper-container');
-      const swiperOptions: SwiperOptions = {
-        slidesPerView: this.slidesPerView,
-        pagination: {
-          enabled: this.pagination,
-          clickable: this.paginationClick,
-        },
-        navigation: { enabled: this.navigation },
-        autoplay: { delay: this.autoplayTime },
-        loop: this.loop,
-        freeMode: this.freeMode,
-        spaceBetween: this.spacebetween,
-      };
-      Object.assign(swiperElemConstructor!, swiperOptions);
-      this.swiperElement.set(swiperElemConstructor as SwiperContainer);
-       this.swiperElement()?.initialize();
-    }
-  }
-  sanitize(html: string | undefined): SafeHtml {
-    return html ? this.sanitizer.bypassSecurityTrustHtml(html) : false;
+
+  safeContent(key?: string) {
+    return this.htmlTranslate.getSanitizedHtml(key);
   }
 }

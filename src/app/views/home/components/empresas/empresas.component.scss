@@ -1,4 +1,4 @@
-@use "@assets/colors.scss" as *;
+@use "assets/colors.scss" as *;
 
 .company-section {
   font-family: "Inter", sans-serif;
@@ -10,7 +10,7 @@
   .company-title {
     font-weight: 400;
     text-align: center;
-    font-size: clamp(15px, 2vw, 43px);
+    font-size: clamp(20px, 2vw, 43px);
     color: $color-footer;
     .company-title-bold {
       font-weight: 800;
@@ -24,6 +24,7 @@
     margin-bottom: 2%;
     width: clamp(226px, 33%, 766px);
     height: 1px;
+    opacity: 1;
   }
 
   .company-swiper {
@@ -46,7 +47,7 @@
         .company-img {
           margin: auto;
           max-width: 100%;
-          height: auto;
+          height: 100%;
           aspect-ratio: 1/1;
           object-fit: contain;
           mix-blend-mode: color-burn;
@@ -56,25 +57,8 @@
   }
 }
 
-/* Media Queries */
-
-/* Dispositivos medianos a grandes */
 @media (min-width: 768px) {
   .company-swiper {
     margin: 0 10%;
   }
 }
-
-// /* Dispositivos grandes */
-// @media (min-width: 992px) {
-//   .company-swiper {
-//     height: 25vh;
-//   }
-// }
-
-// /* Dispositivos extra grandes */
-// @media (min-width: 1200px) {
-//   .company-swiper {
-//     height: 30vh;
-//   }
-//}

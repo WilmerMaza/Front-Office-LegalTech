@@ -1,148 +1,266 @@
-@use "@assets/colors.scss" as *;
-
-
-// .lix {
-//   width: calc(min(100px, 100%) + 2%);
-// }
-// .lixl {
-//   width: calc(min(100px, 100%) + 4%);
-// }
+@use "assets/colors.scss" as *;
 
 .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  height: 77px;
+  background: $color-footer;
+
   .logo-container {
-    .logo {
-      position: absolute;
-      width: 40.1px;
-      height: 31.75px;
-      left: 29px;
-      top: 44.16px;
-    }
-    .text-container {
-      color: $color-white;
-      font-family: "Inter";
-      font-style: normal;
-      .company-name {
-        position: absolute;
-        left: 61.34px;
-        top: 42px;
-        font-weight: 800;
-        font-size: 17.2477px;
-        line-height: 21px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+
+    .content-img {
+      margin-top: 12px;
+
+      .logo {
+        position: static;
+        height: auto;
+        width: 35px;
       }
+    }
+
+    .text-container {
+      margin-top: 28px;
+      color: $color-white;
+      font-family: "Josefin Sans", sans-serif;
+
+      .company-name {
+        margin: 0;
+        font-weight: 700;
+        font-size: 18.7945px;
+        line-height: 4px;
+      }
+
       .company-desc {
-        position: absolute;
-        left: 61.34px;
-        top: 60.11px;
-        font-weight: 400;
-        font-size: 6.89908px;
-        line-height: 8px;
+        font-size: 9.52px;
       }
     }
   }
+
   .menu {
     display: none;
   }
+
+  .menu-toggle-checkbox {
+    display: none;
+  }
+
   .menu-button {
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px;
     position: absolute;
-    right: 40px;
-    top: 46px;
+    top: 15px;
+    right: 10px;
+    z-index: 1002;
   }
-}
 
-/* Tabletas */
-@media (min-width: 768px) {
-  .company-name {
-    font-size: 20px !important;
-  }
-  .company-desc {
-    font-size: 8px !important;
-  }
-}
+  .button-lineal-container {
+    display: none;
+    position: fixed;
+    top: 10px;
+    width: 52%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    z-index: 1001;
+    right: 5px;
 
-/* Dispositivos de escritorio pequeños */
-@media (width >= 992px) {
-  .navbar {
-    box-sizing: border-box;
-    position: absolute;
-    height: calc(5vw + 1px);
-    background: $color-nav-gradient;
-    border-bottom: 0.5px solid rgba(209, 219, 219, 0.2);
-    padding: 0;
+    .menu-lineal {
+      margin: 54px 34px;
 
-    .logo-container {
-      display: flex;
-      align-items: center;
-      position: relative;
-      .logo {
-        margin-left: 104px;
-        position: static;
-        width: auto;
-        height: auto;
-      }
-      .text-container {
-        position: absolute;
-        left: 138px;
-        top: 1px;
-        .company-name {
-          position: static;
-          margin: 0;
+      a {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        text-decoration: none;
+        color: #641378;
+        font-size: 19px;
+        font-family: "Josefin Sans", sans-serif;
+
+        &.fixed {
+          border-bottom: 1px solid #eeacff;
+          height: 67px;
+          margin-right: -13px;
         }
-        .company-desc {
-          position: static;
+
+        .menu-icon {
+          margin-left: -20PX;
+          width: 28px;
+          height: 28px;
+        }
+
+        &:hover {
+          color: $color-navPosition;
+        }
+
+        &.active {
+          color: $color-navPosition;
+          font-weight: bold;
+
         }
       }
     }
+  }
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; // Más alto que el botón
+    display: none;
+  }
+
+  // Mostrar overlay y menú cuando el checkbox esté marcado
+  .menu-toggle-checkbox:checked~.overlay {
+    display: block;
+  }
+
+  .menu-toggle-checkbox:checked~.button-lineal-container {
+    display: block;
+  }
+
+  .menu-toggle-checkbox:checked~.menu-button {
+    position: fixed;
+  }
+
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    .menu-toggle-checkbox:checked+.menu-button {
+      position: fixed;
+    }
+  }
+
+  .menu-toggle-checkbox:checked+.menu-button+.button-lineal-container {
+    max-height: 88%;
+    margin-top: 21px;
+    right: 21px;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 77px;
+    background-color: $color-nav-gradient;
+    border-bottom: 0.5px solid rgba(209, 219, 219, 0.2);
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10%;
+
+    .logo-container {
+      margin-left: 10%;
+
+      .content-img {
+        margin-top: -3px !important;
+
+        .logo {
+          position: static;
+          height: auto;
+          width: 44px !important;
+        }
+      }
+
+
+      .text-container {
+        margin-top: 16px;
+
+        .company-name {
+          margin: 0;
+          font-weight: 700;
+          font-size: 31.7945px;
+          line-height: 20px;
+        }
+
+        .company-desc {
+          font-size: 12.52px;
+        }
+      }
+    }
+
     .menu {
-      display: flex !important;
+      display: flex;
       justify-content: center;
       gap: 8%;
       width: 60%;
       height: 100%;
       margin: 0;
+
       .menu-item {
         list-style: none;
         display: flex;
         height: 100%;
+        align-items: center;
 
         .link {
           position: relative;
           text-decoration: none;
-
           color: $color-white;
-          font-family: "Inter";
-          font-style: normal;
-          font-size: 13.863px;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
           font-weight: 400;
           line-height: 24px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 5px;
+            background: $color-navPosition;
+            top: 0;
+            transition: width 0.5s;
+          }
+
+          &:hover {
+            color: $color-navPosition;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+
+          &.active {
+            color: $color-navPosition;
+            font-weight: bold;
+
+            &::before {
+              width: 100%;
+              background: $color-navPosition;
+            }
+          }
         }
+
       }
     }
-    .menu .menu-item .link:hover {
-      color: $color-navPosition;
-    }
-    .menu .menu-item .link::before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 0;
-      background: $color-navPosition;
-      height: 5px;
-      top: 0;
-      transition: width 0.5s;
-    }
-    .menu .menu-item .link:hover:before {
-      width: 100%;
-    }
+
+    .menu-toggle-checkbox:checked,
+    .button-lineal-container,
     .menu-button {
       display: none;
     }
   }
-}
-
-/* Dispositivos de escritorio grandes */
-@media (min-width: 1200px) {
 }

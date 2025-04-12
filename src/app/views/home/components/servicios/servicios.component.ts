@@ -1,12 +1,24 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
+import { ServicesArray } from '../../interface/interfaceService';
+import { ServiceNavigationComponent } from './shared/service-navigation.component';
+
 
 @Component({
   selector: 'app-servicios',
-  standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ServiceNavigationComponent
+  ],
   templateUrl: './servicios.component.html',
-  styleUrl: './servicios.component.scss'
+  styleUrls: ['./servicios.component.scss']
 })
-export class ServiciosComponent {
 
+export class ServiciosComponent {
 }
+
+
+

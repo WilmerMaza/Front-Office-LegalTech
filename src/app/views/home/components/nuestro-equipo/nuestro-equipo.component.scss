@@ -1,0 +1,122 @@
+@use "assets/colors.scss" as *;
+
+.section-team {
+  .header-team {
+    height: 138px;
+    background: linear-gradient(
+      90.2deg,
+      rgba(97, 19, 116, 0.95) 55.58%,
+      rgba(192, 131, 207, 0.95) 166.61%
+    );
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-title-team {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 0;
+      .text-title-team-weight {
+        font-weight: 300;
+      }
+    }
+    .section-divider {
+      border: 0;
+      border-top: 2px solid #eeacff;
+      width: clamp(226px, 33%, 766px);
+      height: 1px;
+      opacity: 1;
+      margin: 0;
+    }
+  }
+  .content-text {
+    margin: 12% 10%;
+    text-align: center;
+    color: #611374;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    .team-section-text {
+      text-align: justify;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+    .content-text-bold {
+      font-weight: 700;
+    }
+  }
+
+  .content-team {
+    margin: 5%;
+    position: relative;
+    z-index: 1;
+    .team-header-list {
+      height: 56px;
+      background: #641378;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      color: white;
+      text-align: left;
+      line-height: 56px;
+      padding-left: 20px;
+      .header-list-text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    .team-content-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      padding: 10% 5%;
+      position: relative;
+      top: -13px;
+      z-index: -1;
+    }
+  }
+}
+@media (width>= 768px) {
+  .section-team {
+    .header-team {
+      height: 340px;
+      justify-content: flex-start;
+      .text-title-team {
+        margin-top: 70px;
+      }
+    }
+    .content-text {
+      display: none;
+    }
+
+    .content-team {
+      height: 240px;
+      .team-header-list {
+        display: none;
+      }
+      .team-content-list {
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: -60px;
+        z-index: 1;
+        background: none;
+        gap: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
+  }
+}

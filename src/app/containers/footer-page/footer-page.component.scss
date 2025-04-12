@@ -1,51 +1,73 @@
-@use "@assets/colors.scss" as *;
-#footer-content {
-  background: $color-footer;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  color: $color-white;
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    margin-left: -16px;
-    .imgLogo{
-      width: 58px;
-    }
-    .text-container {
-      margin-left: -12px;
-      .company-name {
-      
-        font-size: 29px;
-        line-height: 16px;
-        font-weight: 800;
-      }
-      .company-desc {
-        font-weight: 400;
-        font-size: 11.37139px;
-        line-height: 7px;
-        margin: 0;
-      }
-    }
-  }
+ @use "assets/colors.scss" as *;
 
-  .socialMedia {
-    margin-top: 23px;
-    .text{
-      font-size: 19px;
-    }
-    .list-social {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      padding: 0;
-      margin: 0 5px;
+ #footer-content {
+   display: flex;
+   justify-content: center;
+   background-color: $color-footer;
+   height: 400px;
+   width: 100%;
+   position: relative;
+   margin-top: 80px;
 
-      a:focus,
-      a:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-}
+
+   .footer-white {
+     width: 90%;
+     height: 115%;
+     background-color: #ffffff;
+     position: absolute;
+     top: -60px;
+     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.25);
+   }
+
+
+   .derechos-autor {
+     color: $color-footer;
+     margin: 20px;
+     text-align: center;
+   }
+
+   .derechos-autor-pc {
+     position: absolute;
+     color: $color-white;
+     margin: 20px;
+     bottom: -19px;
+   }
+
+   .footer_purple {
+     display: none;
+   }
+ }
+
+ @media (min-width: 770px) {
+   #footer-content {
+     height: 200px;
+
+     .footer-white {
+       display: none;
+     }
+
+     .footer_purple {
+       display: flex !important;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       gap: 20px;
+
+       .divider-footer {
+         width: 2px;
+         background-color: $color-white;
+         height: 84px;
+       }
+
+     }
+   }
+
+ }
+
+ @media (min-width:990px) {
+
+   .divider-footer {
+     margin: 0 clamp(10px, 4vw, 80px) !important;
+   }
+
+ }

@@ -1,0 +1,21 @@
+<section>
+
+  @if (!this.param) {
+  <div class="kwon-team">
+    <div class="team-title-container">
+      <h2>CONOCE NUESTRO EQUIPO</h2>
+    </div>
+  </div>
+  }
+
+  @for (member of team; track $index) {
+  @if(!this.param || member.link === this.param ){
+  <app-person [teamObject]="member"></app-person>
+  }
+  }
+
+  <!-- <button class="signature-button" (click)="toggleSignature()">
+    Nuestra <strong> Firma</strong>
+  </button> -->
+
+</section>

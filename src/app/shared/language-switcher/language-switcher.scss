@@ -1,0 +1,48 @@
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    background-color: #f3e2ff;
+    border-radius: 30px;
+    padding: 4px 12px;
+    gap: 8px;
+    width: 120px;
+
+    .lang-icon {
+        font-size: 18px;
+        color: #641378;
+    }
+
+    .select-wrapper {
+        position: relative;
+        flex: 1;
+
+        select {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font-weight: 600;
+            color: #641378;
+            font-size: 14px;
+            padding: 6px 24px 6px 8px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            font-family: inherit;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .custom-arrow {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #641378;
+            font-size: 10px;
+        }
+    }
+}

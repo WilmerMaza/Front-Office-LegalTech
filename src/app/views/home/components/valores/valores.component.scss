@@ -1,566 +1,172 @@
+@use "assets/colors.scss" as *;
 
-@import "@assets/colors.scss";
-.container {
-	width: 80%; 
-	margin: 40px auto;
-}
+.Valores {
+  .container {
+    width: 80%;
+    margin: 70px auto;
 
-.text h3{
-	 width: 100%;
-	 padding: 10px;
-	 font-size: 17px;
-	 text-align: center;
-    color:$color-footer;
+    .container-text {
+      .text_principal_valores {
+        // margin: 7% 0 5% 0;
+        line-height: 0;
+        font-size: clamp(20px, 2.5vw, 43px);
+        text-align: center;
+        font-family: "Inter";
+        font-style: normal;
+        color: $color-footer;
 
-}
-.Linea{
-  width: 200px; 
-  height: 2px; 
-  background: $color-gradient;
-  display: flex; 
-  margin: 0 auto; 
-  
-   }
+        .text_valores_normal {
+          font-weight: 400;
+        }
+      }
 
-.Container-Valores{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  justify-items: center;
-  align-items: center;
-  height: auto; 
-  max-width: 800px; 
-  margin: 0 auto; 
-  gap: 20px 11px;
-  align-items: flex-start; 
-    
-}
-//cambios
-.item-innovacion {
-  transform: translateX(calc(16px - 1px));
-}
-
-.item-prejudicialidad {
-  transform: translateX(calc(13px - 1px));
-}
-
-.item-celebridad {
-  transform: translateX(calc(31px - 1px));
-}
-
-.item-honestidad {
-  transform: translateX(calc(52px - 1px));
-}
-//---------------------------------
-p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8.5px;
-    line-height: 13px;
-    text-align: center;
-    
-    color: $color-footer;
-    width: 100%;
-    
-}
-//cambios
-.Honestidad {
-  grid-column: span 2;
-  transform: translateX(calc(70px - 1px));
-}
-
-.Honestidad p {
-  font-size: 8.5px;
-  width: calc(71% + 1px);
-  transform: translateX(calc(-20px - 1px));
-}
-//---------------
-@media screen and (min-width:470px) {
-  
-  .Linea{
-    width: 45%;
-   }
-  .Container-Valores{
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    //gap: 20px 10px;
-    gap: calc(20px + 1px) 10px;
- }
-
- p{
-
-  font-size: 9.2px;
-  line-height: 1.2;
-
-}
-  
-}
-
-
-@media screen and (min-width: 620px){
-
-
-  .Linea{
-    width: 40%;
+      .divider-services {
+        width: clamp(230px, 29vw, 31rem);
+        margin: auto;
+        border: none;
+        height: 2px;
+        opacity: 1;
+        background: $color-gradientLine;
+      }
+    }
   }
-  
-  p{
-    font-size: 11px;
-    width: 125%;
-  }
-/* Aquí aplicamos el orden deseado */
-.Honestidad {
-  order: 1;
-  grid-column: span 1;
-  transform: translateX(0px);
-  p{
-    font-size: 11px;
-    width: 92%;
-  }
-  .item-honestidad{
-    transform: translateX(57px);
+
+  .Container-Valores {
+    gap: 20px 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eeacff;
+    position: relative;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 28px 0;
+
+    .item_valor {
+      background: $color-white;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 135px;
+
+      .svg_valores {
+        width: 68px;
+      }
+
+      .text-valores {
+        width: 70%;
+
+        .title_valor {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+
+          color: #611374;
+          margin: 1px 0;
+        }
+
+        .text_valores_p {
+          color: #611374;
+          width: 100%;
+          margin: 0;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: justify;
+        }
+      }
+    }
   }
 }
 
-.Responsabilidad {
-  order: 2;
-  p{
-    transform: translateX(-35px);
-  }
-  .item-responsabilidad{
-    transform: translateX(-10px);
-  }
-}
+@media (width >=992px) {
+  .Valores {
+    .Container-Valores {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-items: center;
+      align-items: center;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      gap: 20px 40px;
+      align-items: flex-start;
+      background: $color-white;
 
-.Innovacion {
-  order: 3;
- p{
-  transform: translateX(-35px);
- } 
-  .item-innovacion{
-    transform: translateX(10px);
-  }
-}
+      .item_valor {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        flex-direction: column;
 
-.Celeridad {
-  order: 4;
-  p{
-    transform: translateX(45px);
-  }
-  .item-celebridad{
-    transform: translateX(125px);
-  }
-}
-.Prejudicialidad {
-  order: 5;
-  p{
-    transform: translateX(80px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(135px);
-  
-  }
-}
+        .svg_valores {
+          width: 55%;
+          height: auto;
+        }
 
-}
+        .text-valores {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
 
-@media screen and (min-width:680px){
-  p{
- 
-    font-size: 1.65vw;
-  }
-  .Honestidad {
-  
-  p{
-    font-size: 1.65vw;
-        width: 86%;
-        transform: translateX(33px);
-  }
-  .item-honestidad{
-    transform: translateX(91px);
-  }
-}
+          .title_valor {
+            font-size: 27px;
+          }
 
-.Responsabilidad {
-  p{
-    transform: translateX(-45px);
-  }
-  .item-responsabilidad{
-    transform: translateX(-10px);
-  }
-}
+          .text_valores_p {
+            font-size: 17px;
+          }
+        }
+      }
 
-.Innovacion {
- p{
-  transform: translateX(-90px);
- } 
-  .item-innovacion{
-    transform: translateX(-32px);
-  }
-}
+      .Responsabilidad,
+      .Innovacion,
+      .Celeridad,
+      .Prejudicialidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-.Celeridad {
-  p{
-    transform: translateX(60px);
-  }
-  .item-celebridad{
-    transform: translateX(149px);
-  }
-}
-.Prejudicialidad {
-  p{
-    transform: translateX(91px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(172px);
-  
-  }
-}
-  
-}
+      .Honestidad {
+        order: 1;
+        grid-column: span 1;
+      }
 
+      .Responsabilidad {
+        order: 2;
+      }
 
-@media screen and (min-width: 780px) {
-  
-  p{
-    font-size: 1.65vw;
-  }
-  .Honestidad {
-  grid-column: span 1;
-  p{
-    font-size: 1.65vw;
-        width: 90%;
-        transform: translateX(19px);
-  }
-  .item-honestidad{
-    transform: translateX(91px);
-  }
-}
+      .Innovacion {
+        order: 3;
+      }
 
-.Responsabilidad {
-  p{
-    transform: translateX(-45px);
-  }
-  .item-responsabilidad{
-    transform: translateX(6.5px);
-  }
-}
+      .Celeridad {
+        order: 4;
+      }
 
-.Innovacion {
- p{
-  transform: translateX(-90px);
- } 
-  .item-innovacion{
-    transform: translateX(-14px);
-  }
-}
+      .Prejudicialidad {
+        order: 5;
+      }
 
-.Celeridad {
-  p{
-    transform: translateX(60px);
-  }
-  .item-celebridad{
-    transform: translateX(172px);
-  }
-}
-.Prejudicialidad {
-  p{
-    transform: translateX(91px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(181px);
-  
-  }
-}  
-  
-}
-
-@media screen and (min-width:900px){
-  .Linea{
-    width:30%;
-  }
-  p{
-    font-size: 1.4vw;
-  }
-  .Honestidad {
-  p{
-    font-size: 1.4vw;
-        width: 86%;
-        transform: translateX(45px);
-  }
-  .item-honestidad{
-    transform: translateX(110px);
+      .Celeridad,
+      .Prejudicialidad {
+        position: relative;
+        top: 20px;
+        left: 132px;
+      }
+    }
   }
 }
-
-.Responsabilidad {
-  p{
-    transform: translateX(-45px);
-  }
-  .item-responsabilidad{
-    transform: translateX(1.7px);
-  }
-}
-
-.Innovacion {
- p{
-  transform: translateX(-90px);
- } 
-  .item-innovacion{
-    transform: translateX(-18.5px);
-  }
-}
-
-.Celeridad {
-  p{
-    transform: translateX(66px);
-  }
-  .item-celebridad{
-    transform: translateX(172px);
-  }
-}
-.Prejudicialidad {
-  p{
-    transform: translateX(91px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(181px);
-  
-  }
-}
-  
-}
-
-@media screen and (min-width:1024px) {
- .Linea{
-  width:26%;
- } 
- p{
-  font-size: 1.25vw;
-}
-.Honestidad {
-
-p{
-  font-size: 1.25vw;
-      width: 90%;
-      transform: translateX(40px);
-}
-.item-honestidad{
-  transform: translateX(110px);
-}
-}
-
-.Responsabilidad {
-p{
-  transform: translateX(-31px);
-}
-.item-responsabilidad{
-  transform: translateX(21px);
-}
-}
-
-.Innovacion {
-p{
-transform: translateX(-78px);
-} 
-.item-innovacion{
-  transform: translateX(-7.5px);
-}
-}
-
-.Celeridad {
-p{
-  transform: translateX(76px);
-}
-.item-celebridad{
-  transform: translateX(183px); 
-}
-}
-.Prejudicialidad {
-p{
-  transform: translateX(97px);
-}
-.item-prejudicialidad{
-  transform: translateX(194px);
-}
-}
-}
-
-@media screen and (min-width:1200px) {
-  .Linea{
-   width:22%;
-  } 
-
-  p{
-    font-size: 1vw;
-  }
-  .Honestidad {
-  transform: translateX(-10px);
-  p{
-    font-size: 1vw;
-        width: 85%;
-        transform: translateX(40px);
-  }
-  .item-honestidad{
-    transform: translateX(110px);
-  }
-  }
-  
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
-  .item-responsabilidad{
-    transform: translateX(12px);
-  }
-  }
-  
-  .Innovacion {
-  
-  transform: translateX(30px);
-  p{
-  transform: translateX(-78px);
-  } 
-  .item-innovacion{
-    transform: translateX(-9.5px);//
-  }
-  }
-  
-  .Celeridad {
-  p{
-    transform: translateX(76px);
-  }
-  .item-celebridad{
-    transform: translateX(180px);
-  }
-  }
-  .Prejudicialidad {
-  p{
-    transform: translateX(97px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(185px);
-  }
-  }
- }
-
- @media screen and (min-width:1420px) {
-  .Linea{
-   width:20%;
-  } 
-
-  p{
-    font-size: 1vw;
-    line-height: 1.2;
-  }
-  .Honestidad {
-  transform: translateX(-30px);
-  p{
-    font-size: 1vw;
-        width: 100%;
-        transform: translateX(40px);
-  }
-  .item-honestidad{
-    transform: translateX(125px);
-  }
-  }
-  
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
-  .item-responsabilidad{
-    transform: translateX(20.7%);
-  }
-  }
-  
-  .Innovacion {
-  transform: translateX(30px);
-  p{
-  transform: translateX(-78px);
-  } 
-  .item-innovacion{
-    transform: translateX(5.5px);
-  }
-  }
-  
-  .Celeridad {
-  p{
-    transform: translateX(70px);
-  }
-  .item-celebridad{
-    transform: translateX(183px);
-  }
-  }
-  .Prejudicialidad {
-  order: 5;
-  p{
-    transform: translateX(100px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(194px);
-  
-  }
-  }
- }
-
- @media screen and (min-width:1600px) {
-  .Linea{
-   width:20%;
-  } 
-
-  p{
-    font-size: 0.8vw;
-  }
-  .Honestidad {
-  transform: translateX(-30px);
-  p{
-    font-size: 0.8vw;
-        width: 95%;
-        transform: translateX(40px);
-  }
-  .item-honestidad{
-    transform: translateX(125px);
-  }
-  }
-  
-  .Responsabilidad {
-  p{
-    transform: translateX(-31px);
-  }
-  .item-responsabilidad{
-    transform: translateX(20.7%);
-  }
-  }
-  
-  .Innovacion {
-  transform: translateX(30px);
-  p{
-  transform: translateX(-78px);
-  } 
-  .item-innovacion{
-    transform: translateX(5.5px);
-  }
-  }
-  
-  .Celeridad {
-  p{
-    transform: translateX(50px); 
-  }
-  .item-celebridad{
-    transform: translateX(183px);
-  }
-  }
-  .Prejudicialidad {
-  order: 5;
-  p{
-    transform: translateX(120px);
-  }
-  .item-prejudicialidad{
-    transform: translateX(211px);
-  }
-  }
- }
-
-
- //ESTE ES MI CODIGO
- 

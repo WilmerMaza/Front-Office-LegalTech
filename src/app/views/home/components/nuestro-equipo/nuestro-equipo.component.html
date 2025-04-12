@@ -1,0 +1,28 @@
+<section class="section-team">
+  <section class="header-team">
+    <h2 class="text-title-team"> {{'TEAM.TITLE_PART_ONE' | translate}} <span class="text-title-team-weight">
+        {{'TEAM.TITLE_PART_TWO' | translate}}</span></h2>
+    <hr class="section-divider">
+  </section>
+  <section class="content-text">
+    <p class="team-section-text">
+      {{'TEAM.TEAM_INTRO' | translate}}
+    </p>
+    <p class="content-text-bold">{{'TEAM.HELP_MESSAGE' | translate}}</p>
+  </section>
+
+  <section class="content-team">
+    <section class="team-header-list">
+      <h3 class="header-list-text">{{'TEAM.ASSOCIATED' | translate}}</h3>
+    </section>
+
+    <section class="team-content-list">
+
+      @for (member of teamMembers; track $index) {
+      <app-team-card [member]="member"></app-team-card>
+      }
+    </section>
+
+
+  </section>
+</section>

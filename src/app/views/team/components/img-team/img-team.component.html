@@ -1,0 +1,12 @@
+<section class="content_img">
+    <div class="content_principal">
+        <div class="image_container">
+            <img [src]="tamObject()?.person" alt="" class="img" loading="lazy">
+        </div>
+    </div>
+
+    <div class="name_team">
+        <h4 class="name">{{tamObject()?.name }}</h4>
+        <h4 class="team-position">{{tamObject()?.position?? '' | translate }}</h4>
+    </div>
+</section>

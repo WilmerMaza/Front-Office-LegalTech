@@ -1,0 +1,70 @@
+{
+  "id": "/",
+  "name": "LegalTech | Abogados Digitales",
+  "short_name": "LegalTech",
+  "description": "LegalTech es una firma de abogados digitales especializada en tecnología, derecho y transformación legal.",
+  "lang": "es-CO",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "theme_color": "#611374",
+  "background_color": "#fafafa",
+  "orientation": "portrait",
+  "categories": ["business", "productivity", "legal", "tools"],
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/screenshots/home-wide.png",
+      "sizes": "2554x1716",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "img/screenshots/home-mobile.png",
+      "sizes": "812x1408",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contáctanos",
+      "short_name": "Contacto",
+      "description": "Ir a la sección de contacto",
+      "url": "/#contacto",
+      "icons": [
+        {
+          "src": "icons/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

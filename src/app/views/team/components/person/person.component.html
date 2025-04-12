@@ -1,0 +1,94 @@
+<section class="conten-team">
+  <app-img-team [tamObject]="teamObject()"></app-img-team>
+  <div class="team-container"></div>
+  <div class="button-container">
+    <button class="contact-button" (click)="toggleInfo()">
+      <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
+      <strong>Contactar</strong>
+      <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
+    </button>
+
+    @if (showInfo) {
+    <div class="info-box">
+      <div [innerHTML]="safeContent(teamObject()?.contacto )"></div>
+    </div>
+    }
+  </div>
+
+  <button class="formation-button" (click)="toggleEducation()">
+    <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
+    <strong>Formación</strong>
+    <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
+  </button>
+
+  @if (showEducation) {
+  <div class="education-box">
+    <div [innerHTML]=" safeContent(teamObject()?.educacion)"></div>
+  </div>
+  }
+
+  <!-- Línea separadora -->
+  <hr class="purple-line" />
+
+  <!-- Contenedores de biografía y experiencia -->
+  <div class="experience-biography-container">
+    <div class="biography-info">
+      <div [innerHTML]="safeContent(teamObject()?.formacion)"></div>
+    </div>
+    @if (teamObject()?.experiencia) {
+    <div class="experience-box">
+      <div class="team-content" [innerHTML]="safeContent(teamObject()?.experiencia)"></div>
+    </div>
+    }
+  </div>
+</section>
+
+<main class="nuevo_container">
+  <section class="container-team">
+    <div class="container-title">
+      <p class="title">{{ teamObject()?.name }}</p>
+      <p class="subtitle">{{ teamObject()?.position ?? '' | translate }}</p>
+    </div>
+
+    <div class="container-info">
+      <div class="container-images">
+        <div class="image-team">
+
+          <img class="image" src="{{ teamObject()?.person }}" loading="lazy" />
+
+        </div>
+        <div class="button-container">
+          <button class="contact-button" (click)="toggleInfo()">
+            <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
+            <strong>Contactar</strong>
+            <img [src]="arrowContact" alt="flecha" class="arrow-icon" loading="lazy" />
+          </button>
+
+          @if (showInfo) {
+          <div class="info-box">
+            <div [innerHTML]="safeContent(teamObject()?.contacto )"></div>
+          </div>
+          }
+
+          <button class="formation-button" (click)="toggleEducation()">
+            <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
+            <strong>Formación</strong>
+            <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
+          </button>
+
+          @if (showEducation) {
+          <div class="education-box">
+            <div [innerHTML]="safeContent(teamObject()?.educacion)"></div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <div class="container-text">
+        <div [innerHTML]=" safeContent(teamObject()?.formacion)"></div>
+        <div class="team-content" [innerHTML]=" safeContent(teamObject()?.experiencia)"></div>
+      </div>
+    </div>
+
+  </section>
+</main>
