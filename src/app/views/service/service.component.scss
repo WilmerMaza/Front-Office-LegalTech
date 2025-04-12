@@ -53,10 +53,11 @@
       font-size: 15px;
       line-height: 1.5;
       padding: 20px;
-      text-align: center;
+      text-align: justify;
 
       .service-text-principal {
         margin-bottom: 10px;
+        text-align: justify;
       }
     }
   }
@@ -77,6 +78,7 @@
     .services-box p {
       color: #611374;
       margin: 5px 0;
+      text-align: justify;
     }
   }
 
