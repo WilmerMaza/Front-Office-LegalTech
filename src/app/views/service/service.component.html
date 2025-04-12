@@ -1,10 +1,7 @@
 <section class="service-us">
-  <app-cartera></app-cartera>
+  <app-service-content [service]="currentService"></app-service-content>
   <div class="services-navigation">
-    <app-inmobiliaria *ngIf="currentRoute !== '/inmobiliaria'"></app-inmobiliaria>
-    <app-responsabilidad-civil *ngIf="currentRoute !== '/responsabilidad'"></app-responsabilidad-civil>
-    <app-labora-comercial *ngIf="currentRoute !== '/laboral'"></app-labora-comercial>
-    <app-propiedad-horizontal *ngIf="currentRoute !== '/propiedad-horizontal'"></app-propiedad-horizontal>
-    <app-derecho-comercial *ngIf="currentRoute !== '/derecho-comercial'"></app-derecho-comercial>
+    <!-- Usando el componente dinámico de navegación de servicios -->
+    <app-service-navigation [currentService]="currentRoute"></app-service-navigation>
   </div>
 </section>
