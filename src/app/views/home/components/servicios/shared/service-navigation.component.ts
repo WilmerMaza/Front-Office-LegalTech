@@ -67,7 +67,7 @@ export class ServiceNavigationComponent {
       route: '/derecho-comercial',
       dataValue: 'Commercial',
       ariaLabel: 'Commercial Law',
-      icon: '<img class="icon" width="38" height="50" src="/icons/icon-peso-blanco.svg" alt="derecho comercial" loading="lazy">'
+      icon: '<img class="icon" width="41" height="50" src="/icons/icon-peso-blanco.svg" alt="derecho comercial" loading="lazy">'
     }
 
   ];

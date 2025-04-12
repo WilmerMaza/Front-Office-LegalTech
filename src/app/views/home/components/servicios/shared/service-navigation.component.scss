@@ -1,17 +1,23 @@
 @use "../../../../../../../src/assets/colors.scss" as *;
 
-.button-container {
-  max-width: 1200px;
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  align-content: space-evenly;
-  font-family: "Inter";
-  font-style: normal;
+
+  .button-container {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    justify-content: center; /* centra horizontalmente el grid */
+    align-content: center;   /* centra verticalmente el grid */
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto; /* centra el contenedor dentro del padre */
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+
+
 
 
   @media (max-width: 1024px) {
@@ -52,8 +58,8 @@
   justify-content: space-between;
 
   &:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: none; // ⛔️ Quitamos el movimiento vertical
+
   }
 
   .service-title {
@@ -73,7 +79,7 @@
   left: -50px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -1;
+  z-index: -50;
   display: flex;
   align-items: center;
   justify-content: flex-start;

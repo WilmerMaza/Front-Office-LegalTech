@@ -67,7 +67,7 @@ export class ServiceComponent implements OnInit {
       case '/responsabilidad':
         this.currentService = {
           title: 'Responsabilidad Civil',
-          imageSrc: 'img/servicios/service_responsabilidad_legaltech.png',
+          imageSrc: '/icons/responsabilidad_civil.svg',
           imageAlt: 'Responsabilidad Civil',
           description: 'Brindamos asesoría especializada en casos de responsabilidad civil contractual y extracontractual:',
           bulletPoints: [
@@ -81,7 +81,7 @@ export class ServiceComponent implements OnInit {
       case '/laboral':
         this.currentService = {
           title: 'Derecho Laboral',
-          imageSrc: 'img/servicios/service_laboral_legaltech.png',
+          imageSrc: '/icons/derecho_laboral.svg',
           imageAlt: 'Derecho Laboral',
           description: 'Ofrecemos asesoría integral en asuntos laborales para empresas y trabajadores:',
           bulletPoints: [
@@ -96,7 +96,7 @@ export class ServiceComponent implements OnInit {
       case '/propiedad-horizontal':
         this.currentService = {
           title: 'Propiedad Horizontal',
-          imageSrc: 'img/servicios/service_propiedad_horizontal_legaltech.png',
+          imageSrc: '/icons/propiedad_horizontal.svg',
           imageAlt: 'Propiedad Horizontal',
           description: 'Especialistas en la gestión legal de comunidades de propietarios y edificios:',
           bulletPoints: [
@@ -111,7 +111,7 @@ export class ServiceComponent implements OnInit {
       case '/derecho-comercial':
         this.currentService = {
           title: 'Derecho Comercial',
-          imageSrc: 'img/servicios/service_comercial_legaltech.png',
+          imageSrc: '/icons/derecho_laboral.svg',
           imageAlt: 'Derecho Comercial',
           description: 'Brindamos asesoría legal especializada para empresas y emprendedores:',
           bulletPoints: [
