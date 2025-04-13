@@ -33,6 +33,52 @@
             "TEXT": "At our firm, <span class='bold'>effectiveness</span> and transparency are more than just <span class='bold'>words</span>: they are our promise. We meet <span class='bold'>deadlines</span>, deliver <span class='bold'>results</span>, and elevate legal counsel to the <span class='bold'>next level</span>."
         }
     },
+    "SERVICES": {
+        "TITLE_PART_ONE": "Service catalog,",
+        "TITLE_PART_TWO": "your perfect solution!"
+    },
+    "IDENTITY": {
+        "TITLE_PART_ONE": "We love",
+        "TITLE_PART_TWO": "what we do",
+        "TITLE_PART_THREE": "with passion",
+        "TITLE_PART_FOUR": "and commitment",
+        "TITLE_PART_FIVE": "every day"
+    },
+    "VALUES": {
+    "TITLE_PART_ONE": "Values that",
+    "TITLE_PART_TWO": "identify us",
+    "TITLE_PART_THREE": "RESPONSIBILITY",
+    "TEXT_ONE": "Responsibility is the foundation upon which we build trust with our clients and excellence in our legal services.",
+    "TITLE_PART_FOUR": "INNOVATION",
+    "TEXT_TWO": "Innovation through technology is our compass to navigate a constantly changing world.",
+    "TITLE_PART_FIVE": "SWIFTNESS",
+    "TEXT_THREE": "At our firm, timeliness is essential. We are committed to providing swift and efficient legal solutions, acting promptly and effectively in every case.",
+    "TITLE_PART_SIX": "PREJUDICE",
+    "TEXT_FOUR": "We are dedicated to providing effective and rapid advice, seeking practical solutions for our clients' issues without resorting to prolonged legal processes.",
+    "TITLE_PART_SEVEN": "HONESTY",
+    "TEXT_FIVE": "Our firm is built on integrity, transparency, and commitment to our clients' interests."
+},
+
+"CONTACT": {
+    "TITLE_PART_ONE": "Contact us now!",
+    "TEXT_ONE": "We are ready to help you with your legal inquiries",
+    "TITLE_PART_TWO": "Chat with us",
+    "TITLE_PART_THREE": "Close"
+
+},
+
+"LEGAL_ADVICE": {
+    "TITLE_PART_ONE": "LegalTech: Advanced Legal Advice Driven by Technology and Innovation"
+},
+
+
+"TEAM_VIEWS": {
+  "TITLE_PART_ONE": "MEET OUR TEAM"
+},
+
+
+
+
     "ENTERPRISES": {
         "TITLE_PART_ONE": "Companies that",
         "TITLE_PART_TWO": "trusted us"

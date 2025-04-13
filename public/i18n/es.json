@@ -33,6 +33,77 @@
             "TEXT": "En nuestra firma, la <span class='bold'>efectividad</span> y la transparencia son más que <span class='bold'>palabras</span>: son nuestra promesa. Cumplimos <span class='bold'>plazos</span>, entregamos <span class='bold'>resultados</span> y llevamos la asesoría legal al <span class='bold'>siguiente nivel</span>."
         }
     },
+
+
+    "FIRMA": {
+        "TITLE_PART_ONE": "NUESTRA FIRMA.",
+        "TEXT_ONE": " En LegalTech, nos enorgullecemos de ofrecer a nuestros clientes una representación legal excepcional respaldada por años de experiencia y dedicación inquebrantable. Nuestro equipo de abogados altamente calificados está  comprometido con la defensa de los derechos y los intereses de quienes confían en nosotros para resolver sus asuntos legales más apremiantes.",
+        "TITLE_PART_TWO": "Ver más"
+    },
+    "SERVICES": {
+        "TITLE_PART_ONE": "Catálogo de servicios,",
+        "TITLE_PART_TWO":"¡tu solución perfecta!"
+    },
+    "IDENTITY": {
+        "TITLE_PART_ONE": "Amamos",
+        "TITLE_PART_TWO": "lo que hacemos",
+        "TITLE_PART_THREE": "con pasión",
+        "TITLE_PART_FOUR": "y compromiso",
+        "TITLE_PART_FIVE": "cada día"
+    },
+    "VALUES": {
+        "TITLE_PART_ONE": "Valores que",
+        "TITLE_PART_TWO": "nos identifican",
+        "TITLE_PART_THREE": "RESPONSABILIDAD",
+        "TEXT_ONE": "La responsabilidad es la base sobre la que construimos la confinza de nuestros clientes y la excelencia de nuestros servicios legales.",
+        "TITLE_PART_FOUR": "INNOVACIÓN",
+        "TEXT_TWO": "La innovación a través de la tecnología es nuestra brújula para navegar en un mundo en constante cambio",
+        "TITLE_PART_FIVE": "CELERIDAD",
+        "TEXT_THREE": "En nuestra firma, la oportunidad es esencial. Nos comprometemos a proporcionar soluciones legales rápidas y eficiemntes, actuando con prontitud y eficacia en cada caso",
+        "TITLE_PART_SIX": "PREJUDICIALIDAD.",
+        "TEXT_FOUR": "Nos comprometemos en ofrecer asesorías eficaces y rápidas, buscando soluciones prácticas para los problemas de nuestros clientes sin recurrir a procesos juciciales prolongados.",
+        "TITLE_PART_SEVEN": "HONESTIDAD",
+        "TEXT_FIVE": "Nuestra firma se basa en la integridad, transparencia y compromiso con los intereses de los clientes."
+    },
+
+    "CONTACT":{
+        "TITLE_PART_ONE": "¡Contáctanos ahora!",
+        "TEXT_ONE":"Estamos listos para ayudarte con tus consultas legales",
+        "TITLE_PART_TWO":"Chatea con nosotros",
+        "TITLE_PART_THREE": "Cerrar"
+
+
+
+    },
+
+
+    "LEGAL_ADVICE":{
+        "TITLE_PART_ONE": "LegalTech: Asesoramiento Jurídico Avanzado Impulsado por Tecnología e Innovación"
+
+    },
+
+
+    "OUR_FIRM2":{
+        "TITLE_PART_ONE": "NUESTRA",
+        "TITLE_PART_TWO":"FIRMA",
+        "TEXT_ONE":" En LegalTech – Abogados Digitales, creemos en la importancia de adaptarnos a un mundo en constante evolución. Nos esforzamos por estar a la vanguardia de las tendencias emergentes en legal tech, explorando nuevas formas de utilizar la inteligencia artificial, la automatización y el análisis de datos para mejorar la eficiencia y la  precisión en la práctica del derecho. Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de cómo la tecnología puede transformar y mejorar la prestación de servicios legales.",
+        "TEXT_TWO":" Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de cómo la tecnología puede transformar y mejorar la prestación de servicios legales." ,
+        "TEXT_THREE":"En LegalTech – Abogados Digitales, combinamos la destreza legal tradicional con un enfoque innovador hacia la resolución de problemas. Ya sea que seas una startup emergente, una empresa establecida o un particular en  busca de asesoramiento legal, en Legaltech te ofrecemos soluciones adaptadas a tus necesidades específicas.  Estamos aquí para ayudarte a navegar por el panorama legal en constante cambio y para proporcionarte la tranquilidad y la seguridad que necesitas en un mundo cada vez más digitalizado. ",
+        "TITLE_PART_THREE":"CONOCE NUESTRO",
+        "TITLE_PART_FOUR":"EQUIPO"
+     },
+
+     "TEAM_VIEWS":{
+      "TITLE_PART_ONE":  "CONOCE NUESTRO EQUIPO"
+        
+     },
+
+
+
+
+
+
+
     "ENTERPRISES": {
         "TITLE_PART_ONE": "Empresas que",
         "TITLE_PART_TWO": "confiaron en nosotros"

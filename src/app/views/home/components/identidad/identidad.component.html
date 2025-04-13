@@ -1,6 +1,14 @@
 <section id="identity" class="identity-section">
   <app-bandera-legal class="bandera_absolute"></app-bandera-legal>
-  <h2 class="identity-heading"><span class="highlighted-text">Amamos</span> lo que hacemos</h2>
+
+
+  <h2 class="identity-heading">
+    <span class="highlighted-text"> {{ 'IDENTITY.TITLE_PART_ONE' | translate }} </span> 
+    {{ 'IDENTITY.TITLE_PART_TWO' | translate }} 
+  </h2>
+
+
+
   <div class="identity-content">
     <div class="identity-card">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -15,8 +23,8 @@
         </defs>
       </svg>
       <p class="statistic-number">+4</p>
-      <p class="statistic-label">Socios</p>
-    </div>
+      <p class="statistic-label">{{'IDENTITY.TITLE_PART_THREE' | translate}}</p>
+    </div>               
     <div class="identity-card">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="icon icon-experience">
@@ -30,7 +38,7 @@
         </defs>
       </svg>
       <p class="statistic-number">+20</p>
-      <p class="statistic-label">Años de experiencia</p>
+      <p class="statistic-label"><span>{{'IDENTITY.TITLE_PART_FOUR' | translate }}</span></p>
     </div>
     <div class="identity-card">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +53,7 @@
         </defs>
       </svg>
       <p class="statistic-number">+800</p>
-      <p class="statistic-label">Procesos</p>
+      <p class="statistic-label">{{'IDENTITY.TITLE_PART_FIVE' | translate }}</p>
     </div>
   </div>
 </section>
