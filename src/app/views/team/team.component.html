@@ -1,21 +1,16 @@
 <section>
-
   @if (!this.param) {
   <div class="kwon-team">
     <div class="team-title-container">
-      <h2>{{ 'TEAM_VIEWS.TITLE_PART_ONE' | translate }}</h2>
+      <h2>{{ "TEAM_VIEWS.TITLE_PART_ONE" | translate }}</h2>
     </div>
   </div>
-  }
-
-  @for (member of team; track $index) {
-  @if(!this.param || member.link === this.param ){
+  } @for (member of team; track $index) { @if(!this.param || member.link ===
+  this.param ){
   <app-person [teamObject]="member"></app-person>
-  }
-  }
+  } }
 
   <!-- <button class="signature-button" (click)="toggleSignature()">
     Nuestra <strong> Firma</strong>
   </button> -->
-
 </section>

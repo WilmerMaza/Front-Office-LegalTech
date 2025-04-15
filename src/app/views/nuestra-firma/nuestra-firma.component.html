@@ -5,7 +5,8 @@
   <section class="about-content">
     <div class="about-header-text">
       <h1 class="about-title" id="about-us">
-        {{ 'OUR_FIRM2.TITLE_PART_ONE' | translate }}<span class="strong">{{ 'OUR_FIRM2.TITLE_PART_TWO' | translate }}</span>
+        {{ "OUR_FIRM2.TITLE_OUR" | translate
+        }}<span class="strong">{{ "OUR_FIRM2.TITLE_FIRM" | translate }}</span>
       </h1>
       <hr class="about-divider" aria-hidden="true" />
     </div>
@@ -19,26 +20,23 @@
     <!-- Descripción sobre la firma -->
     <div class="about-text">
       <p class="about-text-principal">
-        {{ 'OUR_FIRM2.TEXT_ONE' | translate }} 
+        {{ "OUR_FIRM2.TEXT_LEGALTECH" | translate }}
       </p>
 
-      
       <!-- Contenido colapsable -->
       <div class="collapsible-content" [class.collapsed]="showMore">
         <p>
-          {{ 'OUR_FIRM2.TEXT_TWO' | translate }} 
-          
+          {{ "OUR_FIRM2.TEXT_LAWYERS" | translate }}
         </p>
         <p>
-          {{ 'OUR_FIRM2.TEXT_THREE' | translate }} 
-          
+          {{ "OUR_FIRM2.TEXT_SOLUTIONS" | translate }}
         </p>
       </div>
 
       <!-- Botón para ver más/menos -->
       <div class="toggle-content">
         <button class="toggle-more-btn" (click)="toggleShowMore()" [attr.aria-expanded]="showMore">
-          {{ showMore ? 'Ver menos' : 'Ver más' }}
+          {{ showMore ? "Ver menos" : "Ver más" }}
         </button>
       </div>
     </div>
@@ -47,14 +45,15 @@
   <!-- Sección de la misión con contenido colapsable -->
   <section class="button-content">
     <app-legend-buttons [content]="mision" [title]="titleMision"></app-legend-buttons>
-    <br>
+    <br />
     <app-legend-buttons [content]="vision" [title]="titleVision"></app-legend-buttons>
   </section>
 
   <section class="button-nuestro-equipo">
     <button class="formation-button" role="button" (click)="redirectToTeam()">
-      <span>{{ 'OUR_FIRM2.TITLE_PART_THREE' | translate }}<span class="strong"> {{ 'OUR_FIRM2.TITLE_PART_FOUR' | translate }}</span></span>
+      <span>{{ "OUR_FIRM2.TITLE_MEET" | translate
+        }}<span class="strong">
+          {{ "OUR_FIRM2.TITLE_TEAM" | translate }}</span></span>
     </button>
   </section>
-
 </section>
