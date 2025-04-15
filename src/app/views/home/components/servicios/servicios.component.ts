@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { ServicesArray } from '../../interface/interfaceService';
 import { ServiceNavigationComponent } from './shared/service-navigation.component';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 @Component({
@@ -11,7 +13,8 @@ import { ServiceNavigationComponent } from './shared/service-navigation.componen
   imports: [
     CommonModule,
     RouterModule,
-    ServiceNavigationComponent
+    ServiceNavigationComponent,
+    TranslateModule
   ],
   templateUrl: './servicios.component.html',
   styleUrls: ['./servicios.component.scss']

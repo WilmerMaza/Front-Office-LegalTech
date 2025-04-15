@@ -5,7 +5,8 @@
   <section class="about-content">
     <div class="about-header-text">
       <h1 class="about-title" id="about-us">
-        NUESTRA <span class="strong">FIRMA</span>
+        {{ "OUR_FIRM2.TITLE_OUR" | translate
+        }}<span class="strong">{{ "OUR_FIRM2.TITLE_FIRM" | translate }}</span>
       </h1>
       <hr class="about-divider" aria-hidden="true" />
     </div>
@@ -19,33 +20,23 @@
     <!-- Descripción sobre la firma -->
     <div class="about-text">
       <p class="about-text-principal">
-        En LegalTech – Abogados Digitales, creemos en la importancia de adaptarnos a un mundo en constante evolución.
-        Nos esforzamos por estar a la vanguardia de las tendencias emergentes en legal tech, explorando nuevas formas de
-        utilizar la inteligencia artificial, la automatización y el análisis de datos para mejorar la eficiencia y la
-        precisión en la práctica del derecho. Nuestros abogados no solo tienen un profundo conocimiento del derecho,
-        sino también una comprensión sólida de cómo la tecnología puede transformar y mejorar la prestación de servicios
-        legales.
+        {{ "OUR_FIRM2.TEXT_LEGALTECH" | translate }}
       </p>
 
       <!-- Contenido colapsable -->
       <div class="collapsible-content" [class.collapsed]="showMore">
         <p>
-          Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de
-          cómo la tecnología puede transformar y mejorar la prestación de servicios legales.
+          {{ "OUR_FIRM2.TEXT_LAWYERS" | translate }}
         </p>
         <p>
-          En LegalTech – Abogados Digitales, combinamos la destreza legal tradicional con un enfoque innovador hacia la
-          resolución de problemas. Ya sea que seas una startup emergente, una empresa establecida o un particular en
-          busca de asesoramiento legal, en Legaltech te ofrecemos soluciones adaptadas a tus necesidades específicas.
-          Estamos aquí para ayudarte a navegar por el panorama legal en constante cambio y para proporcionarte la
-          tranquilidad y la seguridad que necesitas en un mundo cada vez más digitalizado.
+          {{ "OUR_FIRM2.TEXT_SOLUTIONS" | translate }}
         </p>
       </div>
 
       <!-- Botón para ver más/menos -->
       <div class="toggle-content">
         <button class="toggle-more-btn" (click)="toggleShowMore()" [attr.aria-expanded]="showMore">
-          {{ showMore ? 'Ver menos' : 'Ver más' }}
+          {{ showMore ? "Ver menos" : "Ver más" }}
         </button>
       </div>
     </div>
@@ -54,14 +45,15 @@
   <!-- Sección de la misión con contenido colapsable -->
   <section class="button-content">
     <app-legend-buttons [content]="mision" [title]="titleMision"></app-legend-buttons>
-    <br>
+    <br />
     <app-legend-buttons [content]="vision" [title]="titleVision"></app-legend-buttons>
   </section>
 
   <section class="button-nuestro-equipo">
     <button class="formation-button" role="button" (click)="redirectToTeam()">
-      <span>CONOCE NUESTRO<span class="strong"> EQUIPO</span></span>
+      <span>{{ "OUR_FIRM2.TITLE_MEET" | translate
+        }}<span class="strong">
+          {{ "OUR_FIRM2.TITLE_TEAM" | translate }}</span></span>
     </button>
   </section>
-
 </section>

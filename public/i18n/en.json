@@ -33,6 +33,52 @@
             "TEXT": "At our firm, <span class='bold'>effectiveness</span> and transparency are more than just <span class='bold'>words</span>: they are our promise. We meet <span class='bold'>deadlines</span>, deliver <span class='bold'>results</span>, and elevate legal counsel to the <span class='bold'>next level</span>."
         }
     },
+    "SERVICES": {
+        "SERVICES_TITLE": "Service catalog",
+        "SERVICES_SUBTITLE": "your perfect solution!"
+    },
+    "IDENTITY": {
+        "TITLE_WE_LOVE": "We love what",
+        "TITLE_WHAT_WE_DO": "we do",
+        "PASSION_LABEL": "with passion",
+        "COMMITMENT_LABEL": "and commitment",
+        "EVERYDAY_LABEL": "every day"
+    },
+    "VALUES": {
+        "TITLE": "Values that",
+        "TITLE_TWO": "identify us",
+        "TITLE_RESPONSIBILITY": "RESPONSIBILITY",
+        "TEXT_RESPONSIBILITY": "Responsibility is the foundation on which we build our clients' trust and the excellence of our legal services.",
+        "TITLE_INNOVATION": "INNOVATION",
+        "TEXT_INNOVATION": "Innovation through technology is our compass to navigate a constantly changing world.",
+        "TITLE_PROMPTNESS": "PROMPTNESS",
+        "TEXT_PROMPTNESS": "In our firm, timeliness is essential. We are committed to providing fast and efficient legal solutions, acting promptly and effectively in every case.",
+        "TITLE_PREJUDICIAL": "PREJUDICIALITY",
+        "TEXT_PREJUDICIAL": "We are committed to offering effective and fast advice, seeking practical solutions for our clients' problems without resorting to prolonged judicial processes.",
+        "TITLE_HONESTY": "HONESTY",
+        "TEXT_HONESTY": "Our firm is based on integrity, transparency, and commitment to our clients' interests."
+    },
+    "CONTACT": {
+        "CONTACT_AHORA": "Contact us now!",
+        "CONTACT_TEXT": "We are ready to help you with your legal inquiries",
+        "CONTACT_CHAT": "Chat with us",
+        "CONTACT_CLOSE": "Close"
+    },
+    "OUR_FIRM2": {
+        "TITLE_OUR": "OUR",
+        "TITLE_FIRM": "FIRM",
+        "TEXT_LEGALTECH": "At LegalTech – Digital Lawyers, we believe in the importance of adapting to a constantly evolving world. We strive to be at the forefront of emerging trends in legal tech, exploring new ways to use artificial intelligence, automation, and data analysis to improve efficiency and accuracy in the practice of law. Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
+        "TEXT_LAWYERS": "Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
+        "TEXT_SOLUTIONS": "At LegalTech – Digital Lawyers, we combine traditional legal expertise with an innovative approach to problem-solving. Whether you are an emerging startup, an established company, or an individual seeking legal advice, at Legaltech we offer solutions tailored to your specific needs. We are here to help you navigate the constantly changing legal landscape and to provide you with the peace of mind and security you need in an increasingly digital world.",
+        "TITLE_MEET": "MEET OUR",
+        "TITLE_TEAM": "TEAM"
+    },
+    "LEGAL_ADVICE": {
+        "TITLE_PART_ONE": "LegalTech: Advanced Legal Advice Driven by Technology and Innovation"
+    },
+    "TEAM_VIEWS": {
+        "TITLE_PART_ONE": "MEET OUR TEAM"
+    },
     "ENTERPRISES": {
         "TITLE_PART_ONE": "Companies that",
         "TITLE_PART_TWO": "trusted us"

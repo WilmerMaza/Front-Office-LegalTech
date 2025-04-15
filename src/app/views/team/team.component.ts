@@ -4,12 +4,15 @@ import { ActivatedRoute } from '@angular/router';
 import { TEAMARRAY } from "../../constant/team";
 import { TeamArray } from '../home/interface/ImgInterface';
 import { PersonComponent } from "./components/person/person.component";
+import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-team',
   standalone: true,
   imports: [
     CommonModule,
-    PersonComponent
+    PersonComponent,
+    TranslateModule
   ],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']

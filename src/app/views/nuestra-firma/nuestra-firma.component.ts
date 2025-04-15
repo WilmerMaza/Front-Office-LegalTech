@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MISION, TEXT_MISION, TEXT_VISION, VISION } from '../../constant/company_information';
 import { LegendButtonsComponent } from './components/legend-buttons/legend-buttons.component';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-nuestra-firma',
-  imports: [LegendButtonsComponent],
+  imports: [LegendButtonsComponent,TranslateModule],
   standalone: true,
-  templateUrl: './nuestra-firma.component.html',
+  templateUrl:'./nuestra-firma.component.html',
   styleUrl: './nuestra-firma.component.scss',
 })
 export class NuestraFirmaComponent {

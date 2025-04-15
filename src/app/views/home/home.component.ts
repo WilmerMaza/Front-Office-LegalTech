@@ -10,6 +10,8 @@ import { NuestroEquipoComponent } from './components/nuestro-equipo/nuestro-equi
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ValoresComponent } from './components/valores/valores.component';
 import { ImgInterface } from './interface/ImgInterface';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
@@ -24,7 +26,8 @@ import { ImgInterface } from './interface/ImgInterface';
     ValoresComponent,
     EmpresasComponent,
     FirmaComponent,
-    NuestroEquipoComponent
+    NuestroEquipoComponent,
+    TranslateModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

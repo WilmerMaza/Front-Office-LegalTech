@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogRef } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-dialog',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule,TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-dialog.component.html',
   styleUrl: './contact-dialog.component.scss'
