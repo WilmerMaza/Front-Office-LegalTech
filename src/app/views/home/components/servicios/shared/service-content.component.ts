@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { HtmlTranslateService } from 'src/app/shared/services/html-translate.service';
 
 interface ServiceContent {
   title: string;
@@ -33,11 +34,20 @@ interface ServiceContent {
         </div>
 
         <div class="service-text">
-          <p class="service-text-principal">{{ service.description |  translate }}</p>
+          <p
+            class="service-text-principal"
+            [innerHTML]="safeContent(service.description)"
+          ></p>
         </div>
       </div>
       <div class="services-box">
-        <p *ngFor="let point of service.bulletPoints">• {{ point | translate }}</p>
+        @for (point of service.bulletPoints; track $index) {
+
+        <p>
+          {{ point | translate }}
+        </p>
+
+        }
       </div>
     </div>
   `,
@@ -51,4 +61,10 @@ export class ServiceContentComponent {
     description: '',
     bulletPoints: [],
   };
+
+  constructor(public htmlTranslate: HtmlTranslateService) {}
+
+  public safeContent(key?: string) {
+    return this.htmlTranslate.getSanitizedHtml(key);
+  }
 }

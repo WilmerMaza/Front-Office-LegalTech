@@ -1,195 +1,195 @@
 {
-    "NAV": {
-        "HOME": "Home",
-        "SERVICES": "Services",
-        "FIRM": "Our Firm",
-        "CONTACT": "Contact",
-        "NAME": "DIGITAL LAWYERS"
+  "NAV": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "FIRM": "Our Firm",
+    "CONTACT": "Contact",
+    "NAME": "DIGITAL LAWYERS"
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved",
+    "NAME": "DIGITAL LAWYERS",
+    "SOCIAL": "FOLLOW"
+  },
+  "OUR_FIRM": {
+    "TITLE": "Our Firm",
+    "INITIAL_TEXT": "At LegalTech, we take pride in providing our clients with exceptional legal representation backed by years of experience and unwavering dedication. Our team of highly qualified attorneys is committed to defending the rights and interests of those who trust us to handle their most pressing legal matters.",
+    "SEE_MORE": "Read more"
+  },
+  "COROUSEL_INIT": {
+    "IMG_ONE": {
+      "TITLE": "Legal Strategy and Planning",
+      "ALT": "Chessboard illustrating legal strategies",
+      "TEXT": "<span class='bold'>The future</span> of law is here: From <span class='bold'>start</span> to finish, our <span class='bold'>commitment</span> is legal counsel <span class='bold'>empowered</span> by <span class='bold'>technological advancements</span>."
     },
-    "FOOTER": {
-        "RIGHTS": "All rights reserved",
-        "NAME": "DIGITAL LAWYERS",
-        "SOCIAL": "FOLLOW"
+    "IMG_TWO": {
+      "TITLE": "Legal Strategy and Planning",
+      "ALT": "Chessboard with crystal pieces",
+      "TEXT": "Ready for a <span class='bold'>change</span> in the legal experience? We offer more than just <span class='bold'>services</span>: we offer compliance, <span class='bold'>honesty</span>, and an <span class='bold'>innovative</span> approach that redefines <span class='bold'>legal practice</span>."
     },
-    "OUR_FIRM": {
-        "TITLE": "Our Firm",
-        "INITIAL_TEXT": "At LegalTech, we take pride in providing our clients with exceptional legal representation backed by years of experience and unwavering dedication. Our team of highly qualified attorneys is committed to defending the rights and interests of those who trust us to handle their most pressing legal matters.",
-        "SEE_MORE": "Read more"
-    },
-    "COROUSEL_INIT": {
-        "IMG_ONE": {
-            "TITLE": "Legal Strategy and Planning",
-            "ALT": "Chessboard illustrating legal strategies",
-            "TEXT": "<span class='bold'>The future</span> of law is here: From <span class='bold'>start</span> to finish, our <span class='bold'>commitment</span> is legal counsel <span class='bold'>empowered</span> by <span class='bold'>technological advancements</span>."
-        },
-        "IMG_TWO": {
-            "TITLE": "Legal Strategy and Planning",
-            "ALT": "Chessboard with crystal pieces",
-            "TEXT": "Ready for a <span class='bold'>change</span> in the legal experience? We offer more than just <span class='bold'>services</span>: we offer compliance, <span class='bold'>honesty</span>, and an <span class='bold'>innovative</span> approach that redefines <span class='bold'>legal practice</span>."
-        },
-        "IMG_THREE": {
-            "TITLE": "Legal Strategy and Planning",
-            "ALT": "Teamwork leads to the best legal strategies",
-            "TEXT": "At our firm, <span class='bold'>effectiveness</span> and transparency are more than just <span class='bold'>words</span>: they are our promise. We meet <span class='bold'>deadlines</span>, deliver <span class='bold'>results</span>, and elevate legal counsel to the <span class='bold'>next level</span>."
-        }
-    },
-    "SERVICES": {
-        "SERVICES_TITLE": "Service catalog",
-        "SERVICES_SUBTITLE": "your perfect solution!"
-    },
-    "IDENTITY": {
-        "TITLE_WE_LOVE": "We love what",
-        "TITLE_WHAT_WE_DO": "we do",
-        "PASSION_LABEL": "with passion",
-        "COMMITMENT_LABEL": "and commitment",
-        "EVERYDAY_LABEL": "every day"
-    },
-    "VALUES": {
-        "TITLE": "Values that",
-        "TITLE_TWO": "identify us",
-        "TITLE_RESPONSIBILITY": "RESPONSIBILITY",
-        "TEXT_RESPONSIBILITY": "Responsibility is the foundation on which we build our clients' trust and the excellence of our legal services.",
-        "TITLE_INNOVATION": "INNOVATION",
-        "TEXT_INNOVATION": "Innovation through technology is our compass to navigate a constantly changing world.",
-        "TITLE_PROMPTNESS": "PROMPTNESS",
-        "TEXT_PROMPTNESS": "In our firm, timeliness is essential. We are committed to providing fast and efficient legal solutions, acting promptly and effectively in every case.",
-        "TITLE_PREJUDICIAL": "PREJUDICIALITY",
-        "TEXT_PREJUDICIAL": "We are committed to offering effective and fast advice, seeking practical solutions for our clients' problems without resorting to prolonged judicial processes.",
-        "TITLE_HONESTY": "HONESTY",
-        "TEXT_HONESTY": "Our firm is based on integrity, transparency, and commitment to our clients' interests."
-    },
-    "CONTACT": {
-        "CONTACT_NOW": "Talk to Us!",
-        "CONTACT_CHAT": "Whatsapp",
-        "CONTACT_CLOSE": "Close"
-    },
-    "OUR_FIRM2": {
-        "TITLE_OUR": "OUR",
-        "TITLE_FIRM": " FIRM",
-        "TEXT_LEGALTECH": "At LegalTech – Digital Lawyers, we believe in the importance of adapting to a constantly evolving world. We strive to be at the forefront of emerging trends in legal tech, exploring new ways to use artificial intelligence, automation, and data analysis to improve efficiency and accuracy in the practice of law. Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
-        "TEXT_LAWYERS": "Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
-        "TEXT_SOLUTIONS": "At LegalTech – Digital Lawyers, we combine traditional legal expertise with an innovative approach to problem-solving. Whether you are an emerging startup, an established company, or an individual seeking legal advice, at Legaltech we offer solutions tailored to your specific needs. We are here to help you navigate the constantly changing legal landscape and to provide you with the peace of mind and security you need in an increasingly digital world.",
-        "TITLE_MEET": "MEET OUR",
-        "TITLE_TEAM": "TEAM",
-        "MISSION": "At Legaltech, our mission is to provide our clients with exceptional legal representation, backed by technical expertise and a passion for innovation. Whether you need advice on intellectual property, regulatory compliance, litigation, or any other area of law, at Legaltech we are here to help you navigate an increasingly complex and technology-driven legal world.",
-        "VISION": "In a constantly evolving legal environment, our vision is to leverage the latest technological tools to deliver cutting-edge legal representation to our clients. From process automation to data analysis, our expertise at Legaltech allows us to optimize the practice of law, save time and resources, and deliver exceptional results to our clients.",
-        "TEXT_VISION": "VISION",
-        "TEXT_MISSION": "MISSION",
-        "SEE_LESS": "See less",
-        "SEE_MORE": "See more"
-    },
-    "LEGAL_ADVICE": {
-        "TITLE_PART_ONE": "LegalTech: Advanced Legal Advice Driven by Technology and Innovation"
-    },
-    "TEAM_VIEWS": {
-        "TITLE_PART_ONE": "MEET OUR TEAM"
-    },
-    "ENTERPRISES": {
-        "TITLE_PART_ONE": "Companies that",
-        "TITLE_PART_TWO": "trusted us"
-    },
-    "TEAM": {
-        "CATHERINE": {
-            "EDUCATION": "<p>She is a lawyer who graduated in 1998 from Universidad del Norte in Barranquilla. She later pursued advanced studies at Universidad Externado de Colombia in Bogotá between 2001 and 2002. In 2017, she completed a program in American Legal English at EF Chicago. In 2020 and 2022, she took courses in Introduction to American English at the University of Pennsylvania and Leadership at the University of Michigan, respectively.</p>",
-            "FORMACION": "Lawyer graduated from Universidad del Norte and Universidad Externado de Colombia, with over 21 years of experience in legal consulting and litigation. Throughout my career, I have provided strategic legal advice to prominent companies such as Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, and Hotel Bahía S.A.S. My background includes managing civil, labor, and administrative proceedings as a correspondent attorney for prestigious firms including Chapman & Asociados, Vélez Gutiérrez, and Baker & McKenzie S.A.S.",
-            "POSITION": "Manager"
-        },
-        "MIRNA": {
-            "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
-            "FORMACION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Background in the judiciary, specifically in Administrative Litigation Law. Currently providing legal services at the law firm Legal Tech Abogados Digitales, focusing on real estate law, horizontal property, and executive proceedings.",
-            "POSITION": "Junior Lawyer",
-            "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Administrative Court of Bolívar, Judicial Assistant (ad honorem) | January 2023</p><p>• Junior Lawyer – Legaltech Abogados Digitales | October 2023 – Present</p>"
-        },
-        "ISABEL": {
-            "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
-            "FORMACION": "Bilingual lawyer with experience in horizontal property law, currently leading the collections department. Expert in managing the recovery of overdue administration fees and implementing legal solutions. My focus is on ensuring the financial stability of properties through effective collection and negotiation strategies, while promoting regulatory compliance and harmonious coexistence among co-owners.",
-            "POSITION": "Junior Lawyer",
-            "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Junior Lawyer – Legaltech Abogados Digitales.</p>",
-            "DESCRIPTION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Specialized in the judiciary, specifically in the area of Administrative Litigation Law."
-        },
-        "SEE_MORE": "Read more",
-        "ASSOCIATED": "Associated",
-        "HELP_MESSAGE": "We’re here to help you!",
-        "TEAM_INTRO": "We are proud to have a diverse and dynamic team that works with passion to turn ideas into reality. At LegalTech, every team member plays a crucial role in our success, and we are excited to share this journey with our clients.",
-        "TITLE_PART_ONE": "MEET",
-        "TITLE_PART_TWO": "OUR TEAM",
-        "CONTACTAR": "Contact",
-        "FORMACION": "Training"
-    },
-    "SERVICE": {
-        "DEFAULT": {
-            "TITLE": "Our Services",
-            "DESCRIPTION": "We offer a wide range of specialized legal services for individuals and companies."
-        },
-        "CARTERA": {
-            "NAME": "Collection",
-            "TITLE": "Debt Collection",
-            "DESCRIPTION": "We focus on efficient debt management and recovery, taking legal and extrajudicial actions to recover the owed amounts.",
-            "BULLETS": [
-                "Digital communications to obtain payment or formal",
-                "•requirements Negotiation with debtors to establish payment",
-                "•plans Filing of executive and mortgage",
-                "•proceedings execution of judgments and monitoring of recovered amounts"
-            ]
-        },
-        "INMOBILIARIA": {
-            "NAME": "Estate Law",
-            "TITLE": "Real Estate Law",
-            "DESCRIPTION": "We provide legal advice in all phases of real estate transactions, ensuring legal security in each operation:",
-            "BULLETS": [
-                " Advice on the purchase, sale, rental, and leasing of properties",
-                "• Drafting, reviewing, and negotiating real estate contracts",
-                "• Resolution of property-related disputes",
-                "• Assistance with document processing before authorities",
-                "• Analysis of mortgage processes at foreclosure stage"
-            ]
-        },
-        "RESPONSABILIDAD": {
-            "NAME": "Civil Liability",
-            "TITLE": "Civil Liability",
-            "DESCRIPTION": "We provide specialized advice in cases of contractual and non-contractual civil liability:",
-            "BULLETS": [
-                "Representation in damage claims",
-                "•Advice on professional liability claims",
-                "•Defense in defective product liability cases",
-                "•Negotiation and out-of-court dispute resolution"
-            ]
-        },
-        "LABORAL": {
-            "NAME": "Labor",
-            "TITLE": "Labor Law",
-            "DESCRIPTION": "We offer comprehensive labor law advice for companies and employees:",
-            "BULLETS": [
-                "Drafting and reviewing employment contracts",
-                "•Representation in disciplinary procedures and dismissals",
-                "•Advice on collective bargaining",
-                "•Defense in labor litigation",
-                "•Compliance consulting in labor regulations"
-            ]
-        },
-        "PROPIEDAD": {
-            "NAME": "Condominium Law",
-            "TITLE": "Condominium Law",
-            "DESCRIPTION": "Specialists in the legal management of property owners' communities and buildings:",
-            "BULLETS": [
-                "Advice on establishing and modifying condominium regimes",
-                "•Resolution of conflicts between property owners",
-                "•Representation in owners' meetings",
-                "•Consulting on condominium law regulations",
-                "•Management of unpaid community fees"
-            ]
-        },
-        "COMERCIAL": {
-            "NAME": "Commercial Law",
-            "TITLE": "Commercial Law",
-            "DESCRIPTION": "We provide specialized legal advice for companies and entrepreneurs:",
-            "BULLETS": [
-                "Company formation and restructuring",
-                "•Drafting and negotiation of commercial contracts",
-                "•Advice on business operations",
-                "•Protection of intellectual and industrial property",
-                "•Representation in commercial litigation"
-            ]
-        }
+    "IMG_THREE": {
+      "TITLE": "Legal Strategy and Planning",
+      "ALT": "Teamwork leads to the best legal strategies",
+      "TEXT": "At our firm, <span class='bold'>effectiveness</span> and transparency are more than just <span class='bold'>words</span>: they are our promise. We meet <span class='bold'>deadlines</span>, deliver <span class='bold'>results</span>, and elevate legal counsel to the <span class='bold'>next level</span>."
     }
+  },
+  "SERVICES": {
+    "SERVICES_TITLE": "Service catalog",
+    "SERVICES_SUBTITLE": "your perfect solution!"
+  },
+  "IDENTITY": {
+    "TITLE_WE_LOVE": "We love what",
+    "TITLE_WHAT_WE_DO": "we do",
+    "PASSION_LABEL": "with passion",
+    "COMMITMENT_LABEL": "and commitment",
+    "EVERYDAY_LABEL": "every day"
+  },
+  "VALUES": {
+    "TITLE": "Values that",
+    "TITLE_TWO": "identify us",
+    "TITLE_RESPONSIBILITY": "RESPONSIBILITY",
+    "TEXT_RESPONSIBILITY": "Responsibility is the foundation on which we build our clients' trust and the excellence of our legal services.",
+    "TITLE_INNOVATION": "INNOVATION",
+    "TEXT_INNOVATION": "Innovation through technology is our compass to navigate a constantly changing world.",
+    "TITLE_PROMPTNESS": "PROMPTNESS",
+    "TEXT_PROMPTNESS": "In our firm, timeliness is essential. We are committed to providing fast and efficient legal solutions, acting promptly and effectively in every case.",
+    "TITLE_PREJUDICIAL": "PREJUDICIALITY",
+    "TEXT_PREJUDICIAL": "We are committed to offering effective and fast advice, seeking practical solutions for our clients' problems without resorting to prolonged judicial processes.",
+    "TITLE_HONESTY": "HONESTY",
+    "TEXT_HONESTY": "Our firm is based on integrity, transparency, and commitment to our clients' interests."
+  },
+  "CONTACT": {
+    "CONTACT_NOW": "Talk to Us!",
+    "CONTACT_CHAT": "Whatsapp",
+    "CONTACT_CLOSE": "Close"
+  },
+  "OUR_FIRM2": {
+    "TITLE_OUR": "OUR",
+    "TITLE_FIRM": " FIRM",
+    "TEXT_LEGALTECH": "At LegalTech – Digital Lawyers, we believe in the importance of adapting to a constantly evolving world. We strive to be at the forefront of emerging trends in legal tech, exploring new ways to use artificial intelligence, automation, and data analysis to improve efficiency and accuracy in the practice of law. Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
+    "TEXT_LAWYERS": "Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
+    "TEXT_SOLUTIONS": "At LegalTech – Digital Lawyers, we combine traditional legal expertise with an innovative approach to problem-solving. Whether you are an emerging startup, an established company, or an individual seeking legal advice, at Legaltech we offer solutions tailored to your specific needs. We are here to help you navigate the constantly changing legal landscape and to provide you with the peace of mind and security you need in an increasingly digital world.",
+    "TITLE_MEET": "MEET OUR",
+    "TITLE_TEAM": "TEAM",
+    "MISSION": "At Legaltech, our mission is to provide our clients with exceptional legal representation, backed by technical expertise and a passion for innovation. Whether you need advice on intellectual property, regulatory compliance, litigation, or any other area of law, at Legaltech we are here to help you navigate an increasingly complex and technology-driven legal world.",
+    "VISION": "In a constantly evolving legal environment, our vision is to leverage the latest technological tools to deliver cutting-edge legal representation to our clients. From process automation to data analysis, our expertise at Legaltech allows us to optimize the practice of law, save time and resources, and deliver exceptional results to our clients.",
+    "TEXT_VISION": "VISION",
+    "TEXT_MISSION": "MISSION",
+    "SEE_LESS": "See less",
+    "SEE_MORE": "See more"
+  },
+  "LEGAL_ADVICE": {
+    "TITLE_PART_ONE": "LegalTech: Advanced Legal Advice Driven by Technology and Innovation"
+  },
+  "TEAM_VIEWS": {
+    "TITLE_PART_ONE": "MEET OUR TEAM"
+  },
+  "ENTERPRISES": {
+    "TITLE_PART_ONE": "Companies that",
+    "TITLE_PART_TWO": "trusted us"
+  },
+  "TEAM": {
+    "CATHERINE": {
+      "EDUCATION": "<p>She is a lawyer who graduated in 1998 from Universidad del Norte in Barranquilla. She later pursued advanced studies at Universidad Externado de Colombia in Bogotá between 2001 and 2002. In 2017, she completed a program in American Legal English at EF Chicago. In 2020 and 2022, she took courses in Introduction to American English at the University of Pennsylvania and Leadership at the University of Michigan, respectively.</p>",
+      "FORMACION": "Lawyer graduated from Universidad del Norte and Universidad Externado de Colombia, with over 21 years of experience in legal consulting and litigation. Throughout my career, I have provided strategic legal advice to prominent companies such as Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, and Hotel Bahía S.A.S. My background includes managing civil, labor, and administrative proceedings as a correspondent attorney for prestigious firms including Chapman & Asociados, Vélez Gutiérrez, and Baker & McKenzie S.A.S.",
+      "POSITION": "Manager"
+    },
+    "MIRNA": {
+      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "FORMACION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Background in the judiciary, specifically in Administrative Litigation Law. Currently providing legal services at the law firm Legal Tech Abogados Digitales, focusing on real estate law, horizontal property, and executive proceedings.",
+      "POSITION": "Junior Lawyer",
+      "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Administrative Court of Bolívar, Judicial Assistant (ad honorem) | January 2023</p><p>• Junior Lawyer – Legaltech Abogados Digitales | October 2023 – Present</p>"
+    },
+    "ISABEL": {
+      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "FORMACION": "Bilingual lawyer with experience in horizontal property law, currently leading the collections department. Expert in managing the recovery of overdue administration fees and implementing legal solutions. My focus is on ensuring the financial stability of properties through effective collection and negotiation strategies, while promoting regulatory compliance and harmonious coexistence among co-owners.",
+      "POSITION": "Junior Lawyer",
+      "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Junior Lawyer – Legaltech Abogados Digitales.</p>",
+      "DESCRIPTION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Specialized in the judiciary, specifically in the area of Administrative Litigation Law."
+    },
+    "SEE_MORE": "Read more",
+    "ASSOCIATED": "Associated",
+    "HELP_MESSAGE": "We’re here to help you!",
+    "TEAM_INTRO": "We are proud to have a diverse and dynamic team that works with passion to turn ideas into reality. At LegalTech, every team member plays a crucial role in our success, and we are excited to share this journey with our clients.",
+    "TITLE_PART_ONE": "MEET",
+    "TITLE_PART_TWO": "OUR TEAM",
+    "CONTACTAR": "Contact",
+    "FORMACION": "Training"
+  },
+  "SERVICE": {
+    "DEFAULT": {
+      "TITLE": "Our Services",
+      "DESCRIPTION": "At <strong>LegalTech</strong>, we offer <em>innovative</em> and personalized <em>legal solutions</em> for both <em>individuals</em> and <em>businesses</em>."
+    },
+    "CARTERA": {
+      "NAME": "Collection",
+      "TITLE": "Debt Collection",
+      "DESCRIPTION": "We focus on efficient debt management and recovery, taking legal and extrajudicial actions to recover the owed amounts.",
+      "BULLETS": {
+        "ONE": "• Digital communications to obtain payment or formal requirements",
+        "TWO": "• Negotiation with debtors to establish payment plans",
+        "THREE": "• Filing of executive and mortgage proceedings",
+        "FOUR": "• Execution of judgments and monitoring of recovered amounts"
+      }
+    },
+    "INMOBILIARIA": {
+      "NAME": "Estate Law",
+      "TITLE": "Real Estate Law",
+      "DESCRIPTION": "We provide legal advice in all phases of real estate transactions, ensuring legal security in each operation:",
+      "BULLETS": {
+        "ONE": "• Advice on the purchase, sale, rental, and leasing of properties",
+        "TWO": "• Drafting, reviewing, and negotiating real estate contracts",
+        "THREE": "• Resolution of property-related disputes",
+        "FOUR": "• Assistance with document processing before authorities",
+        "FIVE": "• Analysis of mortgage processes at foreclosure stage"
+      }
+    },
+    "RESPONSABILIDAD": {
+      "NAME": "Civil Liability",
+      "TITLE": "Civil Liability",
+      "DESCRIPTION": "We provide specialized advice in cases of contractual and non-contractual civil liability:",
+      "BULLETS": {
+        "ONE": "• Representation in damage claims",
+        "TWO": "• Advice on professional liability claims",
+        "THREE": "• Defense in defective product liability cases",
+        "FOUR": "• Negotiation and out-of-court dispute resolution"
+      }
+    },
+    "LABORAL": {
+      "NAME": "Labor",
+      "TITLE": "Labor Law",
+      "DESCRIPTION": "We offer comprehensive labor law advice for companies and employees:",
+      "BULLETS": {
+        "ONE": "• Drafting and reviewing employment contracts",
+        "TWO": "• Representation in disciplinary procedures and dismissals",
+        "THREE": "• Advice on collective bargaining",
+        "FOUR": "• Defense in labor litigation",
+        "FIVE": "• Compliance consulting in labor regulations"
+      }
+    },
+    "PROPIEDAD": {
+      "NAME": "Condominium Law",
+      "TITLE": "Condominium Law",
+      "DESCRIPTION": "Specialists in the legal management of property owners' communities and buildings:",
+      "BULLETS": {
+        "ONE": "• Advice on establishing and modifying condominium regimes",
+        "TWO": "• Resolution of conflicts between property owners",
+        "THREE": "• Representation in owners' meetings",
+        "FOUR": "• Consulting on condominium law regulations",
+        "FIVE": "• Management of unpaid community fees"
+      }
+    },
+    "COMERCIAL": {
+      "NAME": "Commercial Law",
+      "TITLE": "Commercial Law",
+      "DESCRIPTION": "We provide specialized legal advice for companies and entrepreneurs:",
+      "BULLETS": {
+        "ONE": "• Company formation and restructuring",
+        "TWO": "• Drafting and negotiation of commercial contracts",
+        "THREE": "• Advice on business operations",
+        "FOUR": "• Protection of intellectual and industrial property",
+        "FIVE": "• Representation in commercial litigation"
+      }
+    }
+  }
 }
