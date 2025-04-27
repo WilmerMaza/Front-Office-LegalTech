@@ -19,47 +19,54 @@ import { HtmlTranslateService } from '../services/html-translate.service';
   imports: [CommonModule, TranslateModule],
   styleUrl: './carousel.component.scss',
   template: `
-   <swiper-container
-  #swiperRef
-  init="false"
-  class="swipper-custom"  [ngClass]="{ 'swipper-big': isBig }">
+    <swiper-container
+      #swiperRef
+      init="false"
+      class="swipper-custom"
+      [ngClass]="{ 'swipper-big': isBig }"
+    >
+      <swiper-slide
+        *ngFor="let img of imagesCarousel"
+        [ngClass]="{ 'company-swiper-slide': isEmpresas }"
+      >
+        <picture
+          [ngClass]="{
+            'content-pictures': isBig,
+            'company-picture': isEmpresas
+          }"
+        >
+          <source
+            [srcset]="img.srcMovil"
+            media="(max-width: 425px)"
+            type="image/webp"
+          />
+          <source
+            [srcset]="img.src"
+            media="(min-width: 600px)"
+            type="image/webp"
+          />
 
-  <swiper-slide
-    *ngFor="let img of imagesCarousel"
-    [ngClass]="{ 'company-swiper-slide': isEmpresas}">
+          <img
+            [src]="img.src"
+            [alt]="img.alt | translate"
+            [title]="img.title! | translate"
+            loading="lazy"
+            decoding="async"
+            style="object-fit: cover;"
+            [ngClass]="{
+              images: isPrincipal,
+              'company-img': isEmpresas
+            }"
+          />
+        </picture>
 
-    <picture
-      [ngClass]="{
-        'content-pictures': isBig,
-        'company-picture': isEmpresas
-      }">
-
-      <source [srcset]="img.srcMovil" media="(max-width: 425px)" type="image/webp" />
-      <source [srcset]="img.src" media="(min-width: 600px)" type="image/webp" />
-
-      <img
-        [src]="img.src"
-        [alt]="img.alt | translate"
-        [title]="img.title! | translate"
-        loading="lazy"
-        decoding="async"
-        style="object-fit: cover;"
-        [ngClass]="{
-          'images': isPrincipal,
-          'company-img': isEmpresas
-        }"
-      />
-    </picture>
-
-    <div *ngIf="textPresent" class="content-text-swiper">
-      <p [innerHTML]="safeContent(img.text)" class="text-swiper"></p>
-      <hr class="divider-carousel">
-    </div>
-
-  </swiper-slide>
-</swiper-container>
-
-  `
+        <div *ngIf="textPresent" class="content-text-swiper">
+          <p [innerHTML]="safeContent(img.text)" class="text-swiper"></p>
+          <hr class="divider-carousel" />
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  `,
 })
 export class CarouselComponent implements AfterViewInit {
   @Input() imagesCarousel: Array<ImgInterface> = [];
@@ -78,17 +85,18 @@ export class CarouselComponent implements AfterViewInit {
   @Input() isEmpresas: boolean = false;
   @Input() isPrincipal: boolean = false;
 
-
   @ViewChild('swiperRef', { static: false }) swiperRef!: ElementRef;
 
-  constructor(public htmlTranslate: HtmlTranslateService) { }
+  constructor(public htmlTranslate: HtmlTranslateService) {}
 
   public ngAfterViewInit(): void {
     const swiperEl = this.swiperRef.nativeElement;
 
     const config: SwiperOptions = {
       slidesPerView: this.slidesPerView,
-      pagination: this.pagination ? { clickable: this.paginationClick } : undefined,
+      pagination: this.pagination
+        ? { clickable: this.paginationClick }
+        : undefined,
       navigation: this.navigation,
       autoplay: { delay: this.autoplayTime },
       loop: this.loop,
@@ -102,7 +110,7 @@ export class CarouselComponent implements AfterViewInit {
     swiperEl.initialize?.();
   }
 
-  safeContent(key?: string) {
+  public safeContent(key?: string) {
     return this.htmlTranslate.getSanitizedHtml(key);
   }
 }
