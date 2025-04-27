@@ -12,8 +12,9 @@ import { Component } from '@angular/core';
           <img src="icons/telefono.svg" alt="Teléfono" loading="lazy" width="24" height="24" />
         </th>
         <td>
-          <a href="tel:3003534323" class="text-footer">300 3534323</a> -
-          <a href="tel:3226654345" class="text-footer">322 6654345</a>
+          <a href="tel:3003534323" class="text-footer">3166912248</a> -
+          <a href="tel:3226654345" class="text-footer">3053072539</a>-
+          <a href="tel:3226654345" class="text-footer">3234339675</a>
         </td>
       </tr>
       <tr>

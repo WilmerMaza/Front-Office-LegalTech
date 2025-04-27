@@ -64,9 +64,8 @@
     "TEXT_HONESTY": "Nuestra firma se basa en la integridad, transparencia y compromiso con los intereses de los clientes."
   },
   "CONTACT": {
-    "CONTACT_AHORA": "¡Contáctanos ahora!",
-    "CONTACT_TEXT": "Estamos listos para ayudarte con tus consultas legales",
-    "CONTACT_CHAT": "Chatea con nosotros",
+    "CONTACT_NOW": "Habla con Nosotros!",
+    "CONTACT_CHAT": "Whatsapp",
     "CONTACT_CLOSE": "Cerrar"
   },
   "LEGAL_ADVICE": {
@@ -79,7 +78,17 @@
     "TEXT_LAWYERS": "Nuestros abogados no solo tienen un profundo conocimiento del derecho, sino también una comprensión sólida de cómo la tecnología puede transformar y mejorar la prestación de servicios legales.",
     "TEXT_SOLUTIONS": "En LegalTech – Abogados Digitales, combinamos la destreza legal tradicional con un enfoque innovador hacia la resolución de problemas. Ya sea que seas una startup emergente, una empresa establecida o un particular en busca de asesoramiento legal, en Legaltech te ofrecemos soluciones adaptadas a tus necesidades específicas. Estamos aquí para ayudarte a navegar por el panorama legal en constante cambio y para proporcionarte la tranquilidad y la seguridad que necesitas en un mundo cada vez más digitalizado.",
     "TITLE_MEET": "CONOCE A NUESTRO",
-    "TITLE_TEAM": "EQUIPO"
+    "TITLE_TEAM": "EQUIPO",
+    "MISSION":"En Legaltech, nuestra misión es proporcionar a nuestros clientes una representación legal excepcional, respaldada por la experiencia técnica y la pasión por la innovación. Ya sea que necesites asesoramiento en materia de propiedad intelectual, cumplimiento normativo, litigios o cualquier otra área del derecho, en Legaltech estamos aquí para ayudarte a navegar por un mundo legal cada vez más complejo y tecnológicamente impulsado.",
+    "VISION":"En un entorno jurídico en constante evolución, nuestra misión es aprovechar las últimas herramientas tecnológicas para ofrecer a nuestros clientes una representación legal de vanguardia. Desde la automatización de procesos hasta el análisis de datos, nuestra experiencia en Legaltech nos permite optimizar la práctica del derecho, ahorrar tiempo y recursos, y brindar resultados excepcionales a nuestros clientes.",
+    "TEXT_MISSION":"MISION",
+    "TEXT_VISION":"VISION",
+    "SEE_LESS":"Ver menos",
+    "SEE_MORE":"Ver mas"
+
+
+
+
   },
   "TEAM_VIEWS": {
     "TITLE_PART_ONE": "CONOCE NUESTRO EQUIPO"
@@ -112,7 +121,11 @@
     "HELP_MESSAGE": "¡Estamos aquí para ayudarte!",
     "TEAM_INTRO": "Nos enorgullece contar con un equipo diverso y dinámico que trabaja con pasión para transformar ideas en realidades. En Legaltech, cada miembro del equipo juega un papel crucial en nuestro éxito, y estamos emocionados de compartir esta experiencia con nuestros clientes.",
     "TITLE_PART_ONE": "CONOCE",
-    "TITLE_PART_TWO": "NUESTRO EQUIPO"
+    "TITLE_PART_TWO": "NUESTRO EQUIPO",    
+    "CONTACTAR": "Contactar",
+    "FORMACION": "Formacion"
+    
+    
   },
   "SERVICE": {
     "DEFAULT": {
@@ -125,9 +138,9 @@
       "DESCRIPTION": "Nos enfocamos en la gestión y recuperación de deudas de manera eficiente, realizando acciones legales y extrajudiciales para recuperar los montos adeudados.",
       "BULLETS": [
         "Comunicaciones a través de medios digitales para obtener el pago o requerimientos formales",
-        "Negociación con los deudores para establecer planes de pago",
-        "Presentación de procesos ejecutivos y procesos hipotecarios",
-        "Ejecución de sentencias y seguimiento de la recuperación de las sumas adeudadas"
+        "•Negociación con los deudores para establecer planes de pago",
+        "•Presentación de procesos ejecutivos y procesos hipotecarios",
+        "•Ejecución de sentencias y seguimiento de la recuperación de las sumas adeudadas"
       ]
     },
     "INMOBILIARIA": {
@@ -136,10 +149,10 @@
       "DESCRIPTION": "Ofrecemos asesoramiento legal en todas las fases de operaciones inmobiliarias, garantizando seguridad jurídica en cada transacción:",
       "BULLETS": [
         "Asesoramiento en la compra, venta, alquiler y arrendamiento de propiedades",
-        "Redacción, revisión y negociación de contratos inmobiliarios",
-        "Resolución de conflictos relacionados con la propiedad",
-        "Asistencia en la tramitación de documentos ante autoridades competentes",
-        "Análisis de procesos hipotecarios en etapa de remate"
+        "•Redacción, revisión y negociación de contratos inmobiliarios",
+        "•Resolución de conflictos relacionados con la propiedad",
+        "•Asistencia en la tramitación de documentos ante autoridades competentes",
+        "•Análisis de procesos hipotecarios en etapa de remate"
       ]
     },
     "RESPONSABILIDAD": {
@@ -148,9 +161,9 @@
       "DESCRIPTION": "Brindamos asesoría especializada en casos de responsabilidad civil contractual y extracontractual:",
       "BULLETS": [
         "Representación en casos de daños y perjuicios",
-        "Asesoramiento en reclamaciones por responsabilidad profesional",
-        "Defensa en casos de responsabilidad por productos defectuosos",
-        "Negociación y resolución de conflictos extrajudiciales"
+        "•Asesoramiento en reclamaciones por responsabilidad profesional",
+        "•Defensa en casos de responsabilidad por productos defectuosos",
+        "•Negociación y resolución de conflictos extrajudiciales"
       ]
     },
     "LABORAL": {
@@ -159,10 +172,10 @@
       "DESCRIPTION": "Ofrecemos asesoría integral en asuntos laborales para empresas y trabajadores:",
       "BULLETS": [
         "Redacción y revisión de contratos laborales",
-        "Representación en procesos disciplinarios y despidos",
-        "Asesoramiento en negociaciones colectivas",
-        "Defensa en litigios laborales",
-        "Consultoría en cumplimiento normativo laboral"
+        "•Representación en procesos disciplinarios y despidos",
+        "•Asesoramiento en negociaciones colectivas",
+        "•Defensa en litigios laborales",
+        "•Consultoría en cumplimiento normativo laboral"
       ]
     },
     "PROPIEDAD": {
@@ -171,10 +184,10 @@
       "DESCRIPTION": "Especialistas en la gestión legal de comunidades de propietarios y edificios:",
       "BULLETS": [
         "Asesoramiento en la constitución y modificación de regímenes de propiedad horizontal",
-        "Resolución de conflictos entre propietarios",
-        "Representación en juntas de propietarios",
-        "Consultoría en normativa de propiedad horizontal",
-        "Gestión de impagos de cuotas comunitarias"
+        "•Resolución de conflictos entre propietarios",
+        "•Representación en juntas de propietarios",
+        "•Consultoría en normativa de propiedad horizontal",
+        "•Gestión de impagos de cuotas comunitarias"
       ]
     },
     "COMERCIAL": {
@@ -183,10 +196,10 @@
       "DESCRIPTION": "Brindamos asesoría legal especializada para empresas y emprendedores:",
       "BULLETS": [
         "Constitución y reestructuración de sociedades",
-        "Redacción y negociación de contratos mercantiles",
-        "Asesoramiento en operaciones comerciales",
-        "Protección de propiedad intelectual e industrial",
-        "Representación en litigios comerciales"
+        "•Redacción y negociación de contratos mercantiles",
+        "•Asesoramiento en operaciones comerciales",
+        "•Protección de propiedad intelectual e industrial",
+        "•Representación en litigios comerciales"
       ]
     }
   }
