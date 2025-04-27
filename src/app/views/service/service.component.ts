@@ -37,99 +37,65 @@ export class ServiceComponent implements OnInit {
     switch (route) {
       case '/cartera':
         this.currentService = {
-          title: 'Gestión de cartera',
+          title: 'SERVICE.CARTERA.TITLE',
           imageSrc: 'img/servicios/service_cartera_legaltech.png',
           imageAlt: 'Cobro de Cartera',
-          description: 'Nos enfocamos en la gestión y recuperación de deudas de manera eficiente, realizando acciones legales y extrajudiciales para recuperar los montos adeudados.',
-          bulletPoints: [
-            'Comunicaciones a través de medios digitales para obtener el pago o requerimientos formales',
-            'Negociación con los deudores para establecer planes de pago',
-            'Presentación de procesos ejecutivos y procesos hipotecarios',
-            'Ejecución de sentencias y seguimiento de la recuperación de las sumas adeudadas'
-          ]
+          description:'SERVICE.CARTERA.DESCRIPTION',
+          bulletPoints: ['SERVICE.CARTERA.BULLETS' ]
         };
         break;
       case '/inmobiliaria':
         this.currentService = {
-          title: 'Derecho Inmobiliario',
+          title: 'SERVICE.INMOBILIARIA.TITLE',
           imageSrc: 'img/servicios/service_inmobiliaria_legaltech.png',
           imageAlt: 'Derecho Inmobiliario',
-          description: 'Ofrecemos asesoramiento legal en todas las fases de operaciones inmobiliarias, garantizando seguridad jurídica en cada transacción:',
-          bulletPoints: [
-            'Asesoramiento en la compra, venta, alquiler y arrendamiento de propiedades',
-            'Redacción, revisión y negociación de contratos inmobiliarios',
-            'Resolución de conflictos relacionados con la propiedad',
-            'Asistencia en la tramitación de documentos ante autoridades competentes',
-            'Análisis de procesos hipotecarios en etapa de remate'
-          ]
+          description: 'SERVICE.INMOBILIARIA.DESCRIPTION',
+          bulletPoints: ['SERVICE.INMOBILIARIA.DESCRIPTION']
         };
         break;
       case '/responsabilidad':
         this.currentService = {
-          title: 'Responsabilidad Civil',
+          title: 'SERVICE.RESPONSABILIDAD.TITLE',
           imageSrc: '/icons/responsabilidad_civil.svg',
           imageAlt: 'Responsabilidad Civil',
-          description: 'Brindamos asesoría especializada en casos de responsabilidad civil contractual y extracontractual:',
-          bulletPoints: [
-            'Representación en casos de daños y perjuicios',
-            'Asesoramiento en reclamaciones por responsabilidad profesional',
-            'Defensa en casos de responsabilidad por productos defectuosos',
-            'Negociación y resolución de conflictos extrajudiciales'
-          ]
+          description: 'SERVICE.RESPONSABILIDAD.DESCRIPTION',
+          bulletPoints: ['SERVICE.RESPONSABILIDAD.BULLETS' ]
         };
         break;
       case '/laboral':
         this.currentService = {
-          title: 'Derecho Laboral',
+          title: 'SERVICE.LABORAL.TITLE',
           imageSrc: '/icons/derecho_laboral.svg',
           imageAlt: 'Derecho Laboral',
-          description: 'Ofrecemos asesoría integral en asuntos laborales para empresas y trabajadores:',
-          bulletPoints: [
-            'Redacción y revisión de contratos laborales',
-            'Representación en procesos disciplinarios y despidos',
-            'Asesoramiento en negociaciones colectivas',
-            'Defensa en litigios laborales',
-            'Consultoría en cumplimiento normativo laboral'
-          ]
+          description: 'SERVICE.LABORAL.DESCRIPTION',
+          bulletPoints: ['SERVICE.LABORAL.BULLETS']
         };
         break;
       case '/propiedad-horizontal':
         this.currentService = {
-          title: 'Propiedad Horizontal',
+          title: 'SERVICE.PROPIEDAD.TITLE',
           imageSrc: '/icons/propiedad_horizontal.svg',
           imageAlt: 'Propiedad Horizontal',
-          description: 'Especialistas en la gestión legal de comunidades de propietarios y edificios:',
-          bulletPoints: [
-            'Asesoramiento en la constitución y modificación de regímenes de propiedad horizontal',
-            'Resolución de conflictos entre propietarios',
-            'Representación en juntas de propietarios',
-            'Consultoría en normativa de propiedad horizontal',
-            'Gestión de impagos de cuotas comunitarias'
-          ]
+          description: 'SERVICE.PROPIEDAD.DESCRIPTION',
+          bulletPoints: ['SERVICE.PROPIEDAD.BULLETS']
         };
         break;
       case '/derecho-comercial':
         this.currentService = {
-          title: 'Derecho Comercial',
+          title: 'SERVICE.COMERCIAL.TITLE',
           imageSrc: '/icons/derecho_laboral.svg',
           imageAlt: 'Derecho Comercial',
-          description: 'Brindamos asesoría legal especializada para empresas y emprendedores:',
-          bulletPoints: [
-            'Constitución y reestructuración de sociedades',
-            'Redacción y negociación de contratos mercantiles',
-            'Asesoramiento en operaciones comerciales',
-            'Protección de propiedad intelectual e industrial',
-            'Representación en litigios comerciales'
-          ]
+          description: 'SERVICE.COMERCIAL.DESCRIPTION',
+          bulletPoints: ['SERVICE.COMERCIAL.BULLETS']
         };
         break;
       default:
         // Servicio por defecto o redirección
         this.currentService = {
-          title: 'Nuestros Servicios',
+          title: 'SERVICE.DEFAULT.TITLE',
           imageSrc: 'img/servicios/service_default_legaltech.png',
           imageAlt: 'Servicios Legales',
-          description: 'Ofrecemos una amplia gama de servicios legales especializados para particulares y empresas.',
+          description: 'SERVICE.DEFAULT.DESCRIPTION',
           bulletPoints: []
         };
     }
