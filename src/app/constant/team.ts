@@ -58,7 +58,9 @@ export const TEAMARRAY: TeamArray[] = [
           <img src="icons/telefono.svg" alt="Teléfono" loading="lazy" width="24" height="24" />
         </th>
         <td>
-          <a href="tel:3166912248" >316 6912248</a>
+          
+          <a href="tel:3053072539" > 305 3072539</a>
+         
      
         </td>
       </tr>

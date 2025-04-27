@@ -59,19 +59,24 @@
         "TEXT_HONESTY": "Our firm is based on integrity, transparency, and commitment to our clients' interests."
     },
     "CONTACT": {
-        "CONTACT_AHORA": "Contact us now!",
-        "CONTACT_TEXT": "We are ready to help you with your legal inquiries",
-        "CONTACT_CHAT": "Chat with us",
+        "CONTACT_NOW": "Talk to Us!",
+        "CONTACT_CHAT": "Whatsapp",
         "CONTACT_CLOSE": "Close"
     },
     "OUR_FIRM2": {
         "TITLE_OUR": "OUR",
-        "TITLE_FIRM": "FIRM",
+        "TITLE_FIRM": " FIRM",
         "TEXT_LEGALTECH": "At LegalTech – Digital Lawyers, we believe in the importance of adapting to a constantly evolving world. We strive to be at the forefront of emerging trends in legal tech, exploring new ways to use artificial intelligence, automation, and data analysis to improve efficiency and accuracy in the practice of law. Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
         "TEXT_LAWYERS": "Our lawyers not only have a deep knowledge of the law, but also a solid understanding of how technology can transform and enhance the provision of legal services.",
         "TEXT_SOLUTIONS": "At LegalTech – Digital Lawyers, we combine traditional legal expertise with an innovative approach to problem-solving. Whether you are an emerging startup, an established company, or an individual seeking legal advice, at Legaltech we offer solutions tailored to your specific needs. We are here to help you navigate the constantly changing legal landscape and to provide you with the peace of mind and security you need in an increasingly digital world.",
         "TITLE_MEET": "MEET OUR",
-        "TITLE_TEAM": "TEAM"
+        "TITLE_TEAM": "TEAM",
+        "MISSION": "At Legaltech, our mission is to provide our clients with exceptional legal representation, backed by technical expertise and a passion for innovation. Whether you need advice on intellectual property, regulatory compliance, litigation, or any other area of law, at Legaltech we are here to help you navigate an increasingly complex and technology-driven legal world.",
+        "VISION": "In a constantly evolving legal environment, our vision is to leverage the latest technological tools to deliver cutting-edge legal representation to our clients. From process automation to data analysis, our expertise at Legaltech allows us to optimize the practice of law, save time and resources, and deliver exceptional results to our clients.",
+        "TEXT_VISION": "VISION",
+        "TEXT_MISSION": "MISSION",
+        "SEE_LESS": "See less",
+        "SEE_MORE": "See more"
     },
     "LEGAL_ADVICE": {
         "TITLE_PART_ONE": "LegalTech: Advanced Legal Advice Driven by Technology and Innovation"
@@ -107,6 +112,84 @@
         "HELP_MESSAGE": "We’re here to help you!",
         "TEAM_INTRO": "We are proud to have a diverse and dynamic team that works with passion to turn ideas into reality. At LegalTech, every team member plays a crucial role in our success, and we are excited to share this journey with our clients.",
         "TITLE_PART_ONE": "MEET",
-        "TITLE_PART_TWO": "OUR TEAM"
+        "TITLE_PART_TWO": "OUR TEAM",
+        "CONTACTAR": "Contact",
+        "FORMACION": "Training"
+    },
+    "SERVICE": {
+        "DEFAULT": {
+            "TITLE": "Our Services",
+            "DESCRIPTION": "We offer a wide range of specialized legal services for individuals and companies."
+        },
+        "CARTERA": {
+            "NAME": "Collection",
+            "TITLE": "Debt Collection",
+            "DESCRIPTION": "We focus on efficient debt management and recovery, taking legal and extrajudicial actions to recover the owed amounts.",
+            "BULLETS": [
+                "Digital communications to obtain payment or formal",
+                "•requirements Negotiation with debtors to establish payment",
+                "•plans Filing of executive and mortgage",
+                "•proceedings execution of judgments and monitoring of recovered amounts"
+            ]
+        },
+        "INMOBILIARIA": {
+            "NAME": "Estate Law",
+            "TITLE": "Real Estate Law",
+            "DESCRIPTION": "We provide legal advice in all phases of real estate transactions, ensuring legal security in each operation:",
+            "BULLETS": [
+                " Advice on the purchase, sale, rental, and leasing of properties",
+                "• Drafting, reviewing, and negotiating real estate contracts",
+                "• Resolution of property-related disputes",
+                "• Assistance with document processing before authorities",
+                "• Analysis of mortgage processes at foreclosure stage"
+            ]
+        },
+        "RESPONSABILIDAD": {
+            "NAME": "Civil Liability",
+            "TITLE": "Civil Liability",
+            "DESCRIPTION": "We provide specialized advice in cases of contractual and non-contractual civil liability:",
+            "BULLETS": [
+                "Representation in damage claims",
+                "•Advice on professional liability claims",
+                "•Defense in defective product liability cases",
+                "•Negotiation and out-of-court dispute resolution"
+            ]
+        },
+        "LABORAL": {
+            "NAME": "Labor",
+            "TITLE": "Labor Law",
+            "DESCRIPTION": "We offer comprehensive labor law advice for companies and employees:",
+            "BULLETS": [
+                "Drafting and reviewing employment contracts",
+                "•Representation in disciplinary procedures and dismissals",
+                "•Advice on collective bargaining",
+                "•Defense in labor litigation",
+                "•Compliance consulting in labor regulations"
+            ]
+        },
+        "PROPIEDAD": {
+            "NAME": "Condominium Law",
+            "TITLE": "Condominium Law",
+            "DESCRIPTION": "Specialists in the legal management of property owners' communities and buildings:",
+            "BULLETS": [
+                "Advice on establishing and modifying condominium regimes",
+                "•Resolution of conflicts between property owners",
+                "•Representation in owners' meetings",
+                "•Consulting on condominium law regulations",
+                "•Management of unpaid community fees"
+            ]
+        },
+        "COMERCIAL": {
+            "NAME": "Commercial Law",
+            "TITLE": "Commercial Law",
+            "DESCRIPTION": "We provide specialized legal advice for companies and entrepreneurs:",
+            "BULLETS": [
+                "Company formation and restructuring",
+                "•Drafting and negotiation of commercial contracts",
+                "•Advice on business operations",
+                "•Protection of intellectual and industrial property",
+                "•Representation in commercial litigation"
+            ]
+        }
     }
 }

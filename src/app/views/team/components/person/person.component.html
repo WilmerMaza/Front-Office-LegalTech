@@ -4,7 +4,7 @@
   <div class="button-container">
     <button class="contact-button" (click)="toggleInfo()">
       <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
-      <strong>Contactar</strong>
+      <strong>>{{'TEAM.CONTACTAR' | translate}}</strong>
       <img [src]="arrowContact" alt="flecha" class="arrow-icon" />
     </button>
 
@@ -17,7 +17,7 @@
 
   <button class="formation-button" (click)="toggleEducation()">
     <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
-    <strong>Formación</strong>
+    <strong>{{'TEAM.FORMACION' | translate}}</strong>
     <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
   </button>
 
@@ -60,7 +60,7 @@
         <div class="button-container">
           <button class="contact-button" (click)="toggleInfo()">
             <img src="img/team/contact.png" alt="icono contacto" class="contact-icon" loading="lazy" />
-            <strong>Contactar</strong>
+            <strong>{{'TEAM.CONTACTAR' | translate}}</strong>
             <img [src]="arrowContact" alt="flecha" class="arrow-icon" loading="lazy" />
           </button>
 
@@ -72,7 +72,7 @@
 
           <button class="formation-button" (click)="toggleEducation()">
             <img class="formation-icon" src="img/team/logro.png" alt="Icono de Formación" loading="lazy" />
-            <strong>Formación</strong>
+            <strong>{{'TEAM.FORMACION' | translate }}</strong>
             <img [src]="arrowFormation" alt="flecha" class="arrow-icon" loading="lazy" />
           </button>
 
