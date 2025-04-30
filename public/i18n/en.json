@@ -59,9 +59,9 @@
     "TEXT_HONESTY": "Our firm is based on integrity, transparency, and commitment to our clients' interests."
   },
   "CONTACT": {
-    "CONTACT_NOW": "Talk to Us!",
+    "CONTACT_NOW": "Talk to Us",
     "CONTACT_CHAT": "Whatsapp",
-    "CONTACT_CLOSE": "Close"
+    "CONTACT_CLOSE": "x"
   },
   "OUR_FIRM2": {
     "TITLE_OUR": "OUR",

@@ -64,9 +64,9 @@
     "TEXT_HONESTY": "Nuestra firma se basa en la integridad, transparencia y compromiso con los intereses de los clientes."
   },
   "CONTACT": {
-    "CONTACT_NOW": "Habla con Nosotros!",
+    "CONTACT_NOW": "Habla con Nosotros",
     "CONTACT_CHAT": "Whatsapp",
-    "CONTACT_CLOSE": "Cerrar"
+    "CONTACT_CLOSE": "x"
   },
   "LEGAL_ADVICE": {
     "TITLE_PART_ONE": "LegalTech: Asesoramiento Jurídico Avanzado Impulsado por Tecnología e Innovación"
