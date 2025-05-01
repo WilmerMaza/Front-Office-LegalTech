@@ -6,16 +6,15 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact-dialog',
   standalone: true,
-  imports: [MatCardModule,TranslateModule],
+  imports: [MatCardModule, TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-dialog.component.html',
-  styleUrl: './contact-dialog.component.scss'
+  styleUrl: './contact-dialog.component.scss',
 })
 export class ContactDialogComponent {
   constructor(public dialogRef: MatDialogRef<ContactDialogComponent>) {}
 
-  closeDialog(): void {
-    
+  public closeDialog(): void {
     this.dialogRef.close();
   }
 }

@@ -2,7 +2,7 @@ import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from '@angul
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
-import { routes } from './app.routes';
+import { routes } from './routes/app.routes';
 import { provideTranslate } from './translate.config';
 
 export const appConfig: ApplicationConfig = {

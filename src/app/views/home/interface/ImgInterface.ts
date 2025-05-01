@@ -30,3 +30,10 @@ export interface TeamArray {
   person?: string;
   link?: string;
 }
+
+export interface INav {
+  label: string;
+  link: string;
+  icon: string;
+  class?: string;
+}

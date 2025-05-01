@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
-import { ServicesArray } from '../../interface/interfaceService';
 import { ServiceNavigationComponent } from './shared/service-navigation.component';
 import { TranslateModule } from '@ngx-translate/core';
 
