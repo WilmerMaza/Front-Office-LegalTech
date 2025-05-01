@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Core Pages -->
+  <url>
+    <loc>https://abogadosdigitales.com.co/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/team</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/about</loc>
+  </url>
+
+  <!-- Services Main Page -->
+  <url>
+    <loc>https://abogadosdigitales.com.co/services</loc>
+  </url>
+
+  <!-- Services Children -->
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/cartera</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/inmobiliaria</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/laboral</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/responsabilidad</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/propiedad-horizontal</loc>
+  </url>
+  <url>
+    <loc>https://abogadosdigitales.com.co/services/derecho-comercial</loc>
+  </url>
+</urlset>
