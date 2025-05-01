@@ -7,33 +7,41 @@ import { ContactDialogComponent } from './components/contact-dialog/contact-dial
   standalone: true,
   imports: [MatDialogModule],
   templateUrl: './button-contacto.component.html',
-  styleUrl: './button-contacto.component.scss'
+  styleUrl: './button-contacto.component.scss',
 })
 export class ButtonContactoComponent implements AfterViewInit {
   @ViewChild('floatingButton') floatingButton!: ElementRef<HTMLButtonElement>;
 
-  private isDragging = false;
-  private hasMoved = false;
-  private offsetY = 0;
-  private startY = 0;
+  private isDragging: boolean = false;
+  private hasMoved: boolean = false;
+  private offsetY: number = 0;
+  private startY: number = 0;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {}
 
-  ngAfterViewInit(): void {
+  public ngAfterViewInit(): void {
     const btn = this.floatingButton.nativeElement;
 
     // Desktop
-    btn.addEventListener('mousedown', (event: MouseEvent) => this.onMouseDown(event));
+    btn.addEventListener('mousedown', (event: MouseEvent) =>
+      this.onMouseDown(event)
+    );
     btn.addEventListener('click', () => this.openContactForm());
 
-    // Mobile
-    btn.addEventListener('touchstart', (event: TouchEvent) => this.onTouchStart(event));
-    btn.addEventListener('touchend', () => this.onTouchEnd());
+    // Mobile - con passive: true
+    btn.addEventListener(
+      'touchstart',
+      (event: TouchEvent) => this.onTouchStart(event),
+      { passive: true }
+    );
+    btn.addEventListener('touchend', () => this.onTouchEnd(), {
+      passive: true,
+    });
   }
 
   // --------- DESKTOP EVENTS ---------
 
-  onMouseDown(event: MouseEvent): void {
+  private onMouseDown(event: MouseEvent): void {
     this.isDragging = true;
     this.hasMoved = false;
 
@@ -45,7 +53,7 @@ export class ButtonContactoComponent implements AfterViewInit {
     document.addEventListener('mouseup', this.onMouseUp);
   }
 
-  onMouseMove = (event: MouseEvent): void => {
+  private onMouseMove = (event: MouseEvent): void => {
     if (!this.isDragging) return;
 
     const dy = event.clientY - this.startY;
@@ -60,8 +68,7 @@ export class ButtonContactoComponent implements AfterViewInit {
     this.floatingButton.nativeElement.style.top = `${newTop}px`;
   };
 
-
-  onMouseUp = (): void => {
+  private onMouseUp = (): void => {
     this.isDragging = false;
     document.removeEventListener('mousemove', this.onMouseMove);
     document.removeEventListener('mouseup', this.onMouseUp);
@@ -69,7 +76,7 @@ export class ButtonContactoComponent implements AfterViewInit {
 
   // --------- TOUCH EVENTS ---------
 
-  onTouchStart(event: TouchEvent): void {
+  private onTouchStart(event: TouchEvent): void {
     this.isDragging = true;
     this.hasMoved = false;
 
@@ -78,11 +85,13 @@ export class ButtonContactoComponent implements AfterViewInit {
     this.offsetY = touch.clientY - rect.top;
     this.startY = touch.clientY;
 
-    document.addEventListener('touchmove', this.onTouchMove, { passive: false });
+    document.addEventListener('touchmove', this.onTouchMove, {
+      passive: false,
+    });
     document.addEventListener('touchend', this.onTouchEnd);
   }
 
-  onTouchMove = (event: TouchEvent): void => {
+  private onTouchMove = (event: TouchEvent): void => {
     if (!this.isDragging) return;
 
     const touch = event.touches[0];
@@ -99,8 +108,7 @@ export class ButtonContactoComponent implements AfterViewInit {
     event.preventDefault();
   };
 
-
-  onTouchEnd = (): void => {
+  private onTouchEnd = (): void => {
     this.isDragging = false;
     document.removeEventListener('touchmove', this.onTouchMove);
     document.removeEventListener('touchend', this.onTouchEnd);
@@ -108,13 +116,19 @@ export class ButtonContactoComponent implements AfterViewInit {
 
   // --------- MODAL ---------
 
-  openContactForm(): void {
+  private openContactForm(): void {
     if (this.hasMoved) return;
+
+    // Quitar el foco del botón antes de abrir el modal
+    if (typeof document !== 'undefined') {
+      document.activeElement instanceof HTMLElement &&
+        document.activeElement.blur();
+    }
 
     this.dialog.open(ContactDialogComponent, {
       width: '90%',
       height: '60%',
-      backdropClass: 'backdrop-background'
+      backdropClass: 'backdrop-background',
     });
   }
 }

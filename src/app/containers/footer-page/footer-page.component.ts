@@ -26,7 +26,7 @@ import { SocialMediaComponent } from "./components/social-media/social-media.com
 
     <!-- Derechos de autor -->
     <section [ngClass]="isMobile ? 'derechos-autor':'derechos-autor-pc' ">
-      <p class="text-derechos">© 2024 LegalTech |{{ "FOOTER.RIGHTS" | translate}}.</p>
+      <p class="text-derechos">© 2024 LegalTech | {{ "FOOTER.RIGHTS" | translate}}.</p>
     </section>
   </section>
 

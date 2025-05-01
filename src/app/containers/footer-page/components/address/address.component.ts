@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
         </th>
         <td>
           <a href="tel:3003534323" class="text-footer">3166912248</a> -
-          <a href="tel:3226654345" class="text-footer">3053072539</a>-
+          <a href="tel:3226654345" class="text-footer">3053072539</a> -
           <a href="tel:3226654345" class="text-footer">3234339675</a>
         </td>
       </tr>
