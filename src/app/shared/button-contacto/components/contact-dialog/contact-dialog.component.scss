@@ -5,16 +5,16 @@
   max-width: 400px;
   margin: 0 auto;
   width: 86%;
-  background-color: #f0f0f0;
-  
+  background-image: url(./img/img.png);
+  background-color: #f8f6f8;
 }
 
 .dialog-title {
-  color: #333;
+  color: #611374;
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .whatsapp-container {
@@ -34,18 +34,18 @@
 
 .whatsapp-link {
   text-decoration: none;
-  width: 100%;
+  width: 50%;
 }
 
 .whatsapp-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #25D366;
+  background-color: #611374;
   color: white;
   padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: 600;
+  border-radius: 45px;
+  font-weight: 100;
   font-size: 16px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
@@ -71,7 +71,11 @@
 }
 
 .close-button {
-  background-color: #f0f0f0;
+  background:none;
+  position: relative;
+  bottom: 195px;
+  left: 185px;
+  font-weight: 900;
   color: #555;
   border: none;
   padding: 8px 20px;

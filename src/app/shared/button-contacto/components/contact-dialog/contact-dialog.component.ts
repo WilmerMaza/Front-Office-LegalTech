@@ -15,6 +15,7 @@ export class ContactDialogComponent {
   constructor(public dialogRef: MatDialogRef<ContactDialogComponent>) {}
 
   closeDialog(): void {
+    
     this.dialogRef.close();
   }
 }
