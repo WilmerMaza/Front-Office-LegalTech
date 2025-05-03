@@ -13,22 +13,25 @@ import { services } from 'src/app/constant/services';
     <div class="button-container">
       <article
         class="service-item"
-        *ngFor="let service of services"
+        *ngFor="let service of services; let i = index"
         [class.hidden]="isCurrentService('/services/' + service.route)"
       >
         <button
           class="button-item button-effect"
           [routerLink]="['/services', service.route]"
           [attr.data-value]="service.dataValue"
-          [attr.aria-label]="service.ariaLabel"
+          [attr.aria-labelledby]="'service-label-' + i"
         >
-          <h3 class="service-title">{{ service.name | translate }}</h3>
+          <h3 class="service-title" [id]="'service-label-' + i">
+            {{ service.name | translate }}
+          </h3>
           <div class="icon-container">
             <img
               [attr.width]="service.iconWidth"
               [attr.height]="service.iconHeight"
               [src]="service.iconSrc"
-              [alt]="service.iconAlt"
+              [alt]=""
+              role="presentation"
               loading="lazy"
             />
           </div>

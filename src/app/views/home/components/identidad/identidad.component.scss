@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  min-width: 233px;
   background: $color-identidad;
   font-family: "Inter", sans-serif;
   color: $color-white;
@@ -73,7 +73,7 @@
 
 @media (width >= 992px) {
   .bandera_absolute {
-    display:block !important;
+    display: block !important;
     position: absolute;
     left: 10%;
     top: -22%;

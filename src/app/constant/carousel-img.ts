@@ -9,6 +9,7 @@ export const CAROUSELIMG: Array<ImgInterface> = [
     alt: 'COROUSEL_INIT.IMG_ONE.ALT',
     title: 'COROUSEL_INIT.IMG_ONE.TITLE',
     text: 'COROUSEL_INIT.IMG_ONE.TEXT',
+    loading: 'eager',
   },
   {
     name: 'tablero-ajedrez-reina',

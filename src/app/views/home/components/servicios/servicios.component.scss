@@ -6,7 +6,7 @@
   flex-direction: column;
   height: clamp(562px, 20vw, 681px);
   margin-bottom: 8%;
-
+  min-height: 837px;
   .container-services {
     margin-bottom: clamp(45px, 2vw, 60px);
 
@@ -64,11 +64,6 @@
     .button-container {
       grid-template-columns: 1fr;
     }
-  }
-
-  // Add the media query for very small screens (less than 400px)
-  @media (min-width: 300px) and (max-width: 760px) {
-    height: clamp(837px, 20vw, 681px);
   }
 
   .button-item {
@@ -132,4 +127,16 @@
 // Estilo para ocultar elementos
 .hidden {
   display: none;
+}
+@media (min-width: 768px) {
+  .services {
+    min-height: 562px !important;
+  }
+}
+
+/* 4. A partir de escritorio amplio (1200px) puedes afinar más */
+@media (min-width: 1200px) {
+  .services {
+    min-height: 562px !important;
+  }
 }

@@ -7,6 +7,7 @@ export interface ImgInterface {
   arial?: string;
   title?: string;
   name?: string;
+  loading?:string;
 }
 
 export interface TeamMember {

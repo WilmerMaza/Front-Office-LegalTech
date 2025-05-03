@@ -50,7 +50,7 @@ import { HtmlTranslateService } from '../services/html-translate.service';
             [src]="img.src"
             [alt]="img.alt | translate"
             [title]="img.title! | translate"
-            loading="lazy"
+            [loading]="img.loading || 'lazy'"
             decoding="async"
             style="object-fit: cover;"
             [ngClass]="{
