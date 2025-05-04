@@ -89,7 +89,10 @@ export class CarouselComponent implements AfterViewInit {
 
   constructor(public htmlTranslate: HtmlTranslateService) {}
 
-  public ngAfterViewInit(): void {
+  public async ngAfterViewInit(): Promise<void> {
+    const { register } = await import('swiper/element/bundle');
+    register(); // inicializa solo cuando el componente ya está en DOM
+
     const swiperEl = this.swiperRef.nativeElement;
 
     const config: SwiperOptions = {

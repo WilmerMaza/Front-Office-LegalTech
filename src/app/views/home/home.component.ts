@@ -11,9 +11,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ValoresComponent } from './components/valores/valores.component';
 import { ImgInterface } from './interface/ImgInterface';
 import { TranslateModule } from '@ngx-translate/core';
-
-
-
+import { SeoService } from 'src/app/shared/services/seo.service';
+import { SEO_PAGE_CONFIG } from 'src/app/constant/seo-page-data';
 
 @Component({
   selector: 'app-home',
@@ -27,19 +26,23 @@ import { TranslateModule } from '@ngx-translate/core';
     EmpresasComponent,
     FirmaComponent,
     NuestroEquipoComponent,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-
   public carouselPrincipal: Array<ImgInterface> = CAROUSELIMG;
   public corouselEmpresas: Array<ImgInterface> = CAROUSELEMPRESASIMG;
   public carouselHeight: string = '10';
 
+  private config: string = 'home';
+
+  constructor(private seo: SeoService) {}
+
   ngOnInit(): void {
     this.renderHeight();
+    this.seo.applySeoConfig(SEO_PAGE_CONFIG[this.config], this.config);
   }
 
   ngAfterViewInit(): void {

@@ -20,7 +20,7 @@ export const nav: INav[] = [
   },
   {
     label: 'NAV.CONTACT',
-    link: '/contas',
+    link: '/team',
     icon: 'icons/forward_to_inbox.svg',
   },
 ];

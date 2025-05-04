@@ -22,3 +22,21 @@ export interface IServiceConfig {
   description: string;
   bulletPoints: string[];
 }
+
+export interface IServiceSeo {
+  title: string;
+  description: string;
+  keywords: string;
+  serviceType: string;
+  faqs?: IServiceFaqSeo[];
+  breadcrumb?: IServiceBreadSeo[];
+}
+
+export interface IServiceFaqSeo {
+  question: string;
+  answer: string;
+}
+export interface IServiceBreadSeo {
+  name: string;
+  url: string;
+}

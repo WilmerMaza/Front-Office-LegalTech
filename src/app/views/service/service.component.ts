@@ -6,6 +6,9 @@ import { ServiceContentComponent } from '../home/components/servicios/shared/ser
 import { SERVICE_DATA } from 'src/app/constant/services';
 import { IServiceConfig } from '../home/interface/interfaceService';
 import { filter } from 'rxjs';
+import { SEO_SERVICE_CONFIG } from 'src/app/constant/seo-services-data';
+import { SeoService } from 'src/app/shared/services/seo.service';
+import { environment } from 'environment/environment';
 
 @Component({
   selector: 'app-service',
@@ -20,7 +23,7 @@ export class ServiceComponent implements OnInit {
 
   private readonly defaultService: IServiceConfig = SERVICE_DATA['defaul'];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private seo: SeoService) {}
 
   public ngOnInit(): void {
     // Inicializa inmediatamente con la ruta actual
@@ -38,5 +41,10 @@ export class ServiceComponent implements OnInit {
     this.currentRoute = route;
     const keyRoute = route.split('/')[2];
     this.currentService = SERVICE_DATA[keyRoute] ?? this.defaultService;
+
+    // 1. Obtener configuración SEO segura
+    const seoConfig =
+      SEO_SERVICE_CONFIG[keyRoute] ?? SEO_SERVICE_CONFIG['defaul'];
+    this.seo.applySeoConfig(seoConfig);
   }
 }
