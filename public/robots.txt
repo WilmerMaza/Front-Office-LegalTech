@@ -1,22 +1,19 @@
 User-agent: *
 
-# Bloquear recursos técnicos que no deben ser indexados
 Disallow: /server/
 Disallow: /main.ts
-Disallow: /polyfills
-Disallow: /runtime
-Disallow: /manifest.webmanifest
 Disallow: /assets/i18n/
-Disallow: /favicon.ico
 Disallow: /ngsw-worker.js
 Disallow: /safety-worker.js
 Disallow: /worker-basic.min.js
 
-# Permitir navegación normal
+Allow: /polyfills*
+Allow: /runtime*
+Allow: /styles*
+Allow: /main*
+Allow: /favicon.ico
+Allow: /manifest.webmanifest
+
 Allow: /
 
-# Priorizar rastreo de páginas importantes
-Crawl-delay: 5
-
-# Declarar ubicación del sitemap
 Sitemap: https://abogadosdigitales.com.co/sitemap.xml
