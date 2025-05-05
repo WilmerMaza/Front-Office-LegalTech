@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(private seo: SeoService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.renderHeight();
     this.seo.applySeoConfig(SEO_PAGE_CONFIG[this.config], this.config);
   }

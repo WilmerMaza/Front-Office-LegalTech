@@ -1,3 +1,4 @@
+import { environment } from 'environment/environment';
 import { IServiceSeo } from '../views/home/interface/interfaceService';
 
 export const SEO_PAGE_CONFIG: Record<string, IServiceSeo> = {
@@ -24,10 +25,35 @@ export const SEO_PAGE_CONFIG: Record<string, IServiceSeo> = {
           'LegalTech ofrece servicios legales en toda Colombia con enfoque digital y atención personalizada.',
       },
     ],
+    organization: {
+      '@context': 'https://schema.org',
+      '@type': 'LegalService',
+      name: 'LegalTech',
+      url: environment.url_legal,
+      logo: `${environment.url_legal}/icons/icon-192x192.png`,
+      description:
+        'Firma de abogados digitales especializada en soluciones legales integradas con tecnología.',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Boca Grande',
+        addressLocality: 'Cartagena',
+        addressRegion: 'Bolívar',
+        postalCode: '130001',
+        addressCountry: 'CO',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+57-316-6912248',
+        contactType: 'customer service',
+        areaServed: 'CO',
+        availableLanguage: ['Spanish', 'English'],
+      },
+      sameAs: ['https://www.instagram.com/legaltechabogadosdigitales'],
+    },
     breadcrumb: [
       {
         name: 'Inicio',
-        url: 'https://abogadosdigitales.com.co/',
+        url: `${environment.url_legal}/`,
       },
     ],
     serviceType: 'Servicios Jurídicos Digitales para Empresas y Personas',
@@ -41,10 +67,10 @@ export const SEO_PAGE_CONFIG: Record<string, IServiceSeo> = {
     serviceType: 'Firma Legal',
 
     breadcrumb: [
-      { name: 'Inicio', url: 'https://abogadosdigitales.com.co/' },
+      { name: 'Inicio', url: `${environment.url_legal}/` },
       {
         name: 'Nuestra Firma',
-        url: 'https://abogadosdigitales.com.co/about',
+        url: `${environment.url_legal}/about`,
       },
     ],
     faqs: [
@@ -73,8 +99,11 @@ export const SEO_PAGE_CONFIG: Record<string, IServiceSeo> = {
       'equipo legal, abogados LegalTech, profesionales del derecho, expertos legales, equipo jurídico, abogados digitales',
     serviceType: 'Equipo Legal',
     breadcrumb: [
-      { name: 'Inicio', url: 'https://abogadosdigitales.com.co/' },
-      { name: 'Nuestro Equipo', url: 'https://abogadosdigitales.com.co/team' },
+      { name: 'Inicio', url: `${environment.url_legal}/` },
+      {
+        name: 'Nuestro Equipo',
+        url: `${environment.url_legal}/team`,
+      },
     ],
     faqs: [
       {

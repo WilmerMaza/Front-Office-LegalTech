@@ -160,6 +160,10 @@ export class SeoService {
       schemas.push(this.buildFaqSchema(config.faqs));
     }
 
+    if (config.organization) {
+      schemas.push(config.organization);
+    }
+
     // Agrega el JSON-LD de tipo WebSite si estás en el home
     if (routeKey === 'home') {
       schemas.push(this.buildWebSiteSchema());
