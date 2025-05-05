@@ -132,6 +132,14 @@ export class SeoService {
         '@type': 'LegalService',
         name: 'LegalTech',
         url: environment.url_legal,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Boca Grande',
+          addressLocality: 'Cartagena',
+          addressRegion: 'Bolívar',
+          postalCode: '130001',
+          addressCountry: 'CO',
+        },
       },
       areaServed: {
         '@type': 'Country',
