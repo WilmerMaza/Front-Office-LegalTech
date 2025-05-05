@@ -145,7 +145,7 @@ export const SERVICE_DATA: Record<string, IServiceConfig> = {
   },
   defaul: {
     title: 'SERVICE.DEFAULT.TITLE',
-    imageSrc: 'img/servicios/service_cartera_legaltech.png',
+    imageSrc: 'img/servicios/service_laboral_comercial_legaltech.png',
     imageAlt: 'Servicios Legales',
     description: 'SERVICE.DEFAULT.DESCRIPTION',
     bulletPoints: [],
