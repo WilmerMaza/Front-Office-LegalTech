@@ -1,5 +1,12 @@
-import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from '@angular/core';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import {
+  ApplicationConfig,
+  isDevMode,
+  provideZoneChangeDetection,
+} from '@angular/core';
+import {
+  provideClientHydration,
+  withEventReplay,
+} from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
 import { routes } from './routes/app.routes';
@@ -8,15 +15,18 @@ import { provideTranslate } from './translate.config';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withInMemoryScrolling({
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled'
-    })),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
+      })
+    ),
     provideClientHydration(withEventReplay()),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
     }),
-    ...provideTranslate()
-  ]
+    ...provideTranslate(),
+  ],
 };

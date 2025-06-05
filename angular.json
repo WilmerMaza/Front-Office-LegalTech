@@ -113,6 +113,25 @@
           },
           "defaultConfiguration": "production"
         },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "LegalTech:build:production",
+            "serverTarget": "LegalTech:server:production",
+            "routes": [
+              "/",
+              "/about",
+              "/team",
+              "/services",
+              "/services/cartera",
+              "/services/inmobiliaria",
+              "/services/laboral",
+              "/services/propiedad-horizontal",
+              "/services/responsabilidad",
+              "/services/derecho-comercial"
+            ]
+          }
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },

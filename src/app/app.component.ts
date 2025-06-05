@@ -9,7 +9,7 @@ import { isPlatformBrowser } from '@angular/common';
   imports: [LayoutComponent],
   standalone: true,
   template: `<app-layout></app-layout>`,
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   public title: string =

@@ -14,7 +14,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
     RouterModule,
   ],
   template: `
-    @defer(on idle){
+    <!-- @defer(on idle){ -->
     <nav class="layout-nav" aria-label="Navegación principal">
       <app-navbar></app-navbar>
       <app-button-contacto></app-button-contacto>
@@ -26,7 +26,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
     <footer role="contentinfo" class="layout-footer">
       <app-footer-page></app-footer-page>
     </footer>
-    } @loading (minimum 1s) {
+    <!-- } @loading (minimum 1s) {
 
     <section class="loading">
       <img
@@ -38,7 +38,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
       <h1 class="loading-text">LegalTech</h1>
     </section>
 
-    }
+    } -->
   `,
   styleUrl: './layout.component.scss',
 })

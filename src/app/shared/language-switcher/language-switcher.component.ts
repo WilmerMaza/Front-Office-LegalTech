@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { TranslateService } from '@ngx-translate/core';
@@ -27,10 +27,19 @@ import { TranslateService } from '@ngx-translate/core';
 export class LanguageSwitcherComponent {
   public currentLang: string;
 
-  constructor(private translate: TranslateService) {
-    this.currentLang =
-      localStorage.getItem('lang') || translate.getDefaultLang();
-    this.translate.use(this.currentLang);
+  constructor(
+    private translate: TranslateService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    // ✅ Verificar si estamos en navegador
+    if (isPlatformBrowser(this.platformId)) {
+      const savedLang = localStorage.getItem('lang');
+      this.currentLang = savedLang || translate.getDefaultLang();
+      translate.use(this.currentLang);
+    } else {
+      // ✅ En SSR, usar el idioma por defecto (no hay localStorage)
+      this.currentLang = translate.getDefaultLang();
+    }
   }
 
   public handleLangChange(event: Event): void {
@@ -41,6 +50,8 @@ export class LanguageSwitcherComponent {
   private switchLang(lang: string): void {
     this.translate.use(lang);
     this.currentLang = lang;
-    localStorage.setItem('lang', lang);
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('lang', lang);
+    }
   }
 }
