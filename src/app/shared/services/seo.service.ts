@@ -62,12 +62,14 @@ export class SeoService {
   }
 
   public injectStructuredData(jsonLd: Record<string, any>) {
-    document.querySelectorAll('.ld-json').forEach((el) => el.remove());
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.classList.add('ld-json');
-    script.text = JSON.stringify(jsonLd);
-    document.head.appendChild(script);
+    if (isPlatformBrowser(this.platformId)) {
+      document.querySelectorAll('.ld-json').forEach((el) => el.remove());
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.classList.add('ld-json');
+      script.text = JSON.stringify(jsonLd);
+      document.head.appendChild(script);
+    }
   }
 
   public buildFaqSchema(

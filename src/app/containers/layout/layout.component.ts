@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { ButtonContactoComponent } from '../../shared/button-contacto/button-contacto.component';
 import { FooterPageComponent } from '../footer-page/footer-page.component';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { LoadingService } from 'src/app/shared/services/loading.service';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-layout',
@@ -12,9 +15,9 @@ import { NavbarComponent } from '../navbar/navbar.component';
     FooterPageComponent,
     ButtonContactoComponent,
     RouterModule,
+    CommonModule,
   ],
   template: `
-    <!-- @defer(on idle){ -->
     <nav class="layout-nav" aria-label="Navegación principal">
       <app-navbar></app-navbar>
       <app-button-contacto></app-button-contacto>
@@ -26,9 +29,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
     <footer role="contentinfo" class="layout-footer">
       <app-footer-page></app-footer-page>
     </footer>
-    <!-- } @loading (minimum 1s) {
 
-    <section class="loading">
+    <section class="loading" *ngIf="loading$ | async">
       <img
         src="icons/icon.svg"
         alt="Logo LegalTech"
@@ -37,11 +39,22 @@ import { NavbarComponent } from '../navbar/navbar.component';
       />
       <h1 class="loading-text">LegalTech</h1>
     </section>
-
-    } -->
   `,
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
-  constructor() {}
+  private platformId = inject(PLATFORM_ID);
+  public loading$ = inject(LoadingService).loading$;
+  private loadingService = inject(LoadingService);
+  private router = inject(Router);
+
+  public ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.router.events
+        .pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe(() => {
+          this.loadingService.showLoader(700); // Mínimo 700 ms para percepción visual
+        });
+    }
+  }
 }
