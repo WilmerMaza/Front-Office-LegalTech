@@ -6,11 +6,7 @@ export const CAROUSELEMPRESASIMG: Array<ImgInterface> = [
     srcMovil: 'img/empresas/virrey.webp',
     alt: 'Description 2'
   },
-  {
-    src: 'img/empresas/orange.webp',
-    srcMovil: 'img/empresas/orange.webp',
-    alt: 'Description 2'
-  },
+
   {
     src: 'img/empresas/adphor.webp',
     srcMovil: 'img/empresas/adphor.webp',

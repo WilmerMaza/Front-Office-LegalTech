@@ -64,7 +64,7 @@
     "TEXT_HONESTY": "Nuestra firma se basa en la integridad, transparencia y compromiso con los intereses de los clientes."
   },
   "CONTACT": {
-    "CONTACT_NOW": "Habla con Nosotros",
+    "CONTACT_NOW": "Habla Con Nosotros",
     "CONTACT_CHAT": "Whatsapp",
     "CONTACT_CLOSE": "x"
   },
@@ -84,7 +84,7 @@
     "TEXT_MISSION": "MISION",
     "TEXT_VISION": "VISION",
     "SEE_LESS": "Ver menos",
-    "SEE_MORE": "Ver mas"
+    "SEE_MORE": "Ver más"
   },
   "TEAM_VIEWS": {
     "TITLE_PART_ONE": "CONOCE NUESTRO EQUIPO"
@@ -95,18 +95,18 @@
   },
   "TEAM": {
     "CATHERINE": {
-      "EDUCATION": "<p>Es abogada, graduada en 1998 de la Universidad del Norte en Barranquilla. Posteriormente, profundizó sus estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002. En 2017, completo un programa de American Legal English en EF Chicago. En 2020 y 2022 cursó Introducción al inglés americano en la Universidad de Pennsylvania y Liderazgo en la Universidad de Michigan respectivamente.</p>",
+      "EDUCATION": "<p>Es abogada, graduada en 1998 de la Universidad del Norte en Barranquilla. Posteriormente, profundizó sus estudios en la Universidad Externado de Colombia en Bogotá entre 2001 y 2002. En 2017, completo un programa de American Legal English en EF Chicago. En 2020 y 2022 cursó Introducción al inglés americano en la Universidad de Pennsylvania y Liderazgo en la Universidad de Michigan respectivamente.</p><p><strong>Idiomas:</strong> Español e Inglés</p>",
       "FORMACION": "Abogada egresada de la Universidad del Norte y la Universidad Externado de Colombia con más de 21 años de experiencia en asesoría legal y litigios. A lo largo de mi carrera, he proporcionado asesoramiento estratégico a empresas reconocidas como Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, y Hotel Bahía S.A.S. Mi trayectoria incluye la gestión de procesos Civiles, laborales y administrativos como abogada corresponsal para firmas prestigiosas, incluyendo Chapman & Asociados, Vélez Gutiérrez y Baker & McKenzie S.A.S.",
       "POSITION": "Gerente"
     },
     "MIRNA": {
-      "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p><p><strong>Idiomas:</strong> Español e Inglés</p>",
       "FORMACION": "Abogada Bilingüe, con experiencia en asesoramiento a empresas privadas en el área laboral y contractual. Experiencia en la rama judicial, específicamente en el área del Derecho Contencioso Administrativo. Actualmente, prestando mis servicios jurídicos en la firma de abogados Legal Tech Abogados Digitales derecho inmobiliario, propiedad horizontal y ejecutivos.",
       "POSITION": "Abogada Junior",
       "EXPERIENCE": "<h3><strong>Experiencia Profesional</strong></h3><p>• Tribunal Administrativo de Bolívar, como auxiliar judicial ad honorem  | Enero 2023</p><p>• Abogada junior -  Legaltech Abogados Digitales | octubre 2023- Presente. </p>"
     },
     "ISABEL": {
-      "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "EDUCATION": "<p>Abogada, Fundación Universitaria Colombo Internacional, 2024.</p><p><strong>Idiomas:</strong> Español e Inglés</p>",
       "FORMACION": "Abogada bilingüe con experiencia en propiedad horizontal, encargada del área de cartera. Experta en la gestión de cobro de cuotas de administración y recuperación de cartera morosa, brindando soluciones legales. Mi enfoque está en garantizar la estabilidad financiera de las propiedades a través de estrategias efectivas de cobro y negociación, asegurando el cumplimiento normativo y la buena convivencia entre los copropietarios.",
       "POSITION": "Abogada Junior",
       "EXPERIENCE": "<h3><strong>Experiencia Profesional</strong></h3><p>• Abogada junior -  Legaltech Abogados Digitales. </p>",
@@ -119,7 +119,7 @@
     "TITLE_PART_ONE": "CONOCE",
     "TITLE_PART_TWO": "NUESTRO EQUIPO",
     "CONTACTAR": "Contactar",
-    "FORMACION": "Formacion"
+    "FORMACION": "Formación"
   },
   "SERVICE": {
     "DEFAULT": {
@@ -142,11 +142,11 @@
       "TITLE": "Derecho Inmobiliario",
       "DESCRIPTION": "Ofrecemos asesoramiento legal en todas las fases de operaciones inmobiliarias, garantizando seguridad jurídica en cada transacción:",
       "BULLETS": {
-        "ONE": "• Asesoramiento en la compra, venta, alquiler y arrendamiento de propiedades",
-        "TWO": "• Redacción, revisión y negociación de contratos inmobiliarios",
-        "THREE": "• Resolución de conflictos relacionados con la propiedad",
+        "ONE": "•   Asesoramiento en la compra y venta de inmuebles",
+        "TWO": "•   ⁠Redacción, revisión y negociación de todo tipo de contratos sobre bienes inmuebles.",
+        "THREE": "•⁠ ⁠Resolución de conflictos relacionados con la propiedad",
         "FOUR": "• Asistencia en la tramitación de documentos ante autoridades competentes",
-        "FIVE": "• Análisis de procesos hipotecarios en etapa de remate"
+        "FIVE": "•⁠  ⁠Análisis de procesos hipotecarios en etapa de remate"
       }
     },
     "RESPONSABILIDAD": {
@@ -198,3 +198,4 @@
     }
   }
 }
+
