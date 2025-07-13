@@ -31,5 +31,11 @@ export const CAROUSELEMPRESASIMG: Array<ImgInterface> = [
     src: 'img/empresas/casacoliseo.webp',
     srcMovil: 'img/empresas/casacoliseo.webp',
     alt: 'Description 2'
+  },
+  {
+    src: 'img/empresas/bahia.webp',
+    srcMovil: 'img/empresas/bahia.webp',
+    alt: 'Description 2'
   }
+
 ];
