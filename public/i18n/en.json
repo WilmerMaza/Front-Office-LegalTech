@@ -90,31 +90,31 @@
   },
   "TEAM": {
     "CATHERINE": {
-      "EDUCATION": "<p>She is a lawyer who graduated in 1998 from Universidad del Norte in Barranquilla. She later pursued advanced studies at Universidad Externado de Colombia in Bogotá between 2001 and 2002. In 2017, she completed a program in American Legal English at EF Chicago. In 2020 and 2022, she took courses in Introduction to American English at the University of Pennsylvania and Leadership at the University of Michigan, respectively.</p>",
+      "EDUCATION": "<p>She is a lawyer who graduated in 1998 from Universidad del Norte in Barranquilla. She later pursued advanced studies at Universidad Externado de Colombia in Bogotá between 2001 and 2002. In 2017, she completed a program in American Legal English at EF Chicago. In 2020 and 2022, she took courses in Introduction to American English at the University of Pennsylvania and Leadership at the University of Michigan, respectively.</p><p><strong>Languages:</strong> Spanish and English</p>",
       "FORMACION": "Lawyer graduated from Universidad del Norte and Universidad Externado de Colombia, with over 21 years of experience in legal consulting and litigation. Throughout my career, I have provided strategic legal advice to prominent companies such as Boccard Colombia SAS, Tenaris-Tubo Caribe Ltda, Hotel Casa del Coliseo, and Hotel Bahía S.A.S. My background includes managing civil, labor, and administrative proceedings as a correspondent attorney for prestigious firms including Chapman & Asociados, Vélez Gutiérrez, and Baker & McKenzie S.A.S.",
       "POSITION": "Manager"
     },
     "MIRNA": {
-      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p><p><strong>Languages:</strong> Spanish and English</p>",
       "FORMACION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Background in the judiciary, specifically in Administrative Litigation Law. Currently providing legal services at the law firm Legal Tech Abogados Digitales, focusing on real estate law, horizontal property, and executive proceedings.",
       "POSITION": "Junior Lawyer",
       "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Administrative Court of Bolívar, Judicial Assistant (ad honorem) | January 2023</p><p>• Junior Lawyer – Legaltech Abogados Digitales | October 2023 – Present</p>"
     },
     "ISABEL": {
-      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p>",
+      "EDUCATION": "<p>Law Degree, Fundación Universitaria Colombo Internacional, 2024.</p><p><strong>Languages:</strong> Spanish and English</p>",
       "FORMACION": "Bilingual lawyer with experience in horizontal property law, currently leading the collections department. Expert in managing the recovery of overdue administration fees and implementing legal solutions. My focus is on ensuring the financial stability of properties through effective collection and negotiation strategies, while promoting regulatory compliance and harmonious coexistence among co-owners.",
       "POSITION": "Junior Lawyer",
       "EXPERIENCE": "<h3><strong>Professional Experience</strong></h3><p>• Junior Lawyer – Legaltech Abogados Digitales.</p>",
       "DESCRIPTION": "Bilingual lawyer with experience advising private companies in labor and contractual matters. Specialized in the judiciary, specifically in the area of Administrative Litigation Law."
     },
     "SEE_MORE": "Read more",
-    "ASSOCIATED": "Associated",
+    "ASSOCIATED": "Associates",
     "HELP_MESSAGE": "We’re here to help you!",
     "TEAM_INTRO": "We are proud to have a diverse and dynamic team that works with passion to turn ideas into reality. At LegalTech, every team member plays a crucial role in our success, and we are excited to share this journey with our clients.",
     "TITLE_PART_ONE": "MEET",
     "TITLE_PART_TWO": "OUR TEAM",
     "CONTACTAR": "Contact",
-    "FORMACION": "Training"
+    "FORMACION": "Formation"
   },
   "SERVICE": {
     "DEFAULT": {
@@ -132,18 +132,19 @@
         "FOUR": "• Execution of judgments and monitoring of recovered amounts"
       }
     },
-    "INMOBILIARIA": {
-      "NAME": "Estate Law",
-      "TITLE": "Real Estate Law",
-      "DESCRIPTION": "We provide legal advice in all phases of real estate transactions, ensuring legal security in each operation:",
-      "BULLETS": {
-        "ONE": "• Advice on the purchase, sale, rental, and leasing of properties",
-        "TWO": "• Drafting, reviewing, and negotiating real estate contracts",
-        "THREE": "• Resolution of property-related disputes",
-        "FOUR": "• Assistance with document processing before authorities",
-        "FIVE": "• Analysis of mortgage processes at foreclosure stage"
-      }
-    },
+   "INMOBILIARIA": {
+  "NAME": "Estate Law",
+  "TITLE": "Real Estate Law",
+  "DESCRIPTION": "We provide legal advice in all phases of real estate transactions, ensuring legal security in each operation:",
+  "BULLETS": {
+    "ONE": "• Advice on the purchase and sale of real estate",
+    "TWO": "• Drafting, reviewing, and negotiating all types of contracts related to real estate",
+    "THREE": "• Resolution of property-related disputes",
+    "FOUR": "• Assistance with the processing of documents before competent authorities",
+    "FIVE": "• Analysis of mortgage processes at the foreclosure stage"
+  }
+},
+
     "RESPONSABILIDAD": {
       "NAME": "Civil Liability",
       "TITLE": "Civil Liability",
